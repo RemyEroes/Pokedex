@@ -1,0 +1,12 @@
+.card-container{
+    margin-top: 1vh;
+    /* background-color: black; */
+
+    width: 100%;
+    aspect-ratio: 0.73;
+    font-size: 10px;
+}
+
+.fond-carte {
+    width: 100%;
+}

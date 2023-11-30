@@ -1,3 +1,7 @@
+:root{
+  --yellow: color(srgb 1 0.796 0.0128);
+}
+
 .App {
   text-align: center;
 }
