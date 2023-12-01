@@ -16,7 +16,7 @@ export default function Card(props){
     var name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
 
     return(
-        <Tilt className="parallax-effect-glare-scale" perspective={500} scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
+        <Tilt className="parallax-effect-glare-scale" scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
             <div className="card-container">
                 <img className='fond-carte' src={fond_carte_squircle} alt="carte"/>
             

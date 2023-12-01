@@ -46,7 +46,7 @@
     top: 30%;
     margin-left: auto;
     margin-right: auto;
-    transform: translateZ(100px);
+    /* transform: translateZ(100px); */
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
 }
 
