@@ -5,7 +5,7 @@ export const PokemonContext = React.createContext()
 export function PokemonProvider({ children }) {
 
     const URLPOKEMON = 'https://pokedex-api.3rgo.tech/api/pokemon/';
-    const URLTYPE = 'https://pokedex-api.3rgo.tech/api/pokemon/';
+    const URLTYPE = 'https://pokedex-api.3rgo.tech/api/types';
 
     const [jsonDataPokemon, setJsonDataPokemon] = useState([]);
     const [jsonDataType, setJsonDataType] = useState([]);

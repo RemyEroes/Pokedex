@@ -1,0 +1,149 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": {
+        "en": "Steel",
+        "fr": "Acier"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/acier.png"
+    },
+    {
+      "id": 2,
+      "name": {
+        "en": "Fighting",
+        "fr": "Combat"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/combat.png"
+    },
+    {
+      "id": 3,
+      "name": {
+        "en": "Dragon",
+        "fr": "Dragon"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/dragon.png"
+    },
+    {
+      "id": 4,
+      "name": {
+        "en": "Water",
+        "fr": "Eau"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/eau.png"
+    },
+    {
+      "id": 5,
+      "name": {
+        "en": "Electric",
+        "fr": "Électrik"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/electrik.png"
+    },
+    {
+      "id": 6,
+      "name": {
+        "en": "Fairy",
+        "fr": "Fée"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/fee.png"
+    },
+    {
+      "id": 7,
+      "name": {
+        "en": "Fire",
+        "fr": "Feu"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/feu.png"
+    },
+    {
+      "id": 8,
+      "name": {
+        "en": "Ice",
+        "fr": "Glace"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/glace.png"
+    },
+    {
+      "id": 9,
+      "name": {
+        "en": "Bug",
+        "fr": "Insecte"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/insecte.png"
+    },
+    {
+      "id": 10,
+      "name": {
+        "en": "Normal",
+        "fr": "Normal"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/normal.png"
+    },
+    {
+      "id": 11,
+      "name": {
+        "en": "Grass",
+        "fr": "Plante"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/plante.png"
+    },
+    {
+      "id": 12,
+      "name": {
+        "en": "Poison",
+        "fr": "Poison"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/poison.png"
+    },
+    {
+      "id": 13,
+      "name": {
+        "en": "Psychic",
+        "fr": "Psy"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/psy.png"
+    },
+    {
+      "id": 14,
+      "name": {
+        "en": "Rock",
+        "fr": "Roche"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/roche.png"
+    },
+    {
+      "id": 15,
+      "name": {
+        "en": "Ground",
+        "fr": "Sol"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/sol.png"
+    },
+    {
+      "id": 16,
+      "name": {
+        "en": "Ghost",
+        "fr": "Spectre"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/spectre.png"
+    },
+    {
+      "id": 17,
+      "name": {
+        "en": "Dark",
+        "fr": "Ténèbres"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/tenebres.png"
+    },
+    {
+      "id": 18,
+      "name": {
+        "en": "Flying",
+        "fr": "Vol"
+      },
+      "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/vol.png"
+    }
+  ]
+}
