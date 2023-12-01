@@ -1,6 +1,8 @@
 import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
+import { PokemonProvider } from './components/PokemonContext';
+
 
 // fetch('https://pokedex-api.3rgo.tech/api/pokemon')
 //   .then((response) => {
@@ -13,10 +15,11 @@ import Menu from './components/Menu'
 
 function App() {
   return (
-    <>
-      <Menu />
-      <Home />
-    </>
+    <PokemonProvider>
+        <Menu />
+        <Home />
+    </PokemonProvider>
+
   );
 }
 

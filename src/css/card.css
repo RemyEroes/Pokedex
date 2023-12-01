@@ -12,18 +12,38 @@
     font-size: 10px;
 }
 
+
+/* INFOS */
 .infos-pokemon{
     font-family: 'Pokemon';
     font-size: 2.7vw;
-    text-align: center;
     width: 100%;
     position: fixed;
-    top: 19%;
+    top: 10%;
     margin-left: auto;
     margin-right: auto;
+
     color: rgb(17, 17, 17);
 }
 
+.number-pokemon{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: clamp(10px,2vw,16px);
+    margin-left: 15%;
+}
+
+.name-pokemon{
+    text-align: center;
+    font-family: 'Pokemon';
+    font-size: clamp(10px,5vw,30px);
+    margin-top: 4%;
+
+}
+
+
+
+/* fond */
 .fond-carte {
     width: 100%;
 }
@@ -43,10 +63,9 @@
 .fond-blanc-carte {
     width: 80%;
     position: fixed;
-    top: 30%;
+    top: 35%;
     margin-left: auto;
     margin-right: auto;
-    /* transform: translateZ(100px); */
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
 }
 
@@ -55,7 +74,7 @@
 .img-pokemon-png{
     height: 36%;
     position: fixed;
-    top: 27%;
+    top: 32%;
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));

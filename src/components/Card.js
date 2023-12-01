@@ -8,6 +8,7 @@ import Tilt from 'react-parallax-tilt';
 
 
 
+
 export default function Card(props){
 
     var {language, pokemon} = props
@@ -15,20 +16,22 @@ export default function Card(props){
     // language.toUpperCase()
     var name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
 
+    var gen = "#000"+pokemon['id']
+
     return(
         <Tilt className="parallax-effect-glare-scale" scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
             <div className="card-container">
                 <img className='fond-carte' src={fond_carte_squircle} alt="carte"/>
-            
+
                 <div className='infos-pokemon'>
-                    {name}
+                    <div className='number-pokemon'>{gen}</div>
+                    <div className='name-pokemon'>{name}</div>
                 </div>
                 <div className='img-pokemon-container'>
                     <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc"/>
                     <img className='img-pokemon-png' src={pokemon['image']} alt='png'/>
                 </div>
             </div>
-            
         </Tilt>
     )
 }
