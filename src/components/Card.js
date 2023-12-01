@@ -1,21 +1,57 @@
 import '../css/card.css'
+import fond_image_pokemon from '../images/fond-image-pokemon.svg'
 import fond_carte_squircle from '../images/fond-card-template-squircle.svg'
 import Tilt from 'react-parallax-tilt';
 
 
 
-export default function Card({name}){
 
+
+
+export default function Card(props){
+
+    var {language, pokemon} = props
     // console.log(name)
+    // language.toUpperCase()
+    var name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
 
     return(
-        <Tilt glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
+        <Tilt className="parallax-effect-glare-scale" perspective={500} scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
             <div className="card-container">
                 <img className='fond-carte' src={fond_carte_squircle} alt="carte"/>
+            
+                <div className='infos-pokemon'>
+                    {name}
+                </div>
+                <div className='img-pokemon-container'>
+                    <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc"/>
+                    <img className='img-pokemon-png' src={pokemon['image']} alt='png'/>
+                </div>
             </div>
-            <div className='infos-pokemon'>
-                
-            </div>
+            
         </Tilt>
     )
 }
+
+// export default function Card(){
+
+
+//     return(
+//         <Tilt className="parallax-effect" perspective={500} scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
+//             <div className="card-container">
+//                 <img className='fond-carte' src={fond_carte_squircle} alt="carte"/>
+            
+//                 <div className='infos-pokemon'>
+//                     pokemon
+//                 </div>
+//                 <div className='img-pokemon-container'>
+//                     <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc"/>
+//                     <img className='img-pokemon-png' src='https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/625/regular.png' alt='png'/>
+//                 </div>
+//             </div>
+            
+//         </Tilt>
+//     )
+// }
+
+

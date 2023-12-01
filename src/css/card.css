@@ -1,12 +1,62 @@
+@import '../css/app.css';
+
+
+
+
 .card-container{
     margin-top: 1vh;
-    /* background-color: black; */
 
+    /* transform-style: preserve-3d; */
     width: 100%;
     aspect-ratio: 0.73;
     font-size: 10px;
 }
 
+.infos-pokemon{
+    font-family: 'Pokemon';
+    font-size: 2.7vw;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 19%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(17, 17, 17);
+}
+
 .fond-carte {
     width: 100%;
+}
+
+
+/* image */
+.img-pokemon-container {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.fond-blanc-carte {
+    width: 80%;
+    position: fixed;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateZ(100px);
+    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
+}
+
+
+
+.img-pokemon-png{
+    height: 36%;
+    position: fixed;
+    top: 27%;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
 }

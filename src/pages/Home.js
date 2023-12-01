@@ -3,50 +3,49 @@ import '../css/home.css'
 // import GlareCard from '../components/Card'
 import Card from '../components/Card'
 
-
-// export default function Home() {
-//     var [jsonData, setJsonData] = useState([]);
-
-//     useEffect(() => {
-//         // Charger le fichier JSON (remplacez le chemin par le bon chemin de votre fichier)
-//         fetch('https://pokedex-api.3rgo.tech/api/pokemon')
-//             .then(response => response.json())
-//             .then(data => {
-//                 setJsonData(data['data']);
-//             })
-//     }, []);
-
-//     return (
-//         <div className="home">
-//             {Array.isArray(jsonData) && jsonData.map((item, index) => (
-//                 <Card key={index} title={item[index]}/>
-//             ))}
-//         </div>
-//     )
-// }
-
 const URL = 'https://pokedex-api.3rgo.tech/api/pokemon/';
 
 export default function Home() {
-    var [jsonData, setJsonData] = useState([]);
+    const [jsonData, setJsonData] = useState([]);
 
     useEffect(() => {
-        const fetchData = async () =>{
-            const result = await fetch(URL)
-            result.json().then(json=>{
-                setJsonData(json['data'])
-            })
-        }
-        fetchData()
-    }, []);
+        const fetchData = async () => {
+            try {
+                const response = await fetch(URL);
+                const json = await response.json();
+
+                if (mounted) {
+                    setJsonData(json['data']);
+                }
+            } catch (error) {
+                console.error('Erreur lors du chargement des données :', error);
+            }
+        };
+
+        let mounted = true;
+
+        fetchData();
+
+        return () => {
+            mounted = false;
+        };
+    }, []); 
+
+    console.log(jsonData);
+    var language= 'fr'
 
     return (
         <div className="home">
-            {Array.isArray(jsonData) && jsonData.map((item, index) => (
-                <Card key={index} title={item} />
+            {jsonData.map(pokemon => (
+                <Card key={pokemon.id} language={language} pokemon={pokemon} />
             ))}
         </div>
-    )
+    );
+    // return (
+    //     <div className="home">
+    //             <Card />
+    //     </div>
+    // );
 }
 
 // export default function Home() {
@@ -67,3 +66,6 @@ export default function Home() {
 //       </div>
 //     );
 //   }
+
+
+
