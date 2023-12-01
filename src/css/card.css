@@ -106,3 +106,14 @@
         clip-path: path("M0 13.972C0 2.46606 2.46606 0 13.972 0H21.028C32.5339 0 35 2.46606 35 13.972V21.028C35 32.5339 32.5339 35 21.028 35H13.972C2.46606 35 0 32.5339 0 21.028V13.972Z");
     }
 }
+
+
+/* generation */
+.gen-pokemon{
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    font-size: 0.8vw;
+    font-weight: bold;
+    text-align: center;
+}

@@ -71,7 +71,7 @@ export default function Card(props){
 
 
 
-    // afficher les 
+    // filtrer les images
     pokemon_type.forEach(pokemonType => {
         typeList.forEach(element => {
             if (element['id'] === parseInt(pokemonType,10)) {
@@ -83,7 +83,8 @@ export default function Card(props){
     });
    
 
-    // console.log(type)
+    // generation
+    var pokemon_generation = "GENERATION "+pokemon['generation']
 
     return(
         <Tilt className="parallax-effect-glare-scale" scale={1.15} glareEnable={true} glareMaxOpacity={0.8} glareColor="#ffffff" glarePosition="bottom" glareBorderRadius="20px">
@@ -105,7 +106,7 @@ export default function Card(props){
                     <img className='type-image' src={pokemon_type_url[index]} alt="type"/>
                 ))}
                 </div>
-                <div className='type-pokemon'>{pokemon_type_name}</div>
+                <div className='gen-pokemon'>{pokemon_generation}</div>
             </div>
         </Tilt>
     )
