@@ -74,7 +74,7 @@ export default function Card(props) {
 
 
 
-    // filtrer les images
+    // afficher les 
     pokemon_type.forEach(pokemonType => {
         typeList.forEach(element => {
             if (element['id'] === parseInt(pokemonType, 10)) {
