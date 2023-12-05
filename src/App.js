@@ -1,7 +1,7 @@
 import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
-import { PokemonProvider } from './components/PokemonContext';
+import { PokemonProvider } from './contexts/PokemonContext';
 import { OpenCardProvider } from './contexts/OpenCardContext';
 
 

@@ -2,7 +2,7 @@ import { useContext, useRef, useEffect } from 'react';
 import '../css/home.css'
 // import GlareCard from '../components/Card'
 import Card from '../components/Card'
-import {PokemonContext} from '../components/PokemonContext';
+import {PokemonContext} from '../contexts/PokemonContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 
