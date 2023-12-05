@@ -2,6 +2,7 @@ import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
 import { PokemonProvider } from './components/PokemonContext';
+import { OpenCardProvider } from './contexts/OpenCardContext';
 
 
 // fetch('https://pokedex-api.3rgo.tech/api/pokemon')
@@ -15,10 +16,12 @@ import { PokemonProvider } from './components/PokemonContext';
 
 function App() {
   return (
-    <PokemonProvider>
+    <OpenCardProvider>
+      <PokemonProvider>
         <Menu />
         <Home />
-    </PokemonProvider>
+      </PokemonProvider>
+    </OpenCardProvider>
 
   );
 }

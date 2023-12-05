@@ -9,6 +9,9 @@
     justify-content: center;
     border-bottom-left-radius: 12vw;
     border-bottom-right-radius: 12vw;
+
+    z-index: 1;
+    position: relative;
 }
 
 /* .banniere{
