@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react';
 import '../css/card.css'
 import fond_image_pokemon from '../images/fond-image-pokemon.svg'
-import fond_image_2test from '../images/fond-card-mask/Mask-group-test.svg'
+// import FaceCard from './FaceCard';
 // import fond_carte_squircle from '../images/fond-card-template-squircle.svg'
 import Tilt from 'react-parallax-tilt';
 import { useContext } from 'react';
 import { PokemonContext } from '../contexts/PokemonContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
+import int_to_hashtag from '../tools/int_to_hashtag'
 
 
 // images front 
@@ -54,6 +55,7 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
 // images back 
 import back_card from "../images/back-card-squircle.svg";
+
 
 
 export default function Card(props) {
@@ -240,7 +242,7 @@ export default function Card(props) {
         }
     }
 
-    function renderBGImages() {
+    function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
       
         if (pokemon_type_length === 2) {
@@ -270,7 +272,7 @@ export default function Card(props) {
                 <button className="card-container" onClick={opencard}>
 
                     <div ref={little_front} className='front-card-little'>
-                        {renderBGImages()}
+                        {render_BG_Images()}
                         <div className='infos-pokemon'>
                             <div className='number-pokemon'>{pk_number}</div>
                             <div className='name-pokemon'>{name}</div>
@@ -296,7 +298,7 @@ export default function Card(props) {
 
 
                     <div ref={big_front} className='big-front-card'>
-                        {renderBGImages()}
+                        {render_BG_Images()}
                         <div className='infos-pokemon-big'>
                             <div className='numeros-container-big'>
                                 <div className='number-pokemon-big'>{pk_number}</div>
@@ -322,45 +324,6 @@ export default function Card(props) {
             </Tilt>
         </div>
     )
-    // <div className='type-pokemon'>{pokemon_type_name}</div>
-    //<div ref={big_front_container_element} className='big-front-card-container'>
-    //     <div ref={big_front} className='big-front-card'>
-    //     <img className='fond-carte' src={fond_card_svg} alt="carte" />
-    //     <h1>test retournement</h1>
-    // </div>
-    // </div>
+
 }
 
-
-
-function int_to_hashtag(int) {
-    var tostring = int.toString();
-    var finalstring;
-
-    if (tostring.length === 3) {
-        finalstring = "#0" + int;
-    } else if (tostring.length === 2) {
-        finalstring = "#00" + int;
-    } else if (tostring.length === 1) {
-        finalstring = "#000" + int;
-    } else {
-        finalstring = "#" + int;
-    }
-
-    return finalstring;
-}
-
-// function twotypes(pokemon_type){
-//     if (pokemon_type.length()===2){
-//         return (
-//             <>
-//             <img className='fond-carte' src={fond_card_svg} alt="carte" />
-//             <img className='fond-carte-test' src={fond_image_2test} alt="carte" />
-//             </>
-//         )
-//     }else if (pokemon_type.length()===1){
-//         return (
-//             <img className='fond-carte' src={fond_card_svg} alt="carte" />
-//         )
-//     }
-// }

@@ -12,6 +12,7 @@ export function OpenCardProvider({ children }) {
     function closeCardfunction(){
         setOpenCardValue('close')
     };
+    
     const value = {openCardValue, openCardfunction, closeCardfunction}
 
     return (
