@@ -212,7 +212,7 @@ export default function Card(props) {
                     }, 200);
                     setInterval(() => {
                         $(bigFrontElement).css('transform', 'rotateY(360deg)');
-                    }, 550);
+                    }, 650);
 
                     setCardState('back');
                 
