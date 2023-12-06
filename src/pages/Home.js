@@ -2,7 +2,7 @@ import { useContext, useRef, useEffect } from 'react';
 import '../css/home.css'
 // import GlareCard from '../components/Card'
 import Card from '../components/Card'
-import {PokemonContext} from '../contexts/PokemonContext';
+import {FilterContext} from '../contexts/FilterContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 
@@ -10,7 +10,7 @@ import $ from 'jquery';
 
 export default function Home() {
 
-    const { pokemonList } = useContext(PokemonContext)
+    const { pokemonList, filterValue} = useContext(FilterContext)
 
     const { openCardValue , closeCardfunction} = useContext(OpenCardContext);
 
@@ -25,6 +25,10 @@ export default function Home() {
         }
     }, [openCardValue]); 
 
+
+    useEffect(() => {
+        console.log(filterValue)
+      }, [filterValue])
 
     const blurry_background = useRef(null)
    
