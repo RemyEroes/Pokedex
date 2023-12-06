@@ -15,7 +15,7 @@ export const PokemonSelect = () => {
       generation = pokemon.generation;
       options.push(
         <option key={generation} value={generation}>
-          Gen {generation}
+          {generation}
         </option>
       );
     }
