@@ -150,7 +150,7 @@ export default function Card(props) {
     const big_front = useRef(null)
     const card_element = useRef(null)
     const paralax_element = useRef(null)
-    const paralax_element_2 = useRef(null)
+    // const paralax_element_2 = useRef(null)
     const big_front_container_element = useRef(null)
 
 

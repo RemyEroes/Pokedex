@@ -1,5 +1,5 @@
 import React, { useContext} from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { PokemonContext } from "./PokemonContext";
 
 export const FilterContext = React.createContext()

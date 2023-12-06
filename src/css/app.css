@@ -7,6 +7,16 @@
   font-style: normal;
 }
 
+
+/* FONT OUTFIT BOLD */
+@font-face {
+  font-family: 'Outfit-bold';
+  src: url('../font/outfit_font/Outfit-Bold.woff2') format('woff2'),
+      url('../font/outfit_font/Outfit-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root{
   --yellow: color(srgb 1 0.796 0.0128);
 }

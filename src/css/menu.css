@@ -1,27 +1,68 @@
 @import '../css/app.css';
 
+
 .menu{
-    background-color: var(--yellow);
+    /* background-color: rgba(255, 255, 255, 0.911); */
+    background-color: white;
 
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom-left-radius: 12vw;
-    border-bottom-right-radius: 12vw;
+    border-bottom-left-radius: 14vw;
+    border-bottom-right-radius: 14vw;
+
+    box-shadow: 0px 20px 18px white;
 
     z-index: 1;
     position: sticky;
     top: 0px;
-    box-shadow: 0px 11px 18px white;
+
 }
 
-/* .banniere{
-    width: 101vw;
-    position: fixed;
+.banniere{
+    width: 100%;
+    position: absolute;
     top:0;
+    left: 0;
+    filter: drop-shadow(0px 20px 18px white);
+}
 
-} */
+
+.generation-filter-container{
+    /* background-color: aqua; */
+    width: 13%;
+    position: absolute;
+    bottom: 0%;
+    left: 44%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+.clock{
+   height: 100%;
+}
+
+#generation{
+    border: none;
+    outline: none;  
+    width: 100%;
+    margin-left: 10px;
+
+    font-size: 18px;
+
+    font-family: 'Outfit-bold';
+}
+
+
+
+
+
+
+
+
+/* pokeball */
 
 .pokeball-logo{
     width: clamp(50px,20%,100px);
