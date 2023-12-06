@@ -1,4 +1,4 @@
-import { useContext, useRef, useEffect } from 'react';
+import { useContext, useRef, useEffect, useState } from 'react';
 import '../css/home.css';
 import Card from '../components/Card';
 import { FilterContext } from '../contexts/FilterContext';
@@ -8,38 +8,23 @@ import filterpokemonlist from '../tools/filterpokemonlist';
 
 export default function Home() {
   const { pokemonList, filterValue } = useContext(FilterContext);
+  const [filteredPokemonList, setFilteredPokemonList] = useState([]);
   const { openCardValue, closeCardfunction } = useContext(OpenCardContext);
 
   useEffect(() => {
     if (openCardValue === 'open') {
       backgroundBlur('on');
-      console.log('on');
     } else if (openCardValue === 'close') {
       backgroundBlur('off');
-      console.log('off');
     }
   }, [openCardValue]);
 
   const blurry_background = useRef(null);
 
   useEffect(() => {
-    const filteredPokemonList = filterpokemonlist(pokemonList, filterValue);
-    var language = 'fr';
-    return (
-      <>
-        <div className="home">
-          {filteredPokemonList.map((pokemon) => (
-            <Card key={pokemon.id} language={language} pokemon={pokemon} />
-          ))}
-        </div>
-        <div
-          ref={blurry_background}
-          onClick={closeCardfunction}
-          className="background-blur"
-        ></div>
-      </>
-    );
-  }, [filterValue]);
+    const newFilteredPokemonList = filterpokemonlist(pokemonList, filterValue);
+    setFilteredPokemonList(newFilteredPokemonList);
+  }, [filterValue, pokemonList]);
 
   function backgroundBlur(x) {
     const blurry_background_element = blurry_background.current;
@@ -49,4 +34,21 @@ export default function Home() {
       $(blurry_background_element).css('display', 'none');
     }
   }
+
+  var language = 'fr';
+
+  return (
+    <>
+      <div className="home">
+        {filteredPokemonList.map((pokemon) => (
+          <Card key={pokemon.id} language={language} pokemon={pokemon} />
+        ))}
+      </div>
+      <div
+        ref={blurry_background}
+        onClick={closeCardfunction}
+        className="background-blur"
+      ></div>
+    </>
+  );
 }

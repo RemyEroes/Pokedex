@@ -36,7 +36,7 @@ export function FilterProvider({ children }) {
 
   
 
-  const value = { pokemonList: pokemonList, typeList: typeList, filterValue , filterOnSelect};
+  const value = { pokemonList, typeList, filterValue , filterOnSelect};
 
   return (
     <FilterContext.Provider value={value}>

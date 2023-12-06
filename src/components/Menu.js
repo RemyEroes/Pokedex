@@ -5,10 +5,8 @@ import pokeball_image from '../images/pokeball.svg';
 import { FilterContext, PokemonSelect } from '../contexts/FilterContext';
 
 export default function Menu() {
-  // Utilisez le hook useContext pour obtenir la valeur du contexte
-  const { filter, filterValue, filterOnSelect  } = useContext(FilterContext);
+  const {  filterOnSelect  } = useContext(FilterContext);
 
-  // Vous pouvez maintenant appeler la fonction filter dans votre composant
   const filterChanged = (event) => {
     const selectedValue = event.target.value;
     filterOnSelect(selectedValue)
@@ -20,7 +18,7 @@ export default function Menu() {
       <div className="filter_div">
         <label htmlFor="categorie">Gen</label>
         <select name="categorie" id="categorie" onChange={ filterChanged }>
-          <option value="">--Veuillez choisir une option--</option>
+          <option value="none">Generation</option>
           <PokemonSelect />
         </select>
       </div>
@@ -29,4 +27,3 @@ export default function Menu() {
 }
 
 
-//<img className='banniere' src={banniere} alt="banniere"/  >
