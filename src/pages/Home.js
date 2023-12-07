@@ -5,6 +5,7 @@ import { FilterContext } from '../contexts/FilterContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 import filterpokemonlist from '../tools/filterpokemonlist';
+import Footer from '../components/Footer';
 
 
 export default function Home() {
@@ -77,6 +78,7 @@ export default function Home() {
         onClick={closeCardfunction}
         className="background-blur"
       ></div>
+        <Footer/>
     </>
   );
 }
