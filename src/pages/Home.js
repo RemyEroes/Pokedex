@@ -6,8 +6,9 @@ import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 import filterpokemonlist from '../tools/filterpokemonlist';
 
+
 export default function Home() {
-  const { pokemonList, filterValue } = useContext(FilterContext);
+  const { pokemonList, genFilterValue, typeFilterValue } = useContext(FilterContext);
   const [filteredPokemonList, setFilteredPokemonList] = useState([]);
   const { openCardValue, closeCardfunction } = useContext(OpenCardContext);
 
@@ -21,11 +22,38 @@ export default function Home() {
 
   const blurry_background = useRef(null);
 
-  useEffect(() => {
-    const newFilteredPokemonList = filterpokemonlist(pokemonList, filterValue);
-    setFilteredPokemonList(newFilteredPokemonList);
-  }, [filterValue, pokemonList]);
 
+  // // generation
+  // useEffect(() => {
+  //   const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
+  //   setFilteredPokemonList(newFilteredPokemonList);
+    
+  // }, [genFilterValue, typeFilterValue, pokemonList]);
+  useEffect(() => {
+    const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
+    setFilteredPokemonList(newFilteredPokemonList);
+
+    const cards = document.querySelectorAll('.card-container');
+    // enleve la classe
+    cards.forEach((card) => {
+      card.classList.remove('card-fade');
+    });
+  
+    // Ajoutez la classe aux cartes
+    cards.forEach((card) => {
+      card.classList.add('card-fade');
+    });
+  
+    // Supprimez la classe après la fin de l'animation
+    setTimeout(() => {
+      cards.forEach((card) => {
+        card.classList.remove('card-fade');
+      });
+    }, 800); // 800 ms correspond à la durée de l'animation fondu
+  }, [genFilterValue, typeFilterValue, pokemonList]);
+
+
+  // blurry background
   function backgroundBlur(x) {
     const blurry_background_element = blurry_background.current;
     if (x === 'on') {
@@ -41,7 +69,7 @@ export default function Home() {
     <>
       <div className="home">
         {filteredPokemonList.map((pokemon) => (
-          <Card key={pokemon.id} language={language} pokemon={pokemon} />
+          <Card  key={pokemon.id} language={language} pokemon={pokemon} />
         ))}
       </div>
       <div

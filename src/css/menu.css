@@ -29,8 +29,8 @@
 }
 
 
+/* gen filter */
 .generation-filter-container{
-    /* background-color: aqua; */
     width: 13%;
     position: absolute;
     bottom: 0%;
@@ -50,11 +50,36 @@
     width: 100%;
     margin-left: 10px;
 
-    font-size: 18px;
+    font-size: 17px;
 
-    font-family: 'Outfit-bold';
+    font-family: 'Outfit';
 }
 
+/* gen filter */
+.type-filter-container{
+    width: 13%;
+    position: absolute;
+    bottom: 0%;
+    left: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+.type-img{
+    height: 80%;
+}
+
+#type{
+    border: none;
+    outline: none;  
+    width: 80%;
+    margin-left: 20px;
+
+    font-size: 17px;
+
+    font-family: 'Outfit';
+}
 
 
 

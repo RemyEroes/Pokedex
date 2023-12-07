@@ -4,7 +4,7 @@ import { PokemonContext } from "./PokemonContext";
 
 export const FilterContext = React.createContext()
 
-export const PokemonSelect = () => {
+export const GenFilterSelect = () => {
   let generation = 0;
   const { pokemonList } = useContext(PokemonContext);
 
@@ -15,7 +15,7 @@ export const PokemonSelect = () => {
       generation = pokemon.generation;
       options.push(
         <option key={generation} value={generation}>
-          {generation}
+          Generation {generation}
         </option>
       );
     }
@@ -24,19 +24,28 @@ export const PokemonSelect = () => {
   return <>{options}</>;
 };
 
+
+
+
+
 export function FilterProvider({ children }) {
   const { pokemonList, typeList } = useContext(PokemonContext);
-  const [filterValue, setFilterValue] = useState('none')
-  // const [jsonDataPokemon, setJsonDataPokemon] = useState([]);
-  // const [jsonDataType, setJsonDataType] = useState([]);
+  const [genFilterValue, setGenFilterValue] = useState('none')
+  const [typeFilterValue, setTypeFilterValue] = useState('none')
 
-  function filterOnSelect(filter){
-    setFilterValue(filter)
+
+
+  function genFilterOnSelect(filter){
+    setGenFilterValue(filter)
+  }
+
+  function typeFilterOnSelect(filter){
+    setTypeFilterValue(filter)
   }
 
   
 
-  const value = { pokemonList, typeList, filterValue , filterOnSelect};
+  const value = { pokemonList, typeList, genFilterValue , genFilterOnSelect, typeFilterValue, typeFilterOnSelect };
 
   return (
     <FilterContext.Provider value={value}>

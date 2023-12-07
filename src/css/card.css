@@ -14,8 +14,25 @@
     transition: all 1s ease;
 
     perspective: 1000px;
-    /* max-width: 70%; */
+    animation: fondu .8s ease-out;
 }
+
+.card-fade {
+    animation: fondu .8s ease-out;
+  }
+  
+
+@keyframes fondu {
+    0% {
+        transform: scale(.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 /* rotation */
 /* .card-container:hover .front-card-little {
@@ -37,8 +54,8 @@
 }
 
 .number-pokemon {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-family: 'Outfit';
+    /* font-weight: bold; */
     font-size: clamp(10px, 2vw, 16px);
     margin-left: 15%;
 }
@@ -133,11 +150,12 @@
 
 /* generation */
 .gen-pokemon {
+    font-family: 'Outfit';
     width: 100%;
     position: absolute;
     top: 90%;
     font-size: 0.8vw;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-align: center;
 }
 
