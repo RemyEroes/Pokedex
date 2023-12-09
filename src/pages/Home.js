@@ -25,11 +25,6 @@ export default function Home() {
 
 
   // // generation
-  // useEffect(() => {
-  //   const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
-  //   setFilteredPokemonList(newFilteredPokemonList);
-    
-  // }, [genFilterValue, typeFilterValue, pokemonList]);
   useEffect(() => {
     const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
     setFilteredPokemonList(newFilteredPokemonList);
@@ -39,12 +34,14 @@ export default function Home() {
     cards.forEach((card) => {
       card.classList.remove('card-fade');
     });
-  
+
     // Ajoutez la classe aux cartes
-    cards.forEach((card) => {
-      card.classList.add('card-fade');
-    });
-  
+    setTimeout(() => {
+      cards.forEach((card) => {
+        card.classList.add('card-fade');
+      });
+    }, 50);
+
     // Supprimez la classe après la fin de l'animation
     setTimeout(() => {
       cards.forEach((card) => {
@@ -70,7 +67,7 @@ export default function Home() {
     <>
       <div className="home">
         {filteredPokemonList.map((pokemon) => (
-          <Card  key={pokemon.id} language={language} pokemon={pokemon} />
+          <Card key={pokemon.id} language={language} pokemon={pokemon} />
         ))}
       </div>
       <div
@@ -78,7 +75,7 @@ export default function Home() {
         onClick={closeCardfunction}
         className="background-blur"
       ></div>
-        <Footer/>
+      <Footer />
     </>
   );
 }

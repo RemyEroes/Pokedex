@@ -14,11 +14,11 @@
     transition: all 1s ease;
 
     perspective: 1000px;
-    animation: fondu .8s ease-out;
+    animation: fondu .8s ease-in-out;
 }
 
 .card-fade {
-    animation: fondu .8s ease-out;
+    animation: fondu .8s ease-in-out;
   }
   
 
