@@ -7,27 +7,21 @@ export const SortContext = React.createContext()
 
 export function SortProvider({ children }) {
   const { pokemonList, typeList } = useContext(FilterContext);
-  const [genFilterValue, setGenFilterValue] = useState('none')
-  const [typeFilterValue, setTypeFilterValue] = useState('none')
+  const [sortValue, setSortValue] = useState('none')
 
 
 
-  function genFilterOnSelect(filter){
-    setGenFilterValue(filter)
+  function sortOnSelect(filter){
+    setSortValue(filter)
   }
-
-  function typeFilterOnSelect(filter){
-    setTypeFilterValue(filter)
-  }
-
   
 
-  const value = { pokemonList, typeList, genFilterValue , genFilterOnSelect, typeFilterValue, typeFilterOnSelect };
+  const value = { pokemonList, typeList, sortValue, sortOnSelect };
 
   return (
-    <FilterContext.Provider value={value}>
+    <SortContext.Provider value={value}>
       {children}
-    </FilterContext.Provider>
+    </SortContext.Provider>
   );
 }
  

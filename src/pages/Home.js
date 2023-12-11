@@ -5,12 +5,22 @@ import { FilterContext } from '../contexts/FilterContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 import filterpokemonlist from '../tools/filterpokemonlist';
+import sortpokemonlist from '../tools/sortpokemonlist';
+import { SortContext } from '../contexts/SortContext';
 import Footer from '../components/Footer';
 
 
+
 export default function Home() {
-  const { pokemonList, genFilterValue, typeFilterValue } = useContext(FilterContext);
+  // filter
+  const { genFilterValue, typeFilterValue } = useContext(FilterContext);
+  // const { pokemonList, genFilterValue, typeFilterValue } = useContext(FilterContext);
   const [filteredPokemonList, setFilteredPokemonList] = useState([]);
+
+  // sort
+  const { pokemonList,  sortValue} = useContext(SortContext);
+  const [sortedpokemonlist, setsoredtpokemonlist] = useState([]);
+
   const { openCardValue, closeCardfunction } = useContext(OpenCardContext);
 
   useEffect(() => {
@@ -51,6 +61,22 @@ export default function Home() {
   }, [genFilterValue, typeFilterValue, pokemonList]);
 
 
+
+
+
+  //sort
+  useEffect(() => {
+    const newSortedPokemonList = sortpokemonlist(pokemonList, sortValue);
+    setsoredtpokemonlist(newSortedPokemonList);
+
+  }, [pokemonList, sortValue]);
+
+
+
+  console.log('Type of sortedpokemonlist:', typeof sortedpokemonlist);
+
+
+
   // blurry background
   function backgroundBlur(x) {
     const blurry_background_element = blurry_background.current;
@@ -63,10 +89,11 @@ export default function Home() {
 
   var language = 'fr';
 
+
   return (
     <>
       <div className="home">
-        {filteredPokemonList.map((pokemon) => (
+        {sortedpokemonlist.map((pokemon) => (
           <Card key={pokemon.id} language={language} pokemon={pokemon} />
         ))}
       </div>

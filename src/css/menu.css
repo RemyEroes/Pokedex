@@ -84,6 +84,31 @@
 }
 
 
+/* sort */
+.sort-container {
+    width: 13%;
+    position: absolute;
+    bottom: 0%;
+    left: 75.5%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+
+.sort-img {
+    height: 100%;
+}
+
+#sort {
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 15px;
+    font-size: 17px;
+    font-family: 'Outfit';
+}
+
 
 @media screen and (max-width: 768px)  {
     #generation {

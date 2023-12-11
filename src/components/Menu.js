@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import '../css/menu.css';
 import { FilterContext, GenFilterSelect } from '../contexts/FilterContext';
+import { SortContext } from '../contexts/SortContext';
+import SortSelect from './SortSelect';
 import TypeFilterSelect from '../tools/typeFilterSelect';
 import get_banner_from_width from '../tools/get_banner_from_width';
 import $ from 'jquery'
@@ -11,10 +13,12 @@ import $ from 'jquery'
 import clock_img from '../images/assets/clock.svg'
 // type
 import type_img from '../images/assets/type.svg'
-
+// sort
+import sort_img from '../images/assets/tri.svg'
 
 export default function Menu() {
   const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
+  const {  sortOnSelect  } = useContext(SortContext);
 
   // banner from width
   const [windowWidth] = useState(window.innerWidth);
@@ -47,6 +51,13 @@ export default function Menu() {
     const selectedValue = event.target.value;
     typeFilterOnSelect(selectedValue)
   };
+
+  // sort 
+  const sortChanged = (event) => {
+    const selectedValue = event.target.value;
+    sortOnSelect(selectedValue)
+  };
+
   
 
 
@@ -72,6 +83,16 @@ export default function Menu() {
         <select name="type" id="type" onChange={ typeFilterChanged }>
           <option value="none">Tous Types</option>
           <TypeFilterSelect />
+        </select>
+      </div>
+
+      <div className="sort-container">
+        <label htmlFor="sort">
+          <img className='sort-img' src={sort_img} alt="sort" />
+        </label>
+        <select name="sort" id="sort" onChange={ sortChanged }>
+          <option value="none">Trier</option>
+          <SortSelect />
         </select>
       </div>
 

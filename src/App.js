@@ -5,7 +5,7 @@ import Menu from './components/Menu'
 import { PokemonProvider } from './contexts/PokemonContext';
 import { OpenCardProvider } from './contexts/OpenCardContext';
 import { FilterProvider } from "./contexts/FilterContext";
-
+import { SortProvider } from "./contexts/SortContext";
 
 // fetch('https://pokedex-api.3rgo.tech/api/pokemon')
 //   .then((response) => {
@@ -21,8 +21,10 @@ function App() {
     <OpenCardProvider>
       <PokemonProvider>
         <FilterProvider>
-          <Menu />
-          <Home />
+          <SortProvider>
+            <Menu />
+            <Home />
+          </SortProvider>
         </FilterProvider>
       </PokemonProvider>
     </OpenCardProvider>
