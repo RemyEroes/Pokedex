@@ -1,46 +1,10 @@
-// export default function sortpokemonlist(pokemonlist, sortValue) {
-//     let pokemonListSorted = [];
+import compareByNameAsc from "./compareByNameAsc";
+import compareByNameDesc from "./compareByNameDesc";
 
 
-
-
-//     // const sort_options = {
-//     //     "Numero": "🔢",
-//     //     "Alphabetique": "🔡",
-//     //     "Poids": "⚖️",
-//     //     "Taille": "📏",
-//     // };
-
-//     // const sort_type = {
-//     //     "croissant": "⬆️",
-//     //     "decroissant": "⬇️",
-//     // };
-//     console.log(sortValue)
-//     // eslint-disable-next-line eqeqeq
-//     if (sortValue != 'none') {
-//         switch (sortValue) {
-//             case 'Numerocroissant':
-//                 const entriesAsc = Object.entries(pokemonlist).sort((a, b) => a[1].id - b[1].id);
-//                 pokemonListSorted = Object.fromEntries(entriesAsc);
-//                 console.log(JSON.stringify(entriesAsc));
-//                 break;
-
-//             case 'Numerodecroissant':
-//                 const entriesDesc = Object.entries(pokemonlist).sort((a, b) => b[1].id - a[1].id);
-//                 pokemonListSorted = Object.fromEntries(entriesDesc);
-//                 break;
-
-//             default:
-//                 break
-//         }
-//     } else {
-//         pokemonListSorted = pokemonlist
-//     }
-
-//     return pokemonListSorted;
-// }
 export default function sortpokemonlist(pokemonlist, sortValue) {
     let pokemonListSorted = [];
+    // var language = 'fr';
 
     // eslint-disable-next-line eqeqeq
     if (sortValue !== 'none') {
@@ -55,7 +19,30 @@ export default function sortpokemonlist(pokemonlist, sortValue) {
                 pokemonListSorted = Object.values(pokemonlist).sort((a, b) => b.id - a.id);
                 break;
 
-            
+            case 'alphabetiquecroissant':
+                pokemonListSorted = pokemonlist.sort(compareByNameAsc);
+                break;
+
+            case 'alphabetiquedecroissant':
+                pokemonListSorted = pokemonlist.sort(compareByNameDesc);
+                break;
+
+            case 'poidscroissant':
+                pokemonListSorted = Object.values(pokemonlist).sort((a, b) => a.weight - b.weight);
+                break;
+
+            case 'poidsdecroissant':
+                pokemonListSorted = Object.values(pokemonlist).sort((a, b) => b.weight - a.weight);
+                break;
+                
+            case 'taillecroissant':
+                pokemonListSorted = Object.values(pokemonlist).sort((a, b) => a.height - b.height);
+                break;
+
+            case 'tailledecroissant':
+                pokemonListSorted = Object.values(pokemonlist).sort((a, b) => b.height - a.height);
+                break;
+
             default:
                 break;
         }
