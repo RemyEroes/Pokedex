@@ -8,14 +8,17 @@ import filterpokemonlist from '../tools/filterpokemonlist';
 import sortpokemonlist from '../tools/sortpokemonlist';
 import { SortContext } from '../contexts/SortContext';
 import Footer from '../components/Footer';
+import { SearchContext } from '../contexts/SearchContext';
+import searchpokemonlist from '../tools/searchpokemonlist';
 
 
 
 export default function Home() {
+  //search
+  const { searchValue } = useContext(SearchContext);
+
   // filter
   const { genFilterValue, typeFilterValue } = useContext(FilterContext);
-  // const { pokemonList, genFilterValue, typeFilterValue } = useContext(FilterContext);
-  const [filteredPokemonList, setFilteredPokemonList] = useState([]);
 
   // sort
   const { pokemonList,  sortValue} = useContext(SortContext);
@@ -34,11 +37,13 @@ export default function Home() {
   const blurry_background = useRef(null);
 
 
-  // // generation
+  // sort, filter, search
   useEffect(() => {
+    //search
+    const newsearchedPokemonList = searchpokemonlist(pokemonList, searchValue);
+
     // filter
-    const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
-    setFilteredPokemonList(newFilteredPokemonList);
+    const newFilteredPokemonList = filterpokemonlist(newsearchedPokemonList, genFilterValue, typeFilterValue);
   
     const cards = document.querySelectorAll('.card-container');
     
@@ -64,10 +69,13 @@ export default function Home() {
     // sort
     const newSortedPokemonList = sortpokemonlist(newFilteredPokemonList, sortValue);
     setsoredtpokemonlist(newSortedPokemonList);
-  }, [genFilterValue, typeFilterValue, pokemonList, sortValue]);
+  }, [searchValue, genFilterValue, typeFilterValue, pokemonList, sortValue]);
 
 
-
+  // search
+  useEffect(()=>{
+    console.log(searchValue)
+  },[searchValue])
 
 
   // blurry background

@@ -29,6 +29,40 @@
 }
 
 
+/* searching bar */
+.search-bar-container {
+
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+
+.search {
+    height: 110%;
+    opacity: .5;
+}
+
+#search-bar {
+    /* background-color: aqua; */
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 25px;
+    font-size: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    /* font-family: 'Outfit-bold'; */
+}
+
+
+
+
 /* gen filter */
 .generation-filter-container {
     width: 13%;
@@ -110,7 +144,9 @@
 }
 
 
-@media screen and (max-width: 768px)  {
+
+
+@media screen and (max-width: 768px) {
     #generation {
         margin-left: 2px;
         font-size: 6px;
@@ -120,8 +156,19 @@
         margin-left: 2px;
         font-size: 7px;
     }
+
     .type-img {
         height: 60%;
+    }
+
+    #search-bar {
+        margin-left: 3px;
+        font-size: 8px;
+    }
+
+    .search {
+        height: 90%;
+        opacity: .8;
     }
 }
 
@@ -135,9 +182,16 @@
         margin-left: 5px;
         font-size: 10px;
     }
+
     .type-img {
         height: 70%;
     }
+
+    #search-bar {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
@@ -149,6 +203,10 @@
     #type {
         margin-left: 15px;
         font-size: 14px;
+    }
+
+    #search-bar {
+        font-size: 16px;
     }
 }
 

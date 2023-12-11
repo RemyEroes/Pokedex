@@ -6,9 +6,11 @@ import SortSelect from './SortSelect';
 import TypeFilterSelect from '../tools/typeFilterSelect';
 import get_banner_from_width from '../tools/get_banner_from_width';
 import $ from 'jquery'
+import { SearchContext } from '../contexts/SearchContext';
 
 
-
+// search
+import search_img from '../images/assets/search.svg'
 // clock
 import clock_img from '../images/assets/clock.svg'
 // type
@@ -19,6 +21,7 @@ import sort_img from '../images/assets/tri.svg'
 export default function Menu() {
   const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
   const {  sortOnSelect  } = useContext(SortContext);
+  const {searchOnChange } = useContext(SearchContext)
 
   // banner from width
   const [windowWidth] = useState(window.innerWidth);
@@ -58,6 +61,11 @@ export default function Menu() {
     sortOnSelect(selectedValue)
   };
 
+  // research
+  const searchValueChanged = (event) => {
+    const selectedValue = event.target.value;
+    searchOnChange(selectedValue)
+  };
   
 
 
@@ -65,7 +73,14 @@ export default function Menu() {
     <div id='menu' className="menu">
       <img className="banniere" src={bannerSRC} alt="banniere" />
 
+      <div className="search-bar-container">
+        <label htmlFor="search-bar">
+          <img className='search' src={search_img} alt="search" />
+        </label>
+        <input type="text" name="search-bar" id="search-bar" placeholder="Rechercher . . ." onChange={ searchValueChanged }></input>
+      </div>
       
+
       <div className="generation-filter-container">
         <label htmlFor="generation">
           <img className='clock' src={clock_img} alt="clock" />
