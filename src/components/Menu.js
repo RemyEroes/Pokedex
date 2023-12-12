@@ -3,7 +3,7 @@ import '../css/menu.css';
 import { FilterContext, GenFilterSelect } from '../contexts/FilterContext';
 import { SortContext } from '../contexts/SortContext';
 import SortSelect from './SortSelect';
-import TypeFilterSelect from '../tools/typeFilterSelect';
+import TypeFilterSelect from './typeFilterSelect';
 import get_banner_from_width from '../tools/get_banner_from_width';
 import $ from 'jquery'
 import { SearchContext } from '../contexts/SearchContext';
@@ -17,6 +17,7 @@ import clock_img from '../images/assets/clock.svg'
 import type_img from '../images/assets/type.svg'
 // sort
 import sort_img from '../images/assets/tri.svg'
+import SearchList from './SearchList';
 
 export default function Menu() {
   const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
@@ -67,7 +68,13 @@ export default function Menu() {
     searchOnChange(selectedValue)
   };
   
-
+  const [isSearchActive, setIsSearchActive] = useState(false);
+  function searchActive(){
+    setIsSearchActive(true)
+  }
+  function searchInactive(){
+    setIsSearchActive(false)
+  }
 
   return (
     <div id='menu' className="menu">
@@ -77,8 +84,9 @@ export default function Menu() {
         <label htmlFor="search-bar">
           <img className='search' src={search_img} alt="search" />
         </label>
-        <input type="text" name="search-bar" id="search-bar" placeholder="Rechercher . . ." onChange={ searchValueChanged }></input>
+        <input type="text" name="search-bar" id="search-bar" placeholder="Rechercher . . ." onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
       </div>
+      {isSearchActive && <SearchList />}
       
 
       <div className="generation-filter-container">

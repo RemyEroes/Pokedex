@@ -10,6 +10,9 @@ import { SortContext } from '../contexts/SortContext';
 import Footer from '../components/Footer';
 import { SearchContext } from '../contexts/SearchContext';
 import searchpokemonlist from '../tools/searchpokemonlist';
+import CloseButton from '../components/CloseButton';
+import { PokemonListContext } from '../contexts/PokemonListContext';
+
 
 
 
@@ -21,10 +24,14 @@ export default function Home() {
   const { genFilterValue, typeFilterValue } = useContext(FilterContext);
 
   // sort
-  const { pokemonList,  sortValue} = useContext(SortContext);
+  const { pokemonList, sortValue } = useContext(SortContext);
   const [sortedpokemonlist, setsoredtpokemonlist] = useState([]);
 
   const { openCardValue, closeCardfunction } = useContext(OpenCardContext);
+
+  // liste finale
+  const { changePokemonListValue } = useContext(PokemonListContext);
+
 
   useEffect(() => {
     if (openCardValue === 'open') {
@@ -44,38 +51,39 @@ export default function Home() {
 
     // filter
     const newFilteredPokemonList = filterpokemonlist(newsearchedPokemonList, genFilterValue, typeFilterValue);
-  
+
     const cards = document.querySelectorAll('.card-container');
-    
+
     // Remove fade class
     cards.forEach((card) => {
       card.classList.remove('card-fade');
     });
-  
+
     // Add fade class
     setTimeout(() => {
       cards.forEach((card) => {
         card.classList.add('card-fade');
       });
     }, 50);
-  
+
     // Remove fade class after animation
     setTimeout(() => {
       cards.forEach((card) => {
         card.classList.remove('card-fade');
       });
     }, 800); // 800 ms is the duration of the fade animation
-  
+
     // sort
     const newSortedPokemonList = sortpokemonlist(newFilteredPokemonList, sortValue);
     setsoredtpokemonlist(newSortedPokemonList);
+
   }, [searchValue, genFilterValue, typeFilterValue, pokemonList, sortValue]);
 
+  // Call changePokemonListValue outside of useEffect if needed
+  useEffect(() => {
+    changePokemonListValue(sortedpokemonlist);
+  }, [sortedpokemonlist, changePokemonListValue]);
 
-  // search
-  useEffect(()=>{
-    console.log(searchValue)
-  },[searchValue])
 
 
   // blurry background
@@ -91,6 +99,9 @@ export default function Home() {
   var language = 'fr';
 
 
+
+
+
   return (
     <>
       <div className="home">
@@ -103,6 +114,7 @@ export default function Home() {
         onClick={closeCardfunction}
         className="background-blur"
       ></div>
+      <CloseButton />
       <Footer />
     </>
   );

@@ -1,6 +1,6 @@
 export default function filterpokemonlist(pokemonlist, genfilterValue, typefilterValue) {
     let pokemonListFiltered = [];
-    console.log(genfilterValue,typefilterValue)
+    // console.log(genfilterValue,typefilterValue)
 
     pokemonlist.forEach((pokemon) => {
         let type_pokemon = pokemon["types"];

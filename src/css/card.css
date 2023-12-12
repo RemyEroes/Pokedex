@@ -159,6 +159,14 @@
     text-align: center;
 }
 
+/* responsive */
+@media screen and (max-width: 1024px) {
+    .gen-pokemon{
+        top: 91%;
+    font-size: 1.3vw;
+    }
+}
+
 
 /* ---------- */
 .back-card,
@@ -192,37 +200,6 @@
 
 /* face 2 */
 
-
-
-/* position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: scale(3); 
-    transform-origin: center;
-    transform: scale(3);
-    z-index: 100; */
-
-
-/* @keyframes little-front-flip {
-    0%{
-        transform: rotateY(0deg);
-    }
-    100%{
-        transform: rotateY(180deg);
-        display: none;
-    }
-}
-
-@keyframes back-flip {
-    0%{
-        transform: rotateY(-180deg);
-        display: initial;
-    }
-    100%{
-        transform: rotateY(360deg);
-    }
-} */
-
 @keyframes card-position-center {
 
     100% {
@@ -231,9 +208,6 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        /* position: absolute;
-        top: 30%;
-        left: 30%; */
 
     }
 }
@@ -285,6 +259,10 @@
 }
 
 
+
+
+
+
 /* big front */
 .infos-pokemon-big {
     font-family: 'Pokemon';
@@ -300,8 +278,6 @@
 
 .numeros-container-big {
     display: flex;
-    /* background-color: aquamarine;
-    opacity: .5; */
     justify-content: space-between;
     align-items: flex-start;
     position: absolute;
@@ -311,16 +287,14 @@
 }
 
 .number-pokemon-big {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: clamp(10px, .7vw, 16px);
+    font-family: 'Outfit';
+    font-size: clamp(10px, .6vw, 16px);
     margin-left: 5%;
 }
 
 .gen-pokemon-big {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: clamp(10px, .7vw, 16px);
+    font-family: 'Outfit';
+    font-size: clamp(10px, .6vw, 16px);
     margin-left: 5%;
 }
 

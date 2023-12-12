@@ -7,14 +7,7 @@ import { OpenCardProvider } from './contexts/OpenCardContext';
 import { FilterProvider } from "./contexts/FilterContext";
 import { SortProvider } from "./contexts/SortContext";
 import { SearchProvider } from "./contexts/SearchContext";
-
-// fetch('https://pokedex-api.3rgo.tech/api/pokemon')
-//   .then((response) => {
-//     return response.json()
-//   })
-//   .then((result) => {
-//     console.log(result)
-//   })
+import { PokemonListProvider } from "./contexts/PokemonListContext";
 
 
 function App() {
@@ -24,8 +17,10 @@ function App() {
         <SearchProvider>
           <FilterProvider>
             <SortProvider>
-              <Menu />
-              <Home />
+              <PokemonListProvider>
+                <Menu />
+                <Home />
+              </PokemonListProvider>
             </SortProvider>
           </FilterProvider>
         </SearchProvider>

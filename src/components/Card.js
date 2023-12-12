@@ -11,6 +11,7 @@ import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
 
 
+
 // images front 
 import fond_card_1 from "../images/fond-card/fond-carte-squircle-1.svg";
 import fond_card_2 from "../images/fond-card/fond-carte-squircle-2.svg";
@@ -55,6 +56,7 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
 // images back 
 import back_card from "../images/back-card-squircle.svg";
+
 
 
 
@@ -117,7 +119,7 @@ export default function Card(props) {
         fond_card_mask_18,
     ];
     // uniquement le 1er
-    
+
 
 
 
@@ -133,7 +135,7 @@ export default function Card(props) {
     });
 
 
-    const [cardState, setCardState] = useState('front');
+    // const [cardState, setCardState] = useState('front');
 
     const [tiltProps, setTiltProps] = useState({
         scale: 1.15,
@@ -155,110 +157,86 @@ export default function Card(props) {
 
 
     // open card
-    const { openCardValue, openCardfunction, closeCardfunction } = useContext(OpenCardContext);
-
-    function opencard() {
-        // props
-        // setTiltProps({
-        //     scale: 1.15,
-        //     glareEnable: true,
-        //     glareMaxOpacity: 0.8,
-        //     glareColor: "#ffffff",
-        //     glarePosition: "bottom",
-        //     glareBorderRadius: "20px",
-        //     trackOnWindow: true,
-        // })
-        // console.log(tiltProps)
-
-        if (openCardValue === 'close') {
-
-            if (openCardValue === 'close') {
-                openCardfunction()
-            } else if (openCardValue === 'open') {
-                closeCardfunction()
-            }
-            console.log(openCardValue)
-
-            const littleFrontElement = little_front.current;
-            const backElement = back_.current;
-            const bigFrontElement = big_front.current;
-            const CARDElement = card_element.current;
-            const big_front_container = big_front_container_element.current
-            const ParalaxElement = paralax_element.current;
+    const { openingCardValueFunction, openCardValueFunction } = useContext(OpenCardContext);
 
 
-            if (littleFrontElement && backElement) {
-                // Appliquer les transformations en fonction de l'état actuel de la carte
-                if (cardState === 'front') {
-
-                    // $(littleFrontElement).css('transform', ' scale(2) rotateY(180deg)');
-                    // $(littleFrontElement).css('animation', 'little-front-flip 1s ease');
-                    // setTiltProps('trackOnWindow = {true}')
-
-
-                    // $(CARDElement).css('animation', 'card-position-center 1s ease');
-
-                    // $(CARDElement).css('transform', 'translate(-620px, 280px)');
-                    $(CARDElement).css('z-index', '100');
-                    $(CARDElement).css('position', 'fixed');
-                    $(CARDElement).css('top', '50%');
-                    $(CARDElement).css('left', '50%');
-                    $(CARDElement).css('transform', 'translate(-50%, -50%) scale(3)');
-
-                    $(big_front_container).css('display', 'initial');
+    function openCard() {
+        openingCardValueFunction()
+        // elements
+        const littleFrontElement = little_front.current;
+        const backElement = back_.current;
+        const bigFrontElement = big_front.current;
+        const CARDElement = card_element.current;
+        const big_front_container = big_front_container_element.current
+        // const ParalaxElement = paralax_element.current;
 
 
-                    $(littleFrontElement).css('transform', ' rotateY(180deg)');
-                    setInterval(() => {
-                        $(backElement).css('transform', ' rotateY(540deg)')
-                    }, 200);
-                    setInterval(() => {
-                        $(bigFrontElement).css('transform', 'rotateY(360deg)');
-                    }, 650);
+        if (littleFrontElement && backElement) {
+            // Appliquer les transformations en fonction de l'état actuel de la carte
+            $(CARDElement).css('z-index', '100');
+            $(CARDElement).css('position', 'fixed');
+            $(CARDElement).css('top', '50%');
+            $(CARDElement).css('left', '50%');
+            $(CARDElement).css('transform', 'translate(-50%, -50%) scale(3)');
 
-                    setCardState('back');
-                
-                }else if (cardState === 'back') {
-                    $(CARDElement).css('z-index', '1');
-                    $(CARDElement).css('position', 'initial');
-                    // $(CARDElement).css('top', '50%');
-                    // $(CARDElement).css('left', '50%');
-                    $(CARDElement).css('transform', 'translate(0%, 0%) scale(1)');
+            $(big_front_container).css('display', 'initial');
 
-                    $(big_front_container).css('display', 'none');
 
-                    $(bigFrontElement).css('transform', 'rotateY(-360deg)');
-                    $(littleFrontElement).css('transform', ' rotateY(-180deg)');
-                    setInterval(() => {
-                        $(backElement).css('transform', ' rotateY(-540deg)')
-                    }, 200);
-                    setInterval(() => {
-                        $(littleFrontElement).css('transform', ' rotateY(-180deg)');
-                    }, 550);
+            $(littleFrontElement).css('transform', ' rotateY(180deg)');
+            setInterval(() => {
+                $(backElement).css('transform', ' rotateY(540deg)')
+            }, 200);
+            setInterval(() => {
+                $(bigFrontElement).css('transform', 'rotateY(360deg)');
+            }, 650);
 
-                    setCardState('front');
-                }
-            }
+            // open
+            openCardValueFunction()
         }
+
     }
+
+
+    function closeCard(){
+        // console.log('close')
+        // const littleFrontElement = little_front.current;
+        // const backElement = back_.current;
+        // const bigFrontElement = big_front.current;
+        const CARDElement = card_element.current;
+        const big_front_container = big_front_container_element.current
+        // const ParalaxElement = paralax_element.current;
+        $(CARDElement).css('opacity', '0.3');
+        // if (openCardValue === 'closing') {
+
+        //         // Appliquer les transformations en fonction de l'état actuel de la carte
+        //         // $(CARDElement).css('z-index', '100');
+        //         $('pokemon1').css('opacity', '0.3');
+               
+        //         closeCardValueFunction()
+
+        // }
+    }
+
+
+
 
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
-      
+
         if (pokemon_type_length === 2) {
             const fond_card_mask_svg = fondCardImagesMask[pokemon_type[1] - 1];
-          return (
-            <>
-              <img className='fond-carte' src={fond_card_svg} alt="carte" />
-              <img className='fond-carte-test' src={fond_card_mask_svg} alt="carte" />
-            </>
-          );
+            return (
+                <>
+                    <img className='fond-carte' src={fond_card_svg} alt="carte" />
+                    <img className='fond-carte-test' src={fond_card_mask_svg} alt="carte" />
+                </>
+            );
         } else {
-          return (
-            <img className='fond-carte' src={fond_card_svg} alt="carte" />
-          );
+            return (
+                <img className='fond-carte' src={fond_card_svg} alt="carte" />
+            );
         }
-      }
+    }
 
 
     // generation
@@ -266,10 +244,10 @@ export default function Card(props) {
     var pokemon_generation_big = "GEN " + pokemon['generation']
 
     return (
-        <div ref={card_element} className='card_wraper'>
+        <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
             <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
 
-                <button className="card-container" onClick={opencard}>
+                <button className="card-container" onClick={openCard}>
 
                     <div ref={little_front} className='front-card-little'>
                         {render_BG_Images()}
@@ -316,14 +294,15 @@ export default function Card(props) {
                                 <img key={type} className='type-image-big' src={pokemon_type_url[index]} alt="type" />
                             ))}
                         </div>
-                        
+
+
                     </div>
-
-
                 </button>
             </Tilt>
         </div>
+        
+
     )
 
 }
-
+ // <CloseButton onClick={() => closeCard()} />

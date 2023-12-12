@@ -15,6 +15,7 @@ export function SortProvider({ children }) {
     setSortValue(filter)
   }
   
+  
 
   const value = { pokemonList, typeList, sortValue, sortOnSelect };
 
