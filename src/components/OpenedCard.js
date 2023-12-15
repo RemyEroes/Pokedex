@@ -59,6 +59,20 @@ import back_card from "../images/back-card-squircle.svg";
 export default function Opened_card(props) {
   const { onClose } = props;
   const pokemon = props.pokemon;
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+    Shiny(isChecked);
+  };
+
+  function Shiny(isChecked){
+    if (isChecked == false){
+      <img className='img-pokemon-png' src={pokemon['image']} alt='png' />
+    } else {
+        <img className='img-pokemon-png' src={pokemon['image_shiny']} alt='shiny_png' />
+    }
+  }
 
   useEffect(() => {
     const pokemon_atk = pokemon['stats']['atk'];
@@ -145,7 +159,11 @@ export default function Opened_card(props) {
           <div className="radar" id="chart"></div>
         </div>
         <label className="switch">
-          <input type="checkbox"/>
+          <input 
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+          />
           <span className="slider round"></span>
         </label>
       </div>
