@@ -41,8 +41,7 @@
     height: 100%;
     position: absolute;
 
-    /* transform: rotateX(180deg); */
-
+    /* transform: rotateY(180deg); */
 }
 
 .back-card-big img{
@@ -63,9 +62,27 @@
     position: absolute;
 }
 
+/* 
 
+@keyframes back-turn {
+  0%{
+    opacity: 0;
+    transform: scale(.6) rotateY(0deg);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) rotateY(180deg);
+  }
+}
 
-
+@keyframes from-turn {
+  0%{
+    transform: scale(.6) rotateY(180deg);
+  }
+  100%{
+    transform: scale(1) rotateY(360deg);
+  }
+} */
 
 
 
