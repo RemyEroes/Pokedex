@@ -6,11 +6,12 @@
     /* height: 30px; */
     pointer-events: none;
     cursor: none;
-    transform: rotateX(20deg);
+    /* transform: rotateX(20deg); */
 }
 
 .pointer-image{
     width: 100%;
     cursor: none;
-    transform: rotate(327deg);
+    /* transform: rotate(327deg); */
+    transition: all .4s ease-in-out;
 }
