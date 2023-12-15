@@ -308,23 +308,4 @@ export default function Card(props) {
 
 
 
-// <div ref={big_front} className='big-front-card'>
-//  {render_BG_Images()}
-//  <div className='infos-pokemon-big'>
-//      <div className='numeros-container-big'>
-//          <div className='number-pokemon-big'>{pk_number}</div>
-//          <div className='gen-pokemon-big'>{pokemon_generation_big}</div>
-//      </div>
-//      <div className='name-pokemon-big'>{name}</div>
-//  </div>
-//  <div className='img-pokemon-container'>
-//      <img className='fond-blanc-carte-big' src={fond_image_pokemon} alt="fond-blanc" />
-//      <img className='img-pokemon-png-big' src={pokemon['image']} alt='png' />
-//  </div>
 
-//  <div className='type-pokemon-container-big'>
-//      {pokemon_type.map((type, index) => (
-//          <img key={type} className='type-image-big' src={pokemon_type_url[index]} alt="type" />
-//      ))}
-//  </div>
-// </div>
