@@ -7,6 +7,7 @@ import Tilt from 'react-parallax-tilt';
 import { useContext } from 'react';
 import { PokemonContext } from '../contexts/PokemonContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
+import Opened_card from './Opened_card';
 import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
 
@@ -63,6 +64,7 @@ import back_card from "../images/back-card-squircle.svg";
 export default function Card(props) {
 
     const { typeList } = useContext(PokemonContext)
+    const [isCardOpen, setIsCardOpen] = useState(false);
     var { language, pokemon } = props
     // console.log(name)
     // language.toUpperCase()
@@ -219,9 +221,6 @@ export default function Card(props) {
     }
 
 
-
-
-
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
 
@@ -249,34 +248,46 @@ export default function Card(props) {
     var pokemon_generation_little = "GENERATION " + pokemon['generation']
     // var pokemon_generation_big = "GEN " + pokemon['generation']
 
+    function openCard() {
+        setIsCardOpen(true);
+      }
+
+      function closeCard() {
+        setIsCardOpen(false);
+      }
+
     return (
         <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
-            <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
+            {isCardOpen ? (
+            <Opened_card onClose={closeCard} /> // Affiche le composant Opened_card si la carte est ouverte
+            ) : (
+                <button className="card-container" onClick={openCard}>
+                    {
+                        <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
+                            <div ref={little_front} className='front-card-little'>
+                                {render_BG_Images()}
+                                <div className='infos-pokemon'>
+                                    <div className='number-pokemon'>{pk_number}</div>
+                                    <div className='name-pokemon'>{name}</div>
 
-                <button className="card-container" onClick={() => openCardFromID(pokemon['id'])}>
+                                </div>
+                                <div className='img-pokemon-container'>
+                                    <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc" />
+                                    <img className='img-pokemon-png' src={pokemon['image']} alt='png' />
+                                </div>
 
-                    <div ref={little_front} className='front-card-little'>
-                        {render_BG_Images()}
-                        <div className='infos-pokemon'>
-                            <div className='number-pokemon'>{pk_number}</div>
-                            <div className='name-pokemon'>{name}</div>
+                                <div className='type-pokemon-container'>
+                                    {pokemon_type.map((type, index) => (
+                                        <img key={type} className='type-image' src={pokemon_type_url[index]} alt="type" />
+                                    ))}
+                                </div>
+                                <div className='gen-pokemon'>{pokemon_generation_little}</div>
+                            </div>
 
-                        </div>
-                        <div className='img-pokemon-container'>
-                            <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc" />
-                            <img className='img-pokemon-png' src={pokemon['image']} alt='png' />
-                        </div>
-
-                        <div className='type-pokemon-container'>
-                            {pokemon_type.map((type, index) => (
-                                <img key={type} className='type-image' src={pokemon_type_url[index]} alt="type" />
-                            ))}
-                        </div>
-                        <div className='gen-pokemon'>{pokemon_generation_little}</div>
-                    </div>
-
-                </button>
-            </Tilt>
+                        </Tilt>}
+                        </button>
+                    )}
+            
         </div>
         
 
