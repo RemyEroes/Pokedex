@@ -285,6 +285,9 @@ export default function Card(props) {
 }
  // <CloseButton onClick={() => closeCard()} />
 
+
+
+
 //  <div ref={back_} className='back-card'>
 //  <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
 // </div>
