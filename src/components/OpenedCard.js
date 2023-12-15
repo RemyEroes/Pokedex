@@ -233,6 +233,20 @@ export default function OpenedCard(props) {
           </label>
           {/* <div id="chart"></div> */}
         </div>
+    <div>
+      <div className="opencard">
+        <div className="bigcard">
+          <div className="radar" id="chart"></div>
+        </div>
+        <button onClick={onClose}>Fermer la carte</button>
+        <label className="switch">
+          <input 
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+          />
+          <span className="slider round"></span>
+        </label>
       </div>
     </div>
   );
