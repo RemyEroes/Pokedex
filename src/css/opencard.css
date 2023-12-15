@@ -15,16 +15,20 @@
     z-index: 999;
 }
 
+.parallax-effect-glare-scale{
+  height: 100%;
+}
+
 .card_wraper-big {
     height: 80vh; /* Par exemple, 80% de la hauteur de la vue */
     aspect-ratio: 0.73;
     max-width: 90%;
-    /* background-color: blueviolet; */
 }
 
 .card-container-big{
     width: 100%;
     height: 100%;
+  display: block;
 }
 
 /* arriere de la carte */
@@ -35,6 +39,9 @@
 
     width: 100%;
     height: 100%;
+    position: absolute;
+
+    /* transform: rotateX(180deg); */
 
 }
 
@@ -49,15 +56,15 @@
 .front-card-big{
     height: 100%;
     width: 100%;
-    background-color: aquamarine;
-
     /* transform: translate(0%, -125%); */
 }
-
 .front-card-big img{
     width: 100%;
     position: absolute;
 }
+
+
+
 
 
 

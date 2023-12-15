@@ -49,210 +49,213 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 import back_card from "../images/back-card-squircle.svg";
 
 export default function OpenedCard(props) {
-  const { onClose } = props;
-  const pokemon = props.pokemon;
-  const [isChecked, setIsChecked] = useState(false);
-  const {typeList} = useContext(PokemonContext);
+    const { onClose } = props;
+    const pokemon = props.pokemon;
+    const [isChecked, setIsChecked] = useState(false);
+    const { typeList } = useContext(PokemonContext);
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked);
-  };
+    const handleCheckboxChange = () => {
+        setIsChecked(!isChecked);
+    };
 
-  const renderPokemonImage = () => {
-    return (
-      <img
-        className='img-pokemon-png'
-        src={isChecked ? pokemon['image_shiny'] : pokemon['image']}
-        alt={isChecked ? 'shiny_png' : 'png'}
-      />
-    );
-  };
-
-  var language = 'fr';
-  var pokemon_type = pokemon['types'];
-  var pokemon_type_name_ = [];
-  var pokemon_type_url_ = [];
-
-  const fondCardImages = [
-    fond_card_1,
-    fond_card_2,
-    fond_card_3,
-    fond_card_4,
-    fond_card_5,
-    fond_card_6,
-    fond_card_7,
-    fond_card_8,
-    fond_card_9,
-    fond_card_10,
-    fond_card_11,
-    fond_card_12,
-    fond_card_13,
-    fond_card_14,
-    fond_card_15,
-    fond_card_16,
-    fond_card_17,
-    fond_card_18,
-  ];
-
-  const fond_card_svg = fondCardImages[pokemon_type[0] - 1];
-
-  const fondCardImagesMask = [
-    fond_card_mask_1,
-    fond_card_mask_2,
-    fond_card_mask_3,
-    fond_card_mask_4,
-    fond_card_mask_5,
-    fond_card_mask_6,
-    fond_card_mask_7,
-    fond_card_mask_8,
-    fond_card_mask_9,
-    fond_card_mask_10,
-    fond_card_mask_11,
-    fond_card_mask_12,
-    fond_card_mask_13,
-    fond_card_mask_14,
-    fond_card_mask_15,
-    fond_card_mask_16,
-    fond_card_mask_17,
-    fond_card_mask_18,
-  ];
-
-  // useEffect(() => {
-  //   const pokemon_atk = pokemon['stats']['atk'];
-  //   const pokemon_atk_spe = pokemon['stats']['spe_atk'];
-  //   const pokemon_pv = pokemon['stats']['hp'];
-  //   const pokemon_def = pokemon['stats']['def'];
-  //   const pokemon_def_spe = pokemon['stats']['spe_def'];
-  //   const pokemon_speed = pokemon['stats']['vit'];
-
-  //   const options = {
-  //     series: [{
-  //       data: [
-  //         pokemon_atk,
-  //         pokemon_atk_spe,
-  //         pokemon_pv,
-  //         pokemon_def,
-  //         pokemon_def_spe,
-  //         pokemon_speed
-  //       ],
-  //     }],
-  //     chart: {
-  //       height: 350,
-  //       type: 'radar',
-  //     },
-  //     plotOptions: {
-  //       radar: {
-  //         size: 140,
-  //         polygons: {
-  //           strokeColors: '#e9e9e9',
-  //           fill: {
-  //             colors: ['#f8f8f8', '#fff']
-  //           }
-  //         }
-  //       }
-  //     },
-  //     colors: ['#FF4560'],
-  //     markers: {
-  //       size: 4,
-  //       colors: ['#fff'],
-  //       strokeColor: '#FF4560',
-  //       strokeWidth: 2,
-  //     },
-  //     tooltip: {
-  //       y: {
-  //         formatter: function (val) {
-  //           return val
-  //         }
-  //       }
-  //     },
-  //     xaxis: {
-  //       categories: [
-  //         'Attaque : ' + pokemon_atk,
-  //         'Attaque spéciale : ' + pokemon_atk_spe,
-  //         'PV : ' + pokemon_pv,
-  //         'Defense : ' + pokemon_def,
-  //         'Defense spéciale : ' + pokemon_def_spe,
-  //         'Vitesse : ' + pokemon_speed,
-  //       ]
-  //     },
-  //     yaxis: {
-  //       tickAmount: 8,
-  //       labels: {
-  //         formatter: function (val) {
-  //           return ''
-  //         }
-  //       }
-  //     }
-  //   };
-
-  //   const chart = new ApexCharts(document.querySelector("#chart"), options);
-  //   chart.render();
-
-  
-  // }, [pokemon]);
-
-  pokemon_type.forEach(pokemonType => {
-    typeList.forEach(element => {
-        if (element['id'] === parseInt(pokemonType, 10)) {
-            pokemon_type_name_.push(element['name'][language]);
-            pokemon_type_url_.push(element['image']);
-            // console.log(pokemon_type_name)
-        }
-    });
-});
-
-  const tiltProps = {
-    scale: 1.15,
-    glareEnable: true,
-    glareMaxOpacity: 0.8,
-    glareColor: "#ffffff",
-    glarePosition: "bottom",
-    glareBorderRadius: "20px",
-    trackOnWindow: false
-  };
-
-  function render_BG_Images() {
-    const pokemon_type_length = pokemon_type.length;
-
-    if (pokemon_type_length === 2) {
-        const fond_card_mask_svg = fondCardImagesMask[pokemon_type[1] - 1];
+    const renderPokemonImage = () => {
         return (
-            <>
-                <img className='fond-carte' src={fond_card_svg} alt="carte" />
-                <img className='fond-carte-test' src={fond_card_mask_svg} alt="carte" />
-            </>
-        );
-    } else {
-        return (
-            <img className='fond-carte' src={fond_card_svg} alt="carte" />
-        );
-    }
-}
-
-  return (
-    <div className='test'>
-      <div className='card_wraper-big'>
-        <div className="card-container-big">
-          <div className='back-card-big'>
-            <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
-          </div>
-
-          <div className='front-card-big'>
-          {render_BG_Images()}
-          </div>
-
-          <button onClick={onClose}>Fermer la carte</button>
-          <label className="switch">
-            <input 
-              type="checkbox"
-              checked={isChecked}
-              onChange={handleCheckboxChange}
+            <img
+                className='img-pokemon-png'
+                src={isChecked ? pokemon['image_shiny'] : pokemon['image']}
+                alt={isChecked ? 'shiny_png' : 'png'}
             />
-            <span className="slider round"></span>
-          </label>
-          {/* <div id="chart"></div> */}
+        );
+    };
+
+    var language = 'fr';
+    var pokemon_type = pokemon['types'];
+    var pokemon_type_name_ = [];
+    var pokemon_type_url_ = [];
+
+    const fondCardImages = [
+        fond_card_1,
+        fond_card_2,
+        fond_card_3,
+        fond_card_4,
+        fond_card_5,
+        fond_card_6,
+        fond_card_7,
+        fond_card_8,
+        fond_card_9,
+        fond_card_10,
+        fond_card_11,
+        fond_card_12,
+        fond_card_13,
+        fond_card_14,
+        fond_card_15,
+        fond_card_16,
+        fond_card_17,
+        fond_card_18,
+    ];
+
+    const fond_card_svg = fondCardImages[pokemon_type[0] - 1];
+
+    const fondCardImagesMask = [
+        fond_card_mask_1,
+        fond_card_mask_2,
+        fond_card_mask_3,
+        fond_card_mask_4,
+        fond_card_mask_5,
+        fond_card_mask_6,
+        fond_card_mask_7,
+        fond_card_mask_8,
+        fond_card_mask_9,
+        fond_card_mask_10,
+        fond_card_mask_11,
+        fond_card_mask_12,
+        fond_card_mask_13,
+        fond_card_mask_14,
+        fond_card_mask_15,
+        fond_card_mask_16,
+        fond_card_mask_17,
+        fond_card_mask_18,
+    ];
+
+    // useEffect(() => {
+    //   const pokemon_atk = pokemon['stats']['atk'];
+    //   const pokemon_atk_spe = pokemon['stats']['spe_atk'];
+    //   const pokemon_pv = pokemon['stats']['hp'];
+    //   const pokemon_def = pokemon['stats']['def'];
+    //   const pokemon_def_spe = pokemon['stats']['spe_def'];
+    //   const pokemon_speed = pokemon['stats']['vit'];
+
+    //   const options = {
+    //     series: [{
+    //       data: [
+    //         pokemon_atk,
+    //         pokemon_atk_spe,
+    //         pokemon_pv,
+    //         pokemon_def,
+    //         pokemon_def_spe,
+    //         pokemon_speed
+    //       ],
+    //     }],
+    //     chart: {
+    //       height: 350,
+    //       type: 'radar',
+    //     },
+    //     plotOptions: {
+    //       radar: {
+    //         size: 140,
+    //         polygons: {
+    //           strokeColors: '#e9e9e9',
+    //           fill: {
+    //             colors: ['#f8f8f8', '#fff']
+    //           }
+    //         }
+    //       }
+    //     },
+    //     colors: ['#FF4560'],
+    //     markers: {
+    //       size: 4,
+    //       colors: ['#fff'],
+    //       strokeColor: '#FF4560',
+    //       strokeWidth: 2,
+    //     },
+    //     tooltip: {
+    //       y: {
+    //         formatter: function (val) {
+    //           return val
+    //         }
+    //       }
+    //     },
+    //     xaxis: {
+    //       categories: [
+    //         'Attaque : ' + pokemon_atk,
+    //         'Attaque spéciale : ' + pokemon_atk_spe,
+    //         'PV : ' + pokemon_pv,
+    //         'Defense : ' + pokemon_def,
+    //         'Defense spéciale : ' + pokemon_def_spe,
+    //         'Vitesse : ' + pokemon_speed,
+    //       ]
+    //     },
+    //     yaxis: {
+    //       tickAmount: 8,
+    //       labels: {
+    //         formatter: function (val) {
+    //           return ''
+    //         }
+    //       }
+    //     }
+    //   };
+
+    //   const chart = new ApexCharts(document.querySelector("#chart"), options);
+    //   chart.render();
+
+
+    // }, [pokemon]);
+
+    pokemon_type.forEach(pokemonType => {
+        typeList.forEach(element => {
+            if (element['id'] === parseInt(pokemonType, 10)) {
+                pokemon_type_name_.push(element['name'][language]);
+                pokemon_type_url_.push(element['image']);
+                // console.log(pokemon_type_name)
+            }
+        });
+    });
+
+    const tiltProps = {
+        glareEnable: true,
+        glareMaxOpacity: 0.8,
+        glareColor: "#ffffff",
+        glarePosition: "bottom",
+        glareBorderRadius: "50px",
+        trackOnWindow: false
+    };
+
+    function render_BG_Images() {
+        const pokemon_type_length = pokemon_type.length;
+
+        if (pokemon_type_length === 2) {
+            const fond_card_mask_svg = fondCardImagesMask[pokemon_type[1] - 1];
+            return (
+                <>
+                    <img className='front-card-big' src={fond_card_svg} alt="carte" />
+                    <img className='front-card-big' src={fond_card_mask_svg} alt="carte" />
+                </>
+            );
+        } else {
+            return (
+                <img className='front-card-big' src={fond_card_svg} alt="carte" />
+            );
+        }
+    }
+
+    return (
+        <div className='test'>
+            <div className='card_wraper-big'>
+                <Tilt className="parallax-effect-glare-scale" {...tiltProps}>
+                    <div className="card-container-big">
+
+                        <div className='back-card-big'>
+                            <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
+                        </div>
+
+                        <div className='front-card-big'>
+                            {render_BG_Images()}
+                        </div>
+
+                        <button onClick={onClose}>Fermer la carte</button>
+
+                        <label className="switch">
+                            <input
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={handleCheckboxChange}
+                            />
+                            <span className="slider round"></span>
+                        </label>
+                        {/* <div id="chart"></div> */}
+                    </div>
+                </Tilt>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
