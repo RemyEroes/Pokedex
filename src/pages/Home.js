@@ -5,12 +5,33 @@ import { FilterContext } from '../contexts/FilterContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
 import $ from 'jquery';
 import filterpokemonlist from '../tools/filterpokemonlist';
+import sortpokemonlist from '../tools/sortpokemonlist';
+import { SortContext } from '../contexts/SortContext';
+import Footer from '../components/Footer';
+import { SearchContext } from '../contexts/SearchContext';
+import searchpokemonlist from '../tools/searchpokemonlist';
+import CloseButton from '../components/CloseButton';
+import { PokemonListContext } from '../contexts/PokemonListContext';
+
+
 
 
 export default function Home() {
-  const { pokemonList, genFilterValue, typeFilterValue } = useContext(FilterContext);
-  const [filteredPokemonList, setFilteredPokemonList] = useState([]);
+  //search
+  const { searchValue } = useContext(SearchContext);
+
+  // filter
+  const { genFilterValue, typeFilterValue } = useContext(FilterContext);
+
+  // sort
+  const { pokemonList, sortValue } = useContext(SortContext);
+  const [sortedpokemonlist, setsoredtpokemonlist] = useState([]);
+
   const { openCardValue, closeCardfunction } = useContext(OpenCardContext);
+
+  // liste finale
+  const { changePokemonListValue } = useContext(PokemonListContext);
+
 
   useEffect(() => {
     if (openCardValue === 'open') {
@@ -23,34 +44,46 @@ export default function Home() {
   const blurry_background = useRef(null);
 
 
-  // // generation
-  // useEffect(() => {
-  //   const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
-  //   setFilteredPokemonList(newFilteredPokemonList);
-    
-  // }, [genFilterValue, typeFilterValue, pokemonList]);
+  // sort, filter, search
   useEffect(() => {
-    const newFilteredPokemonList = filterpokemonlist(pokemonList, genFilterValue, typeFilterValue);
-    setFilteredPokemonList(newFilteredPokemonList);
+    //search
+    const newsearchedPokemonList = searchpokemonlist(pokemonList, searchValue);
+
+    // filter
+    const newFilteredPokemonList = filterpokemonlist(newsearchedPokemonList, genFilterValue, typeFilterValue);
 
     const cards = document.querySelectorAll('.card-container');
-    // enleve la classe
+
+    // Remove fade class
     cards.forEach((card) => {
       card.classList.remove('card-fade');
     });
-  
-    // Ajoutez la classe aux cartes
-    cards.forEach((card) => {
-      card.classList.add('card-fade');
-    });
-  
-    // Supprimez la classe après la fin de l'animation
+
+    // Add fade class
+    setTimeout(() => {
+      cards.forEach((card) => {
+        card.classList.add('card-fade');
+      });
+    }, 50);
+
+    // Remove fade class after animation
     setTimeout(() => {
       cards.forEach((card) => {
         card.classList.remove('card-fade');
       });
-    }, 800); // 800 ms correspond à la durée de l'animation fondu
-  }, [genFilterValue, typeFilterValue, pokemonList]);
+    }, 800); // 800 ms is the duration of the fade animation
+
+    // sort
+    const newSortedPokemonList = sortpokemonlist(newFilteredPokemonList, sortValue);
+    setsoredtpokemonlist(newSortedPokemonList);
+
+  }, [searchValue, genFilterValue, typeFilterValue, pokemonList, sortValue]);
+
+  // Call changePokemonListValue outside of useEffect if needed
+  useEffect(() => {
+    changePokemonListValue(sortedpokemonlist);
+  }, [sortedpokemonlist, changePokemonListValue]);
+
 
 
   // blurry background
@@ -65,11 +98,15 @@ export default function Home() {
 
   var language = 'fr';
 
+
+
+
+
   return (
     <>
       <div className="home">
-        {filteredPokemonList.map((pokemon) => (
-          <Card  key={pokemon.id} language={language} pokemon={pokemon} />
+        {sortedpokemonlist.map((pokemon) => (
+          <Card key={pokemon.id} language={language} pokemon={pokemon} />
         ))}
       </div>
       <div
@@ -77,6 +114,9 @@ export default function Home() {
         onClick={closeCardfunction}
         className="background-blur"
       ></div>
+      <CloseButton />
+      <Footer />
     </>
   );
 }
+

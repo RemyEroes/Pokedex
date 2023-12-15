@@ -1,12 +1,12 @@
 import React, { useContext} from 'react';
 import { useState } from 'react';
-import { PokemonContext } from "./PokemonContext";
+import { SearchContext } from "./SearchContext";
 
 export const FilterContext = React.createContext()
 
 export const GenFilterSelect = () => {
   let generation = 0;
-  const { pokemonList } = useContext(PokemonContext);
+  const { pokemonList } = useContext(SearchContext);
 
   const options = [];
 
@@ -29,7 +29,7 @@ export const GenFilterSelect = () => {
 
 
 export function FilterProvider({ children }) {
-  const { pokemonList, typeList } = useContext(PokemonContext);
+  const { pokemonList, typeList } = useContext(SearchContext);
   const [genFilterValue, setGenFilterValue] = useState('none')
   const [typeFilterValue, setTypeFilterValue] = useState('none')
 

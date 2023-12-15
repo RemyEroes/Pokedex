@@ -1,7 +1,7 @@
 @import '../css/app.css';
 
 
-.menu{
+.menu {
     /* background-color: rgba(255, 255, 255, 0.911); */
     background-color: white;
 
@@ -20,17 +20,51 @@
 
 }
 
-.banniere{
+.banniere {
     width: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     filter: drop-shadow(0px 20px 18px white);
 }
 
 
+/* searching bar */
+.search-bar-container {
+
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+
+.search {
+    height: 110%;
+    opacity: .5;
+}
+
+#search-bar {
+    /* background-color: aqua; */
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 25px;
+    font-size: 19px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 600;
+    /* font-family: 'Outfit-bold'; */
+}
+
+
+
+
 /* gen filter */
-.generation-filter-container{
+.generation-filter-container {
     width: 13%;
     position: absolute;
     bottom: 0%;
@@ -40,13 +74,14 @@
     align-items: stretch;
     z-index: 1001;
 }
-.clock{
-   height: 100%;
+
+.clock {
+    height: 100%;
 }
 
-#generation{
+#generation {
     border: none;
-    outline: none;  
+    outline: none;
     width: 100%;
     margin-left: 10px;
 
@@ -56,7 +91,7 @@
 }
 
 /* gen filter */
-.type-filter-container{
+.type-filter-container {
     width: 13%;
     position: absolute;
     bottom: 0%;
@@ -66,13 +101,14 @@
     align-items: stretch;
     z-index: 1001;
 }
-.type-img{
+
+.type-img {
     height: 80%;
 }
 
-#type{
+#type {
     border: none;
-    outline: none;  
+    outline: none;
     width: 80%;
     margin-left: 20px;
 
@@ -82,6 +118,99 @@
 }
 
 
+/* sort */
+.sort-container {
+    width: 13%;
+    position: absolute;
+    bottom: 0%;
+    left: 75.5%;
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    z-index: 1001;
+}
+
+.sort-img {
+    height: 100%;
+}
+
+#sort {
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 15px;
+    font-size: 17px;
+    font-family: 'Outfit';
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    #generation {
+        margin-left: 2px;
+        font-size: 6px;
+    }
+
+    #type {
+        margin-left: 2px;
+        font-size: 7px;
+    }
+
+    .type-img {
+        height: 60%;
+    }
+
+    #search-bar {
+        margin-left: 3px;
+        font-size: 8px;
+    }
+
+    .search {
+        height: 90%;
+        opacity: .8;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #generation {
+        margin-left: 5px;
+        font-size: 7px;
+    }
+
+    #type {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .type-img {
+        height: 70%;
+    }
+
+    #search-bar {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    #generation {
+        margin-left: 5px;
+        font-size: 10.5px;
+    }
+
+    #type {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    #search-bar {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1300px) {}
 
 
 
@@ -89,8 +218,8 @@
 
 /* pokeball */
 
-.pokeball-logo{
-    width: clamp(50px,20%,100px);
+.pokeball-logo {
+    width: clamp(50px, 20%, 100px);
     padding: 10px 0px 10px 0px;
     transform-origin: bottom;
     animation: pokeball_vibre 3.5s infinite ease-in-out;
@@ -101,15 +230,19 @@
     0% {
         transform: rotate(0deg);
     }
+
     15% {
         transform: rotate(5deg);
     }
+
     30% {
         transform: rotate(-5deg);
     }
+
     55% {
         transform: rotate(7deg);
     }
+
     100% {
         transform: rotate(0deg);
     }

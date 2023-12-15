@@ -6,7 +6,7 @@
     justify-content: center;
     grid-template-columns: repeat(3, 25%);
     grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-row-gap: 10px;
     
     padding-top: 2vw;
 }
@@ -17,7 +17,7 @@
     .home {
         grid-template-columns: repeat(4, 20%);
         grid-column-gap: 25px;
-        grid-row-gap: 25px;
+        grid-row-gap: 15px;
     }
 }
 
@@ -25,7 +25,7 @@
     .home {
         grid-template-columns: repeat(5, 17%);
         grid-column-gap: 25px;
-        grid-row-gap: 25px;
+        grid-row-gap: 20px;
     }
 }
 
