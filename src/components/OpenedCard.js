@@ -188,7 +188,7 @@ export default function OpenedCard(props) {
   //   const chart = new ApexCharts(document.querySelector("#chart"), options);
   //   chart.render();
 
-  // 
+  
   // }, [pokemon]);
 
   pokemonType.forEach(pokemonType => {
@@ -231,6 +231,7 @@ export default function OpenedCard(props) {
             />
             <span className="slider round"></span>
           </label>
+          {/* <div id="chart"></div> */}
         </div>
       </div>
     </div>
