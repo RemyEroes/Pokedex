@@ -68,10 +68,10 @@ export default function OpenedCard(props) {
     );
   };
 
-  const language = 'fr';
-  const pokemonType = pokemon['types'];
-  const pokemonTypeName = [];
-  const pokemonTypeUrl = [];
+  var language = 'fr';
+  var pokemon_type = pokemon['types'];
+  var pokemon_type_name_ = [];
+  var pokemon_type_url_ = [];
 
   const fondCardImages = [
     fond_card_1,
@@ -94,7 +94,7 @@ export default function OpenedCard(props) {
     fond_card_18,
   ];
 
-  const fond_card_svg = fondCardImages[pokemonType[0] - 1];
+  const fond_card_svg = fondCardImages[pokemon_type[0] - 1];
 
   const fondCardImagesMask = [
     fond_card_mask_1,
@@ -191,14 +191,15 @@ export default function OpenedCard(props) {
   
   // }, [pokemon]);
 
-  pokemonType.forEach(pokemonType => {
+  pokemon_type.forEach(pokemonType => {
     typeList.forEach(element => {
-      if (element['id'] === parseInt(pokemonType, 10)) {
-        pokemonTypeName.push(element['name'][language]);
-        pokemonTypeUrl.push(element['image']);
-      }
+        if (element['id'] === parseInt(pokemonType, 10)) {
+            pokemon_type_name_.push(element['name'][language]);
+            pokemon_type_url_.push(element['image']);
+            // console.log(pokemon_type_name)
+        }
     });
-  });
+});
 
   const tiltProps = {
     scale: 1.15,
@@ -210,6 +211,24 @@ export default function OpenedCard(props) {
     trackOnWindow: false
   };
 
+  function render_BG_Images() {
+    const pokemon_type_length = pokemon_type.length;
+
+    if (pokemon_type_length === 2) {
+        const fond_card_mask_svg = fondCardImagesMask[pokemon_type[1] - 1];
+        return (
+            <>
+                <img className='fond-carte' src={fond_card_svg} alt="carte" />
+                <img className='fond-carte-test' src={fond_card_mask_svg} alt="carte" />
+            </>
+        );
+    } else {
+        return (
+            <img className='fond-carte' src={fond_card_svg} alt="carte" />
+        );
+    }
+}
+
   return (
     <div className='test'>
       <div className='card_wraper-big'>
@@ -219,7 +238,7 @@ export default function OpenedCard(props) {
           </div>
 
           <div className='front-card-big'>
-            {renderPokemonImage()}
+          {render_BG_Images()}
           </div>
 
           <button onClick={onClose}>Fermer la carte</button>
