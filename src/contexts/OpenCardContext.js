@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const OpenCardContext = React.createContext()
 
 export function OpenCardProvider({ children }) {
     const [openCardValue, setOpenCardValue] = useState('close');
+    const [opencardIdValue, setOpencardIdValue] = useState();
 
     function openingCardValueFunction() {
         setOpenCardValue('opening')
@@ -21,7 +22,10 @@ export function OpenCardProvider({ children }) {
         setOpenCardValue('close')
     };
 
-    const value = { openCardValue, openingCardValueFunction, openCardValueFunction, closingCardValueFunction, closeCardValueFunction }
+    
+    
+
+    const value = { openCardValue, openingCardValueFunction, openCardValueFunction, closingCardValueFunction, closeCardValueFunction , opencardIdValue, setOpencardIdValue}
 
     return (
         <OpenCardContext.Provider value={value}>
