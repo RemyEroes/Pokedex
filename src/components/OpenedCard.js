@@ -1,17 +1,11 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import '../css/opencard.css';
-import { useContext } from 'react';
 import { PokemonContext } from '../contexts/PokemonContext';
-import { OpenCardContext } from '../contexts/OpenCardContext';
-import $ from 'jquery';
-import int_to_hashtag from '../tools/int_to_hashtag'
 import ApexCharts from 'apexcharts';
 import Tilt from 'react-parallax-tilt';
-import fond_image_pokemon from '../images/fond-image-pokemon.svg'
+import fond_image_pokemon from '../images/fond-image-pokemon.svg';
 
-
-
-// images front 
+// images front
 import fond_card_1 from "../images/fond-card/fond-carte-squircle-1.svg";
 import fond_card_2 from "../images/fond-card/fond-carte-squircle-2.svg";
 import fond_card_3 from "../images/fond-card/fond-carte-squircle-3.svg";
@@ -31,8 +25,7 @@ import fond_card_16 from "../images/fond-card/fond-carte-squircle-16.svg";
 import fond_card_17 from "../images/fond-card/fond-carte-squircle-17.svg";
 import fond_card_18 from "../images/fond-card/fond-carte-squircle-18.svg";
 
-
-// images mask 
+// images mask
 import fond_card_mask_1 from "../images/fond-card-mask/fond-card-mask-1.svg";
 import fond_card_mask_2 from "../images/fond-card-mask/fond-card-mask-2.svg";
 import fond_card_mask_3 from "../images/fond-card-mask/fond-card-mask-3.svg";
@@ -52,32 +45,34 @@ import fond_card_mask_16 from "../images/fond-card-mask/fond-card-mask-16.svg";
 import fond_card_mask_17 from "../images/fond-card-mask/fond-card-mask-17.svg";
 import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
-
-// images back 
+// images back
 import back_card from "../images/back-card-squircle.svg";
 
-export default function Opened_card(props) {
+export default function OpenedCard(props) {
   const { onClose } = props;
   const pokemon = props.pokemon;
   const [isChecked, setIsChecked] = useState(false);
+  const {typeList} = useContext(PokemonContext);
 
-  var language = 'fr'
-  var pokemon_type = pokemon['types'];
-  var pokemon_type_name = [];
-  var pokemon_type_url = [];
-  var pokemon_atk = pokemon['stats']['atk'];
-  var pokemon_atk_spe = pokemon['stats']['spe_atk'];
-  var pokemon_def = pokemon['stats']['def'];
-  var pokemon_def_spe = pokemon['stats']['spe_def'];
-  var pokemon_pv = pokemon['stats']['hp'];
-  var pokemon_speed = pokemon['stats']['vit'];
-  var pokemon_height = pokemon['height'];
-  var pokemon_weight = pokemon['weight'];
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
+  };
 
-  var pokemon_type_name_ = []
-  var pokemon_type_url_ = []
+  const renderPokemonImage = () => {
+    return (
+      <img
+        className='img-pokemon-png'
+        src={isChecked ? pokemon['image_shiny'] : pokemon['image']}
+        alt={isChecked ? 'shiny_png' : 'png'}
+      />
+    );
+  };
 
-  // images 
+  const language = 'fr';
+  const pokemonType = pokemon['types'];
+  const pokemonTypeName = [];
+  const pokemonTypeUrl = [];
+
   const fondCardImages = [
     fond_card_1,
     fond_card_2,
@@ -98,8 +93,8 @@ export default function Opened_card(props) {
     fond_card_17,
     fond_card_18,
   ];
-  // uniquement le 1er
-  const fond_card_svg = fondCardImages[pokemon_type[0] - 1];
+
+  const fond_card_svg = fondCardImages[pokemonType[0] - 1];
 
   const fondCardImagesMask = [
     fond_card_mask_1,
@@ -121,26 +116,16 @@ export default function Opened_card(props) {
     fond_card_mask_17,
     fond_card_mask_18,
   ];
-  // uniquement le 1er
-
-
-
-
-  // afficher les 
-  pokemon_type.forEach(pokemonType => {
-    typeList.forEach(element => {
-      if (element['id'] === parseInt(pokemonType, 10)) {
-        pokemon_type_name_.push(element['name'][language]);
-        pokemon_type_url_.push(element['image']);
-      }
-    });
-  });
-
-
-
 
   // useEffect(() => {
-  //   var options = {
+  //   const pokemon_atk = pokemon['stats']['atk'];
+  //   const pokemon_atk_spe = pokemon['stats']['spe_atk'];
+  //   const pokemon_pv = pokemon['stats']['hp'];
+  //   const pokemon_def = pokemon['stats']['def'];
+  //   const pokemon_def_spe = pokemon['stats']['spe_def'];
+  //   const pokemon_speed = pokemon['stats']['vit'];
+
+  //   const options = {
   //     series: [{
   //       data: [
   //         pokemon_atk,
@@ -149,7 +134,6 @@ export default function Opened_card(props) {
   //         pokemon_def,
   //         pokemon_def_spe,
   //         pokemon_speed
-
   //       ],
   //     }],
   //     chart: {
@@ -166,9 +150,6 @@ export default function Opened_card(props) {
   //           }
   //         }
   //       }
-  //     },
-  //     title: {
-  //       text: 'Radar with Polygon Fill'
   //     },
   //     colors: ['#FF4560'],
   //     markers: {
@@ -192,7 +173,6 @@ export default function Opened_card(props) {
   //         'Defense : ' + pokemon_def,
   //         'Defense spéciale : ' + pokemon_def_spe,
   //         'Vitesse : ' + pokemon_speed,
-
   //       ]
   //     },
   //     yaxis: {
@@ -205,13 +185,20 @@ export default function Opened_card(props) {
   //     }
   //   };
 
-  //   var chart = new ApexCharts(document.querySelector("#chart"), options);
+  //   const chart = new ApexCharts(document.querySelector("#chart"), options);
   //   chart.render();
-  // }, []);
 
+  // 
+  // }, [pokemon]);
 
-
-
+  pokemonType.forEach(pokemonType => {
+    typeList.forEach(element => {
+      if (element['id'] === parseInt(pokemonType, 10)) {
+        pokemonTypeName.push(element['name'][language]);
+        pokemonTypeUrl.push(element['image']);
+      }
+    });
+  });
 
   const tiltProps = {
     scale: 1.15,
@@ -223,94 +210,29 @@ export default function Opened_card(props) {
     trackOnWindow: false
   };
 
-  const little_front = useRef(null)
-  const back_ = useRef(null)
-  const big_front = useRef(null)
-  const card_element = useRef(null)
-  const paralax_element = useRef(null)
-  // const paralax_element_2 = useRef(null)
-  const big_front_container_element = useRef(null)
-
-  function render_BG_Images() {
-    const pokemon_type_length = pokemon_type.length;
-
-    if (pokemon_type_length === 2) {
-      const fond_card_mask_svg = fondCardImagesMask[pokemon_type[1] - 1];
-      return (
-        <>
-          <img className='fond-carte-img-big' src={fond_card_svg} alt="carte" />
-          <img className='fond-carte-img-big' src={fond_card_mask_svg} alt="carte" />
-        </>
-      );
-    } else {
-      return (
-        <img className='fond-carte' src={fond_card_svg} alt="carte" />
-      );
-    }
-  }
-
   return (
-
     <div className='test'>
-      <div ref={card_element} className='card_wraper-big'>
+      <div className='card_wraper-big'>
         <div className="card-container-big">
-        
-          <div ref={back_} className='back-card-big'>
+          <div className='back-card-big'>
             <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
           </div>
 
-          <div ref={back_} className='front-card-big'>
-            {render_BG_Images()}
+          <div className='front-card-big'>
+            {renderPokemonImage()}
           </div>
 
           <button onClick={onClose}>Fermer la carte</button>
-
-
-
-        </div >
-      </div >
-    </div>
-
-  );
-
-}
-// <div className="radar" id="chart"></div>
-
-
-//  <Tilt ref={paralax_element} className="parallax-effect-glare-scale" >
-// <div ref={front_} className='front-card'> 
-// {render_BG_Images()}
-
-// 'Taille : ' + pokemon_height,
-//           'Poids : ' + pokemon_weight
-
-// pokemon_height,
-//           pokemon_weight
-    const chart = new ApexCharts(document.querySelector("#chart"), options);
-    chart.render();
-
-    // Assurez-vous de détruire le graphique lorsqu'il n'est plus nécessaire
-    return () => {
-      chart.destroy();
-    };
-  }, [pokemon]);
-
-  return (
-    <div>
-      <div className="opencard">
-        <button onClick={onClose}>Fermer la carte</button>
-        <div className="bigcard">
-          <div className="radar" id="chart"></div>
+          <label className="switch">
+            <input 
+              type="checkbox"
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            />
+            <span className="slider round"></span>
+          </label>
         </div>
-        <label className="switch">
-          <input 
-          type="checkbox"
-          checked={isChecked}
-          onChange={handleCheckboxChange}
-          />
-          <span className="slider round"></span>
-        </label>
       </div>
-    </div> 
+    </div>
   );
 }
