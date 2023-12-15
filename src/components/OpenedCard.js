@@ -1,3 +1,4 @@
+@ -1,316 +0,0 @@
 import React, { useRef, useEffect } from 'react';
 import '../css/opencard.css';
 import { useContext } from 'react';
