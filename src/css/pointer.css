@@ -1,0 +1,16 @@
+@import '../css/app.css';
+
+
+.pointer-container{
+    width: 80px;
+    /* height: 30px; */
+    pointer-events: none;
+    cursor: none;
+    transform: rotateX(20deg);
+}
+
+.pointer-image{
+    width: 100%;
+    cursor: none;
+    transform: rotate(327deg);
+}
