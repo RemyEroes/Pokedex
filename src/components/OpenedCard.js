@@ -57,9 +57,9 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 import back_card from "../images/back-card-squircle.svg";
 
 export default function Opened_card(props) {
-  const { typeList } = useContext(PokemonContext);
   const { onClose } = props;
   const pokemon = props.pokemon;
+  const [isChecked, setIsChecked] = useState(false);
 
   var language = 'fr'
   var pokemon_type = pokemon['types'];
@@ -286,3 +286,31 @@ export default function Opened_card(props) {
 
 // pokemon_height,
 //           pokemon_weight
+    const chart = new ApexCharts(document.querySelector("#chart"), options);
+    chart.render();
+
+    // Assurez-vous de détruire le graphique lorsqu'il n'est plus nécessaire
+    return () => {
+      chart.destroy();
+    };
+  }, [pokemon]);
+
+  return (
+    <div>
+      <div className="opencard">
+        <button onClick={onClose}>Fermer la carte</button>
+        <div className="bigcard">
+          <div className="radar" id="chart"></div>
+        </div>
+        <label className="switch">
+          <input 
+          type="checkbox"
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+          />
+          <span className="slider round"></span>
+        </label>
+      </div>
+    </div> 
+  );
+}
