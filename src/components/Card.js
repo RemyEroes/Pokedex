@@ -7,7 +7,7 @@ import Tilt from 'react-parallax-tilt';
 import { useContext } from 'react';
 import { PokemonContext } from '../contexts/PokemonContext';
 import { OpenCardContext } from '../contexts/OpenCardContext';
-import Opened_card from './Opened_card';
+import OpenedCard from './OpenedCard';
 import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
 
@@ -252,14 +252,17 @@ export default function Card(props) {
         setIsCardOpen(true);
       }
 
-      function closeCard() {
+      function tocloseCard() {
         setIsCardOpen(false);
       }
 
+
     return (
         <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
-            {isCardOpen ? (
-            <Opened_card onClose={closeCard} /> // Affiche le composant Opened_card si la carte est ouverte
+            {isCardOpen ? 
+            (< OpenedCard 
+            onClose={tocloseCard}
+            pokemon={pokemon} />
             ) : (
                 <button className="card-container" onClick={openCard}>
                     {

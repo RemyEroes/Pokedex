@@ -22,9 +22,6 @@ export function OpenCardProvider({ children }) {
         setOpenCardValue('close')
     };
 
-    
-    
-
     const value = { openCardValue, openingCardValueFunction, openCardValueFunction, closingCardValueFunction, closeCardValueFunction , opencardIdValue, setOpencardIdValue}
 
     return (
