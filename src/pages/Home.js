@@ -81,6 +81,7 @@ export default function Home() {
 
   // Call changePokemonListValue outside of useEffect if needed
   useEffect(() => {
+    // changePokemonListValue(sortedpokemonlist.slice(0, 100));
     changePokemonListValue(sortedpokemonlist);
   }, [sortedpokemonlist, changePokemonListValue]);
 
@@ -109,11 +110,7 @@ export default function Home() {
           <Card key={pokemon.id} language={language} pokemon={pokemon} />
         ))}
       </div>
-      <div
-        ref={blurry_background}
-        onClick={closeCardfunction}
-        className="background-blur"
-      ></div>
+      <div ref={blurry_background} onClick={closeCardfunction} className="background-blur"></div>
       <CloseButton />
       <Footer />
     </>

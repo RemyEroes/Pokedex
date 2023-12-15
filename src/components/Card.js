@@ -157,11 +157,12 @@ export default function Card(props) {
 
 
     // open card
-    const { openingCardValueFunction, openCardValueFunction } = useContext(OpenCardContext);
+    const { openingCardValueFunction, openCardValueFunction, setOpencardIdValue } = useContext(OpenCardContext);
 
 
     function openCard() {
         openingCardValueFunction()
+        
         // elements
         const littleFrontElement = little_front.current;
         const backElement = back_.current;
@@ -220,6 +221,7 @@ export default function Card(props) {
 
 
 
+
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
 
@@ -238,16 +240,20 @@ export default function Card(props) {
         }
     }
 
+    function openCardFromID(id){
+        setOpencardIdValue(id)
+    }
+
 
     // generation
     var pokemon_generation_little = "GENERATION " + pokemon['generation']
-    var pokemon_generation_big = "GEN " + pokemon['generation']
+    // var pokemon_generation_big = "GEN " + pokemon['generation']
 
     return (
         <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
             <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
 
-                <button className="card-container" onClick={openCard}>
+                <button className="card-container" onClick={() => openCardFromID(pokemon['id'])}>
 
                     <div ref={little_front} className='front-card-little'>
                         {render_BG_Images()}
@@ -269,34 +275,6 @@ export default function Card(props) {
                         <div className='gen-pokemon'>{pokemon_generation_little}</div>
                     </div>
 
-                    <div ref={back_} className='back-card'>
-                        <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
-                    </div>
-
-
-
-                    <div ref={big_front} className='big-front-card'>
-                        {render_BG_Images()}
-                        <div className='infos-pokemon-big'>
-                            <div className='numeros-container-big'>
-                                <div className='number-pokemon-big'>{pk_number}</div>
-                                <div className='gen-pokemon-big'>{pokemon_generation_big}</div>
-                            </div>
-                            <div className='name-pokemon-big'>{name}</div>
-                        </div>
-                        <div className='img-pokemon-container'>
-                            <img className='fond-blanc-carte-big' src={fond_image_pokemon} alt="fond-blanc" />
-                            <img className='img-pokemon-png-big' src={pokemon['image']} alt='png' />
-                        </div>
-
-                        <div className='type-pokemon-container-big'>
-                            {pokemon_type.map((type, index) => (
-                                <img key={type} className='type-image-big' src={pokemon_type_url[index]} alt="type" />
-                            ))}
-                        </div>
-
-
-                    </div>
                 </button>
             </Tilt>
         </div>
@@ -366,3 +344,29 @@ var options = {
 
 var chart = new ApexCharts(document.querySelector("#chart"), options);
 chart.render();
+//  <div ref={back_} className='back-card'>
+//  <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
+// </div>
+
+
+
+// <div ref={big_front} className='big-front-card'>
+//  {render_BG_Images()}
+//  <div className='infos-pokemon-big'>
+//      <div className='numeros-container-big'>
+//          <div className='number-pokemon-big'>{pk_number}</div>
+//          <div className='gen-pokemon-big'>{pokemon_generation_big}</div>
+//      </div>
+//      <div className='name-pokemon-big'>{name}</div>
+//  </div>
+//  <div className='img-pokemon-container'>
+//      <img className='fond-blanc-carte-big' src={fond_image_pokemon} alt="fond-blanc" />
+//      <img className='img-pokemon-png-big' src={pokemon['image']} alt='png' />
+//  </div>
+
+//  <div className='type-pokemon-container-big'>
+//      {pokemon_type.map((type, index) => (
+//          <img key={type} className='type-image-big' src={pokemon_type_url[index]} alt="type" />
+//      ))}
+//  </div>
+// </div>
