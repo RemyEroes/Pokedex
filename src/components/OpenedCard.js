@@ -57,27 +57,18 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 import back_card from "../images/back-card-squircle.svg";
 
 export default function Opened_card(props) {
-  const { typeList } = useContext(PokemonContext);
   const { onClose } = props;
   const pokemon = props.pokemon;
 
-  var { language } = props;
-  var pokemon_type = pokemon['types'];
-  var pokemon_type_name = [];
-  var pokemon_type_url = [];
-  var pokemon_atk = pokemon['stats']['atk'];
-  var pokemon_atk_spe = pokemon['stats']['spe_atk'];
-  var pokemon_def = pokemon['stats']['def'];
-  var pokemon_def_spe = pokemon['stats']['spe_def'];
-  var pokemon_pv = pokemon['stats']['hp'];
-  var pokemon_speed = pokemon['stats']['vit'];
-  var pokemon_height = pokemon['height'];
-  var pokemon_weight = pokemon['weight'];
-
-  console.log(pokemon['id']);
-
   useEffect(() => {
-    var options = {
+    const pokemon_atk = pokemon['stats']['atk'];
+    const pokemon_atk_spe = pokemon['stats']['spe_atk'];
+    const pokemon_pv = pokemon['stats']['hp'];
+    const pokemon_def = pokemon['stats']['def'];
+    const pokemon_def_spe = pokemon['stats']['spe_def'];
+    const pokemon_speed = pokemon['stats']['vit'];
+
+    const options = {
       series: [{
         data: [
           pokemon_atk,
@@ -86,7 +77,6 @@ export default function Opened_card(props) {
           pokemon_def,
           pokemon_def_spe,
           pokemon_speed
-          
         ],
       }],
       chart: {
@@ -103,9 +93,6 @@ export default function Opened_card(props) {
             }
           }
         }
-      },
-      title: {
-        text: 'Radar with Polygon Fill'
       },
       colors: ['#FF4560'],
       markers: {
@@ -129,7 +116,6 @@ export default function Opened_card(props) {
           'Defense : ' + pokemon_def,
           'Defense spéciale : ' + pokemon_def_spe,
           'Vitesse : ' + pokemon_speed,
-          
         ]
       },
       yaxis: {
@@ -142,27 +128,27 @@ export default function Opened_card(props) {
       }
     };
 
-    var chart = new ApexCharts(document.querySelector("#chart"), options);
+    const chart = new ApexCharts(document.querySelector("#chart"), options);
     chart.render();
-  }, []); 
+
+    // Assurez-vous de détruire le graphique lorsqu'il n'est plus nécessaire
+    return () => {
+      chart.destroy();
+    };
+  }, [pokemon]);
 
   return (
     <div>
       <div className="opencard">
         <button onClick={onClose}>Fermer la carte</button>
         <div className="bigcard">
-          
           <div className="radar" id="chart"></div>
         </div>
+        <label className="switch">
+          <input type="checkbox"/>
+          <span className="slider round"></span>
+        </label>
       </div>
-      
-    </div>
+    </div> 
   );
 }
-
-
-// 'Taille : ' + pokemon_height,
-//           'Poids : ' + pokemon_weight
-
-// pokemon_height,
-//           pokemon_weight
