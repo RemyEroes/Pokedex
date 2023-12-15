@@ -1,13 +1,60 @@
-.opencard{
+@import '../css/app.css';
+
+
+.test{
+    width: 100vw;
+    height: 100vh;
+
     position: fixed;
-    top: 0;
+    top:0;
     left: 0;
-    background-color: red;
-    width: 30vw;
-    height: 30vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 999;
 }
 
-.bigcard{
-    
+.card_wraper-big {
+    height: 80vh; /* Par exemple, 80% de la hauteur de la vue */
+    aspect-ratio: 0.73;
+    max-width: 90%;
+    /* background-color: blueviolet; */
+}
+
+.card-container-big{
+    width: 100%;
+    height: 100%;
+}
+
+/* arriere de la carte */
+.back-card-big{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: all 1s ease;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.back-card-big img{
+   width: 100%;
+}
+
+
+
+
+/* FRONT */
+.front-card-big{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+
+    /* transform: translate(0%, -125%); */
+}
+
+.front-card-big img{
+    width: 100%;
+    position: absolute;
 }
