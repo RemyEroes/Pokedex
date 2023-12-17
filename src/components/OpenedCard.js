@@ -1,9 +1,12 @@
-import React, { useEffect, useState, useContext } from 'react';
+import React, { useEffect, useState, useContext, useRef } from 'react';
 import '../css/opencard.css';
 import { PokemonContext } from '../contexts/PokemonContext';
 import ApexCharts from 'apexcharts';
 import Tilt from 'react-parallax-tilt';
 import fond_image_pokemon from '../images/fond-image-pokemon.svg';
+import int_to_hashtag from '../tools/int_to_hashtag';
+// import CloseButton from './CloseButton';
+import $ from 'jquery';
 
 // images front
 import fond_card_1 from "../images/fond-card/fond-carte-squircle-1.svg";
@@ -47,6 +50,12 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
 // images back
 import back_card from "../images/back-card-squircle.svg";
+// close img
+import close_img from '../images/assets/close.svg'
+
+import height_img from '../images/assets/height.svg';
+import weight_img from '../images/assets/weight.svg';
+
 
 export default function OpenedCard(props) {
     const { onClose } = props;
@@ -61,7 +70,7 @@ export default function OpenedCard(props) {
     const renderPokemonImage = () => {
         return (
             <img
-                className='img-pokemon-png'
+                className='img-pokemon-png-big'
                 src={isChecked ? pokemon['image_shiny'] : pokemon['image']}
                 alt={isChecked ? 'shiny_png' : 'png'}
             />
@@ -72,6 +81,9 @@ export default function OpenedCard(props) {
     var pokemon_type = pokemon['types'];
     var pokemon_type_name_ = [];
     var pokemon_type_url_ = [];
+    var pokemon_num = int_to_hashtag(pokemon['id']);
+    var pokemon_name = pokemon['name'][language];
+    var pokemon_generation = "GEN " + pokemon['generation']
 
     const fondCardImages = [
         fond_card_1,
@@ -117,98 +129,139 @@ export default function OpenedCard(props) {
         fond_card_mask_18,
     ];
 
-    // useEffect(() => {
-    //   const pokemon_atk = pokemon['stats']['atk'];
-    //   const pokemon_atk_spe = pokemon['stats']['spe_atk'];
-    //   const pokemon_pv = pokemon['stats']['hp'];
-    //   const pokemon_def = pokemon['stats']['def'];
-    //   const pokemon_def_spe = pokemon['stats']['spe_def'];
-    //   const pokemon_speed = pokemon['stats']['vit'];
+    const chartContainerRef = useRef();
+    const chartRef = useRef(null);
 
-    //   const options = {
-    //     series: [{
-    //       data: [
-    //         pokemon_atk,
-    //         pokemon_atk_spe,
-    //         pokemon_pv,
-    //         pokemon_def,
-    //         pokemon_def_spe,
-    //         pokemon_speed
-    //       ],
-    //     }],
-    //     chart: {
-    //       height: 350,
-    //       type: 'radar',
-    //     },
-    //     plotOptions: {
-    //       radar: {
-    //         size: 140,
-    //         polygons: {
-    //           strokeColors: '#e9e9e9',
-    //           fill: {
-    //             colors: ['#f8f8f8', '#fff']
-    //           }
-    //         }
-    //       }
-    //     },
-    //     colors: ['#FF4560'],
-    //     markers: {
-    //       size: 4,
-    //       colors: ['#fff'],
-    //       strokeColor: '#FF4560',
-    //       strokeWidth: 2,
-    //     },
-    //     tooltip: {
-    //       y: {
-    //         formatter: function (val) {
-    //           return val
-    //         }
-    //       }
-    //     },
-    //     xaxis: {
-    //       categories: [
-    //         'Attaque : ' + pokemon_atk,
-    //         'Attaque spéciale : ' + pokemon_atk_spe,
-    //         'PV : ' + pokemon_pv,
-    //         'Defense : ' + pokemon_def,
-    //         'Defense spéciale : ' + pokemon_def_spe,
-    //         'Vitesse : ' + pokemon_speed,
-    //       ]
-    //     },
-    //     yaxis: {
-    //       tickAmount: 8,
-    //       labels: {
-    //         formatter: function (val) {
-    //           return ''
-    //         }
-    //       }
-    //     }
-    //   };
+    useEffect(() => {
+        const pokemon_atk = pokemon['stats']['atk'];
+        const pokemon_atk_spe = pokemon['stats']['spe_atk'];
+        const pokemon_pv = pokemon['stats']['hp'];
+        const pokemon_def = pokemon['stats']['def'];
+        const pokemon_def_spe = pokemon['stats']['spe_def'];
+        const pokemon_speed = pokemon['stats']['vit'];
 
-    //   const chart = new ApexCharts(document.querySelector("#chart"), options);
-    //   chart.render();
+        const chart_height = chartContainerRef.current.clientHeight;
+        const chart_width = $('.stats-chart-container').width();
+
+        console.log(pokemon_type)
+        var color1 = '#a5df98';
+        var color2 = '#f8f8f8';
+
+        if (pokemon_type.length === 2) {
+            color1 = type_id_to_color(pokemon_type[0]);
+            color2 = type_id_to_color(pokemon_type[1]);
+        } else {
+            color1 = type_id_to_color(pokemon_type[0]);
+        }
+
+        const options = {
+
+            series: [{
+                data: [
+                    pokemon_pv,
+                    pokemon_atk,
+                    pokemon_atk_spe,
+                    pokemon_speed,
+                    pokemon_def_spe,
+                    pokemon_def
+                ],
+            }],
+            chart: {
+                height: chart_height,
+
+                type: 'radar',
+            },
+            plotOptions: {
+                radar: {
+                    polygons: {
+                        strokeColors: '#f8f8f8',
+                        fill: {
+                            colors: [color2, color1]
+                        }
+                    }
+                }
+            },
+            colors: ['#FF4560'],
+            markers: {
+                size: 4,
+                colors: ['#fff'],
+                strokeColor: '#FF4560',
+                strokeWidth: 2,
+            },
+            tooltip: {
+                y: {
+                    formatter: function (val) {
+                        return val
+                    }
+                }
+            },
+            xaxis: {
+                categories: [
+                    'PV : ' + pokemon_pv,
+                    'Attaque : ' + pokemon_atk,
+                    'Attaque spéciale : ' + pokemon_atk_spe,
+                    'Vitesse : ' + pokemon_speed,
+                    'Defense spéciale : ' + pokemon_def_spe,
+                    'Defense : ' + pokemon_def,
+                ],
+                labels: {
+                    show: true,
+                    style: {
+                        colors: ["#000000"],
+                        fontSize: "12px",
+                        fontFamily: 'Outfit'
+                    }
+                }
+            },
+            yaxis: {
+                tickAmount: 4,
+                labels: {
+                    show: false,
+                }
+            }
+        };
 
 
-    // }, [pokemon]);
+
+
+        setTimeout(() => {
+            // Sélectionnez l'élément du graphique
+            const chartElement = document.querySelector("#chart");
+
+            // Vérifiez si un graphique existe déjà et détruisez-le
+            if (chartElement._chart) {
+                chartElement._chart.destroy();
+            }
+
+            // Créez un nouveau graphique
+            const chart = new ApexCharts(chartElement, options);
+            chart.render();
+
+            // Mise à jour du graphique dans l'élément du DOM
+            chartElement._chart = chart;
+
+        }, 50);
+
+    }, [pokemon, pokemon_type]);
+
+
 
     pokemon_type.forEach(pokemonType => {
         typeList.forEach(element => {
             if (element['id'] === parseInt(pokemonType, 10)) {
                 pokemon_type_name_.push(element['name'][language]);
                 pokemon_type_url_.push(element['image']);
-                // console.log(pokemon_type_name)
             }
         });
     });
 
-    const tiltProps = {
-        glareEnable: true,
-        glareMaxOpacity: 0.8,
-        glareColor: "#ffffff",
-        glarePosition: "bottom",
-        glareBorderRadius: "50px",
-        trackOnWindow: false
-    };
+    // const tiltProps = {
+    //     gyroscope:true,
+    //     tiltMaxAngleX:45,
+    //     tiltMaxAngleY:45
+       
+    // };
+    const tiltProps = {};
 
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
@@ -228,34 +281,138 @@ export default function OpenedCard(props) {
         }
     }
 
+    function render_Type_Images() {
+        if (pokemon_type_url_.length === 2) {
+            const Images = pokemon_type_url_.map((type, index) => (
+                <div key={index} className='type-container-big double'>
+                    <img className='type-image-big' src={type} alt={`type-${index}`} />
+                </div>
+            ));
+            return Images;
+        } else {
+            const Image = pokemon_type_url_.map((type, index) => (
+                <div key={index} className='type-container-big simple'>
+                    <img className='type-image-big' src={type} alt={`type-${index}`} />
+                </div>
+            ));
+            return Image;
+        }
+
+    }
+
+    function print_height() {
+        if (language === 'fr') {
+            return (
+                <div className='height-container'>
+                    <img className='height-img' src={height_img} alt='height' />
+                    <div className='height-value'>{pokemon['height']} m</div>
+                </div>
+            )
+        } else if (language === 'en') {
+            return (
+                <div className='height-container'>
+                    <img className='height-img' src={height_img} alt='height' />
+                    <div className='height-value'>{meters_to_feet(pokemon['height'])} ft</div>
+                </div>
+            )
+        }
+    }
+
+    function print_weight() {
+        if (language === 'fr') {
+            return (
+                <div className='weight-container'>
+                    <img className='weight-img' src={weight_img} alt='weight' />
+                    <div className='weight-value'>{pokemon['weight']} kg</div>
+                </div>
+            )
+        } else if (language === 'en') {
+            return (
+                <div className='weight-container'>
+                    <img className='weight-img' src={weight_img} alt='weight' />
+                    <div className='weight-value'>{kgs_to_lbs(pokemon['weight'])} lbs</div>
+                </div>
+            )
+        }
+    }
+
+    function kgs_to_lbs(kgs) {
+        return (kgs * 2.20462).toFixed(1);
+    }
+    function meters_to_feet(meters) {
+        return (meters * 3.28084).toFixed(1);
+    }
+
+    function type_id_to_color(id) {
+        const colors = ['#A2D0E0', '#FFD3A7', '#B0B9FF', '#98C5FF', '#FFEBA7', '#FCC0FC', '#FFA6A7', '#C3F3FF', "#CCD77C", "#DDDDDD", "#A4DF97", "#DEB3FF", "#FDBDD1", "#DBD7BC", "#D2AB8D", "#D7A0D7", "#A4918E", "#CADFF2"]
+        return colors[id - 1];
+    }
+
+
+
     return (
-        <div className='test'>
-            <div className='card_wraper-big'>
-                <Tilt className="parallax-effect-glare-scale" {...tiltProps}>
-                    <div className="card-container-big">
+        <>
+            <div className='test' onClick={onClose} >
+                <div className='card_wraper-big'>
+                    <Tilt className="parallax-effect-glare-scale" {...tiltProps}>
+                        <div className="card-container-big">
 
-                        <div className='back-card-big'>
-                            <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
+                            <div className='back-card-big'>
+                                <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
+                            </div>
+
+                            <div className='front-card-big-container'>
+                                {render_BG_Images()}
+                                <div className='infos-pokemon-container'>
+                                    <div className='top-infos-container'>
+                                        <div className='number-pokemon-big'>{pokemon_num}</div>
+                                        <div className='gen-pokemon-big'>{pokemon_generation}</div>
+                                    </div>
+                                    <div className='name-pokemon-big'>{pokemon_name}</div>
+                                </div>
+
+                                <div className='img-pokemon-container-big'>
+                                    <div className='type-images-container'>
+                                        {render_Type_Images()}
+                                    </div>
+                                    <div className='pokemon-images-container'>
+                                        <img className='fond-blanc-carte-big' src={fond_image_pokemon} alt="fond-blanc" />
+                                        {renderPokemonImage()}
+                                    </div>
+                                </div>
+
+                                <div className='stats-container'>
+                                    <div className='stats-title'>STATS</div>
+                                    <div className='stats-chart-container' ref={chartContainerRef}>
+                                        <div id="chart" ref={chartRef}></div>
+                                    </div>
+                                </div>
+
+                                <div className='bottom-infos-container'>
+                                    {print_height()}
+                                    {print_weight()}
+                                </div>
+
+
+
+                                <label className="switch">
+                                    <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={handleCheckboxChange}
+                                    />
+                                    <span className="slider round"></span>
+                                </label>
+                            </div>
                         </div>
-
-                        <div className='front-card-big'>
-                            {render_BG_Images()}
-                        </div>
-
-                        <button onClick={onClose}>Fermer la carte</button>
-
-                        <label className="switch">
-                            <input
-                                type="checkbox"
-                                checked={isChecked}
-                                onChange={handleCheckboxChange}
-                            />
-                            <span className="slider round"></span>
-                        </label>
-                        {/* <div id="chart"></div> */}
-                    </div>
-                </Tilt>
+                    </Tilt>
+                </div>
             </div>
-        </div>
+            <button className='close-button' style={{ position: 'fixed' }} onClick={onClose}>
+                <img className="close-img" src={close_img} alt="close" />
+            </button>
+        </>
     );
 }
+
+// <img className='img-pokemon-png-big' src={pokemon['image']} alt='png' />

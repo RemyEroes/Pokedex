@@ -315,14 +315,14 @@
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
 }
 
-.img-pokemon-png-big{
+/* .img-pokemon-png-big{
     height: 30%;
     position: fixed;
     top: 24%;
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
-}
+} */
 
 .type-pokemon-container-big {
     width: 60%;
@@ -334,21 +334,18 @@
     filter: drop-shadow(2px 2px 4px rgba(55, 55, 55, 0.489));
 }
 
-
-.type-image-big {
+/* 
+.type-image-bi {
     background-color: aqua;
-    /* 20px */
+
     width: 20px;
     clip-path: path("M0 7.984C0 1.40918 1.40918 0 7.984 0H12.016C18.5908 0 20 1.40918 20 7.984V12.016C20 18.5908 18.5908 20 12.016 20H7.984C1.40918 20 0 18.5908 0 12.016V7.984Z");
 }
 
 @media screen and (min-width: 768px) {
     .type-image-big {
-        /* 35px
-        width: 35px;
-        clip-path: path("M0 13.972C0 2.46606 2.46606 0 13.972 0H21.028C32.5339 0 35 2.46606 35 13.972V21.028C35 32.5339 32.5339 35 21.028 35H13.972C2.46606 35 0 32.5339 0 21.028V13.972Z");*/
-         /* 20px */
         width: 20px;
         clip-path: path("M0 7.984C0 1.40918 1.40918 0 7.984 0H12.016C18.5908 0 20 1.40918 20 7.984V12.016C20 18.5908 18.5908 20 12.016 20H7.984C1.40918 20 0 18.5908 0 12.016V7.984Z");
     } 
-}
+} */
+

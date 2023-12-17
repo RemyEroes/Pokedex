@@ -111,9 +111,10 @@ export default function Home() {
         ))}
       </div>
       <div ref={blurry_background} onClick={closeCardfunction} className="background-blur"></div>
-      <CloseButton />
+      
       <Footer />
     </>
   );
 }
 
+// <CloseButton />
