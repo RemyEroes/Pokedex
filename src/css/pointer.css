@@ -12,6 +12,6 @@
 .pointer-image{
     width: 100%;
     cursor: none;
-    transform: translate(-3px, 12px);
+    transform: translate(-4px, 14px);
     transition: all .4s ease-in-out;
 }

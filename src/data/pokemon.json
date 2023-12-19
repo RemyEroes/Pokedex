@@ -1699,7 +1699,7 @@
       "evolvesTo": {
         "61": "Niveau 25",
         "62": "Pierre Eau",
-        "186": "Echange avec Roche Royale"
+        "186": "Échange avec Roche Royale"
       }
     },
     {
@@ -1729,7 +1729,7 @@
       },
       "evolvesTo": {
         "62": "Pierre Eau",
-        "186": "Echange avec Roche Royale"
+        "186": "Échange avec Roche Royale"
       }
     },
     {
@@ -1786,7 +1786,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "64": "Niveau 16",
-        "65": "Echange/Au contact d'un Fil de Liaison"
+        "65": "Échange"
       }
     },
     {
@@ -1815,7 +1815,7 @@
         "63": "Niveau 16"
       },
       "evolvesTo": {
-        "65": "Echange/Au contact d'un Fil de Liaison"
+        "65": "Échange"
       }
     },
     {
@@ -1841,8 +1841,8 @@
         13
       ],
       "evolvedFrom": {
-        "63": "Echange/Au contact d'un Fil de Liaison",
-        "64": "Echange/Au contact d'un Fil de Liaison"
+        "63": "Échange",
+        "64": "Échange"
       },
       "evolvesTo": []
     },
@@ -1871,7 +1871,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "67": "Niveau 28",
-        "68": "Echange/Au contact d'un Fil de Liaison"
+        "68": "Échange"
       }
     },
     {
@@ -1900,7 +1900,7 @@
         "66": "Niveau 28"
       },
       "evolvesTo": {
-        "68": "Echange/Au contact d'un Fil de Liaison"
+        "68": "Échange"
       }
     },
     {
@@ -1926,8 +1926,8 @@
         2
       ],
       "evolvedFrom": {
-        "66": "Echange/Au contact d'un Fil de Liaison",
-        "67": "Echange/Au contact d'un Fil de Liaison"
+        "66": "Échange",
+        "67": "Échange"
       },
       "evolvesTo": []
     },
@@ -2101,7 +2101,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "75": "Niveau 25",
-        "76": "Echange/Au contact d'un Fil de Liaison"
+        "76": "Échange"
       }
     },
     {
@@ -2131,7 +2131,7 @@
         "74": "Niveau 25"
       },
       "evolvesTo": {
-        "76": "Echange/Au contact d'un Fil de Liaison"
+        "76": "Échange"
       }
     },
     {
@@ -2158,8 +2158,8 @@
         15
       ],
       "evolvedFrom": {
-        "74": "Echange/Au contact d'un Fil de Liaison",
-        "75": "Echange/Au contact d'un Fil de Liaison"
+        "74": "Échange",
+        "75": "Échange"
       },
       "evolvesTo": []
     },
@@ -2300,7 +2300,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "82": "Niveau 30",
-        "462": "Gain de niveau dans champ magnétique spécial/Pierre Foudre (depuis EB)"
+        "462": "Pierre Foudre"
       }
     },
     {
@@ -2330,7 +2330,7 @@
         "81": "Niveau 30"
       },
       "evolvesTo": {
-        "462": "Gain de niveau dans champ magnétique spécial/Pierre Foudre (depuis EB)"
+        "462": "Pierre Foudre"
       }
     },
     {
@@ -2605,7 +2605,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "93": "Niveau 25",
-        "94": "Echange/Au contact d'un Fil de Liaison"
+        "94": "Échange"
       }
     },
     {
@@ -2635,7 +2635,7 @@
         "92": "Niveau 25"
       },
       "evolvesTo": {
-        "94": "Echange/Au contact d'un Fil de Liaison"
+        "94": "Échange"
       }
     },
     {
@@ -2662,8 +2662,8 @@
         16
       ],
       "evolvedFrom": {
-        "92": "Echange/Au contact d'un Fil de Liaison",
-        "93": "Echange/Au contact d'un Fil de Liaison"
+        "92": "Échange",
+        "93": "Échange"
       },
       "evolvesTo": []
     },
@@ -2692,7 +2692,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "208": "Echange avec Peau Métal/Au contact d'une Peau Métal"
+        "208": "Échange avec Peau Métal"
       }
     },
     {
@@ -3128,7 +3128,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "112": "Niveau 42",
-        "464": "Echange avec Protecteur/Contact d'un Protecteur"
+        "464": "Échange avec Protecteur"
       }
     },
     {
@@ -3158,7 +3158,7 @@
         "111": "Niveau 42"
       },
       "evolvesTo": {
-        "464": "Echange avec Protecteur/Contact d'un Protecteur"
+        "464": "Échange avec Protecteur"
       }
     },
     {
@@ -3186,7 +3186,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "242": "Bonheur",
-        "440": "+1 Niveau la journée avec Pierre Ovale / Contact avec Pierre Ovale le jour (PLA)"
+        "440": "+1 Niveau la journée avec Pierre Ovale"
       }
     },
     {
@@ -3266,7 +3266,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "117": "Niveau 32",
-        "230": "Echange avec Écaille Draco"
+        "230": "Échange avec Écaille Draco"
       }
     },
     {
@@ -3295,7 +3295,7 @@
         "116": "Niveau 32"
       },
       "evolvesTo": {
-        "230": "Echange avec Écaille Draco"
+        "230": "Échange avec Écaille Draco"
       }
     },
     {
@@ -3460,8 +3460,8 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "212": "Echange avec Peau Métal/Au contact d'une Peau Métal",
-        "900": "Avec une obsidienne (PLA)"
+        "212": "Échange avec Peau Métal",
+        "900": "Avec une obsidienne"
       }
     },
     {
@@ -3517,7 +3517,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "239": "Niveau 30",
-        "466": "Echange avec Électriseur/Contact d'un Électriseur"
+        "466": "Échange avec Électriseur"
       }
     },
     {
@@ -3545,7 +3545,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "240": "Niveau 30",
-        "467": "Echange avec Magmariseur/Contact d'un Magmariseur"
+        "467": "Échange avec Magmariseur"
       }
     },
     {
@@ -3733,9 +3733,9 @@
         "136": "Pierre Feu",
         "196": "Bonheur + Jour + 1 niveau",
         "197": "Bonheur + Nuit + 1 niveau",
-        "470": "+1 Niveau vers Pierre Mousse (Avant EB+DEPS) / Pierre Plante / Proche d'une Roche Moussue (PLA)",
-        "471": "+1 Niveau vers Pierre Glacée (Avant EB+DEPS) / Pierre Glace / Proche d'une Roche Gelée (PLA)",
-        "700": "2 coeurs d'affections Poké Récré / Poké Détente + 1 niveau avec une capacité Fée (Avant EB) / Bonheur + capacité Fée (Depuis EB sauf DEPS)"
+        "470": "Pierre Plante",
+        "471": "Pierre Glace",
+        "700": "Bonheur + capacité Fée"
       }
     },
     {
@@ -3843,8 +3843,8 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "233": "Echange avec Améliorator/Contact d'un Améliorator (PLA)",
-        "474": "Echange avec CD Douteux/Contact d'un CD Douteux (PLA)"
+        "233": "Échange avec Améliorator",
+        "474": "Échange avec CD Douteux"
       }
     },
     {
@@ -4335,8 +4335,8 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "156": "Niveau 14 / Niveau 17 (PLA uniquement)",
-        "157": "Niveau 36 (Seulement PLA)"
+        "156": "Niveau 14",
+        "157": "Niveau 36"
       }
     },
     {
@@ -4362,10 +4362,10 @@
         7
       ],
       "evolvedFrom": {
-        "155": "Niveau 14 / Niveau 17 (PLA uniquement)"
+        "155": "Niveau 14"
       },
       "evolvesTo": {
-        "157": "Niveau 36 (Seulement PLA)"
+        "157": "Niveau 36"
       }
     },
     {
@@ -4391,8 +4391,8 @@
         7
       ],
       "evolvedFrom": {
-        "155": "Niveau 36 (Seulement PLA)",
-        "156": "Niveau 36 (Seulement PLA)"
+        "155": "Niveau 36",
+        "156": "Niveau 36"
       },
       "evolvesTo": []
     },
@@ -5209,8 +5209,8 @@
         4
       ],
       "evolvedFrom": {
-        "60": "Echange avec Roche Royale",
-        "61": "Echange avec Roche Royale"
+        "60": "Échange avec Roche Royale",
+        "61": "Échange avec Roche Royale"
       },
       "evolvesTo": []
     },
@@ -5791,7 +5791,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "472": "+1 Niveau avec Croc Rasoir / Contact d'un Croc Rasoir (PLA)"
+        "472": "+1 Niveau avec Croc Rasoir"
       }
     },
     {
@@ -5818,7 +5818,7 @@
         15
       ],
       "evolvedFrom": {
-        "95": "Echange avec Peau Métal/Au contact d'une Peau Métal"
+        "95": "Échange avec Peau Métal"
       },
       "evolvesTo": []
     },
@@ -5926,7 +5926,7 @@
         9
       ],
       "evolvedFrom": {
-        "123": "Echange avec Peau Métal/Au contact d'une Peau Métal"
+        "123": "Échange avec Peau Métal"
       },
       "evolvesTo": []
     },
@@ -6007,7 +6007,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "461": "+1 Niveau avec Griffe Rasoir / Contact d'une Griffe Rasoir"
+        "461": "+1 Niveau avec Griffe Rasoir"
       }
     },
     {
@@ -6421,8 +6421,8 @@
         4
       ],
       "evolvedFrom": {
-        "116": "Echange avec Écaille Draco",
-        "117": "Echange avec Écaille Draco"
+        "116": "Échange avec Écaille Draco",
+        "117": "Échange avec Écaille Draco"
       },
       "evolvesTo": []
     },
@@ -6503,10 +6503,10 @@
         10
       ],
       "evolvedFrom": {
-        "137": "Echange avec Améliorator/Contact d'un Améliorator (PLA)"
+        "137": "Échange avec Améliorator"
       },
       "evolvesTo": {
-        "474": "Echange avec CD Douteux/Contact d'un CD Douteux (PLA)"
+        "474": "Échange avec CD Douteux"
       }
     },
     {
@@ -6672,7 +6672,7 @@
         "125": "Niveau 30"
       },
       "evolvesTo": {
-        "466": "Echange avec Électriseur/Contact d'un Électriseur"
+        "466": "Échange avec Électriseur"
       }
     },
     {
@@ -6701,7 +6701,7 @@
         "126": "Niveau 30"
       },
       "evolvesTo": {
-        "467": "Echange avec Magmariseur/Contact d'un Magmariseur"
+        "467": "Échange avec Magmariseur"
       }
     },
     {
@@ -8362,7 +8362,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "476": "+1 Niveau dans Champ Magnétique / Pierre Foudre (PLA)"
+        "476": "+1 Niveau dans Champ Magnétique"
       }
     },
     {
@@ -9725,7 +9725,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "350": "Beauté supérieur ou égal à 170 + 1 niveau (RSE à N2B2 + ROSA + DEPS) / Echange avec Bel'Écaille (depuis NB)"
+        "350": "Échange avec Bel'Écaille"
       }
     },
     {
@@ -9751,7 +9751,7 @@
         4
       ],
       "evolvedFrom": {
-        "349": "Beauté supérieur ou égal à 170 + 1 niveau (RSE à N2B2 + ROSA + DEPS) / Echange avec Bel'Écaille (depuis NB)"
+        "349": "Échange avec Bel'Écaille"
       },
       "evolvesTo": []
     },
@@ -9884,7 +9884,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "356": "Niveau 37",
-        "477": "Echange en tant Tissu Fauche / Contact d'un Tissu Fauche (PLA)"
+        "477": "Échange avec Tissu Fauche"
       }
     },
     {
@@ -9913,7 +9913,7 @@
         "355": "Niveau 37"
       },
       "evolvesTo": {
-        "477": "Echange en tant Tissu Fauche / Contact d'un Tissu Fauche (PLA)"
+        "477": "Échange avec Tissu Fauche"
       }
     },
     {
@@ -10188,8 +10188,8 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "367": "Echange avec Dent Océan",
-        "368": "Echange avec Écaille Océan"
+        "367": "Échange avec Dent Océan",
+        "368": "Échange avec Écaille Océan"
       }
     },
     {
@@ -10215,7 +10215,7 @@
         4
       ],
       "evolvedFrom": {
-        "366": "Echange avec Dent Océan"
+        "366": "Échange avec Dent Océan"
       },
       "evolvesTo": []
     },
@@ -10242,7 +10242,7 @@
         4
       ],
       "evolvedFrom": {
-        "366": "Echange avec Écaille Océan"
+        "366": "Échange avec Écaille Océan"
       },
       "evolvesTo": []
     },
@@ -12226,7 +12226,7 @@
         10
       ],
       "evolvedFrom": {
-        "113": "+1 Niveau la journée avec Pierre Ovale / Contact avec Pierre Ovale le jour (PLA)",
+        "113": "+1 Niveau la journée avec Pierre Ovale",
         "242": "Bonheur"
       },
       "evolvesTo": []
@@ -12806,7 +12806,7 @@
         17
       ],
       "evolvedFrom": {
-        "215": "+1 Niveau avec Griffe Rasoir / Contact d'une Griffe Rasoir"
+        "215": "+1 Niveau avec Griffe Rasoir"
       },
       "evolvesTo": []
     },
@@ -12834,8 +12834,8 @@
         5
       ],
       "evolvedFrom": {
-        "81": "Gain de niveau dans champ magnétique spécial/Pierre Foudre (depuis EB)",
-        "82": "Gain de niveau dans champ magnétique spécial/Pierre Foudre (depuis EB)"
+        "81": "Pierre Foudre",
+        "82": "Pierre Foudre"
       },
       "evolvesTo": []
     },
@@ -12890,8 +12890,8 @@
         15
       ],
       "evolvedFrom": {
-        "111": "Echange avec Protecteur/Contact d'un Protecteur",
-        "112": "Echange avec Protecteur/Contact d'un Protecteur"
+        "111": "Échange avec Protecteur",
+        "112": "Échange avec Protecteur"
       },
       "evolvesTo": []
     },
@@ -12945,8 +12945,8 @@
         5
       ],
       "evolvedFrom": {
-        "125": "Echange avec Électriseur/Contact d'un Électriseur",
-        "239": "Echange avec Électriseur/Contact d'un Électriseur"
+        "125": "Échange avec Électriseur",
+        "239": "Échange avec Électriseur"
       },
       "evolvesTo": []
     },
@@ -12973,8 +12973,8 @@
         7
       ],
       "evolvedFrom": {
-        "126": "Echange avec Magmariseur/Contact d'un Magmariseur",
-        "240": "Echange avec Magmariseur/Contact d'un Magmariseur"
+        "126": "Échange avec Magmariseur",
+        "240": "Échange avec Magmariseur"
       },
       "evolvesTo": []
     },
@@ -13058,7 +13058,7 @@
         11
       ],
       "evolvedFrom": {
-        "133": "+1 Niveau vers Pierre Mousse (Avant EB+DEPS) / Pierre Plante / Proche d'une Roche Moussue (PLA)"
+        "133": "Pierre Plante"
       },
       "evolvesTo": []
     },
@@ -13085,7 +13085,7 @@
         8
       ],
       "evolvedFrom": {
-        "133": "+1 Niveau vers Pierre Glacée (Avant EB+DEPS) / Pierre Glace / Proche d'une Roche Gelée (PLA)"
+        "133": "Pierre Glace"
       },
       "evolvesTo": []
     },
@@ -13113,7 +13113,7 @@
         18
       ],
       "evolvedFrom": {
-        "207": "+1 Niveau avec Croc Rasoir / Contact d'un Croc Rasoir (PLA)"
+        "207": "+1 Niveau avec Croc Rasoir"
       },
       "evolvesTo": []
     },
@@ -13169,8 +13169,8 @@
         10
       ],
       "evolvedFrom": {
-        "137": "Echange avec CD Douteux/Contact d'un CD Douteux (PLA)",
-        "233": "Echange avec CD Douteux/Contact d'un CD Douteux (PLA)"
+        "137": "Échange avec CD Douteux",
+        "233": "Échange avec CD Douteux"
       },
       "evolvesTo": []
     },
@@ -13227,7 +13227,7 @@
         14
       ],
       "evolvedFrom": {
-        "299": "+1 Niveau dans Champ Magnétique / Pierre Foudre (PLA)"
+        "299": "+1 Niveau dans Champ Magnétique"
       },
       "evolvesTo": []
     },
@@ -13254,8 +13254,8 @@
         16
       ],
       "evolvedFrom": {
-        "355": "Echange en tant Tissu Fauche / Contact d'un Tissu Fauche (PLA)",
-        "356": "Echange en tant Tissu Fauche / Contact d'un Tissu Fauche (PLA)"
+        "355": "Échange avec Tissu Fauche",
+        "356": "Échange avec Tissu Fauche"
       },
       "evolvesTo": []
     },
@@ -13890,7 +13890,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "502": "Niveau 17",
-        "503": "Niveau 36 (Seulement PLA)"
+        "503": "Niveau 36"
       }
     },
     {
@@ -13919,7 +13919,7 @@
         "501": "Niveau 17"
       },
       "evolvesTo": {
-        "503": "Niveau 36 (Seulement PLA)"
+        "503": "Niveau 36"
       }
     },
     {
@@ -13945,8 +13945,8 @@
         4
       ],
       "evolvedFrom": {
-        "501": "Niveau 36 (Seulement PLA)",
-        "502": "Niveau 36 (Seulement PLA)"
+        "501": "Niveau 36",
+        "502": "Niveau 36"
       },
       "evolvesTo": []
     },
@@ -15200,7 +15200,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "549": "Pierre Soleil (Seulement PLA)"
+        "549": "Pierre Soleil"
       }
     },
     {
@@ -15226,7 +15226,7 @@
         11
       ],
       "evolvedFrom": {
-        "548": "Pierre Soleil (Seulement PLA)"
+        "548": "Pierre Soleil"
       },
       "evolvesTo": []
     },
@@ -16307,7 +16307,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "589": "Echange avec Escargaume"
+        "589": "Échange avec Escargaume"
       }
     },
     {
@@ -16334,7 +16334,7 @@
         9
       ],
       "evolvedFrom": {
-        "588": "Echange avec Escargaume"
+        "588": "Échange avec Escargaume"
       },
       "evolvesTo": []
     },
@@ -17087,7 +17087,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "617": "Echange avec Carabing"
+        "617": "Échange avec Carabing"
       }
     },
     {
@@ -17113,7 +17113,7 @@
         9
       ],
       "evolvedFrom": {
-        "616": "Echange avec Carabing"
+        "616": "Échange avec Carabing"
       },
       "evolvesTo": []
     },
@@ -17387,7 +17387,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "628": "Niveau 54 (Seulement PLA)"
+        "628": "Niveau 54"
       }
     },
     {
@@ -17414,7 +17414,7 @@
         18
       ],
       "evolvedFrom": {
-        "627": "Niveau 54 (Seulement PLA)"
+        "627": "Niveau 54"
       },
       "evolvesTo": []
     },
@@ -18908,7 +18908,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "683": "Echange avec Sachet Senteur"
+        "683": "Échange avec Sachet Senteur"
       }
     },
     {
@@ -18934,7 +18934,7 @@
         6
       ],
       "evolvedFrom": {
-        "682": "Echange avec Sachet Senteur"
+        "682": "Échange avec Sachet Senteur"
       },
       "evolvesTo": []
     },
@@ -18962,7 +18962,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "685": "Echange avec Chantibonbon"
+        "685": "Échange avec Chantibonbon"
       }
     },
     {
@@ -18988,7 +18988,7 @@
         6
       ],
       "evolvedFrom": {
-        "684": "Echange avec Chantibonbon"
+        "684": "Échange avec Chantibonbon"
       },
       "evolvesTo": []
     },
@@ -19405,7 +19405,7 @@
         6
       ],
       "evolvedFrom": {
-        "133": "2 coeurs d'affections Poké Récré / Poké Détente + 1 niveau avec une capacité Fée (Avant EB) / Bonheur + capacité Fée (Depuis EB sauf DEPS)"
+        "133": "Bonheur + capacité Fée"
       },
       "evolvesTo": []
     },
@@ -19734,7 +19734,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "713": "Niveau 37 (Seulement PLA)"
+        "713": "Niveau 37"
       }
     },
     {
@@ -19760,7 +19760,7 @@
         8
       ],
       "evolvedFrom": {
-        "712": "Niveau 37 (Seulement PLA)"
+        "712": "Niveau 37"
       },
       "evolvesTo": []
     },
@@ -20001,7 +20001,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "723": "Niveau 17",
-        "724": "Niveau 34 / Niveau 36 (PLA uniquement)"
+        "724": "Niveau 34"
       }
     },
     {
@@ -20031,7 +20031,7 @@
         "722": "Niveau 17"
       },
       "evolvesTo": {
-        "724": "Niveau 34 / Niveau 36 (PLA uniquement)"
+        "724": "Niveau 34"
       }
     },
     {
@@ -20058,8 +20058,8 @@
         16
       ],
       "evolvedFrom": {
-        "722": "Niveau 34 / Niveau 36 (PLA uniquement)",
-        "723": "Niveau 34 / Niveau 36 (PLA uniquement)"
+        "722": "Niveau 34",
+        "723": "Niveau 34"
       },
       "evolvesTo": []
     },
@@ -20402,7 +20402,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "737": "Niveau 20",
-        "738": "+1 Niveau au Grand Canyon de Poni ou Mont Ardent (SL/USUL) / Pierre Foudre (EB)"
+        "738": "Pierre Foudre"
       }
     },
     {
@@ -20432,7 +20432,7 @@
         "736": "Niveau 20"
       },
       "evolvesTo": {
-        "738": "+1 Niveau au Grand Canyon de Poni ou Mont Ardent (SL/USUL) / Pierre Foudre (EB)"
+        "738": "Pierre Foudre"
       }
     },
     {
@@ -20459,8 +20459,8 @@
         9
       ],
       "evolvedFrom": {
-        "736": "+1 Niveau au Grand Canyon de Poni ou Mont Ardent (SL/USUL) / Pierre Foudre (EB)",
-        "737": "+1 Niveau au Grand Canyon de Poni ou Mont Ardent (SL/USUL) / Pierre Foudre (EB)"
+        "736": "Pierre Foudre",
+        "737": "Pierre Foudre"
       },
       "evolvesTo": []
     },
@@ -20488,7 +20488,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "740": "+1 Niveau Mont Lanakila / Pierre Glace (depuis EB)"
+        "740": "Pierre Glace"
       }
     },
     {
@@ -20515,7 +20515,7 @@
         8
       ],
       "evolvedFrom": {
-        "739": "+1 Niveau Mont Lanakila / Pierre Glace (depuis EB)"
+        "739": "Pierre Glace"
       },
       "evolvesTo": []
     },
@@ -24853,7 +24853,7 @@
         14
       ],
       "evolvedFrom": {
-        "123": "Avec une obsidienne (PLA)"
+        "123": "Avec une obsidienne"
       },
       "evolvesTo": []
     },
@@ -25438,7 +25438,7 @@
       "evolvedFrom": [],
       "evolvesTo": {
         "922": "Niveau 18",
-        "923": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "923": "1000 pas + 1 Niveau"
       }
     },
     {
@@ -25468,7 +25468,7 @@
         "921": "Niveau 18"
       },
       "evolvesTo": {
-        "923": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "923": "1000 pas + 1 Niveau"
       }
     },
     {
@@ -25495,8 +25495,8 @@
         5
       ],
       "evolvedFrom": {
-        "921": "Marcher 1000 pas avec En Avant ! + 1 Niveau",
-        "922": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "921": "1000 pas + 1 Niveau",
+        "922": "1000 pas + 1 Niveau"
       },
       "evolvesTo": []
     },
@@ -26136,7 +26136,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "947": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "947": "1000 pas + 1 Niveau"
       }
     },
     {
@@ -26163,7 +26163,7 @@
         16
       ],
       "evolvedFrom": {
-        "946": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "946": "1000 pas + 1 Niveau"
       },
       "evolvesTo": []
     },
@@ -26327,7 +26327,7 @@
       ],
       "evolvedFrom": [],
       "evolvesTo": {
-        "954": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "954": "1000 pas + 1 Niveau"
       }
     },
     {
@@ -26354,7 +26354,7 @@
         13
       ],
       "evolvedFrom": {
-        "953": "Marcher 1000 pas avec En Avant ! + 1 Niveau"
+        "953": "1000 pas + 1 Niveau"
       },
       "evolvesTo": []
     },

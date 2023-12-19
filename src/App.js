@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
@@ -12,6 +12,20 @@ import { PokemonListProvider } from "./contexts/PokemonListContext";
 
 
 function App() {
+  // check is touch device or not (for pointer)
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    const checkTouchSupport = () => {
+      setIsTouchDevice('ontouchstart' in window);
+    };
+    // Initial check on mount
+    checkTouchSupport();
+    // Cleanup on component unmount
+    return () => {
+      window.removeEventListener("resize", checkTouchSupport);
+    };
+  }, []);
   return (
     <OpenCardProvider>
       <PokemonProvider>
@@ -19,7 +33,7 @@ function App() {
           <FilterProvider>
             <SortProvider>
               <PokemonListProvider>
-                <Pointer />
+              {!isTouchDevice && <Pointer />}
                 <Menu />
                 <Home />
               </PokemonListProvider>

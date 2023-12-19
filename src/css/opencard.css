@@ -1,7 +1,7 @@
 @import '../css/app.css';
 
 
-.test {
+.master-container-div {
   width: 100vw;
   height: 100vh;
 
@@ -25,6 +25,8 @@
   /* Par exemple, 80% de la hauteur de la vue */
   aspect-ratio: 0.73;
   max-width: 90%;
+  /* perspective: 1000px; */
+
 }
 
 .card-container-big {
@@ -35,15 +37,13 @@
 
 /* arriere de la carte */
 .back-card-big {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transition: all 1s ease;
-
   width: 100%;
   height: 100%;
   position: absolute;
 
   /* transform: rotateY(180deg); */
+  animation: back-turn 1.5s ease-in-out;
+
 }
 
 .back-card-big img {
@@ -51,16 +51,25 @@
 }
 
 
+/* back hidden */
+.back-card-big,
+.front-card-big-container {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: all 1s ease;
+}
 
 
 /* FRONT */
 .front-card-big-container {
   height: 100%;
   width: 100%;
-  /* transform: translate(0%, -125%); */
+  animation: front-turn 1.5s ease-in-out;
+  transform-style: preserve-3d;
+
 }
 
-.front-card-big  {
+.front-card-big {
   width: 100%;
   position: absolute;
 }
@@ -88,11 +97,18 @@
 .number-pokemon-big,
 .gen-pokemon-big {
   font-family: 'Outfit';
-  font-size: clamp(27px, 2.6vw, 34px);
-  /* margin-left: 5%; */
+  font-size: clamp(20px, 1.6vw, 34px);
 }
 
-.name-pokemon-big{
+.number-pokemon-big {
+  margin-left: 10%;
+}
+
+.gen-pokemon-big {
+  margin-right: 5%;
+}
+
+.name-pokemon-big {
   width: 100%;
   text-align: center;
 
@@ -103,7 +119,7 @@
 
 
 /* images */
-.img-pokemon-container-big{
+.img-pokemon-container-big {
   /* background-color: tomato; */
 
   width: 100%;
@@ -119,14 +135,14 @@
 
 }
 
-.type-images-container{
+.type-images-container {
   /* background-color: rgb(71, 255, 89); */
   width: 30%;
   height: 100%;
 }
 
 
-.type-container-big{
+.type-container-big {
   width: 100%;
   height: 50%;
 
@@ -134,22 +150,25 @@
   justify-content: center;
   align-items: center;
 
+  filter : drop-shadow(4px 4px 3px rgba(55, 55, 55, 0.389));
+
   /* background-color: royalblue; */
 }
 
-.simple{
+.simple {
   height: 100%;
 }
 
-.type-image-big{
+.type-image-big {
   /* width: 20%; */
   /* clip-path: path("M0 7.984C0 1.40918 1.40918 0 7.984 0H12.016C18.5908 0 20 1.40918 20 7.984V12.016C20 18.5908 18.5908 20 12.016 20H7.984C1.40918 20 0 18.5908 0 12.016V7.984Z"); */
-  width: 50px;
-  /* clip-path: path("M0 13.972C0 2.46606 2.46606 0 13.972 0H21.028C32.5339 0 35 2.46606 35 13.972V21.028C35 32.5339 32.5339 35 21.028 35H13.972C2.46606 35 0 32.5339 0 21.028V13.972Z"); */
+  width: 65px;
+  clip-path: path("M0 25.948C0 4.57982 4.57982 0 25.948 0H39.052C60.4202 0 65 4.57982 65 25.948V39.052C65 60.4202 60.4202 65 39.052 65H25.948C4.57982 65 0 60.4202 0 39.052V25.948Z") ;
+  filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
 }
 
 
-.pokemon-images-container{
+.pokemon-images-container {
   /* background-color: rgb(141, 71, 255); */
   width: 60%;
   height: 100%;
@@ -157,18 +176,20 @@
   justify-content: center;
   align-items: center;
 }
-.fond-blanc-carte-big{
+
+.fond-blanc-carte-big {
   position: absolute;
   top: 0%;
   left: 35%;
   width: 60%;
   filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
-  opacity: 0.3;
+  opacity: 0.4;
 }
-.img-pokemon-png-big{
-  height: 110%;
+
+.img-pokemon-png-big {
+  height: 100%;
   filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
-  margin-top: -17%;
+  margin-top: -5%;
 }
 
 
@@ -176,7 +197,7 @@
 
 
 /* height and weight */
-.bottom-infos-container{
+.bottom-infos-container {
   width: 100%;
 
   display: flex;
@@ -188,14 +209,14 @@
 }
 
 .height-container,
-.weight-container{
+.weight-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .height-value,
-.weight-value{
+.weight-value {
   margin-left: 5px;
 }
 
@@ -203,7 +224,7 @@
 
 
 /* stats */
-.stats-container{
+.stats-container {
   width: 100%;
   height: 45%;
   position: absolute;
@@ -213,77 +234,240 @@
   opacity: 0.6; */
 }
 
-.stats-title{
+.stats-title {
   font-family: 'Outfit-bold';
   font-size: clamp(10px, 2.5vw, 30px);
   margin-left: 15%;
 }
-.stats-chart-container{
+
+.stats-chart-container {
   width: 100%;
   height: 90%;
 
 }
 
-#chart{
+#chart {
   margin-top: -10%;
   transform: scale(1.2);
 }
 
-.apexcharts-menu-icon{
+.apexcharts-menu-icon {
   display: none;
 }
 
 
 
 /* close button */
-.close-button{
+.close-button {
   all: unset;
-    background-color: #FFD600;
-    width: 6vw;
-    height: 6vw;
+  background-color: #FFD600;
+  width: 6vw;
+  height: 6vw;
 
-    position: fixed;
-    top: 13%;
-    right: 6%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10vw;
-    z-index: 1000;
+  position: fixed;
+  top: 13%;
+  right: 6%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10vw;
+  z-index: 1000;
 }
-.close-button:hover{
+
+.close-button:hover {
   transform: scale(1.1);
   background-color: #ffde39;
 }
-.close-button:active{
+
+.close-button:active {
   transform: scale(0.8);
 }
-/* 
+
+.close-img{
+  width: 80%;
+
+}
 
 
 
 
 
 @keyframes back-turn {
-  0%{
+  0% {
     opacity: 0;
     transform: scale(.6) rotateY(0deg);
   }
-  100%{
+  25%{
     opacity: 1;
+  }
+
+  100% {
     transform: scale(1) rotateY(180deg);
   }
 }
 
-@keyframes from-turn {
-  0%{
+@keyframes front-turn {
+  0% {
     transform: scale(.6) rotateY(180deg);
   }
-  100%{
-    transform: scale(1) rotateY(360deg);
+
+  100% {
+    transform: scale(1) rotateY(0deg);
   }
-} */
+}
+
+
+
+/* responsive */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .card_wraper-big {
+    height: 75vh;
+  }
+
+  .number-pokemon-big,
+  .gen-pokemon-big {
+    font-size: clamp(30px, 2.6vw, 34px);
+  }
+
+  .name-pokemon-big {
+    font-size: clamp(28px, 13vw, 105px);
+  }
+
+  .type-image-big {
+    width: 90px;
+    clip-path: path("M0 35.928C0 6.34129 6.34129 0 35.928 0H54.072C83.6587 0 90 6.34129 90 35.928V54.072C90 83.6587 83.6587 90 54.072 90H35.928C6.34129 90 0 83.6587 0 54.072V35.928Z") ;
+    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
+  }
+  .stats-title {
+    font-size:clamp(10px, 6.5vw, 40px);
+  }
+  .height-container,
+  .weight-container {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  #chart{
+    margin-top: -6%;
+  }
+
+  /* bouton */
+  .close-button {
+    width: 9vw;
+    height: 9vw;
+  
+    top: 6%;
+    right: 6%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .card_wraper-big {
+    height: 75vh;
+  }
+
+  .number-pokemon-big,
+  .gen-pokemon-big {
+    font-size: clamp(30px, 2.6vw, 34px);
+  }
+
+  .name-pokemon-big {
+    font-size: clamp(28px, 13vw, 105px);
+  }
+
+  .type-image-big {
+    width: 65px;
+    clip-path: path("M0 25.948C0 4.57982 4.57982 0 25.948 0H39.052C60.4202 0 65 4.57982 65 25.948V39.052C65 60.4202 60.4202 65 39.052 65H25.948C4.57982 65 0 60.4202 0 39.052V25.948Z") ;
+    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
+  }
+
+  /* ----------------------------- */
+  .img-pokemon-container-big{
+    top: 20%;
+  }
+  .stats-container{
+    top: 50%;
+  }
+  .height-container,
+  .weight-container {
+    font-size: 1.6rem;
+  font-weight: 500;
+  }
+  #chart{
+    margin-top: -10%;
+  }
+  /* -------------------- */
+
+  .stats-title {
+    font-size:clamp(10px, 6.5vw, 40px);
+  }
+  
+
+  /* bouton */
+  .close-button {
+    width: 9vw;
+    height: 9vw;
+  
+    top: 6%;
+    right: 6%;
+  }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .card_wraper-big {
+    height: 57vh;
+  }
+
+  .number-pokemon-big,
+  .gen-pokemon-big {
+    font-size: clamp(21px, 2.6vw, 34px);
+  }
+
+  .name-pokemon-big {
+    font-size: clamp(65px, 13vw, 105px);
+  }
+
+  .type-image-big {
+    width: 45px;
+    clip-path: path("M0 17.964C0 3.17065 3.17065 0 17.964 0H27.036C41.8294 0 45 3.17065 45 17.964V27.036C45 41.8294 41.8294 45 27.036 45H17.964C3.17065 45 0 41.8294 0 27.036V17.964Z") ;
+    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
+  }
+
+  /* ----------------------------- */
+  .img-pokemon-container-big{
+    top: 20%;
+  }
+  .stats-container{
+    top: 50%;
+  }
+  .height-container,
+  .weight-container {
+    font-size: 1rem;
+  font-weight: 500;
+  }
+  #chart{
+    margin-top: -9%;
+  }
+  /* ----------------------------- */
+
+  .stats-title {
+    font-size:clamp(10px, 5.5vw, 40px);
+  }
+  
+
+  /* bouton */
+  .close-button {
+    width: 9vw;
+    height: 9vw;
+  
+    top: 6%;
+    right: 6%;
+  }
+
+}
+
 
 
 

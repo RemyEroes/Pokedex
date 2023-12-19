@@ -158,67 +158,7 @@ export default function Card(props) {
     const big_front_container_element = useRef(null)
 
 
-    // open card
-    const { openingCardValueFunction, openCardValueFunction, setOpencardIdValue } = useContext(OpenCardContext);
-
-
-    function openCard() {
-        openingCardValueFunction()
-        
-        // elements
-        const littleFrontElement = little_front.current;
-        const backElement = back_.current;
-        const bigFrontElement = big_front.current;
-        const CARDElement = card_element.current;
-        const big_front_container = big_front_container_element.current
-        // const ParalaxElement = paralax_element.current;
-
-
-        if (littleFrontElement && backElement) {
-            // Appliquer les transformations en fonction de l'état actuel de la carte
-            $(CARDElement).css('z-index', '100');
-            $(CARDElement).css('position', 'fixed');
-            $(CARDElement).css('top', '50%');
-            $(CARDElement).css('left', '50%');
-            $(CARDElement).css('transform', 'translate(-50%, -50%) scale(3)');
-
-            $(big_front_container).css('display', 'initial');
-
-
-            $(littleFrontElement).css('transform', ' rotateY(180deg)');
-            setInterval(() => {
-                $(backElement).css('transform', ' rotateY(540deg)')
-            }, 200);
-            setInterval(() => {
-                $(bigFrontElement).css('transform', 'rotateY(360deg)');
-            }, 650);
-
-            // open
-            openCardValueFunction()
-        }
-
-    }
-
-
-    function closeCard(){
-        // console.log('close')
-        // const littleFrontElement = little_front.current;
-        // const backElement = back_.current;
-        // const bigFrontElement = big_front.current;
-        const CARDElement = card_element.current;
-        const big_front_container = big_front_container_element.current
-        // const ParalaxElement = paralax_element.current;
-        $(CARDElement).css('opacity', '0.3');
-        // if (openCardValue === 'closing') {
-
-        //         // Appliquer les transformations en fonction de l'état actuel de la carte
-        //         // $(CARDElement).css('z-index', '100');
-        //         $('pokemon1').css('opacity', '0.3');
-               
-        //         closeCardValueFunction()
-
-        // }
-    }
+   
 
 
     function render_BG_Images() {
@@ -239,23 +179,31 @@ export default function Card(props) {
         }
     }
 
-    function openCardFromID(id){
-        setOpencardIdValue(id)
-    }
+
 
 
     // generation
     var pokemon_generation_little = "GENERATION " + pokemon['generation']
-    // var pokemon_generation_big = "GEN " + pokemon['generation']
+
 
     function openCard() {
         setIsCardOpen(true);
+        page_scroll('disable') 
       }
 
       function tocloseCard() {
         setIsCardOpen(false);
+        page_scroll('enable') 
       }
 
+      
+    function page_scroll(value) {
+        if (value === 'enable'){
+            $('body').css('overflow', 'scroll');
+        }else if (value === 'disable'){
+            $('body').css('overflow', 'hidden');
+        }
+    }
 
     return (
         <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>

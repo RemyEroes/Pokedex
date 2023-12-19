@@ -1,4 +1,4 @@
-@import '../css/app.css';
+/* @import '../css/app.css';
 
 .close-button {
     all: unset;
@@ -20,7 +20,7 @@
 }
 
 
-/* resonsive */
+
 @media screen and (min-width: 768px) {
     .close-button {
         width: 9vw;
@@ -44,4 +44,4 @@
         top: 21%;
         right: 15%;
     }
-}
+} */

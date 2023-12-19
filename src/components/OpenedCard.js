@@ -8,7 +8,9 @@ import int_to_hashtag from '../tools/int_to_hashtag';
 // import CloseButton from './CloseButton';
 import $ from 'jquery';
 
+
 // images front
+
 import fond_card_1 from "../images/fond-card/fond-carte-squircle-1.svg";
 import fond_card_2 from "../images/fond-card/fond-carte-squircle-2.svg";
 import fond_card_3 from "../images/fond-card/fond-carte-squircle-3.svg";
@@ -140,10 +142,26 @@ export default function OpenedCard(props) {
         const pokemon_def_spe = pokemon['stats']['spe_def'];
         const pokemon_speed = pokemon['stats']['vit'];
 
-        const chart_height = chartContainerRef.current.clientHeight;
+        var chart_height = parseInt(chartContainerRef.current.clientHeight);
+        console.log(chart_height);
+        var font_size = '12px';
+
+        
+        if (chart_height > 450) {
+            font_size = '20px';
+            chart_height = 490;
+        }else if(chart_height > 300 && chart_height < 400){
+            //ordi
+            font_size = '14px';
+            chart_height = 350;
+        }else if(chart_height < 250){
+            // tel
+            font_size = '10px';
+            chart_height = 250;
+        }
+
         const chart_width = $('.stats-chart-container').width();
 
-        console.log(pokemon_type)
         var color1 = '#a5df98';
         var color2 = '#f8f8f8';
 
@@ -153,6 +171,7 @@ export default function OpenedCard(props) {
         } else {
             color1 = type_id_to_color(pokemon_type[0]);
         }
+
 
         const options = {
 
@@ -168,7 +187,6 @@ export default function OpenedCard(props) {
             }],
             chart: {
                 height: chart_height,
-
                 type: 'radar',
             },
             plotOptions: {
@@ -199,16 +217,16 @@ export default function OpenedCard(props) {
                 categories: [
                     'PV : ' + pokemon_pv,
                     'Attaque : ' + pokemon_atk,
-                    'Attaque spéciale : ' + pokemon_atk_spe,
+                    'Attaque speciale : ' + pokemon_atk_spe,
                     'Vitesse : ' + pokemon_speed,
-                    'Defense spéciale : ' + pokemon_def_spe,
+                    'Defense speciale : ' + pokemon_def_spe,
                     'Defense : ' + pokemon_def,
                 ],
                 labels: {
                     show: true,
                     style: {
-                        colors: ["#000000"],
-                        fontSize: "12px",
+                        colors: ["#000000", "#000000", "#000000", "#000000", "#000000", "#000000"],
+                        fontSize: font_size,
                         fontFamily: 'Outfit'
                     }
                 }
@@ -348,11 +366,12 @@ export default function OpenedCard(props) {
         return colors[id - 1];
     }
 
+    
 
 
     return (
         <>
-            <div className='test' onClick={onClose} >
+            <div className='master-container-div' onClick={onClose} >
                 <div className='card_wraper-big'>
                     <Tilt className="parallax-effect-glare-scale" {...tiltProps}>
                         <div className="card-container-big">
@@ -368,7 +387,7 @@ export default function OpenedCard(props) {
                                         <div className='number-pokemon-big'>{pokemon_num}</div>
                                         <div className='gen-pokemon-big'>{pokemon_generation}</div>
                                     </div>
-                                    <div className='name-pokemon-big'>{pokemon_name}</div>
+                                    <div className='name-pokemon-big'>{pokemon_name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}</div>
                                 </div>
 
                                 <div className='img-pokemon-container-big'>
@@ -381,9 +400,9 @@ export default function OpenedCard(props) {
                                     </div>
                                 </div>
 
-                                <div className='stats-container'>
+                                <div className='stats-container' ref={chartContainerRef}>
                                     <div className='stats-title'>STATS</div>
-                                    <div className='stats-chart-container' ref={chartContainerRef}>
+                                    <div className='stats-chart-container'>
                                         <div id="chart" ref={chartRef}></div>
                                     </div>
                                 </div>

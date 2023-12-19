@@ -12,9 +12,9 @@
     left: 12.2%;
 
     visibility: hidden;
-    
 
-    border-bottom-left-radius: 2vw ;
+
+    border-bottom-left-radius: 2vw;
     border-bottom-right-radius: 2vw;
 
     box-shadow: 1px 4px 16px 11px white;
@@ -49,36 +49,68 @@
 }
 
 
-.pokemon-img{
+.pokemon-img {
     height: 95%;
 }
-.pokemon-name{
+
+.pokemon-name {
     font-family: 'Outfit';
     font-size: 20px;
 }
 
 /* resonsive */
-@media screen and (min-width: 768px) {
-    .close-button {
-        width: 9vw;
-        height: 9vw;
+@media screen and (max-width: 768px) {
+
+
+    .pokemon-item-container {
+        height: 2vh;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
+
+    .search-list-container {
+        height: 30vh;
+    }
+
+    .pokemon-name {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+
+    .pokemon-item-container {
+        height: 3vh;
+    }
+
+    .search-list-container {
+        height: 40vh;
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
-    .close-button {
-        width: 9vw;
-        height: 9vw;
-        top: 15%;
-    right: 15%;
+
+
+    .pokemon-item-container {
+        height: 3vh;
+    }
+
+    .search-list-container {
+        height: 40vh;
     }
 }
 
 @media screen and (min-width: 1300px) {
-    .close-button {
-        width: 5vw;
-        height: 5vw;
-        top: 21%;
-        right: 15%;
+
+
+    .pokemon-item-container {
+        height: 5vh;
+    }
+
+    .search-list-container {
+        height: 60vh;
     }
 }

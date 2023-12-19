@@ -61,7 +61,19 @@
 }
 
 
-
+/* desactiver le curseur  */
+#generation,
+.clock,
+#type,
+.type-img ,
+#sort,
+.sort-img,
+#search-bar,
+.search ,
+label{
+    cursor: none;
+    /* cursor: default; */
+}
 
 /* gen filter */
 .generation-filter-container {
