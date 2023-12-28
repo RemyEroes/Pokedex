@@ -6,11 +6,11 @@ import fond_image_pokemon from '../images/fond-image-pokemon.svg'
 import Tilt from 'react-parallax-tilt';
 import { useContext } from 'react';
 import { PokemonContext } from '../contexts/PokemonContext';
-import { OpenCardContext } from '../contexts/OpenCardContext';
 import OpenedCard from './OpenedCard';
 import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
-
+import { useTranslation } from 'react-i18next';
+import pokemons_translated from '../data/pokemon_names_new.json';
 
 
 // images front 
@@ -57,6 +57,7 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
 // images back 
 import back_card from "../images/back-card-squircle.svg";
+import translateNames from '../tools/translateNames';
 
 
 
@@ -65,10 +66,12 @@ export default function Card(props) {
 
     const { typeList } = useContext(PokemonContext)
     const [isCardOpen, setIsCardOpen] = useState(false);
-    var { language, pokemon } = props
-    // console.log(name)
-    // language.toUpperCase()
-    var name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
+    var pokemon = props.pokemon
+    const { t } = useTranslation();
+    var language = useTranslation().i18n.language;
+
+    var name = translateNames(pokemon, language)
+   
     var pk_number = int_to_hashtag(pokemon['id'])
 
     var pokemon_type = pokemon['types']
@@ -150,16 +153,14 @@ export default function Card(props) {
     });
 
     const little_front = useRef(null)
-    const back_ = useRef(null)
-    const big_front = useRef(null)
     const card_element = useRef(null)
     const paralax_element = useRef(null)
-    // const paralax_element_2 = useRef(null)
-    const big_front_container_element = useRef(null)
+    
+
 
 
    
-
+   
 
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
@@ -183,7 +184,7 @@ export default function Card(props) {
 
 
     // generation
-    var pokemon_generation_little = "GENERATION " + pokemon['generation']
+    var pokemon_generation_little = t("GENERATION")+" " + pokemon['generation']
 
 
     function openCard() {
@@ -204,6 +205,9 @@ export default function Card(props) {
             $('body').css('overflow', 'hidden');
         }
     }
+
+
+
 
     return (
         <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
@@ -245,15 +249,5 @@ export default function Card(props) {
     )
 
 }
- // <CloseButton onClick={() => closeCard()} />
-
-
-
-
-//  <div ref={back_} className='back-card'>
-//  <img className='back-card-img' src={back_card} alt="back-card-pokemon" />
-// </div>
-
-
 
 

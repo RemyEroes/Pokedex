@@ -1,27 +1,31 @@
 import { PokemonContext } from "../contexts/PokemonContext";
 import { useContext } from "react";
+import { useTranslation } from "react-i18next";
+import translateTypes from "../tools/translateTypes";
 
-const language = 'fr'
 
 
 export default function TypeFilterSelect() {
 
     const { typeList } = useContext(PokemonContext);
 
+    var language = useTranslation().i18n.language;
+
     const options = [];
 
     typeList.forEach(type => {
-        if (!options.includes(type["name"][language])) {
-            var typeName = type["name"][language];
+        var type_trad = translateTypes(type, language)
+        if (!options.includes(type_trad)) {
+            var typeName = type_trad;
             var typeValue
             
             typeList.forEach(type => {
                 // eslint-disable-next-line eqeqeq
-                if (type["name"][language] == typeName){
+                if (type_trad == typeName){
                     typeValue = type['id']
                 }
             })
-            typeName = typeName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            typeName = type_trad
             options.push(
                 <option key={typeValue} value={typeValue}>
                     {typeName}

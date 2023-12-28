@@ -1,0 +1,43 @@
+@import '../css/app.css';
+
+
+.evolution-big-container{
+    /* background-color: red; */
+    position: absolute;
+    width: 30vw;
+    height: 100vh;
+}
+
+.pre{
+    top: 0;
+    left: 0;
+}
+.post{
+    top: 0;
+    right: 0;
+}
+
+.evolution-title{
+    font-family: 'Outfit-bold';
+    font-size: 2rem;
+    text-align: center;
+    
+    margin-top: 30%;
+    width: 100%;
+
+    z-index: 1000;
+    /* box-shadow: -1px 20px 10px white; */
+    box-shadow: -1px 1px 20px 20px white;
+    position: relative;
+}
+
+.evolution-container{
+    width: 100%;
+    height: 80%;
+
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+

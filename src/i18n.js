@@ -2,6 +2,7 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+
 i18n
   // detect user language
   // learn more: https://github.com/i18next/i18next-browser-languageDetector
@@ -11,18 +12,20 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    debug: true,
+    // debug: true,
+    // lng: 'en', // Langue par défaut
     fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
-    },
     resources: {
       en: {
-        translation: {
-          // here we will place our translations...
-        }
+        translation: require('../src/translations/translate-en.json')
+      },
+      fr: {
+        translation: require('../src/translations/translate-fr.json')
+      },
+      ja: {
+        translation: require('../src/translations/translate-ja.json')
       }
-    }
+    },
   });
 
 export default i18n;

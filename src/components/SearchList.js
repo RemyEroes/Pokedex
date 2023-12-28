@@ -3,11 +3,15 @@ import '../css/searchList.css'
 import { PokemonListContext } from '../contexts/PokemonListContext';
 import { SearchContext } from '../contexts/SearchContext';
 import $ from 'jquery';
+import { useTranslation } from 'react-i18next';
+import translateNames from '../tools/translateNames';
+
 
 
 
 
 export default function SearchList() {
+  var language = useTranslation().i18n.language;
 
   const { PokemonListValue } = useContext(PokemonListContext);
   const {searchValue } = useContext(SearchContext)
@@ -46,7 +50,7 @@ export default function SearchList() {
         <div ref={item_container} className='pokemon-item-container' key={pokemon.id}>
           <div className='pokemon-item' >
             <img src={pokemon['image']} className="pokemon-img" alt="pokemon" />
-            <p className='pokemon-name'>{pokemon['name']['fr'].normalize("NFD").replace(/[\u0300-\u036f]/g, "")}</p>
+            <p className='pokemon-name'>{translateNames(pokemon,language)}</p>
           </div>
         </div>
       ))}

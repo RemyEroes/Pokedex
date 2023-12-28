@@ -1,0 +1,81 @@
+@import '../css/app.css';
+
+
+.pokemon-preevolution-container {
+    /* background-color: aquamarine; */
+    height: 33%;
+    width: 100%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.preevolution-card-container {
+    all: unset;
+    /* background-color: #a44700; */
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    position: relative; 
+    /* transition: transform 0.2s ease-in-out; */
+}
+
+
+
+
+
+.pokemon-preevolution-fond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+}
+
+.front-card-evol {
+    position: absolute; 
+    height: 100%;
+    top: 0;
+}
+
+.pokemon-preevolution-name {
+    font-family: 'Pokemon';
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+
+}
+.pokemon-preevolution-number{
+    font-family: 'Outfit';
+    position: relative;
+    left: 17%;
+    top: 2%;
+}
+
+.pokemon-preevolution-images{
+
+    height: 65%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pokemon-preevolution-fond-img{
+    position: absolute;
+    height: 90%;
+    opacity: 0.4;
+}
+
+.pokemon-preevolution-img{
+    position: absolute;
+    height: 100%;
+    margin-top: -7%;
+}
+
+.pokemon-preevolution-condition{
+    font-family: 'Outfit';
+    text-align: center;
+    position: relative;
+}

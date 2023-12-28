@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "en": "Steel",
+      "fr": "Acier",
+      "ja": "鋼",
+      "zh": "钢"
+    }
+  },
+  {
+    "id": 2,
+    "name": {
+      "en": "Fighting",
+      "fr": "Combat",
+      "ja": "格闘",
+      "zh": "格斗"
+    }
+  },
+  {
+    "id": 3,
+    "name": {
+      "en": "Dragon",
+      "fr": "Dragon",
+      "ja": "ドラゴン",
+      "zh": "龙"
+    }
+  },
+  {
+    "id": 4,
+    "name": {
+      "en": "Water",
+      "fr": "Eau",
+      "ja": "水",
+      "zh": "水"
+    }
+  },
+  {
+    "id": 5,
+    "name": {
+      "en": "Electric",
+      "fr": "Électrik",
+      "ja": "でんき",
+      "zh": "电"
+    }
+  },
+  {
+    "id": 6,
+    "name": {
+      "en": "Fairy",
+      "fr": "Fée",
+      "ja": "フェアリー",
+      "zh": "妖精"
+    }
+  },
+  {
+    "id": 7,
+    "name": {
+      "en": "Fire",
+      "fr": "Feu",
+      "ja": "ほのお",
+      "zh": "火"
+    }
+  },
+  {
+    "id": 8,
+    "name": {
+      "en": "Ice",
+      "fr": "Glace",
+      "ja": "こおり",
+      "zh": "冰"
+    }
+  },
+  {
+    "id": 9,
+    "name": {
+      "en": "Bug",
+      "fr": "Insecte",
+      "ja": "むし",
+      "zh": "虫"
+    }
+  },
+  {
+    "id": 10,
+    "name": {
+      "en": "Normal",
+      "fr": "Normal",
+      "ja": "ノーマル",
+      "zh": "一般"
+    }
+  },
+  {
+    "id": 11,
+    "name": {
+      "en": "Grass",
+      "fr": "Plante",
+      "ja": "くさ",
+      "zh": "草"
+    }
+  },
+  {
+    "id": 12,
+    "name": {
+      "en": "Poison",
+      "fr": "Poison",
+      "ja": "どく",
+      "zh": "毒"
+    }
+  },
+  {
+    "id": 13,
+    "name": {
+      "en": "Psychic",
+      "fr": "Psy",
+      "ja": "エスパー",
+      "zh": "超能"
+    }
+  },
+  {
+    "id": 14,
+    "name": {
+      "en": "Rock",
+      "fr": "Roche",
+      "ja": "いわ",
+      "zh": "岩"
+    }
+  },
+  {
+    "id": 15,
+    "name": {
+      "en": "Ground",
+      "fr": "Sol",
+      "ja": "じめん",
+      "zh": "地面"
+    }
+  },
+  {
+    "id": 16,
+    "name": {
+      "en": "Ghost",
+      "fr": "Spectre",
+      "ja": "ゴースト",
+      "zh": "幽灵"
+    }
+  },
+  {
+    "id": 17,
+    "name": {
+      "en": "Dark",
+      "fr": "Ténèbres",
+      "ja": "あく",
+      "zh": "恶"
+    }
+  },
+  {
+    "id": 18,
+    "name": {
+      "en": "Flying",
+      "fr": "Vol",
+      "ja": "ひこう",
+      "zh": "飞行"
+    }
+  }
+]

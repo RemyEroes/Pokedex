@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
@@ -11,9 +11,11 @@ import { SearchProvider } from "./contexts/SearchContext";
 import { PokemonListProvider } from "./contexts/PokemonListContext";
 
 
+
 function App() {
   // check is touch device or not (for pointer)
   const [isTouchDevice, setIsTouchDevice] = useState(false);
+
 
   useEffect(() => {
     const checkTouchSupport = () => {
@@ -27,21 +29,23 @@ function App() {
     };
   }, []);
   return (
-    <OpenCardProvider>
-      <PokemonProvider>
-        <SearchProvider>
-          <FilterProvider>
-            <SortProvider>
-              <PokemonListProvider>
-              {!isTouchDevice && <Pointer />}
-                <Menu />
-                <Home />
-              </PokemonListProvider>
-            </SortProvider>
-          </FilterProvider>
-        </SearchProvider>
-      </PokemonProvider>
-    </OpenCardProvider>
+
+      <OpenCardProvider>
+        <PokemonProvider>
+          <SearchProvider>
+            <FilterProvider>
+              <SortProvider>
+                <PokemonListProvider>
+                  {!isTouchDevice && <Pointer />}
+                  <Menu />
+                  <Home />
+                </PokemonListProvider>
+              </SortProvider>
+            </FilterProvider>
+          </SearchProvider>
+        </PokemonProvider>
+      </OpenCardProvider>
+
 
   );
 }

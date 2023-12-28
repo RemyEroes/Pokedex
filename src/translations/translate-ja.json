@@ -1,0 +1,20 @@
+{
+  "rechercher": "検索",
+  "tt-gen": "すべての世代",
+  "tt-type": "すべてのタイプ",
+  "trier": "並べ替え",
+  "condition": "条件",
+  "PV": "HP :",
+  "Attaque": "攻撃 :",
+  "Attaque-speciale": "特別な攻撃 : ",
+  "Vitesse": "速さ : ",
+  "Defense-speciale": "特別な防御 : ",
+  "Defense": "防御 : ",
+  "Ancêtres": "先祖",
+  "Descendants": "子孫",
+  "chargement": "読み込み中",
+  "GEN": "世代",
+  "GENERATION": "世代",
+  "generation": "世代",
+  "STATS": "統計"
+}

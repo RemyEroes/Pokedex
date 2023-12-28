@@ -1,0 +1,21 @@
+{
+  "rechercher": "搜索",
+  "tt-gen": "所有世代",
+  "tt-type": "所有类型",
+  "trier": "排序",
+  "condition": "条件",
+  "PV": "生命值：",
+  "Attaque": "攻击：",
+  "Attaque-speciale": "特殊攻击：",
+  "Vitesse": "速度：",
+  "Defense-speciale": "特殊防御：",
+  "Defense": "防御：",
+  "Ancêtres": "祖先",
+  "Descendants": "后裔",
+  "chargement": "加载中",
+  "GEN": "世代",
+  "GENERATION": "世代",
+  "generation": "世代",
+  "STATS": "统计"
+
+}

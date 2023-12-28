@@ -8,7 +8,8 @@ export default function filterpokemonlist(pokemonlist, genfilterValue, typefilte
         // eslint-disable-next-line eqeqeq
         if (typefilterValue != 'none') {
             typefilterValue = parseInt(typefilterValue, 10);
-        } else {
+        } 
+        else {
             typefilterValue = '11';
         }
 

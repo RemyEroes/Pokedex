@@ -7,6 +7,8 @@ import fond_image_pokemon from '../images/fond-image-pokemon.svg';
 import int_to_hashtag from '../tools/int_to_hashtag';
 // import CloseButton from './CloseButton';
 import $ from 'jquery';
+import EvolutionCardContainer from './EvolutionCardContainer';
+import { useTranslation } from 'react-i18next';
 
 
 // images front
@@ -57,35 +59,51 @@ import close_img from '../images/assets/close.svg'
 
 import height_img from '../images/assets/height.svg';
 import weight_img from '../images/assets/weight.svg';
+import translateNames from '../tools/translateNames';
 
 
 export default function OpenedCard(props) {
-    const { onClose } = props;
-    const pokemon = props.pokemon;
+    const { onClose, openEvolutionCard } = props;
+    var newpokemon = props.pokemon;
+    // var pokemon = props.pokemon;
     const [isChecked, setIsChecked] = useState(false);
+    const [preEvolutionValue, setPreEvolutionValue] = useState(false);
+    const [futureEvolutionValue, setFutureEvolutionValue] = useState(false);
     const { typeList } = useContext(PokemonContext);
+    const [pokemon, setPokemon] = useState(newpokemon);
+
+    const { t } = useTranslation();
+    var language = useTranslation().i18n.language;
+
 
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
     };
 
+
+
     const renderPokemonImage = () => {
         return (
             <img
-                className='img-pokemon-png-big'
+                className='img-pokemon-png-big fade-in'
                 src={isChecked ? pokemon['image_shiny'] : pokemon['image']}
                 alt={isChecked ? 'shiny_png' : 'png'}
+                onClick={handleCheckboxChange}
             />
         );
     };
 
-    var language = 'fr';
+    // var pokemon_name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    var pokemon_name = translateNames(pokemon, language)
     var pokemon_type = pokemon['types'];
     var pokemon_type_name_ = [];
     var pokemon_type_url_ = [];
     var pokemon_num = int_to_hashtag(pokemon['id']);
-    var pokemon_name = pokemon['name'][language];
-    var pokemon_generation = "GEN " + pokemon['generation']
+    var pokemon_generation =  t('GEN')+" " + pokemon['generation']
+    var pokemon_preevolution = pokemon['evolvedFrom'];
+    var pokemon_postevolution = pokemon['evolvesTo'];
+
+
 
     const fondCardImages = [
         fond_card_1,
@@ -143,24 +161,24 @@ export default function OpenedCard(props) {
         const pokemon_speed = pokemon['stats']['vit'];
 
         var chart_height = parseInt(chartContainerRef.current.clientHeight);
-        console.log(chart_height);
+        // console.log(chart_height);
         var font_size = '12px';
 
-        
+
         if (chart_height > 450) {
             font_size = '20px';
             chart_height = 490;
-        }else if(chart_height > 300 && chart_height < 400){
+        } else if (chart_height > 300 && chart_height < 400) {
             //ordi
             font_size = '14px';
             chart_height = 350;
-        }else if(chart_height < 250){
+        } else if (chart_height < 250) {
             // tel
             font_size = '10px';
             chart_height = 250;
         }
 
-        const chart_width = $('.stats-chart-container').width();
+        // const chart_width = $('.stats-chart-container').width();
 
         var color1 = '#a5df98';
         var color2 = '#f8f8f8';
@@ -172,6 +190,12 @@ export default function OpenedCard(props) {
             color1 = type_id_to_color(pokemon_type[0]);
         }
 
+        var pv_name = t('PV')
+        var at_name = t('Attaque')
+        var at_spe_name = t('Attaque-speciale')
+        var def_spe_name = t('Defense-speciale')
+        var def_name = t('Defense')
+        var speed_name = t('Vitesse')
 
         const options = {
 
@@ -215,12 +239,12 @@ export default function OpenedCard(props) {
             },
             xaxis: {
                 categories: [
-                    'PV : ' + pokemon_pv,
-                    'Attaque : ' + pokemon_atk,
-                    'Attaque speciale : ' + pokemon_atk_spe,
-                    'Vitesse : ' + pokemon_speed,
-                    'Defense speciale : ' + pokemon_def_spe,
-                    'Defense : ' + pokemon_def,
+                    pv_name + pokemon_pv,
+                    at_name + pokemon_atk,
+                    at_spe_name + pokemon_atk_spe,
+                    speed_name + pokemon_speed,
+                    def_spe_name + pokemon_def_spe,
+                    def_name + pokemon_def,
                 ],
                 labels: {
                     show: true,
@@ -260,7 +284,7 @@ export default function OpenedCard(props) {
 
         }, 50);
 
-    }, [pokemon, pokemon_type]);
+    }, [pokemon, pokemon_type, t]);
 
 
 
@@ -277,7 +301,7 @@ export default function OpenedCard(props) {
     //     gyroscope:true,
     //     tiltMaxAngleX:45,
     //     tiltMaxAngleY:45
-       
+
     // };
     const tiltProps = {};
 
@@ -319,7 +343,7 @@ export default function OpenedCard(props) {
     }
 
     function print_height() {
-        if (language === 'fr') {
+        if (language === 'fr' || language === 'ja' || language === 'zh') {
             return (
                 <div className='height-container'>
                     <img className='height-img' src={height_img} alt='height' />
@@ -337,7 +361,7 @@ export default function OpenedCard(props) {
     }
 
     function print_weight() {
-        if (language === 'fr') {
+        if (language === 'fr' || language === 'ja' || language === 'zh') {
             return (
                 <div className='weight-container'>
                     <img className='weight-img' src={weight_img} alt='weight' />
@@ -366,12 +390,33 @@ export default function OpenedCard(props) {
         return colors[id - 1];
     }
 
-    
 
+    useEffect(() => {
+        var pre_evolution = pokemon['evolvedFrom'];
+        var future_evolution = pokemon['evolvesTo'];
+
+
+        // if not empty array
+        if (!Array.isArray(pre_evolution)) {
+            setPreEvolutionValue(true)
+        }
+        if (!Array.isArray(future_evolution)) {
+            setFutureEvolutionValue(true)
+        }
+    }, [pokemon])
+
+
+
+    // click fonction
+    function evolutionCardClick(pokemon) {
+        setPokemon(pokemon)
+        console.log('pokemon changé')
+    }
 
     return (
         <>
-            <div className='master-container-div' onClick={onClose} >
+            <div className='master-container-div'  >
+                {preEvolutionValue && <EvolutionCardContainer pokemons={pokemon_preevolution} onEvClick={evolutionCardClick} isChecked={isChecked} evolvType={"preevolution"} />}
                 <div className='card_wraper-big'>
                     <Tilt className="parallax-effect-glare-scale" {...tiltProps}>
                         <div className="card-container-big">
@@ -387,7 +432,7 @@ export default function OpenedCard(props) {
                                         <div className='number-pokemon-big'>{pokemon_num}</div>
                                         <div className='gen-pokemon-big'>{pokemon_generation}</div>
                                     </div>
-                                    <div className='name-pokemon-big'>{pokemon_name.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}</div>
+                                    <div className='name-pokemon-big'>{pokemon_name}</div>
                                 </div>
 
                                 <div className='img-pokemon-container-big'>
@@ -395,13 +440,21 @@ export default function OpenedCard(props) {
                                         {render_Type_Images()}
                                     </div>
                                     <div className='pokemon-images-container'>
+                                        <label className="switch">
+                                            <input
+                                                type="checkbox"
+                                                checked={isChecked}
+                                                onChange={handleCheckboxChange}
+                                            />
+                                            <span className="slider round"></span>
+                                        </label>
                                         <img className='fond-blanc-carte-big' src={fond_image_pokemon} alt="fond-blanc" />
                                         {renderPokemonImage()}
                                     </div>
                                 </div>
 
                                 <div className='stats-container' ref={chartContainerRef}>
-                                    <div className='stats-title'>STATS</div>
+                                    <div className='stats-title'>{t('STATS')}</div>
                                     <div className='stats-chart-container'>
                                         <div id="chart" ref={chartRef}></div>
                                     </div>
@@ -411,21 +464,11 @@ export default function OpenedCard(props) {
                                     {print_height()}
                                     {print_weight()}
                                 </div>
-
-
-
-                                <label className="switch">
-                                    <input
-                                        type="checkbox"
-                                        checked={isChecked}
-                                        onChange={handleCheckboxChange}
-                                    />
-                                    <span className="slider round"></span>
-                                </label>
                             </div>
                         </div>
                     </Tilt>
                 </div>
+                {futureEvolutionValue && <EvolutionCardContainer pokemons={pokemon_postevolution} onEvClick={evolutionCardClick} isChecked={isChecked} evolvType={"futurevolution"} />}
             </div>
             <button className='close-button' style={{ position: 'fixed' }} onClick={onClose}>
                 <img className="close-img" src={close_img} alt="close" />

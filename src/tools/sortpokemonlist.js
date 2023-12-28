@@ -1,10 +1,16 @@
 import compareByNameAsc from "./compareByNameAsc";
 import compareByNameDesc from "./compareByNameDesc";
+import { useTranslation } from 'react-i18next';
 
 
 export default function sortpokemonlist(pokemonlist, sortValue) {
     let pokemonListSorted = [];
-    // var language = 'fr';
+    // // var language = 'fr';
+    //  // var language = 'fr';
+    // // var language = useTranslation().i18n.language;
+    // const { i18n } = useTranslation();
+    // var language = i18n.language;
+    // console.log(language)
 
     // eslint-disable-next-line eqeqeq
     if (sortValue !== 'none') {

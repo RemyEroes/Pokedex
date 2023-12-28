@@ -1,12 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import '../css/menu.css';
-import { FilterContext, GenFilterSelect } from '../contexts/FilterContext';
+import { FilterContext } from '../contexts/FilterContext';
+import GenFilterSelect from './genFilterSelect';
 import { SortContext } from '../contexts/SortContext';
 import SortSelect from './SortSelect';
 import TypeFilterSelect from './typeFilterSelect';
 import get_banner_from_width from '../tools/get_banner_from_width';
 import $ from 'jquery'
 import { SearchContext } from '../contexts/SearchContext';
+import {useTranslation} from 'react-i18next';
+import axios from 'axios';
 
 
 // search
@@ -19,10 +22,33 @@ import type_img from '../images/assets/type.svg'
 import sort_img from '../images/assets/tri.svg'
 import SearchList from './SearchList';
 
+
 export default function Menu() {
   const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
   const {  sortOnSelect  } = useContext(SortContext);
   const {searchOnChange } = useContext(SearchContext)
+  var language = useTranslation().i18n.language;
+  const [lang, setLang] = useState(language);
+
+  const { t, i18n } = useTranslation();
+
+  const languageToFlag = {
+    'fr': '🇫🇷',
+    'en': '🇬🇧',
+    'ja': '🇯🇵',
+    'zh': '🇨🇳',
+  }
+  
+  const changeLanguage = () => {
+    // Toggle between available languages
+    const availableLanguages = ['fr', 'en', 'ja', 'zh'];
+    const currentLangIndex = availableLanguages.indexOf(lang);
+    const newLang = availableLanguages[(currentLangIndex + 1) % availableLanguages.length];
+
+    setLang(newLang);
+    i18n.changeLanguage(newLang);
+    console.log(language)
+  }
 
   // banner from width
   const [windowWidth] = useState(window.innerWidth);
@@ -75,6 +101,10 @@ export default function Menu() {
   function searchInactive(){
     setIsSearchActive(false)
   }
+  var placeholder = t('rechercher')
+
+
+
 
   return (
     <div id='menu' className="menu">
@@ -84,7 +114,7 @@ export default function Menu() {
         <label htmlFor="search-bar">
           <img className='search' src={search_img} alt="search" />
         </label>
-        <input type="text" name="search-bar" id="search-bar" placeholder="Rechercher . . ." onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
+        <input type="text" name="search-bar" id="search-bar" placeholder={placeholder+' . . .'} onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
       </div>
       {isSearchActive && <SearchList />}
       
@@ -94,7 +124,7 @@ export default function Menu() {
           <img className='clock' src={clock_img} alt="clock" />
         </label>
         <select name="generation" id="generation" onChange={ genFilterChanged }>
-          <option value="none">Toutes generations</option>
+          <option value="none">{t('tt-gen')}</option>
           <GenFilterSelect />
         </select>
       </div>
@@ -104,7 +134,7 @@ export default function Menu() {
           <img className='type-img' src={type_img} alt="type" />
         </label>
         <select name="type" id="type" onChange={ typeFilterChanged }>
-          <option value="none">Tous Types</option>
+          <option value="none">{t('tt-type')}</option>
           <TypeFilterSelect />
         </select>
       </div>
@@ -114,12 +144,14 @@ export default function Menu() {
           <img className='sort-img' src={sort_img} alt="sort" />
         </label>
         <select name="sort" id="sort" onChange={ sortChanged }>
-          <option value="none">Trier</option>
+          <option value="none">{t('trier')}</option>
           <SortSelect />
         </select>
       </div>
 
-    </div>
+      <button className="change-language-button" onClick={changeLanguage}>{languageToFlag[lang]}</button>
+      
+      </div>
   );
 }
 

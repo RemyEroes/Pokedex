@@ -97,7 +97,6 @@ export default function Home() {
     }
   }
 
-  var language = 'fr';
 
 
   
@@ -108,7 +107,7 @@ export default function Home() {
     <>
       <div className="home">
         {sortedpokemonlist.map((pokemon) => (
-          <Card key={pokemon.id} language={language} pokemon={pokemon} />
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </div>
       <div ref={blurry_background} onClick={closeCardfunction} className="background-blur"></div>

@@ -1,0 +1,20 @@
+{
+    "rechercher" : "Rechercher",
+    "tt-gen" : "Toutes Generations",
+    "tt-type" : "Tous Types",
+    "trier" : "Trier",
+    "condition" : "Condition",
+    "PV": "PV : ",
+    "Attaque": "Attaque : ",
+    "Attaque-speciale": "Attaque speciale : ",
+    "Vitesse": "Vitesse : ",
+    "Defense-speciale": "Defense speciale : ",
+    "Defense": "Defense : ",
+    "Ancêtres": "Ancetres",
+    "Descendants": "Descendants",
+    "chargement" : "Chargement",
+    "GEN": "GEN",
+    "GENERATION": "GENERATION",
+    "generation": "generation",
+   "STATS": "STATS"
+}

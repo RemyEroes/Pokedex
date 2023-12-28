@@ -1,0 +1,19 @@
+{
+    "rechercher": "Research",
+    "tt-gen": "All Generations",
+    "tt-type": "All Types",
+    "trier": "Sort",
+    "condition": "Condition",
+    "PV": "HP : ",
+    "Attaque": "Attack : ",
+    "Attaque-speciale": "Special Attack : ",
+    "Vitesse": "Speed : ",
+    "Defense-speciale": "Special Defense : ",
+    "Defense": "Defense : ",
+    "Ancêtres": "Ancestors",
+    "Descendants": "Descendants",
+    "chargement" : "Loading",
+    "GEN": "GEN",
+    "generation": "generation",
+    "STATS": "STATS"
+}
