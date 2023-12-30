@@ -9,9 +9,9 @@ export default function filterpokemonlist(pokemonlist, genfilterValue, typefilte
         if (typefilterValue != 'none') {
             typefilterValue = parseInt(typefilterValue, 10);
         } 
-        else {
-            typefilterValue = '11';
-        }
+        // else {
+        //     typefilterValue = '11';
+        // }
 
         // eslint-disable-next-line eqeqeq
         if ((genfilterValue == 'none' || pokemon['generation'] == genfilterValue) && (typefilterValue == 'none' || type_pokemon.includes(typefilterValue))) {

@@ -17,14 +17,8 @@ export default function TypeFilterSelect() {
         var type_trad = translateTypes(type, language)
         if (!options.includes(type_trad)) {
             var typeName = type_trad;
-            var typeValue
-            
-            typeList.forEach(type => {
-                // eslint-disable-next-line eqeqeq
-                if (type_trad == typeName){
-                    typeValue = type['id']
-                }
-            })
+            var typeValue = type['id']
+
             typeName = type_trad
             options.push(
                 <option key={typeValue} value={typeValue}>

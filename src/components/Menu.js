@@ -41,7 +41,7 @@ export default function Menu() {
   
   const changeLanguage = () => {
     // Toggle between available languages
-    const availableLanguages = ['fr', 'en', 'ja', 'zh'];
+    const availableLanguages = ['en', 'fr', 'ja', 'zh'];
     const currentLangIndex = availableLanguages.indexOf(lang);
     const newLang = availableLanguages[(currentLangIndex + 1) % availableLanguages.length];
 
@@ -61,13 +61,13 @@ export default function Menu() {
   // banner
   useEffect(()=>{
     // banner
-    setBannerSRC(get_banner_from_width());
+    setBannerSRC(get_banner_from_width(lang));
 
     // menu height
     var height = banner_element.height()+'px'
     menu_element.css('height',height)
 
-  },[windowWidth, banner_element, menu_element])
+  },[windowWidth, banner_element, menu_element, lang])
 
 
   // gen filter

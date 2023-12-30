@@ -1,7 +1,7 @@
 import json
 # 0 Importer le json depuis le pdf puis le lire
 
-with open('/Users/remyeroes/Desktop/École/EPSI/SN2/COURS/ReactJS/Pokedex/Pokedex/src/data/pokemon_names.json', 'r') as file:
+with open('/Users/remyeroes/Desktop/École/EPSI/SN2/COURS/ReactJS/Pokedex/Pokedex/src/data/pokemon_names_new_new.json', 'r') as file:
     pokemons = json.load(file)
    
 # 1 Trier les joueurs selon leur points d'elo et stocker dans une variable sorted_players..
@@ -30,11 +30,19 @@ with open('/Users/remyeroes/Desktop/École/EPSI/SN2/COURS/ReactJS/Pokedex/Poked
 #     versus_template[f"match_{i+1}"] = match
    
 for pokemon in pokemons:
-    del pokemon['base']
-    del pokemon['type']
+    
+        if ('generation' in pokemon) and ('image' in pokemon) and ('image_shiny' in pokemon) and ('height' in pokemon) and ('weight' in pokemon) and ('stats' in pokemon) and ('types' in pokemon) and ('evolvedFrom' in pokemon) and ('evolvesTo' in pokemon):
+            del pokemon['generation']
+            del pokemon['image']
+            del pokemon['image_shiny']
+            del pokemon['height']
+            del pokemon['weight']
 
+            del pokemon['stats']
+            del pokemon['types']
+            del pokemon['evolvedFrom']
+            del pokemon['evolvesTo']
 
-
-# 3 Générer le fichier json versus.json listant les confrontations
-with open('/Users/remyeroes/Desktop/École/EPSI/SN2/COURS/ReactJS/Pokedex/Pokedex/src/data/pokemon_names_new.json', 'w') as f:
-    json.dump(pokemons, f , indent=2)
+        # 3 Générer le fichier json versus.json listant les confrontations
+        with open('/Users/remyeroes/Desktop/École/EPSI/SN2/COURS/ReactJS/Pokedex/Pokedex/src/data/pokemon_names_new_new.json', 'w') as f:
+            json.dump(pokemons, f , indent=2)

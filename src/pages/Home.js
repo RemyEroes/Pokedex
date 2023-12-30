@@ -12,11 +12,14 @@ import { SearchContext } from '../contexts/SearchContext';
 import searchpokemonlist from '../tools/searchpokemonlist';
 import CloseButton from '../components/CloseButton';
 import { PokemonListContext } from '../contexts/PokemonListContext';
+import { useTranslation } from 'react-i18next';
 
 
 
 
 export default function Home() {
+  //language
+  var language = useTranslation().i18n.language;
   //search
   const { searchValue } = useContext(SearchContext);
 
@@ -74,10 +77,10 @@ export default function Home() {
     }, 800); // 800 ms is the duration of the fade animation
 
     // sort
-    const newSortedPokemonList = sortpokemonlist(newFilteredPokemonList, sortValue);
+    const newSortedPokemonList = sortpokemonlist(newFilteredPokemonList, sortValue, language);
     setsoredtpokemonlist(newSortedPokemonList);
 
-  }, [searchValue, genFilterValue, typeFilterValue, pokemonList, sortValue]);
+  }, [searchValue, genFilterValue, typeFilterValue, pokemonList, sortValue, language]);
 
   // Call changePokemonListValue outside of useEffect if needed
   useEffect(() => {

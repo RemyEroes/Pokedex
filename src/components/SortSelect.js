@@ -4,9 +4,10 @@ import { useTranslation } from 'react-i18next';
 export default function SortSelect() {
     var language = useTranslation().i18n.language;
 
+
     var sort_options = {};
     var sort_type = {};
-    if (language==='fr'){
+    if (language === 'fr') {
         sort_options = {
             "Numero": "🔢",
             "Alphabetique": "🔡",
@@ -18,7 +19,7 @@ export default function SortSelect() {
             "croissant": "⬆️",
             "decroissant": "⬇️",
         };
-    }else if (language==='en'){
+    } else if (language === 'en') {
         sort_options = {
             "Number": "🔢",
             "Alphabetical": "🔡",
@@ -31,7 +32,7 @@ export default function SortSelect() {
             "descending": "⬇️",
         };
     }
-    else if (language==='ja'){
+    else if (language === 'ja') {
         sort_options = {
             "番号": "🔢",
             "アルファベット順": "🔡",
@@ -44,7 +45,7 @@ export default function SortSelect() {
             "降順": "⬇️",
         };
     }
-    else if (language==='zh'){
+    else if (language === 'zh') {
         sort_options = {
             "数字": "🔢",
             "字母顺序": "🔡",
@@ -57,13 +58,21 @@ export default function SortSelect() {
             "降序": "⬇️",
         };
     }
-    const sortOptions = Object.entries(sort_options).map(([keyO, emojiO]) =>
-        Object.entries(sort_type).map(([keyT, emojiT]) => (
-            <option key={keyO + keyT} value={keyO + keyT}>
-                {emojiO} {keyO} : {emojiT}
-            </option>
-        ))
-    );
+    
+    const sortOptions = [];
+    var sort_number = 1;
+
+    Object.entries(sort_options).forEach(([keyO, emojiO]) => {
+        Object.entries(sort_type).forEach(([keyT, emojiT]) => {
+            var currentSortNumber = sort_number++;
+
+            sortOptions.push(
+                <option key={keyO + keyT} value={currentSortNumber}>
+                    {emojiO} {keyO} : {emojiT}
+                </option>
+            );
+        });
+    });
 
     return <>{sortOptions}</>;
 }

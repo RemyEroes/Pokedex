@@ -24,6 +24,9 @@ i18n
       },
       ja: {
         translation: require('../src/translations/translate-ja.json')
+      },
+      zh: {
+        translation: require('../src/translations/translate-zh.json')
       }
     },
   });

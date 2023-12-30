@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import '../css/card.css'
 import fond_image_pokemon from '../images/fond-image-pokemon.svg'
 // import FaceCard from './FaceCard';
@@ -58,6 +58,7 @@ import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 // images back 
 import back_card from "../images/back-card-squircle.svg";
 import translateNames from '../tools/translateNames';
+import { use } from 'i18next';
 
 
 
@@ -71,7 +72,7 @@ export default function Card(props) {
     var language = useTranslation().i18n.language;
 
     var name = translateNames(pokemon, language)
-   
+
     var pk_number = int_to_hashtag(pokemon['id'])
 
     var pokemon_type = pokemon['types']
@@ -155,12 +156,12 @@ export default function Card(props) {
     const little_front = useRef(null)
     const card_element = useRef(null)
     const paralax_element = useRef(null)
-    
 
 
 
-   
-   
+
+
+
 
     function render_BG_Images() {
         const pokemon_type_length = pokemon_type.length;
@@ -184,67 +185,81 @@ export default function Card(props) {
 
 
     // generation
-    var pokemon_generation_little = t("GENERATION")+" " + pokemon['generation']
+    var pokemon_generation_little = t("GENERATION") + " " + pokemon['generation']
 
 
     function openCard() {
         setIsCardOpen(true);
-        page_scroll('disable') 
-      }
+        page_scroll('disable')
+    }
 
-      function tocloseCard() {
+    function tocloseCard() {
         setIsCardOpen(false);
-        page_scroll('enable') 
-      }
+        page_scroll('enable')
+    }
 
-      
+
     function page_scroll(value) {
-        if (value === 'enable'){
+        if (value === 'enable') {
             $('body').css('overflow', 'scroll');
-        }else if (value === 'disable'){
+        } else if (value === 'disable') {
             $('body').css('overflow', 'hidden');
         }
     }
 
+    
+    useEffect(() => {
+        const namePokemonElements = document.getElementsByClassName('name-pokemon');
+    
+        if (language === 'zh' || language === 'ja') {
+            for (const element of namePokemonElements) {
+                element.classList.add('bold');
+            }
+        } else if (language === 'en' || language === 'fr') {
+            for (const element of namePokemonElements) {
+                element.classList.remove('bold');
+            }
+        }
+    }, [language]);
 
 
 
     return (
-        <div ref={card_element} id={'pokemon'+pokemon['id']} className='card_wraper'>
-            {isCardOpen ? 
-            (< OpenedCard 
-            onClose={tocloseCard}
-            pokemon={pokemon} />
-            ) : (
-                <button className="card-container" onClick={openCard}>
-                    {
-                        <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
-                            <div ref={little_front} className='front-card-little'>
-                                {render_BG_Images()}
-                                <div className='infos-pokemon'>
-                                    <div className='number-pokemon'>{pk_number}</div>
-                                    <div className='name-pokemon'>{name}</div>
+        <div ref={card_element} id={'pokemon' + pokemon['id']} className='card_wraper'>
+            {isCardOpen ?
+                (< OpenedCard
+                    onClose={tocloseCard}
+                    pokemon={pokemon} />
+                ) : (
+                    <button className="card-container" onClick={openCard}>
+                        {
+                            <Tilt ref={paralax_element} className="parallax-effect-glare-scale" {...tiltProps}>
+                                <div ref={little_front} className='front-card-little'>
+                                    {render_BG_Images()}
+                                    <div className='infos-pokemon'>
+                                        <div className='number-pokemon'>{pk_number}</div>
+                                        <div className='name-pokemon'>{name}</div>
 
-                                </div>
-                                <div className='img-pokemon-container'>
-                                    <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc" />
-                                    <img className='img-pokemon-png' src={pokemon['image']} alt='png' />
+                                    </div>
+                                    <div className='img-pokemon-container'>
+                                        <img className='fond-blanc-carte' src={fond_image_pokemon} alt="fond-blanc" />
+                                        <img className='img-pokemon-png' src={pokemon['image']} alt='png' />
+                                    </div>
+
+                                    <div className='type-pokemon-container'>
+                                        {pokemon_type.map((type, index) => (
+                                            <img key={type} className='type-image' src={pokemon_type_url[index]} alt="type" />
+                                        ))}
+                                    </div>
+                                    <div className='gen-pokemon'>{pokemon_generation_little}</div>
                                 </div>
 
-                                <div className='type-pokemon-container'>
-                                    {pokemon_type.map((type, index) => (
-                                        <img key={type} className='type-image' src={pokemon_type_url[index]} alt="type" />
-                                    ))}
-                                </div>
-                                <div className='gen-pokemon'>{pokemon_generation_little}</div>
-                            </div>
+                            </Tilt>}
+                    </button>
+                )}
 
-                        </Tilt>}
-                        </button>
-                    )}
-            
         </div>
-        
+
 
     )
 

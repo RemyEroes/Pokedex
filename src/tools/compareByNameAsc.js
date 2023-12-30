@@ -1,9 +1,8 @@
 import removeAccents from "./removeAccents";
 
 // tri alphabetique ascendant
-export default function compareByNameAsc(a, b){
+export default function compareByNameAsc(a, b, language){
 
-    var language = 'en';
 
      // eviter la casse
     const nameA = removeAccents(a['name'][language].toUpperCase());
