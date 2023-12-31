@@ -10,7 +10,6 @@ import OpenedCard from './OpenedCard';
 import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
 import { useTranslation } from 'react-i18next';
-import pokemons_translated from '../data/pokemon_names_new.json';
 
 
 // images front 
@@ -55,10 +54,7 @@ import fond_card_mask_17 from "../images/fond-card-mask/fond-card-mask-17.svg";
 import fond_card_mask_18 from "../images/fond-card-mask/fond-card-mask-18.svg";
 
 
-// images back 
-import back_card from "../images/back-card-squircle.svg";
 import translateNames from '../tools/translateNames';
-import { use } from 'i18next';
 
 
 
@@ -68,8 +64,16 @@ export default function Card(props) {
     const { typeList } = useContext(PokemonContext)
     const [isCardOpen, setIsCardOpen] = useState(false);
     var pokemon = props.pokemon
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     var language = useTranslation().i18n.language;
+
+
+    // change to rigth language
+    if (language === 'fr-FR'){
+        i18n.changeLanguage('fr')
+    }else if ((language === 'en-US') || (language === 'en-GB')){
+        i18n.changeLanguage('en')
+    }
 
     var name = translateNames(pokemon, language)
 
@@ -135,7 +139,6 @@ export default function Card(props) {
             if (element['id'] === parseInt(pokemonType, 10)) {
                 pokemon_type_name.push(element['name'][language]);
                 pokemon_type_url.push(element['image']);
-                // console.log(pokemon_type_name)
             }
         });
     });
@@ -207,7 +210,7 @@ export default function Card(props) {
         }
     }
 
-    
+
     useEffect(() => {
         const namePokemonElements = document.getElementsByClassName('name-pokemon');
     
@@ -222,10 +225,116 @@ export default function Card(props) {
         }
     }, [language]);
 
+    // ----------------------------------------------
+    // const [isVisible, setIsVisible] = useState(false);
 
+    // // const card_element = useRef(null);
+
+    // useEffect(() => {
+    //     const element = card_element.current;
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             if (entry.isIntersecting) {
+    //                 setIsVisible(true);
+    //             }
+    //         },
+    //         {
+    //             root: null,
+    //             rootMargin: '0px',
+    //             threshold: 0.5, // Ajustez le seuil selon vos besoins
+    //         }
+    //     );
+
+    //     if (element) {
+    //         observer.observe(element);
+    //     }
+
+    //     return () => {
+    //         if (element) {
+    //             observer.unobserve(element);
+    //         }
+    //     };
+    // }, []); // Assurez-vous de spécifier toutes les dépendances nécessaires
+    // const [isVisible, setIsVisible] = useState(false);
+    // // const card_element = useRef(null);
+
+    // useEffect(() => {
+    //     const element = card_element.current;
+    //     let observer;
+
+    //     if (element) {
+    //         observer = new IntersectionObserver(
+    //             ([entry]) => {
+    //                 if (entry.isIntersecting) {
+    //                     setIsVisible(true);
+    //                     observer.disconnect(); // Arrêter l'observation après le premier élément visible
+    //                 }
+    //             },
+    //             {
+    //                 root: null,
+    //                 rootMargin: '0px',
+    //                 threshold: 0.5,
+    //             }
+    //         );
+
+    //         observer.observe(element);
+    //     }
+
+    //     return () => {
+    //         if (observer) {
+    //             observer.disconnect();
+    //         }
+    //     };
+    // }, []);
+
+    // useEffect(() => {
+    //     // Ajoutez la classe show après que le composant a été monté et que la première carte est visible
+    //     if (isVisible) {
+    //         setIsVisible(true);
+    //     }
+    // }, [isVisible]);
+
+    // const showCardWrapper = isVisible || isCardOpen;
+    // className={`card_wraper ${showCardWrapper ? 'show' : ''}`}
+
+    const [isVisible, setIsVisible] = useState();
+    const [userScollX, setUserScollX] = useState(window.scrollX);
+    // useEffect(() => {
+    //     const oberver = new IntersectionObserver((entries)=>{
+    //         const entry = entries[0];
+    //         setIsVisible(entry.isIntersecting)
+    //     })
+    //     oberver.observe(card_element.current)
+    // }, [])
+    useEffect(() => {
+        setUserScollX(window.scrollX);
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setIsVisible(entry.isIntersecting);
+        });
+
+        const element = card_element.current;
+        if (element) {
+            observer.observe(element);
+        }
+
+        return () => {
+            if (element) {
+                observer.unobserve(element);
+            }
+        };
+    }, [userScollX]);
+
+     useEffect(() => {
+        if (isVisible) {
+            $(card_element.current).addClass('show');
+        }else {
+            $(card_element.current).removeClass('show');
+        }
+    }, [isVisible]);
 
     return (
-        <div ref={card_element} id={'pokemon' + pokemon['id']} className='card_wraper'>
+        <div ref={card_element} id={'pokemon' + pokemon['id']} className="card_wraper">
             {isCardOpen ?
                 (< OpenedCard
                     onClose={tocloseCard}

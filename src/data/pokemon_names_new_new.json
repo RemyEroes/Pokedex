@@ -6944,7 +6944,7 @@
       "en": "Type: Null",
       "ja": "\u30bf\u30a4\u30d7\uff1a\u30cc\u30eb",
       "zh": "\u5c5e\u6027\uff1a\u7a7a",
-      "fr": "Silvalli\u00e9"
+      "fr": "Type: 0"
     }
   },
   {
@@ -6953,7 +6953,7 @@
       "en": "Silvally",
       "ja": "\u30b7\u30eb\u30f4\u30a1\u30c7\u30a3",
       "zh": "\u94f6\u4f34\u6218\u517d",
-      "fr": "M\u00e9t\u00e9no"
+      "fr": "Silvalli\u00e9"
     }
   },
   {
@@ -6962,7 +6962,8 @@
       "en": "Minior",
       "ja": "\u30e1\u30c6\u30ce",
       "zh": "\u5c0f\u9668\u661f",
-      "fr": "Dodoala"
+      
+      "fr": "M\u00e9t\u00e9no"
     }
   },
   {
@@ -6971,7 +6972,7 @@
       "en": "Komala",
       "ja": "\u30cd\u30c3\u30b3\u30a2\u30e9",
       "zh": "\u6811\u6795\u5c3e\u718a",
-      "fr": "Boumata"
+      "fr": "Dodoala"
     }
   },
   {
@@ -6980,7 +6981,7 @@
       "en": "Turtonator",
       "ja": "\u30d0\u30af\u30ac\u30e1\u30b9",
       "zh": "\u7206\u7130\u9f9f\u517d",
-      "fr": "Togedemaru"
+      "fr": "Boumata"
     }
   },
   {
@@ -6989,7 +6990,7 @@
       "en": "Togedemaru",
       "ja": "\u30c8\u30b2\u30c7\u30de\u30eb",
       "zh": "\u6258\u6208\u5fb7\u739b\u5c14",
-      "fr": "Mimiqui"
+      "fr": "Togedemaru"
     }
   },
   {
@@ -6998,7 +6999,7 @@
       "en": "Mimikyu",
       "ja": "\u30df\u30df\u30c3\u30ad\u30e5",
       "zh": "\u8c1c\u62df\uff31",
-      "fr": "Denticrisse"
+      "fr": "Mimiqui"
     }
   },
   {
@@ -7007,7 +7008,7 @@
       "en": "Bruxish",
       "ja": "\u30cf\u30ae\u30ae\u30b7\u30ea",
       "zh": "\u78e8\u7259\u5f69\u76ae\u9c7c",
-      "fr": "Dra\u00efeul"
+      "fr": "Denticrisse"
     }
   },
   {
@@ -7016,7 +7017,7 @@
       "en": "Drampa",
       "ja": "\u30b8\u30b8\u30fc\u30ed\u30f3",
       "zh": "\u8001\u7fc1\u9f99",
-      "fr": "Sinistrail"
+      "fr": "Dra\u00efeul"
     }
   },
   {
@@ -7025,7 +7026,7 @@
       "en": "Dhelmise",
       "ja": "\u30c0\u30c0\u30ea\u30f3",
       "zh": "\u7834\u7834\u8235\u8f6e",
-      "fr": "B\u00e9b\u00e9caille"
+      "fr": "Sinistrail"
     }
   },
   {
@@ -7034,7 +7035,7 @@
       "en": "Jangmo-o",
       "ja": "\u30b8\u30e3\u30e9\u30b3",
       "zh": "\u5fc3\u9cde\u5b9d",
-      "fr": "\u00c9ca\u00efd"
+      "fr": "B\u00e9b\u00e9caille"
     }
   },
   {
@@ -7043,7 +7044,7 @@
       "en": "Hakamo-o",
       "ja": "\u30b8\u30e3\u30e9\u30f3\u30b4",
       "zh": "\u9cde\u7532\u9f99",
-      "fr": "\u00c9ka\u00efser"
+      "fr": "Écaïd"
     }
   },
   {
@@ -7052,7 +7053,7 @@
       "en": "Kommo-o",
       "ja": "\u30b8\u30e3\u30e9\u30e9\u30f3\u30ac",
       "zh": "\u6756\u5c3e\u9cde\u7532\u9f99",
-      "fr": "Tokorico"
+      "fr": "Ékaïser"
     }
   },
   {
@@ -7061,7 +7062,7 @@
       "en": "Tapu Koko",
       "ja": "\u30ab\u30d7\u30fb\u30b3\u30b1\u30b3",
       "zh": "\u5361\u749e\u30fb\u9e23\u9e23",
-      "fr": "Tokopiyon"
+      "fr": "Tokorico"
     }
   },
   {
@@ -7070,7 +7071,7 @@
       "en": "Tapu Lele",
       "ja": "\u30ab\u30d7\u30fb\u30c6\u30c6\u30d5",
       "zh": "\u5361\u749e\u30fb\u8776\u8776",
-      "fr": "Tokotoro"
+      "fr": "Tokopiyon"
     }
   },
   {
@@ -7079,7 +7080,7 @@
       "en": "Tapu Bulu",
       "ja": "\u30ab\u30d7\u30fb\u30d6\u30eb\u30eb",
       "zh": "\u5361\u749e\u30fb\u54de\u54de",
-      "fr": "Tokopisco"
+      "fr": "Tokotoro"
     }
   },
   {
@@ -7088,7 +7089,7 @@
       "en": "Tapu Fini",
       "ja": "\u30ab\u30d7\u30fb\u30ec\u30d2\u30ec",
       "zh": "\u5361\u749e\u30fb\u9ccd\u9ccd",
-      "fr": "Cosmog"
+      "fr": "Tokopisco"
     }
   },
   {
@@ -7097,7 +7098,7 @@
       "en": "Cosmog",
       "ja": "\u30b3\u30b9\u30e2\u30c3\u30b0",
       "zh": "\u79d1\u65af\u83ab\u53e4",
-      "fr": "Cosmovum"
+      "fr": "Cosmog"
     }
   },
   {
@@ -7106,7 +7107,7 @@
       "en": "Cosmoem",
       "ja": "\u30b3\u30b9\u30e2\u30a6\u30e0",
       "zh": "\u79d1\u65af\u83ab\u59c6",
-      "fr": "Solgaleo"
+      "fr": "Cosmovum"
     }
   },
   {
@@ -7115,7 +7116,7 @@
       "en": "Solgaleo",
       "ja": "\u30bd\u30eb\u30ac\u30ec\u30aa",
       "zh": "\u7d22\u5c14\u8fe6\u96f7\u6b27",
-      "fr": "Lunala"
+      "fr": "Solgaleo"
     }
   },
   {
@@ -7124,7 +7125,7 @@
       "en": "Lunala",
       "ja": "\u30eb\u30ca\u30a2\u30fc\u30e9",
       "zh": "\u9732\u5948\u96c5\u62c9",
-      "fr": "Z\u00e9ro\u00efd"
+      "fr": "Lunala"
     }
   },
   {
@@ -7133,7 +7134,7 @@
       "en": "Nihilego",
       "ja": "\u30a6\u30c4\u30ed\u30a4\u30c9",
       "zh": "\u865a\u543e\u4f0a\u5fb7",
-      "fr": "Mouscoto"
+      "fr": "Z\u00e9ro\u00efd"
     }
   },
   {
@@ -7142,7 +7143,7 @@
       "en": "Buzzwole",
       "ja": "\u30de\u30c3\u30b7\u30d6\u30fc\u30f3",
       "zh": "\u7206\u808c\u868a",
-      "fr": "Cancrelove"
+      "fr": "Mouscoto"
     }
   },
   {
@@ -7151,7 +7152,7 @@
       "en": "Pheromosa",
       "ja": "\u30d5\u30a7\u30ed\u30fc\u30c1\u30a7",
       "zh": "\u8d39\u6d1b\u7f8e\u8782",
-      "fr": "C\u00e2blif\u00e8re"
+      "fr": "Cancrelove"
     }
   },
   {
@@ -7160,7 +7161,7 @@
       "en": "Xurkitree",
       "ja": "\u30c7\u30f3\u30b8\u30e5\u30e2\u30af",
       "zh": "\u7535\u675f\u6728",
-      "fr": "Bamboiselle"
+      "fr": "C\u00e2blif\u00e8re"
     }
   },
   {
@@ -7169,7 +7170,7 @@
       "en": "Celesteela",
       "ja": "\u30c6\u30c3\u30ab\u30b0\u30e4",
       "zh": "\u94c1\u706b\u8f89\u591c",
-      "fr": "Katagami"
+      "fr": "Bamboiselle"
     }
   },
   {
@@ -7178,7 +7179,7 @@
       "en": "Kartana",
       "ja": "\u30ab\u30df\u30c4\u30eb\u30ae",
       "zh": "\u7eb8\u5fa1\u5251",
-      "fr": "Engloutyran"
+      "fr": "Katagami"
     }
   },
   {
@@ -7187,7 +7188,7 @@
       "en": "Guzzlord",
       "ja": "\u30a2\u30af\u30b8\u30ad\u30f3\u30b0",
       "zh": "\u6076\u98df\u5927\u738b",
-      "fr": "Necrozma"
+      "fr": "Engloutyran"
     }
   },
   {
@@ -7196,7 +7197,7 @@
       "en": "Necrozma",
       "ja": "\u30cd\u30af\u30ed\u30ba\u30de",
       "zh": "\u5948\u514b\u6d1b\u5179\u739b",
-      "fr": "Magearna"
+      "fr": "Necrozma"
     }
   },
   {
@@ -7205,7 +7206,7 @@
       "en": "Magearna",
       "ja": "\u30de\u30ae\u30a2\u30ca",
       "zh": "\u739b\u673a\u96c5\u5a1c",
-      "fr": "Marshadow"
+      "fr": "Magearna"
     }
   },
   {
@@ -7214,7 +7215,7 @@
       "en": "Marshadow",
       "ja": "\u30de\u30fc\u30b7\u30e3\u30c9\u30fc",
       "zh": "\u739b\u590f\u591a",
-      "fr": "V\u00e9mini"
+      "fr": "Marshadow"
     }
   },
   {
@@ -7223,7 +7224,7 @@
       "en": "Poipole",
       "ja": "\u30d9\u30d9\u30ce\u30e0",
       "zh": "\u6bd2\u8d1d\u6bd4",
-      "fr": "Mandrillon"
+      "fr": "V\u00e9mini"
     }
   },
   {
@@ -7232,7 +7233,7 @@
       "en": "Naganadel",
       "ja": "\u30a2\u30fc\u30b4\u30e8\u30f3",
       "zh": "\u56db\u989a\u9488\u9f99",
-      "fr": "Ama-Ama"
+      "fr": "Mandrillon"
     }
   },
   {
@@ -7241,7 +7242,7 @@
       "en": "Stakataka",
       "ja": "\u30c4\u30f3\u30c7\u30c4\u30f3\u30c7",
       "zh": "\u5792\u78ca\u77f3",
-      "fr": "Pierroteknik"
+      "fr": "Ama-Ama"
     }
   },
   {
@@ -7250,7 +7251,7 @@
       "en": "Blacephalon",
       "ja": "\u30ba\u30ac\u30c9\u30fc\u30f3",
       "zh": "\u7830\u5934\u5c0f\u4e11",
-      "fr": "Zeraora"
+      "fr": "Pierroteknik"
     }
   },
   {
@@ -7259,7 +7260,7 @@
       "en": "Zeraora",
       "ja": "\u30bc\u30e9\u30aa\u30e9",
       "zh": "\u6377\u62c9\u5965\u62c9",
-      "fr": "Meltan"
+      "fr": "Zeraora"
     }
   },
   {
@@ -7268,7 +7269,7 @@
       "en": "Meltan",
       "ja": "\u30e1\u30eb\u30bf\u30f3",
       "zh": "\u7f8e\u5f55\u5766",
-      "fr": "Melmetal"
+      "fr": "Meltan"
     }
   },
   {

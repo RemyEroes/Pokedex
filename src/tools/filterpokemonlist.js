@@ -9,8 +9,9 @@ export default function filterpokemonlist(pokemonlist, genfilterValue, typefilte
         if (typefilterValue != 'none') {
             typefilterValue = parseInt(typefilterValue, 10);
         } 
+        // dev mode
         // else {
-        //     typefilterValue = '11';
+        //     typefilterValue = '3';
         // }
 
         // eslint-disable-next-line eqeqeq

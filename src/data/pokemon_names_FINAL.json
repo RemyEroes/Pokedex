@@ -6944,7 +6944,7 @@
       "en": "Type: Null",
       "ja": "\u30bf\u30a4\u30d7\uff1a\u30cc\u30eb",
       "zh": "\u5c5e\u6027\uff1a\u7a7a",
-      "fr": "Silvalli\u00e9"
+      "fr": "Type: 0"
     }
   },
   {
@@ -6953,7 +6953,7 @@
       "en": "Silvally",
       "ja": "\u30b7\u30eb\u30f4\u30a1\u30c7\u30a3",
       "zh": "\u94f6\u4f34\u6218\u517d",
-      "fr": "M\u00e9t\u00e9no"
+      "fr": "Silvalli\u00e9"
     }
   },
   {
@@ -6962,7 +6962,7 @@
       "en": "Minior",
       "ja": "\u30e1\u30c6\u30ce",
       "zh": "\u5c0f\u9668\u661f",
-      "fr": "Dodoala"
+      "fr": "M\u00e9t\u00e9no"
     }
   },
   {
@@ -6971,7 +6971,7 @@
       "en": "Komala",
       "ja": "\u30cd\u30c3\u30b3\u30a2\u30e9",
       "zh": "\u6811\u6795\u5c3e\u718a",
-      "fr": "Boumata"
+      "fr": "Dodoala"
     }
   },
   {
@@ -6980,7 +6980,7 @@
       "en": "Turtonator",
       "ja": "\u30d0\u30af\u30ac\u30e1\u30b9",
       "zh": "\u7206\u7130\u9f9f\u517d",
-      "fr": "Togedemaru"
+      "fr": "Boumata"
     }
   },
   {
@@ -6989,7 +6989,7 @@
       "en": "Togedemaru",
       "ja": "\u30c8\u30b2\u30c7\u30de\u30eb",
       "zh": "\u6258\u6208\u5fb7\u739b\u5c14",
-      "fr": "Mimiqui"
+      "fr": "Togedemaru"
     }
   },
   {
@@ -6998,7 +6998,7 @@
       "en": "Mimikyu",
       "ja": "\u30df\u30df\u30c3\u30ad\u30e5",
       "zh": "\u8c1c\u62df\uff31",
-      "fr": "Denticrisse"
+      "fr": "Mimiqui"
     }
   },
   {
@@ -7007,7 +7007,7 @@
       "en": "Bruxish",
       "ja": "\u30cf\u30ae\u30ae\u30b7\u30ea",
       "zh": "\u78e8\u7259\u5f69\u76ae\u9c7c",
-      "fr": "Dra\u00efeul"
+      "fr": "Denticrisse"
     }
   },
   {
@@ -7016,7 +7016,7 @@
       "en": "Drampa",
       "ja": "\u30b8\u30b8\u30fc\u30ed\u30f3",
       "zh": "\u8001\u7fc1\u9f99",
-      "fr": "Sinistrail"
+      "fr": "Dra\u00efeul"
     }
   },
   {
@@ -7025,7 +7025,7 @@
       "en": "Dhelmise",
       "ja": "\u30c0\u30c0\u30ea\u30f3",
       "zh": "\u7834\u7834\u8235\u8f6e",
-      "fr": "B\u00e9b\u00e9caille"
+      "fr": "Sinistrail"
     }
   },
   {
@@ -7034,7 +7034,7 @@
       "en": "Jangmo-o",
       "ja": "\u30b8\u30e3\u30e9\u30b3",
       "zh": "\u5fc3\u9cde\u5b9d",
-      "fr": "\u00c9ca\u00efd"
+      "fr": "B\u00e9b\u00e9caille"
     }
   },
   {
@@ -7043,7 +7043,7 @@
       "en": "Hakamo-o",
       "ja": "\u30b8\u30e3\u30e9\u30f3\u30b4",
       "zh": "\u9cde\u7532\u9f99",
-      "fr": "\u00c9ka\u00efser"
+      "fr": "\u00c9ca\u00efd"
     }
   },
   {
@@ -7052,7 +7052,7 @@
       "en": "Kommo-o",
       "ja": "\u30b8\u30e3\u30e9\u30e9\u30f3\u30ac",
       "zh": "\u6756\u5c3e\u9cde\u7532\u9f99",
-      "fr": "Tokorico"
+      "fr": "\u00c9ka\u00efser"
     }
   },
   {
@@ -7061,7 +7061,7 @@
       "en": "Tapu Koko",
       "ja": "\u30ab\u30d7\u30fb\u30b3\u30b1\u30b3",
       "zh": "\u5361\u749e\u30fb\u9e23\u9e23",
-      "fr": "Tokopiyon"
+      "fr": "Tokorico"
     }
   },
   {
@@ -7070,7 +7070,7 @@
       "en": "Tapu Lele",
       "ja": "\u30ab\u30d7\u30fb\u30c6\u30c6\u30d5",
       "zh": "\u5361\u749e\u30fb\u8776\u8776",
-      "fr": "Tokotoro"
+      "fr": "Tokopiyon"
     }
   },
   {
@@ -7079,7 +7079,7 @@
       "en": "Tapu Bulu",
       "ja": "\u30ab\u30d7\u30fb\u30d6\u30eb\u30eb",
       "zh": "\u5361\u749e\u30fb\u54de\u54de",
-      "fr": "Tokopisco"
+      "fr": "Tokotoro"
     }
   },
   {
@@ -7088,7 +7088,7 @@
       "en": "Tapu Fini",
       "ja": "\u30ab\u30d7\u30fb\u30ec\u30d2\u30ec",
       "zh": "\u5361\u749e\u30fb\u9ccd\u9ccd",
-      "fr": "Cosmog"
+      "fr": "Tokopisco"
     }
   },
   {
@@ -7097,7 +7097,7 @@
       "en": "Cosmog",
       "ja": "\u30b3\u30b9\u30e2\u30c3\u30b0",
       "zh": "\u79d1\u65af\u83ab\u53e4",
-      "fr": "Cosmovum"
+      "fr": "Cosmog"
     }
   },
   {
@@ -7106,7 +7106,7 @@
       "en": "Cosmoem",
       "ja": "\u30b3\u30b9\u30e2\u30a6\u30e0",
       "zh": "\u79d1\u65af\u83ab\u59c6",
-      "fr": "Solgaleo"
+      "fr": "Cosmovum"
     }
   },
   {
@@ -7115,7 +7115,7 @@
       "en": "Solgaleo",
       "ja": "\u30bd\u30eb\u30ac\u30ec\u30aa",
       "zh": "\u7d22\u5c14\u8fe6\u96f7\u6b27",
-      "fr": "Lunala"
+      "fr": "Solgaleo"
     }
   },
   {
@@ -7124,7 +7124,7 @@
       "en": "Lunala",
       "ja": "\u30eb\u30ca\u30a2\u30fc\u30e9",
       "zh": "\u9732\u5948\u96c5\u62c9",
-      "fr": "Z\u00e9ro\u00efd"
+      "fr": "Lunala"
     }
   },
   {
@@ -7133,7 +7133,7 @@
       "en": "Nihilego",
       "ja": "\u30a6\u30c4\u30ed\u30a4\u30c9",
       "zh": "\u865a\u543e\u4f0a\u5fb7",
-      "fr": "Mouscoto"
+      "fr": "Z\u00e9ro\u00efd"
     }
   },
   {
@@ -7142,7 +7142,7 @@
       "en": "Buzzwole",
       "ja": "\u30de\u30c3\u30b7\u30d6\u30fc\u30f3",
       "zh": "\u7206\u808c\u868a",
-      "fr": "Cancrelove"
+      "fr": "Mouscoto"
     }
   },
   {
@@ -7151,7 +7151,7 @@
       "en": "Pheromosa",
       "ja": "\u30d5\u30a7\u30ed\u30fc\u30c1\u30a7",
       "zh": "\u8d39\u6d1b\u7f8e\u8782",
-      "fr": "C\u00e2blif\u00e8re"
+      "fr": "Cancrelove"
     }
   },
   {
@@ -7160,7 +7160,7 @@
       "en": "Xurkitree",
       "ja": "\u30c7\u30f3\u30b8\u30e5\u30e2\u30af",
       "zh": "\u7535\u675f\u6728",
-      "fr": "Bamboiselle"
+      "fr": "C\u00e2blif\u00e8re"
     }
   },
   {
@@ -7169,7 +7169,7 @@
       "en": "Celesteela",
       "ja": "\u30c6\u30c3\u30ab\u30b0\u30e4",
       "zh": "\u94c1\u706b\u8f89\u591c",
-      "fr": "Katagami"
+      "fr": "Bamboiselle"
     }
   },
   {
@@ -7178,7 +7178,7 @@
       "en": "Kartana",
       "ja": "\u30ab\u30df\u30c4\u30eb\u30ae",
       "zh": "\u7eb8\u5fa1\u5251",
-      "fr": "Engloutyran"
+      "fr": "Katagami"
     }
   },
   {
@@ -7187,7 +7187,7 @@
       "en": "Guzzlord",
       "ja": "\u30a2\u30af\u30b8\u30ad\u30f3\u30b0",
       "zh": "\u6076\u98df\u5927\u738b",
-      "fr": "Necrozma"
+      "fr": "Engloutyran"
     }
   },
   {
@@ -7196,7 +7196,7 @@
       "en": "Necrozma",
       "ja": "\u30cd\u30af\u30ed\u30ba\u30de",
       "zh": "\u5948\u514b\u6d1b\u5179\u739b",
-      "fr": "Magearna"
+      "fr": "Necrozma"
     }
   },
   {
@@ -7205,7 +7205,7 @@
       "en": "Magearna",
       "ja": "\u30de\u30ae\u30a2\u30ca",
       "zh": "\u739b\u673a\u96c5\u5a1c",
-      "fr": "Marshadow"
+      "fr": "Magearna"
     }
   },
   {
@@ -7214,7 +7214,7 @@
       "en": "Marshadow",
       "ja": "\u30de\u30fc\u30b7\u30e3\u30c9\u30fc",
       "zh": "\u739b\u590f\u591a",
-      "fr": "V\u00e9mini"
+      "fr": "Marshadow"
     }
   },
   {
@@ -7223,7 +7223,7 @@
       "en": "Poipole",
       "ja": "\u30d9\u30d9\u30ce\u30e0",
       "zh": "\u6bd2\u8d1d\u6bd4",
-      "fr": "Mandrillon"
+      "fr": "V\u00e9mini"
     }
   },
   {
@@ -7232,7 +7232,7 @@
       "en": "Naganadel",
       "ja": "\u30a2\u30fc\u30b4\u30e8\u30f3",
       "zh": "\u56db\u989a\u9488\u9f99",
-      "fr": "Ama-Ama"
+      "fr": "Mandrillon"
     }
   },
   {
@@ -7241,7 +7241,7 @@
       "en": "Stakataka",
       "ja": "\u30c4\u30f3\u30c7\u30c4\u30f3\u30c7",
       "zh": "\u5792\u78ca\u77f3",
-      "fr": "Pierroteknik"
+      "fr": "Ama-Ama"
     }
   },
   {
@@ -7250,7 +7250,7 @@
       "en": "Blacephalon",
       "ja": "\u30ba\u30ac\u30c9\u30fc\u30f3",
       "zh": "\u7830\u5934\u5c0f\u4e11",
-      "fr": "Zeraora"
+      "fr": "Pierroteknik"
     }
   },
   {
@@ -7259,7 +7259,7 @@
       "en": "Zeraora",
       "ja": "\u30bc\u30e9\u30aa\u30e9",
       "zh": "\u6377\u62c9\u5965\u62c9",
-      "fr": "Meltan"
+      "fr": "Zeraora"
     }
   },
   {
@@ -7268,7 +7268,7 @@
       "en": "Meltan",
       "ja": "\u30e1\u30eb\u30bf\u30f3",
       "zh": "\u7f8e\u5f55\u5766",
-      "fr": "Melmetal"
+      "fr": "Meltan"
     }
   },
   {
@@ -7277,5683 +7277,1637 @@
       "en": "Melmetal",
       "ja": "\u30e1\u30eb\u30e1\u30bf\u30eb",
       "zh": "\u7f8e\u5f55\u6885\u5854",
-      "fr": ""
-    }
-  },{
-    "id": 809,
-    "generation": 7,
-    "name": {
-      "en": "Melmetal",
       "fr": "Melmetal"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/809/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/809/shiny.png",
-    "height": 2.5,
-    "weight": 800,
-    "stats": {
-      "hp": 135,
-      "atk": 143,
-      "def": 143,
-      "vit": 34,
-      "spe_atk": 80,
-      "spe_def": 65
-    },
-    "types": [
-      1
-    ],
-    "evolvedFrom": {
-      "808": "400 Bonbons Meltan"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 810,
-    "generation": 8,
     "name": {
       "en": "Grookey",
+      "ja": "\u30b5\u30eb\u30ce\u30ea",
+      "zh": "\u6572\u97f3\u7334",
       "fr": "Ouistempo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/810/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/810/shiny.png",
-    "height": 0.3,
-    "weight": 5,
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 50,
-      "vit": 65,
-      "spe_atk": 40,
-      "spe_def": 40
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "811": "Niveau 16",
-      "812": "Niveau 35"
     }
   },
   {
     "id": 811,
-    "generation": 8,
     "name": {
       "en": "Thwackey",
+      "ja": "\u30d0\u30c1\u30f3\u30ad\u30fc",
+      "zh": "\u556a\u549a\u7334",
       "fr": "Badabouin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/811/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/811/shiny.png",
-    "height": 0.7,
-    "weight": 14,
-    "stats": {
-      "hp": 70,
-      "atk": 85,
-      "def": 70,
-      "vit": 80,
-      "spe_atk": 55,
-      "spe_def": 60
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": {
-      "810": "Niveau 16"
-    },
-    "evolvesTo": {
-      "812": "Niveau 35"
     }
   },
   {
     "id": 812,
-    "generation": 8,
     "name": {
       "en": "Rillaboom",
+      "ja": "\u30b4\u30ea\u30e9\u30f3\u30c0\u30fc",
+      "zh": "\u8f70\u64c2\u91d1\u521a\u7329",
       "fr": "Gorythmic"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/812/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/812/shiny.png",
-    "height": 2.1,
-    "weight": 90,
-    "stats": {
-      "hp": 100,
-      "atk": 125,
-      "def": 90,
-      "vit": 85,
-      "spe_atk": 60,
-      "spe_def": 70
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": {
-      "810": "Niveau 35",
-      "811": "Niveau 35"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 813,
-    "generation": 8,
     "name": {
       "en": "Scorbunny",
+      "ja": "\u30d2\u30d0\u30cb\u30fc",
+      "zh": "\u708e\u5154\u513f",
       "fr": "Flambino"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/813/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/813/shiny.png",
-    "height": 0.3,
-    "weight": 4.5,
-    "stats": {
-      "hp": 50,
-      "atk": 71,
-      "def": 40,
-      "vit": 69,
-      "spe_atk": 40,
-      "spe_def": 40
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "814": "Niveau 16",
-      "815": "Niveau 35"
     }
   },
   {
     "id": 814,
-    "generation": 8,
     "name": {
       "en": "Raboot",
+      "ja": "\u30e9\u30d3\u30d5\u30c3\u30c8",
+      "zh": "\u817e\u8e74\u5c0f\u5c06",
       "fr": "Lapyro"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/814/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/814/shiny.png",
-    "height": 0.6,
-    "weight": 9,
-    "stats": {
-      "hp": 65,
-      "atk": 86,
-      "def": 60,
-      "vit": 94,
-      "spe_atk": 55,
-      "spe_def": 60
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": {
-      "813": "Niveau 16"
-    },
-    "evolvesTo": {
-      "815": "Niveau 35"
     }
   },
   {
     "id": 815,
-    "generation": 8,
     "name": {
       "en": "Cinderace",
+      "ja": "\u30a8\u30fc\u30b9\u30d0\u30fc\u30f3",
+      "zh": "\u95ea\u7130\u738b\u724c",
       "fr": "Pyrobut"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/815/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/815/shiny.png",
-    "height": 1.4,
-    "weight": 33,
-    "stats": {
-      "hp": 80,
-      "atk": 116,
-      "def": 75,
-      "vit": 119,
-      "spe_atk": 65,
-      "spe_def": 75
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": {
-      "813": "Niveau 35",
-      "814": "Niveau 35"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 816,
-    "generation": 8,
     "name": {
       "en": "Sobble",
-      "fr": "Larméléon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/816/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/816/shiny.png",
-    "height": 0.3,
-    "weight": 4,
-    "stats": {
-      "hp": 50,
-      "atk": 40,
-      "def": 40,
-      "vit": 70,
-      "spe_atk": 70,
-      "spe_def": 40
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "817": "Niveau 16",
-      "818": "Niveau 35"
+      "ja": "\u30e1\u30c3\u30bd\u30f3",
+      "zh": "\u6cea\u773c\u8725",
+      "fr": "Larm\u00e9l\u00e9on"
     }
   },
   {
     "id": 817,
-    "generation": 8,
     "name": {
       "en": "Drizzile",
+      "ja": "\u30b8\u30e1\u30ec\u30aa\u30f3",
+      "zh": "\u53d8\u6da9\u8725",
       "fr": "Arrozard"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/817/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/817/shiny.png",
-    "height": 0.7,
-    "weight": 11.5,
-    "stats": {
-      "hp": 65,
-      "atk": 60,
-      "def": 55,
-      "vit": 90,
-      "spe_atk": 95,
-      "spe_def": 55
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "816": "Niveau 16"
-    },
-    "evolvesTo": {
-      "818": "Niveau 35"
     }
   },
   {
     "id": 818,
-    "generation": 8,
     "name": {
       "en": "Inteleon",
-      "fr": "Lézargus"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/818/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/818/shiny.png",
-    "height": 1.9,
-    "weight": 45.2,
-    "stats": {
-      "hp": 70,
-      "atk": 85,
-      "def": 65,
-      "vit": 120,
-      "spe_atk": 125,
-      "spe_def": 65
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "816": "Niveau 35",
-      "817": "Niveau 35"
-    },
-    "evolvesTo": []
+      "ja": "\u30a4\u30f3\u30c6\u30ec\u30aa\u30f3",
+      "zh": "\u5343\u9762\u907f\u5f79",
+      "fr": "L\u00e9zargus"
+    }
   },
   {
     "id": 819,
-    "generation": 8,
     "name": {
       "en": "Skwovet",
+      "ja": "\u30db\u30b7\u30ac\u30ea\u30b9",
+      "zh": "\u8d2a\u5fc3\u6817\u9f20",
       "fr": "Rongourmand"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/819/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/819/shiny.png",
-    "height": 0.3,
-    "weight": 2.5,
-    "stats": {
-      "hp": 70,
-      "atk": 55,
-      "def": 55,
-      "vit": 25,
-      "spe_atk": 35,
-      "spe_def": 35
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "820": "Niveau 24"
     }
   },
   {
     "id": 820,
-    "generation": 8,
     "name": {
       "en": "Greedent",
+      "ja": "\u30e8\u30af\u30d0\u30ea\u30b9",
+      "zh": "\u85cf\u9971\u6817\u9f20",
       "fr": "Rongrigou"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/820/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/820/shiny.png",
-    "height": 0.6,
-    "weight": 6,
-    "stats": {
-      "hp": 120,
-      "atk": 95,
-      "def": 95,
-      "vit": 20,
-      "spe_atk": 55,
-      "spe_def": 75
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": {
-      "819": "Niveau 24"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 821,
-    "generation": 8,
     "name": {
       "en": "Rookidee",
+      "ja": "\u30b3\u30b3\u30ac\u30e9",
+      "zh": "\u7a1a\u5c71\u96c0",
       "fr": "Minisange"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/821/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/821/shiny.png",
-    "height": 0.2,
-    "weight": 1.8,
-    "stats": {
-      "hp": 38,
-      "atk": 47,
-      "def": 35,
-      "vit": 57,
-      "spe_atk": 33,
-      "spe_def": 35
-    },
-    "types": [
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "822": "Niveau 18",
-      "823": "Niveau 38"
     }
   },
   {
     "id": 822,
-    "generation": 8,
     "name": {
       "en": "Corvisquire",
+      "ja": "\u30a2\u30aa\u30ac\u30e9\u30b9",
+      "zh": "\u84dd\u9e26",
       "fr": "Bleuseille"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/822/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/822/shiny.png",
-    "height": 0.8,
-    "weight": 16,
-    "stats": {
-      "hp": 68,
-      "atk": 67,
-      "def": 55,
-      "vit": 77,
-      "spe_atk": 43,
-      "spe_def": 55
-    },
-    "types": [
-      18
-    ],
-    "evolvedFrom": {
-      "821": "Niveau 18"
-    },
-    "evolvesTo": {
-      "823": "Niveau 38"
     }
   },
   {
     "id": 823,
-    "generation": 8,
     "name": {
       "en": "Corviknight",
+      "ja": "\u30a2\u30fc\u30de\u30fc\u30ac\u30a2",
+      "zh": "\u94a2\u94e0\u9e26",
       "fr": "Corvaillus"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/823/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/823/shiny.png",
-    "height": 2.2,
-    "weight": 75,
-    "stats": {
-      "hp": 98,
-      "atk": 87,
-      "def": 105,
-      "vit": 67,
-      "spe_atk": 53,
-      "spe_def": 85
-    },
-    "types": [
-      1,
-      18
-    ],
-    "evolvedFrom": {
-      "821": "Niveau 38",
-      "822": "Niveau 38"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 824,
-    "generation": 8,
     "name": {
       "en": "Blipbug",
+      "ja": "\u30b5\u30c3\u30c1\u30e0\u30b7",
+      "zh": "\u7d22\u4fa6\u866b",
       "fr": "Larvadar"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/824/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/824/shiny.png",
-    "height": 0.4,
-    "weight": 8,
-    "stats": {
-      "hp": 28,
-      "atk": 20,
-      "def": 20,
-      "vit": 45,
-      "spe_atk": 25,
-      "spe_def": 45
-    },
-    "types": [
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "825": "Niveau 10",
-      "826": "Niveau 30"
     }
   },
   {
     "id": 825,
-    "generation": 8,
     "name": {
       "en": "Dottler",
-      "fr": "Coléodôme"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/825/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/825/shiny.png",
-    "height": 0.4,
-    "weight": 19.5,
-    "stats": {
-      "hp": 50,
-      "atk": 35,
-      "def": 80,
-      "vit": 30,
-      "spe_atk": 50,
-      "spe_def": 95
-    },
-    "types": [
-      9,
-      13
-    ],
-    "evolvedFrom": {
-      "824": "Niveau 10"
-    },
-    "evolvesTo": {
-      "826": "Niveau 30"
+      "ja": "\u30ec\u30c9\u30fc\u30e0\u30b7",
+      "zh": "\u5929\u7f69\u866b"
     }
   },
   {
     "id": 826,
-    "generation": 8,
     "name": {
       "en": "Orbeetle",
+      "ja": "\u30a4\u30aa\u30eb\u30d6",
+      "zh": "\u4ee5\u6b27\u8def\u666e",
       "fr": "Astronelle"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/826/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/826/shiny.png",
-    "height": 0.4,
-    "weight": 19.5,
-    "stats": {
-      "hp": 60,
-      "atk": 45,
-      "def": 110,
-      "vit": 90,
-      "spe_atk": 80,
-      "spe_def": 120
-    },
-    "types": [
-      9,
-      13
-    ],
-    "evolvedFrom": {
-      "824": "Niveau 30",
-      "825": "Niveau 30"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 827,
-    "generation": 8,
     "name": {
       "en": "Nickit",
+      "ja": "\u30af\u30b9\u30cd",
+      "zh": "\u5077\u513f\u72d0",
       "fr": "Goupilou"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/827/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/827/shiny.png",
-    "height": 0.6,
-    "weight": 8.9,
-    "stats": {
-      "hp": 40,
-      "atk": 28,
-      "def": 28,
-      "vit": 50,
-      "spe_atk": 47,
-      "spe_def": 52
-    },
-    "types": [
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "828": "Niveau 18"
     }
   },
   {
     "id": 828,
-    "generation": 8,
     "name": {
       "en": "Thievul",
+      "ja": "\u30d5\u30a9\u30af\u30b9\u30e9\u30a4",
+      "zh": "\u72d0\u5927\u76d7",
       "fr": "Roublenard"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/828/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/828/shiny.png",
-    "height": 1.2,
-    "weight": 19.9,
-    "stats": {
-      "hp": 70,
-      "atk": 58,
-      "def": 58,
-      "vit": 90,
-      "spe_atk": 87,
-      "spe_def": 92
-    },
-    "types": [
-      17
-    ],
-    "evolvedFrom": {
-      "827": "Niveau 18"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 829,
-    "generation": 8,
     "name": {
       "en": "Gossifleur",
+      "ja": "\u30d2\u30e1\u30f3\u30ab",
+      "zh": "\u5e7c\u68c9\u68c9",
       "fr": "Tournicoton"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/829/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/829/shiny.png",
-    "height": 0.4,
-    "weight": 2.2,
-    "stats": {
-      "hp": 40,
-      "atk": 40,
-      "def": 60,
-      "vit": 10,
-      "spe_atk": 40,
-      "spe_def": 60
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "830": "Niveau 20"
     }
   },
   {
     "id": 830,
-    "generation": 8,
     "name": {
       "en": "Eldegoss",
+      "ja": "\u30ef\u30bf\u30b7\u30e9\u30ac",
+      "zh": "\u767d\u84ec\u84ec",
       "fr": "Blancoton"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/830/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/830/shiny.png",
-    "height": 0.5,
-    "weight": 2.5,
-    "stats": {
-      "hp": 60,
-      "atk": 50,
-      "def": 90,
-      "vit": 60,
-      "spe_atk": 80,
-      "spe_def": 120
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": {
-      "829": "Niveau 20"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 831,
-    "generation": 8,
     "name": {
       "en": "Wooloo",
+      "ja": "\u30a6\u30fc\u30eb\u30fc",
+      "zh": "\u6bdb\u8fab\u7f8a",
       "fr": "Moumouton"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/831/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/831/shiny.png",
-    "height": 0.6,
-    "weight": 6,
-    "stats": {
-      "hp": 42,
-      "atk": 40,
-      "def": 55,
-      "vit": 48,
-      "spe_atk": 40,
-      "spe_def": 45
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "832": "Niveau 24"
     }
   },
   {
     "id": 832,
-    "generation": 8,
     "name": {
       "en": "Dubwool",
+      "ja": "\u30d0\u30a4\u30a6\u30fc\u30eb\u30fc",
+      "zh": "\u6bdb\u6bdb\u89d2\u7f8a",
       "fr": "Moumouflon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/832/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/832/shiny.png",
-    "height": 1.3,
-    "weight": 43,
-    "stats": {
-      "hp": 72,
-      "atk": 80,
-      "def": 100,
-      "vit": 88,
-      "spe_atk": 60,
-      "spe_def": 90
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": {
-      "831": "Niveau 24"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 833,
-    "generation": 8,
     "name": {
       "en": "Chewtle",
-      "fr": "Khélocrok"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/833/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/833/shiny.png",
-    "height": 0.3,
-    "weight": 8.5,
-    "stats": {
-      "hp": 50,
-      "atk": 64,
-      "def": 50,
-      "vit": 44,
-      "spe_atk": 38,
-      "spe_def": 38
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "834": "Niveau 22"
+      "ja": "\u30ab\u30e0\u30ab\u30e1",
+      "zh": "\u54ac\u54ac\u9f9f ",
+      "fr": "Kh\u00e9locrok"
     }
   },
   {
     "id": 834,
-    "generation": 8,
     "name": {
       "en": "Drednaw",
+      "ja": "\u30ab\u30b8\u30ea\u30ac\u30e1",
+      "zh": "\u66b4\u566c\u9f9f",
       "fr": "Torgamord"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/834/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/834/shiny.png",
-    "height": 1,
-    "weight": 115.5,
-    "stats": {
-      "hp": 90,
-      "atk": 115,
-      "def": 90,
-      "vit": 74,
-      "spe_atk": 48,
-      "spe_def": 68
-    },
-    "types": [
-      4,
-      14
-    ],
-    "evolvedFrom": {
-      "833": "Niveau 22"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 835,
-    "generation": 8,
     "name": {
       "en": "Yamper",
+      "ja": "\u30ef\u30f3\u30d1\u30c1",
+      "zh": "\u6765\u7535\u6c6a",
       "fr": "Voltoutou"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/835/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/835/shiny.png",
-    "height": 0.3,
-    "weight": 13.5,
-    "stats": {
-      "hp": 59,
-      "atk": 45,
-      "def": 50,
-      "vit": 26,
-      "spe_atk": 40,
-      "spe_def": 50
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "836": "Niveau 25"
     }
   },
   {
     "id": 836,
-    "generation": 8,
     "name": {
       "en": "Boltund",
+      "ja": "\u30d1\u30eb\u30b9\u30ef\u30f3",
+      "zh": "\u9010\u7535\u72ac",
       "fr": "Fulgudog"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/836/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/836/shiny.png",
-    "height": 1,
-    "weight": 34,
-    "stats": {
-      "hp": 69,
-      "atk": 90,
-      "def": 60,
-      "vit": 121,
-      "spe_atk": 90,
-      "spe_def": 60
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": {
-      "835": "Niveau 25"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 837,
-    "generation": 8,
     "name": {
       "en": "Rolycoly",
+      "ja": "\u30bf\u30f3\u30c9\u30f3",
+      "zh": "\u5c0f\u70ad\u4ed4",
       "fr": "Charbi"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/837/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/837/shiny.png",
-    "height": 0.3,
-    "weight": 12,
-    "stats": {
-      "hp": 30,
-      "atk": 40,
-      "def": 50,
-      "vit": 30,
-      "spe_atk": 40,
-      "spe_def": 50
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "838": "Niveau 18",
-      "839": "Niveau 34"
     }
   },
   {
     "id": 838,
-    "generation": 8,
     "name": {
       "en": "Carkol",
+      "ja": "\u30c8\u30ed\u30c3\u30b4\u30f3",
+      "zh": "\u5927\u70ad\u8f66",
       "fr": "Wagomine"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/838/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/838/shiny.png",
-    "height": 1.1,
-    "weight": 78,
-    "stats": {
-      "hp": 80,
-      "atk": 60,
-      "def": 90,
-      "vit": 50,
-      "spe_atk": 60,
-      "spe_def": 70
-    },
-    "types": [
-      7,
-      14
-    ],
-    "evolvedFrom": {
-      "837": "Niveau 18"
-    },
-    "evolvesTo": {
-      "839": "Niveau 34"
     }
   },
   {
     "id": 839,
-    "generation": 8,
     "name": {
       "en": "Coalossal",
+      "ja": "\u30bb\u30ad\u30bf\u30f3\u30b6\u30f3",
+      "zh": "\u5de8\u70ad\u5c71",
       "fr": "Monthracite"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/839/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/839/shiny.png",
-    "height": 2.8,
-    "weight": 310.5,
-    "stats": {
-      "hp": 110,
-      "atk": 80,
-      "def": 120,
-      "vit": 30,
-      "spe_atk": 80,
-      "spe_def": 90
-    },
-    "types": [
-      7,
-      14
-    ],
-    "evolvedFrom": {
-      "837": "Niveau 34",
-      "838": "Niveau 34"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 840,
-    "generation": 8,
     "name": {
       "en": "Applin",
+      "ja": "\u30ab\u30b8\u30c3\u30c1\u30e5",
+      "zh": "\u5543\u679c\u866b",
       "fr": "Verpom"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/840/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/840/shiny.png",
-    "height": 0.2,
-    "weight": 0.5,
-    "stats": {
-      "hp": 40,
-      "atk": 40,
-      "def": 80,
-      "vit": 20,
-      "spe_atk": 40,
-      "spe_def": 40
-    },
-    "types": [
-      3,
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "841": "Avec une Pomme Acidulée",
-      "842": "Avec une Pomme Sucrée",
-      "1011": "Avec une Pomme Nectar"
     }
   },
   {
     "id": 841,
-    "generation": 8,
     "name": {
       "en": "Flapple",
+      "ja": "\u30a2\u30c3\u30d7\u30ea\u30e5\u30fc",
+      "zh": "\u82f9\u88f9\u9f99",
       "fr": "Pomdrapi"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/841/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/841/shiny.png",
-    "height": 0.3,
-    "weight": 1,
-    "stats": {
-      "hp": 70,
-      "atk": 110,
-      "def": 80,
-      "vit": 70,
-      "spe_atk": 95,
-      "spe_def": 60
-    },
-    "types": [
-      3,
-      11
-    ],
-    "evolvedFrom": {
-      "840": "Avec une Pomme Acidulée"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 842,
-    "generation": 8,
     "name": {
       "en": "Appletun",
+      "ja": "\u30bf\u30eb\u30c3\u30d7\u30eb",
+      "zh": "\u4e30\u871c\u9f99",
       "fr": "Dratatin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/842/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/842/shiny.png",
-    "height": 0.4,
-    "weight": 13,
-    "stats": {
-      "hp": 110,
-      "atk": 85,
-      "def": 80,
-      "vit": 30,
-      "spe_atk": 100,
-      "spe_def": 80
-    },
-    "types": [
-      3,
-      11
-    ],
-    "evolvedFrom": {
-      "840": "Avec une Pomme Sucrée"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 843,
-    "generation": 8,
     "name": {
       "en": "Silicobra",
+      "ja": "\u30b9\u30ca\u30d8\u30d3",
+      "zh": "\u6c99\u5305\u86c7",
       "fr": "Dunaja"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/843/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/843/shiny.png",
-    "height": 2.2,
-    "weight": 7.6,
-    "stats": {
-      "hp": 52,
-      "atk": 57,
-      "def": 75,
-      "vit": 46,
-      "spe_atk": 35,
-      "spe_def": 50
-    },
-    "types": [
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "844": "Niveau 36"
     }
   },
   {
     "id": 844,
-    "generation": 8,
     "name": {
       "en": "Sandaconda",
+      "ja": "\u30b5\u30c0\u30a4\u30b8\u30e3",
+      "zh": "\u6c99\u87ba\u87d2",
       "fr": "Dunaconda"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/844/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/844/shiny.png",
-    "height": 3.8,
-    "weight": 65.5,
-    "stats": {
-      "hp": 72,
-      "atk": 107,
-      "def": 125,
-      "vit": 71,
-      "spe_atk": 65,
-      "spe_def": 70
-    },
-    "types": [
-      15
-    ],
-    "evolvedFrom": {
-      "843": "Niveau 36"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 845,
-    "generation": 8,
     "name": {
       "en": "Cramorant",
+      "ja": "\u30a6\u30c3\u30a6",
+      "zh": "\u53e4\u6708\u9e1f",
       "fr": "Nigosier"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/845/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/845/shiny.png",
-    "height": 0.8,
-    "weight": 18,
-    "stats": {
-      "hp": 70,
-      "atk": 85,
-      "def": 55,
-      "vit": 85,
-      "spe_atk": 85,
-      "spe_def": 95
-    },
-    "types": [
-      4,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 846,
-    "generation": 8,
     "name": {
       "en": "Arrokuda",
+      "ja": "\u30b5\u30b7\u30ab\u30de\u30b9",
+      "zh": "\u523a\u68ad\u9c7c",
       "fr": "Embrochet"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/846/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/846/shiny.png",
-    "height": 0.5,
-    "weight": 1,
-    "stats": {
-      "hp": 41,
-      "atk": 63,
-      "def": 40,
-      "vit": 66,
-      "spe_atk": 40,
-      "spe_def": 30
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "847": "Niveau 26"
     }
   },
   {
     "id": 847,
-    "generation": 8,
     "name": {
       "en": "Barraskewda",
+      "ja": "\u30ab\u30de\u30b9\u30b8\u30e7\u30fc",
+      "zh": "\u623d\u6597\u5c16\u68ad",
       "fr": "Hastacuda"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/847/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/847/shiny.png",
-    "height": 1.3,
-    "weight": 30,
-    "stats": {
-      "hp": 61,
-      "atk": 123,
-      "def": 60,
-      "vit": 136,
-      "spe_atk": 60,
-      "spe_def": 50
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "846": "Niveau 26"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 848,
-    "generation": 8,
     "name": {
       "en": "Toxel",
+      "ja": "\u30a8\u30ec\u30ba\u30f3",
+      "zh": "\u6bd2\u7535\u5a74",
       "fr": "Toxizap"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/848/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/848/shiny.png",
-    "height": 0.4,
-    "weight": 11,
-    "stats": {
-      "hp": 40,
-      "atk": 38,
-      "def": 35,
-      "vit": 40,
-      "spe_atk": 54,
-      "spe_def": 35
-    },
-    "types": [
-      5,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "849": "Niveau 30"
     }
   },
   {
     "id": 849,
-    "generation": 8,
     "name": {
       "en": "Toxtricity",
+      "ja": "\u30b9\u30c8\u30ea\u30f3\u30c0\u30fc",
+      "zh": "\u98a4\u5f26\u877e\u8788",
       "fr": "Salarsen"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/849/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/849/shiny.png",
-    "height": 1.6,
-    "weight": 40,
-    "stats": {
-      "hp": 75,
-      "atk": 98,
-      "def": 70,
-      "vit": 75,
-      "spe_atk": 114,
-      "spe_def": 70
-    },
-    "types": [
-      5,
-      12
-    ],
-    "evolvedFrom": {
-      "848": "Niveau 30"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 850,
-    "generation": 8,
     "name": {
       "en": "Sizzlipede",
+      "ja": "\u30e4\u30af\u30c7",
+      "zh": "\u70e7\u706b\u86a3",
       "fr": "Grillepattes"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/850/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/850/shiny.png",
-    "height": 0.7,
-    "weight": 1,
-    "stats": {
-      "hp": 50,
-      "atk": 65,
-      "def": 45,
-      "vit": 45,
-      "spe_atk": 50,
-      "spe_def": 50
-    },
-    "types": [
-      7,
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "851": "Niveau 28"
     }
   },
   {
     "id": 851,
-    "generation": 8,
     "name": {
       "en": "Centiskorch",
+      "ja": "\u30de\u30eb\u30e4\u30af\u30c7",
+      "zh": "\u711a\u7130\u86a3",
       "fr": "Scolocendre"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/851/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/851/shiny.png",
-    "height": 3,
-    "weight": 120,
-    "stats": {
-      "hp": 100,
-      "atk": 115,
-      "def": 65,
-      "vit": 65,
-      "spe_atk": 90,
-      "spe_def": 90
-    },
-    "types": [
-      7,
-      9
-    ],
-    "evolvedFrom": {
-      "850": "Niveau 28"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 852,
-    "generation": 8,
     "name": {
       "en": "Clobbopus",
+      "ja": "\u30bf\u30bf\u30c3\u30b3",
+      "zh": "\u62f3\u62f3\u86f8",
       "fr": "Poulpaf"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/852/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/852/shiny.png",
-    "height": 0.6,
-    "weight": 4,
-    "stats": {
-      "hp": 50,
-      "atk": 68,
-      "def": 60,
-      "vit": 32,
-      "spe_atk": 50,
-      "spe_def": 50
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "853": "+1 Niveau avec Provoc"
     }
   },
   {
     "id": 853,
-    "generation": 8,
     "name": {
       "en": "Grapploct",
+      "ja": "\u30aa\u30c8\u30b9\u30d1\u30b9",
+      "zh": "\u516b\u722a\u6b66\u5e08",
       "fr": "Krakos"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/853/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/853/shiny.png",
-    "height": 1.6,
-    "weight": 39,
-    "stats": {
-      "hp": 80,
-      "atk": 118,
-      "def": 90,
-      "vit": 42,
-      "spe_atk": 70,
-      "spe_def": 80
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": {
-      "852": "+1 Niveau avec Provoc"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 854,
-    "generation": 8,
     "name": {
       "en": "Sinistea",
-      "fr": "Théffroi"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/854/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/854/shiny.png",
-    "height": 0.1,
-    "weight": 0.2,
-    "stats": {
-      "hp": 40,
-      "atk": 45,
-      "def": 45,
-      "vit": 50,
-      "spe_atk": 74,
-      "spe_def": 54
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "855": "Avec une Théière Fêlée ou une Théière Ébréchée"
+      "ja": "\u30e4\u30d0\u30c1\u30e3",
+      "zh": "\u6765\u60b2\u8336",
+      "fr": "Th\u00e9ffroi"
     }
   },
   {
     "id": 855,
-    "generation": 8,
     "name": {
       "en": "Polteageist",
-      "fr": "Polthégeist"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/855/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/855/shiny.png",
-    "height": 0.2,
-    "weight": 0.4,
-    "stats": {
-      "hp": 60,
-      "atk": 65,
-      "def": 65,
-      "vit": 70,
-      "spe_atk": 134,
-      "spe_def": 114
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": {
-      "854": "Avec une Théière Fêlée ou une Théière Ébréchée"
-    },
-    "evolvesTo": []
+      "ja": "\u30dd\u30c3\u30c8\u30c7\u30b9",
+      "zh": "\u6016\u601d\u58f6",
+      "fr": "Polth\u00e9geist"
+    }
   },
   {
     "id": 856,
-    "generation": 8,
     "name": {
       "en": "Hatenna",
+      "ja": "\u30df\u30d6\u30ea\u30e0",
+      "zh": "\u8ff7\u5e03\u8389\u59c6",
       "fr": "Bibichut"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/856/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/856/shiny.png",
-    "height": 0.4,
-    "weight": 3.4,
-    "stats": {
-      "hp": 42,
-      "atk": 30,
-      "def": 45,
-      "vit": 39,
-      "spe_atk": 56,
-      "spe_def": 53
-    },
-    "types": [
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "857": "Niveau 32",
-      "858": "Niveau 42"
     }
   },
   {
     "id": 857,
-    "generation": 8,
     "name": {
       "en": "Hattrem",
+      "ja": "\u30c6\u30d6\u30ea\u30e0",
+      "zh": "\u63d0\u5e03\u8389\u59c6",
       "fr": "Chapotus"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/857/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/857/shiny.png",
-    "height": 0.6,
-    "weight": 4.8,
-    "stats": {
-      "hp": 57,
-      "atk": 40,
-      "def": 65,
-      "vit": 49,
-      "spe_atk": 86,
-      "spe_def": 73
-    },
-    "types": [
-      13
-    ],
-    "evolvedFrom": {
-      "856": "Niveau 32"
-    },
-    "evolvesTo": {
-      "858": "Niveau 42"
     }
   },
   {
     "id": 858,
-    "generation": 8,
     "name": {
       "en": "Hatterene",
+      "ja": "\u30d6\u30ea\u30e0\u30aa\u30f3",
+      "zh": "\u5e03\u8389\u59c6\u6e29",
       "fr": "Sorcilence"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/858/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/858/shiny.png",
-    "height": 2.1,
-    "weight": 5.1,
-    "stats": {
-      "hp": 57,
-      "atk": 90,
-      "def": 95,
-      "vit": 29,
-      "spe_atk": 136,
-      "spe_def": 103
-    },
-    "types": [
-      6,
-      13
-    ],
-    "evolvedFrom": {
-      "856": "Niveau 42",
-      "857": "Niveau 42"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 859,
-    "generation": 8,
     "name": {
       "en": "Impidimp",
+      "ja": "\u30d9\u30ed\u30d0\u30fc",
+      "zh": "\u6363\u86cb\u5c0f\u5996",
       "fr": "Grimalin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/859/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/859/shiny.png",
-    "height": 0.4,
-    "weight": 5.5,
-    "stats": {
-      "hp": 45,
-      "atk": 45,
-      "def": 30,
-      "vit": 50,
-      "spe_atk": 55,
-      "spe_def": 40
-    },
-    "types": [
-      6,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "860": "Niveau 32",
-      "861": "Niveau 42"
     }
   },
   {
     "id": 860,
-    "generation": 8,
     "name": {
       "en": "Morgrem",
+      "ja": "\u30ae\u30e2\u30fc",
+      "zh": "\u8bc8\u552c\u9b54",
       "fr": "Fourbelin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/860/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/860/shiny.png",
-    "height": 0.8,
-    "weight": 12.5,
-    "stats": {
-      "hp": 65,
-      "atk": 60,
-      "def": 45,
-      "vit": 70,
-      "spe_atk": 75,
-      "spe_def": 55
-    },
-    "types": [
-      6,
-      17
-    ],
-    "evolvedFrom": {
-      "859": "Niveau 32"
-    },
-    "evolvesTo": {
-      "861": "Niveau 42"
     }
   },
   {
     "id": 861,
-    "generation": 8,
     "name": {
       "en": "Grimmsnarl",
+      "ja": "\u30aa\u30fc\u30ed\u30f3\u30b2",
+      "zh": "\u957f\u6bdb\u5de8\u9b54",
       "fr": "Angoliath"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/861/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/861/shiny.png",
-    "height": 1.5,
-    "weight": 61,
-    "stats": {
-      "hp": 95,
-      "atk": 120,
-      "def": 65,
-      "vit": 60,
-      "spe_atk": 95,
-      "spe_def": 75
-    },
-    "types": [
-      6,
-      17
-    ],
-    "evolvedFrom": {
-      "859": "Niveau 42",
-      "860": "Niveau 42"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 862,
-    "generation": 8,
     "name": {
       "en": "Obstagoon",
+      "ja": "\u30bf\u30c1\u30d5\u30b5\u30b0\u30de",
+      "zh": "\u5835\u62e6\u718a",
       "fr": "Ixon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/862/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/862/shiny.png",
-    "height": 1.6,
-    "weight": 46,
-    "stats": {
-      "hp": 93,
-      "atk": 90,
-      "def": 101,
-      "vit": 95,
-      "spe_atk": 60,
-      "spe_def": 81
-    },
-    "types": [
-      10,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 863,
-    "generation": 8,
     "name": {
       "en": "Perrserker",
+      "ja": "\u30cb\u30e3\u30a4\u30ad\u30f3\u30b0",
+      "zh": "\u55b5\u5934\u76ee",
       "fr": "Berserkatt"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/863/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/863/shiny.png",
-    "height": 0.8,
-    "weight": 28,
-    "stats": {
-      "hp": 70,
-      "atk": 110,
-      "def": 100,
-      "vit": 50,
-      "spe_atk": 50,
-      "spe_def": 60
-    },
-    "types": [
-      1
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 864,
-    "generation": 8,
     "name": {
       "en": "Cursola",
-      "fr": "Corayôme"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/864/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/864/shiny.png",
-    "height": 1,
-    "weight": 0.4,
-    "stats": {
-      "hp": 60,
-      "atk": 95,
-      "def": 50,
-      "vit": 30,
-      "spe_atk": 145,
-      "spe_def": 130
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "ja": "\u30b5\u30cb\u30b4\u30fc\u30f3",
+      "zh": "\u9b54\u7075\u73ca\u745a",
+      "fr": "Coray\u00f4me"
+    }
   },
   {
     "id": 865,
-    "generation": 8,
     "name": {
       "en": "Sirfetch'd",
+      "ja": "\u30cd\u30ae\u30ac\u30ca\u30a4\u30c8",
+      "zh": "\u8471\u6e38\u5175",
       "fr": "Palarticho"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/865/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/865/shiny.png",
-    "height": 0.8,
-    "weight": 117,
-    "stats": {
-      "hp": 62,
-      "atk": 135,
-      "def": 95,
-      "vit": 65,
-      "spe_atk": 68,
-      "spe_def": 82
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 866,
-    "generation": 8,
     "name": {
-      "en": "Mr.Rime",
-      "fr": "M.Glaquette"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/866/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/866/shiny.png",
-    "height": 1.5,
-    "weight": 58.2,
-    "stats": {
-      "hp": 80,
-      "atk": 85,
-      "def": 75,
-      "vit": 70,
-      "spe_atk": 110,
-      "spe_def": 100
-    },
-    "types": [
-      8,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "en": "Mr. Rime",
+      "ja": "\u30d0\u30ea\u30b3\u30aa\u30eb",
+      "zh": "\u8e0f\u51b0\u4eba\u5076",
+      "fr": "M. Glaquette"
+    }
   },
   {
     "id": 867,
-    "generation": 8,
     "name": {
       "en": "Runerigus",
-      "fr": "Tutétékri"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/867/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/867/shiny.png",
-    "height": 1.6,
-    "weight": 66.6,
-    "stats": {
-      "hp": 58,
-      "atk": 95,
-      "def": 145,
-      "vit": 30,
-      "spe_atk": 50,
-      "spe_def": 105
-    },
-    "types": [
-      15,
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "ja": "\u30c7\u30b9\u30d0\u30fc\u30f3",
+      "zh": "\u6b7b\u795e\u677f",
+      "fr": "Tut\u00e9t\u00e9kri"
+    }
   },
   {
     "id": 868,
-    "generation": 8,
     "name": {
       "en": "Milcery",
-      "fr": "Crèmy"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/868/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/868/shiny.png",
-    "height": 0.2,
-    "weight": 0.3,
-    "stats": {
-      "hp": 45,
-      "atk": 40,
-      "def": 40,
-      "vit": 34,
-      "spe_atk": 50,
-      "spe_def": 61
-    },
-    "types": [
-      6
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "869": "Sucre + tourner sur soi même"
+      "ja": "\u30de\u30db\u30df\u30eb",
+      "zh": "\u5c0f\u4ed9\u5976",
+      "fr": "Cr\u00e8my"
     }
   },
   {
     "id": 869,
-    "generation": 8,
     "name": {
       "en": "Alcremie",
+      "ja": "\u30de\u30db\u30a4\u30c3\u30d7",
+      "zh": "\u971c\u5976\u4ed9",
       "fr": "Charmilly"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/869/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/869/shiny.png",
-    "height": 0.3,
-    "weight": 0.5,
-    "stats": {
-      "hp": 65,
-      "atk": 60,
-      "def": 75,
-      "vit": 64,
-      "spe_atk": 110,
-      "spe_def": 121
-    },
-    "types": [
-      6
-    ],
-    "evolvedFrom": {
-      "868": "Sucre + tourner sur soi même"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 870,
-    "generation": 8,
     "name": {
       "en": "Falinks",
+      "ja": "\u30bf\u30a4\u30ec\u30fc\u30c4",
+      "zh": "\u5217\u9635\u5175",
       "fr": "Hexadron"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/870/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/870/shiny.png",
-    "height": 3,
-    "weight": 62,
-    "stats": {
-      "hp": 65,
-      "atk": 100,
-      "def": 100,
-      "vit": 75,
-      "spe_atk": 70,
-      "spe_def": 60
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 871,
-    "generation": 8,
     "name": {
       "en": "Pincurchin",
+      "ja": "\u30d0\u30c1\u30f3\u30a6\u30cb",
+      "zh": "\u556a\u5693\u6d77\u80c6",
       "fr": "Wattapik"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/871/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/871/shiny.png",
-    "height": 0.3,
-    "weight": 1,
-    "stats": {
-      "hp": 48,
-      "atk": 101,
-      "def": 95,
-      "vit": 15,
-      "spe_atk": 91,
-      "spe_def": 85
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 872,
-    "generation": 8,
     "name": {
       "en": "Snom",
+      "ja": "\u30e6\u30ad\u30cf\u30df",
+      "zh": "\u96ea\u541e\u866b",
       "fr": "Frissonille"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/872/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/872/shiny.png",
-    "height": 0.3,
-    "weight": 3.8,
-    "stats": {
-      "hp": 30,
-      "atk": 25,
-      "def": 35,
-      "vit": 20,
-      "spe_atk": 45,
-      "spe_def": 30
-    },
-    "types": [
-      8,
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "873": "Bonheur + Nuit + 1 niveau"
     }
   },
   {
     "id": 873,
-    "generation": 8,
     "name": {
       "en": "Frosmoth",
+      "ja": "\u30e2\u30b9\u30ce\u30a6",
+      "zh": "\u96ea\u7ed2\u86fe",
       "fr": "Beldeneige"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/873/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/873/shiny.png",
-    "height": 1.3,
-    "weight": 42,
-    "stats": {
-      "hp": 70,
-      "atk": 65,
-      "def": 60,
-      "vit": 65,
-      "spe_atk": 125,
-      "spe_def": 90
-    },
-    "types": [
-      8,
-      9
-    ],
-    "evolvedFrom": {
-      "872": "Bonheur + Nuit + 1 niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 874,
-    "generation": 8,
     "name": {
       "en": "Stonjourner",
+      "ja": "\u30a4\u30b7\u30d8\u30f3\u30b8\u30f3",
+      "zh": "\u5de8\u77f3\u4e01",
       "fr": "Dolman"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/874/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/874/shiny.png",
-    "height": 2.5,
-    "weight": 520,
-    "stats": {
-      "hp": 100,
-      "atk": 125,
-      "def": 135,
-      "vit": 70,
-      "spe_atk": 20,
-      "spe_def": 20
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 875,
-    "generation": 8,
     "name": {
       "en": "Eiscue",
-      "fr": "Bekaglaçon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/875/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/875/shiny.png",
-    "height": 1.4,
-    "weight": 89,
-    "stats": {
-      "hp": 75,
-      "atk": 80,
-      "def": 110,
-      "vit": 50,
-      "spe_atk": 65,
-      "spe_def": 90
-    },
-    "types": [
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "ja": "\u30b3\u30aa\u30ea\u30c3\u30dd",
+      "zh": "\u51b0\u780c\u9e45",
+      "fr": "Bekagla\u00e7on"
+    }
   },
   {
     "id": 876,
-    "generation": 8,
     "name": {
       "en": "Indeedee",
+      "ja": "\u30a4\u30a8\u30c3\u30b5\u30f3",
+      "zh": "\u7231\u7ba1\u4f8d",
       "fr": "Wimessir"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/876/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/876/shiny.png",
-    "height": 0.9,
-    "weight": 28,
-    "stats": {
-      "hp": 70,
-      "atk": 55,
-      "def": 65,
-      "vit": 85,
-      "spe_atk": 95,
-      "spe_def": 105
-    },
-    "types": [
-      10,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 877,
-    "generation": 8,
     "name": {
       "en": "Morpeko",
+      "ja": "\u30e2\u30eb\u30da\u30b3",
+      "zh": "\u83ab\u9c81\u8d1d\u53ef",
       "fr": "Morpeko"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/877/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/877/shiny.png",
-    "height": 0.3,
-    "weight": 3,
-    "stats": {
-      "hp": 58,
-      "atk": 95,
-      "def": 58,
-      "vit": 97,
-      "spe_atk": 70,
-      "spe_def": 58
-    },
-    "types": [
-      5,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 878,
-    "generation": 8,
     "name": {
       "en": "Cufant",
+      "ja": "\u30be\u30a6\u30c9\u30a6",
+      "zh": "\u94dc\u8c61",
       "fr": "Charibari"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/878/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/878/shiny.png",
-    "height": 1.2,
-    "weight": 100,
-    "stats": {
-      "hp": 72,
-      "atk": 80,
-      "def": 49,
-      "vit": 40,
-      "spe_atk": 40,
-      "spe_def": 49
-    },
-    "types": [
-      1
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "879": "Niveau 34"
     }
   },
   {
     "id": 879,
-    "generation": 8,
     "name": {
       "en": "Copperajah",
+      "ja": "\u30c0\u30a4\u30aa\u30a6\u30c9\u30a6",
+      "zh": "\u5927\u738b\u94dc\u8c61",
       "fr": "Pachyradjah"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/879/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/879/shiny.png",
-    "height": 3,
-    "weight": 650,
-    "stats": {
-      "hp": 122,
-      "atk": 130,
-      "def": 69,
-      "vit": 30,
-      "spe_atk": 80,
-      "spe_def": 69
-    },
-    "types": [
-      1
-    ],
-    "evolvedFrom": {
-      "878": "Niveau 34"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 880,
-    "generation": 8,
     "name": {
       "en": "Dracozolt",
+      "ja": "\u30d1\u30c3\u30c1\u30e9\u30b4\u30f3",
+      "zh": "\u96f7\u9e1f\u9f99",
       "fr": "Galvagon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/880/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/880/shiny.png",
-    "height": 1.8,
-    "weight": 190,
-    "stats": {
-      "hp": 90,
-      "atk": 100,
-      "def": 90,
-      "vit": 75,
-      "spe_atk": 80,
-      "spe_def": 70
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 881,
-    "generation": 8,
     "name": {
       "en": "Arctozolt",
+      "ja": "\u30d1\u30c3\u30c1\u30eb\u30c9\u30f3",
+      "zh": "\u96f7\u9e1f\u6d77\u517d",
       "fr": "Galvagla"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/881/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/881/shiny.png",
-    "height": 2.3,
-    "weight": 150,
-    "stats": {
-      "hp": 90,
-      "atk": 100,
-      "def": 90,
-      "vit": 55,
-      "spe_atk": 90,
-      "spe_def": 80
-    },
-    "types": [
-      5,
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 882,
-    "generation": 8,
     "name": {
       "en": "Dracovish",
+      "ja": "\u30a6\u30aa\u30ce\u30e9\u30b4\u30f3",
+      "zh": "\u9cc3\u9c7c\u9f99",
       "fr": "Hydragon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/882/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/882/shiny.png",
-    "height": 2.3,
-    "weight": 215,
-    "stats": {
-      "hp": 90,
-      "atk": 90,
-      "def": 100,
-      "vit": 75,
-      "spe_atk": 70,
-      "spe_def": 80
-    },
-    "types": [
-      3,
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 883,
-    "generation": 8,
     "name": {
       "en": "Arctovish",
+      "ja": "\u30a6\u30aa\u30c1\u30eb\u30c9\u30f3",
+      "zh": "\u9cc3\u9c7c\u6d77\u517d",
       "fr": "Hydragla"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/883/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/883/shiny.png",
-    "height": 2,
-    "weight": 175,
-    "stats": {
-      "hp": 90,
-      "atk": 90,
-      "def": 100,
-      "vit": 55,
-      "spe_atk": 80,
-      "spe_def": 90
-    },
-    "types": [
-      4,
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 884,
-    "generation": 8,
     "name": {
       "en": "Duraludon",
+      "ja": "\u30b8\u30e5\u30e9\u30eb\u30c9\u30f3",
+      "zh": "\u94dd\u94a2\u9f99",
       "fr": "Duralugon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/884/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/884/shiny.png",
-    "height": 1.8,
-    "weight": 40,
-    "stats": {
-      "hp": 70,
-      "atk": 95,
-      "def": 115,
-      "vit": 85,
-      "spe_atk": 120,
-      "spe_def": 50
-    },
-    "types": [
-      1,
-      3
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 885,
-    "generation": 8,
     "name": {
       "en": "Dreepy",
+      "ja": "\u30c9\u30e9\u30e1\u30b7\u30e4",
+      "zh": "\u591a\u9f99\u6885\u897f\u4e9a",
       "fr": "Fantyrm"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/885/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/885/shiny.png",
-    "height": 0.5,
-    "weight": 2,
-    "stats": {
-      "hp": 28,
-      "atk": 60,
-      "def": 30,
-      "vit": 82,
-      "spe_atk": 40,
-      "spe_def": 30
-    },
-    "types": [
-      3,
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "886": "Niveau 50",
-      "887": "Niveau 60"
     }
   },
   {
     "id": 886,
-    "generation": 8,
     "name": {
       "en": "Drakloak",
+      "ja": "\u30c9\u30ed\u30f3\u30c1",
+      "zh": "\u591a\u9f99\u5947",
       "fr": "Dispareptil"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/886/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/886/shiny.png",
-    "height": 1.4,
-    "weight": 11,
-    "stats": {
-      "hp": 68,
-      "atk": 80,
-      "def": 50,
-      "vit": 102,
-      "spe_atk": 60,
-      "spe_def": 50
-    },
-    "types": [
-      3,
-      16
-    ],
-    "evolvedFrom": {
-      "885": "Niveau 50"
-    },
-    "evolvesTo": {
-      "887": "Niveau 60"
     }
   },
   {
     "id": 887,
-    "generation": 8,
     "name": {
       "en": "Dragapult",
+      "ja": "\u30c9\u30e9\u30d1\u30eb\u30c8",
+      "zh": "\u591a\u9f99\u5df4\u9c81\u6258",
       "fr": "Lanssorien"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/887/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/887/shiny.png",
-    "height": 3,
-    "weight": 50,
-    "stats": {
-      "hp": 88,
-      "atk": 120,
-      "def": 75,
-      "vit": 142,
-      "spe_atk": 100,
-      "spe_def": 75
-    },
-    "types": [
-      3,
-      16
-    ],
-    "evolvedFrom": {
-      "885": "Niveau 60",
-      "886": "Niveau 60"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 888,
-    "generation": 8,
     "name": {
       "en": "Zacian",
+      "ja": "\u30b6\u30b7\u30a2\u30f3",
+      "zh": "\u82cd\u54cd",
       "fr": "Zacian"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/888/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/888/shiny.png",
-    "height": 2.8,
-    "weight": 110,
-    "stats": {
-      "hp": 92,
-      "atk": 170,
-      "def": 115,
-      "vit": 148,
-      "spe_atk": 80,
-      "spe_def": 115
-    },
-    "types": [
-      6
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 889,
-    "generation": 8,
     "name": {
       "en": "Zamazenta",
-      "fr": "Zamazenta"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/889/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/889/shiny.png",
-    "height": 2.9,
-    "weight": 210,
-    "stats": {
-      "hp": 92,
-      "atk": 130,
-      "def": 145,
-      "vit": 128,
-      "spe_atk": 80,
-      "spe_def": 145
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "ja": "\u30b6\u30de\u30bc\u30f3\u30bf",
+      "zh": "\u85cf\u739b\u7136\u7279",
+      "fr": "Zamazent"
+    }
   },
   {
     "id": 890,
-    "generation": 8,
     "name": {
       "en": "Eternatus",
-      "fr": "Éthernatos"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/890/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/890/shiny.png",
-    "height": 0.6,
-    "weight": 12,
-    "stats": {
-      "hp": 140,
-      "atk": 85,
-      "def": 95,
-      "vit": 130,
-      "spe_atk": 145,
-      "spe_def": 95
-    },
-    "types": [
-      3,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "ja": "\u30e0\u30b2\u30f3\u30c0\u30a4\u30ca",
+      "zh": "\u65e0\u6781\u6c70\u90a3",
+      "fr": "\u00c9thernatos"
+    }
   },
   {
     "id": 891,
-    "generation": 8,
     "name": {
       "en": "Kubfu",
+      "ja": "\u30c0\u30af\u30de",
+      "zh": "\u718a\u5f92\u5f1f",
       "fr": "Wushours"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/891/regular.png",
-    "image_shiny": null,
-    "height": 0.6,
-    "weight": 12,
-    "stats": {
-      "hp": 60,
-      "atk": 90,
-      "def": 60,
-      "vit": 72,
-      "spe_atk": 53,
-      "spe_def": 50
-    },
-    "types": [
-      2
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "892": "Terminer l'ascension de la Tour de l'Eau/Tour des Ténèbres"
     }
   },
   {
     "id": 892,
-    "generation": 8,
     "name": {
-      "en": "Shifours",
+      "en": "Urshifu",
+      "ja": "\u30a6\u30fc\u30e9\u30aa\u30b9",
+      "zh": "\u6b66\u9053\u718a\u5e08",
       "fr": "Shifours"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/892/regular.png",
-    "image_shiny": null,
-    "height": 1.9,
-    "weight": 105,
-    "stats": {
-      "hp": 100,
-      "atk": 130,
-      "def": 100,
-      "vit": 97,
-      "spe_atk": 63,
-      "spe_def": 60
-    },
-    "types": [
-      2,
-      17
-    ],
-    "evolvedFrom": {
-      "891": "Terminer l'ascension de la Tour de l'Eau/Tour des Ténèbres"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 893,
-    "generation": 8,
     "name": {
       "en": "Zarude",
+      "ja": "\u30b6\u30eb\u30fc\u30c9",
+      "zh": "\u8428\u622e\u5fb7",
       "fr": "Zarude"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/893/regular.png",
-    "image_shiny": null,
-    "height": 1.8,
-    "weight": 70,
-    "stats": {
-      "hp": 105,
-      "atk": 120,
-      "def": 105,
-      "vit": 105,
-      "spe_atk": 70,
-      "spe_def": 95
-    },
-    "types": [
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 894,
-    "generation": 8,
     "name": {
       "en": "Regieleki",
+      "ja": "\u30ec\u30b8\u30a8\u30ec\u30ad",
+      "zh": "\u96f7\u5409\u827e\u52d2\u5947",
       "fr": "Regieleki"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/894/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/894/shiny.png",
-    "height": 1.2,
-    "weight": 145,
-    "stats": {
-      "hp": 80,
-      "atk": 100,
-      "def": 50,
-      "vit": 200,
-      "spe_atk": 100,
-      "spe_def": 50
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 895,
-    "generation": 8,
     "name": {
       "en": "Regidrago",
+      "ja": "\u30ec\u30b8\u30c9\u30e9\u30b4",
+      "zh": "\u96f7\u5409\u94ce\u62c9\u6208",
       "fr": "Regidrago"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/895/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/895/shiny.png",
-    "height": 2.1,
-    "weight": 200,
-    "stats": {
-      "hp": 200,
-      "atk": 100,
-      "def": 50,
-      "vit": 80,
-      "spe_atk": 100,
-      "spe_def": 50
-    },
-    "types": [
-      3
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 896,
-    "generation": 8,
     "name": {
       "en": "Glastrier",
+      "ja": "\u30d6\u30ea\u30b6\u30dd\u30b9",
+      "zh": "\u96ea\u66b4\u9a6c",
       "fr": "Blizzeval"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/896/regular.png",
-    "image_shiny": null,
-    "height": 2.2,
-    "weight": 800,
-    "stats": {
-      "hp": 100,
-      "atk": 145,
-      "def": 130,
-      "vit": 30,
-      "spe_atk": 65,
-      "spe_def": 110
-    },
-    "types": [
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 897,
-    "generation": 8,
     "name": {
       "en": "Spectrier",
+      "ja": "\u30ec\u30a4\u30b9\u30dd\u30b9",
+      "zh": "\u7075\u5e7d\u9a6c",
       "fr": "Spectreval"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/897/regular.png",
-    "image_shiny": null,
-    "height": 2,
-    "weight": 44.5,
-    "stats": {
-      "hp": 100,
-      "atk": 65,
-      "def": 60,
-      "vit": 130,
-      "spe_atk": 145,
-      "spe_def": 80
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 898,
-    "generation": 8,
     "name": {
       "en": "Calyrex",
+      "ja": "\u30d0\u30c9\u30ec\u30c3\u30af\u30b9",
+      "zh": "\u857e\u51a0\u738b",
       "fr": "Sylveroy"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/898/regular.png",
-    "image_shiny": null,
-    "height": 1.1,
-    "weight": 7.7,
-    "stats": {
-      "hp": 100,
-      "atk": 80,
-      "def": 80,
-      "vit": 80,
-      "spe_atk": 80,
-      "spe_def": 80
-    },
-    "types": [
-      11,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 899,
-    "generation": 8,
     "name": {
       "en": "Wyrdeer",
       "fr": "Cerbyllin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/899/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/899/shiny.png",
-    "height": 1.8,
-    "weight": 95.1,
-    "stats": {
-      "hp": 103,
-      "atk": 105,
-      "def": 72,
-      "vit": 65,
-      "spe_atk": 105,
-      "spe_def": 75
-    },
-    "types": [
-      10,
-      13
-    ],
-    "evolvedFrom": {
-      "234": "20x capacité Sprint Bouclier sous Style Rapide"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 900,
-    "generation": 8,
     "name": {
       "en": "Kleavor",
-      "fr": "Hachécateur"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/900/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/900/shiny.png",
-    "height": 1.8,
-    "weight": 89,
-    "stats": {
-      "hp": 70,
-      "atk": 135,
-      "def": 95,
-      "vit": 85,
-      "spe_atk": 45,
-      "spe_def": 70
-    },
-    "types": [
-      9,
-      14
-    ],
-    "evolvedFrom": {
-      "123": "Avec une obsidienne"
-    },
-    "evolvesTo": []
+      "fr": "Hach\u00e9cateur"
+    }
   },
   {
     "id": 901,
-    "generation": 8,
     "name": {
       "en": "Ursaluna",
       "fr": "Ursaking"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/901/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/901/shiny.png",
-    "height": 2.4,
-    "weight": 290,
-    "stats": {
-      "hp": 130,
-      "atk": 140,
-      "def": 105,
-      "vit": 50,
-      "spe_atk": 45,
-      "spe_def": 80
-    },
-    "types": [
-      10,
-      15
-    ],
-    "evolvedFrom": {
-      "216": "Bloc de Tourbe en nuit de pleine lune",
-      "217": "Bloc de Tourbe en nuit de pleine lune"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 902,
-    "generation": 8,
     "name": {
       "en": "Basculegion",
       "fr": "Paragruel"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/902/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/902/shiny.png",
-    "height": 3,
-    "weight": 110,
-    "stats": {
-      "hp": 120,
-      "atk": 112,
-      "def": 65,
-      "vit": 78,
-      "spe_atk": 80,
-      "spe_def": 75
-    },
-    "types": [
-      4,
-      16
-    ],
-    "evolvedFrom": {
-      "550": "Si Motif Blanc + Avoir perdu 294 PV ou plus par contrecoup"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 903,
-    "generation": 8,
     "name": {
       "en": "Sneasler",
       "fr": "Farfurex"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/903/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/903/shiny.png",
-    "height": 1.3,
-    "weight": 43,
-    "stats": {
-      "hp": 80,
-      "atk": 130,
-      "def": 60,
-      "vit": 120,
-      "spe_atk": 40,
-      "spe_def": 80
-    },
-    "types": [
-      2,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 904,
-    "generation": 8,
     "name": {
       "en": "Overqwil",
       "fr": "Qwilpik"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/904/regular.png",
-    "image_shiny": null,
-    "height": 2.5,
-    "weight": 60.5,
-    "stats": {
-      "hp": 85,
-      "atk": 115,
-      "def": 95,
-      "vit": 85,
-      "spe_atk": 65,
-      "spe_def": 65
-    },
-    "types": [
-      12,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 905,
-    "generation": 8,
     "name": {
       "en": "Lovetolos",
-      "fr": "Amovénus"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/905/regular.png",
-    "image_shiny": null,
-    "height": 1.6,
-    "weight": 48,
-    "stats": {
-      "hp": 74,
-      "atk": 115,
-      "def": 70,
-      "vit": 106,
-      "spe_atk": 135,
-      "spe_def": 80
-    },
-    "types": [
-      6,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "Amov\u00e9nus"
+    }
   },
   {
     "id": 906,
-    "generation": 9,
     "name": {
       "en": "Sprigatito",
       "fr": "Poussacha"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/906/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/906/shiny.png",
-    "height": 0.4,
-    "weight": 4.1,
-    "stats": {
-      "hp": 40,
-      "atk": 61,
-      "def": 54,
-      "vit": 65,
-      "spe_atk": 45,
-      "spe_def": 45
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "907": "Niveau 16",
-      "908": "Niveau 36"
     }
   },
   {
     "id": 907,
-    "generation": 9,
     "name": {
       "en": "Floragato",
       "fr": "Matourgeon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/907/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/907/shiny.png",
-    "height": 0.9,
-    "weight": 12.2,
-    "stats": {
-      "hp": 61,
-      "atk": 80,
-      "def": 63,
-      "vit": 83,
-      "spe_atk": 60,
-      "spe_def": 63
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": {
-      "906": "Niveau 16"
-    },
-    "evolvesTo": {
-      "908": "Niveau 36"
     }
   },
   {
     "id": 908,
-    "generation": 9,
     "name": {
       "en": "Meowscarada",
       "fr": "Miascarade"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/908/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/908/shiny.png",
-    "height": 1.5,
-    "weight": 31.2,
-    "stats": {
-      "hp": 76,
-      "atk": 110,
-      "def": 70,
-      "vit": 123,
-      "spe_atk": 81,
-      "spe_def": 70
-    },
-    "types": [
-      11,
-      17
-    ],
-    "evolvedFrom": {
-      "906": "Niveau 36",
-      "907": "Niveau 36"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 909,
-    "generation": 9,
     "name": {
       "en": "Fuecoco",
       "fr": "Chochodile"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/909/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/909/shiny.png",
-    "height": 0.4,
-    "weight": 9.8,
-    "stats": {
-      "hp": 67,
-      "atk": 45,
-      "def": 59,
-      "vit": 36,
-      "spe_atk": 63,
-      "spe_def": 40
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "910": "Niveau 16",
-      "911": "Niveau 36"
     }
   },
   {
     "id": 910,
-    "generation": 9,
     "name": {
       "en": "Crocalor",
       "fr": "Crocogril"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/910/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/910/shiny.png",
-    "height": 1,
-    "weight": 30.7,
-    "stats": {
-      "hp": 81,
-      "atk": 55,
-      "def": 78,
-      "vit": 49,
-      "spe_atk": 90,
-      "spe_def": 58
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": {
-      "909": "Niveau 16"
-    },
-    "evolvesTo": {
-      "911": "Niveau 36"
     }
   },
   {
     "id": 911,
-    "generation": 9,
     "name": {
       "en": "Skeledirge",
-      "fr": "Flâmigator"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/911/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/911/shiny.png",
-    "height": 1.6,
-    "weight": 326.5,
-    "stats": {
-      "hp": 104,
-      "atk": 75,
-      "def": 100,
-      "vit": 66,
-      "spe_atk": 110,
-      "spe_def": 75
-    },
-    "types": [
-      7,
-      16
-    ],
-    "evolvedFrom": {
-      "909": "Niveau 36",
-      "910": "Niveau 36"
-    },
-    "evolvesTo": []
+      "fr": "Fl\u00e2migator"
+    }
   },
   {
     "id": 912,
-    "generation": 9,
     "name": {
       "en": "Quaxly",
       "fr": "Coiffeton"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/912/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/912/shiny.png",
-    "height": 0.5,
-    "weight": 6.1,
-    "stats": {
-      "hp": 55,
-      "atk": 65,
-      "def": 45,
-      "vit": 50,
-      "spe_atk": 50,
-      "spe_def": 45
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "913": "Niveau 16",
-      "914": "Niveau 36"
     }
   },
   {
     "id": 913,
-    "generation": 9,
     "name": {
       "en": "Quaxwell",
       "fr": "Canarbello"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/913/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/913/shiny.png",
-    "height": 1.2,
-    "weight": 21.5,
-    "stats": {
-      "hp": 70,
-      "atk": 85,
-      "def": 65,
-      "vit": 65,
-      "spe_atk": 65,
-      "spe_def": 60
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "912": "Niveau 16"
-    },
-    "evolvesTo": {
-      "914": "Niveau 36"
     }
   },
   {
     "id": 914,
-    "generation": 9,
     "name": {
       "en": "Quaquaval",
       "fr": "Palmaval"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/914/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/914/shiny.png",
-    "height": 1.8,
-    "weight": 61.9,
-    "stats": {
-      "hp": 85,
-      "atk": 120,
-      "def": 80,
-      "vit": 85,
-      "spe_atk": 85,
-      "spe_def": 75
-    },
-    "types": [
-      2,
-      4
-    ],
-    "evolvedFrom": {
-      "912": "Niveau 36",
-      "913": "Niveau 36"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 915,
-    "generation": 9,
     "name": {
       "en": "Lechonk",
       "fr": "Gourmelet"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/915/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/915/shiny.png",
-    "height": 0.5,
-    "weight": 10.2,
-    "stats": {
-      "hp": 54,
-      "atk": 45,
-      "def": 40,
-      "vit": 35,
-      "spe_atk": 35,
-      "spe_def": 45
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "916": "Niveau 18"
     }
   },
   {
     "id": 916,
-    "generation": 9,
     "name": {
       "en": "Oinkologne",
       "fr": "Fragroin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/916/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/916/shiny.png",
-    "height": 1,
-    "weight": 120,
-    "stats": {
-      "hp": 110,
-      "atk": 100,
-      "def": 75,
-      "vit": 65,
-      "spe_atk": 59,
-      "spe_def": 80
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": {
-      "915": "Niveau 18"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 917,
-    "generation": 9,
     "name": {
       "en": "Tarountula",
       "fr": "Tissenboule"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/917/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/917/shiny.png",
-    "height": 0.3,
-    "weight": 4,
-    "stats": {
-      "hp": 35,
-      "atk": 41,
-      "def": 45,
-      "vit": 20,
-      "spe_atk": 29,
-      "spe_def": 40
-    },
-    "types": [
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "918": "Niveau 15"
     }
   },
   {
     "id": 918,
-    "generation": 9,
     "name": {
       "en": "Spidops",
       "fr": "Filentrappe"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/918/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/918/shiny.png",
-    "height": 1,
-    "weight": 16.5,
-    "stats": {
-      "hp": 60,
-      "atk": 79,
-      "def": 92,
-      "vit": 35,
-      "spe_atk": 52,
-      "spe_def": 86
-    },
-    "types": [
-      9
-    ],
-    "evolvedFrom": {
-      "917": "Niveau 15"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 919,
-    "generation": 9,
     "name": {
       "en": "Nymble",
       "fr": "Lilliterelle"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/919/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/919/shiny.png",
-    "height": 0.2,
-    "weight": 1,
-    "stats": {
-      "hp": 33,
-      "atk": 46,
-      "def": 40,
-      "vit": 45,
-      "spe_atk": 21,
-      "spe_def": 25
-    },
-    "types": [
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "920": "Niveau 24"
     }
   },
   {
     "id": 920,
-    "generation": 9,
     "name": {
       "en": "Lokix",
       "fr": "Gambex"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/920/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/920/shiny.png",
-    "height": 1,
-    "weight": 17.5,
-    "stats": {
-      "hp": 71,
-      "atk": 102,
-      "def": 78,
-      "vit": 92,
-      "spe_atk": 52,
-      "spe_def": 55
-    },
-    "types": [
-      9,
-      17
-    ],
-    "evolvedFrom": {
-      "919": "Niveau 24"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 921,
-    "generation": 9,
     "name": {
       "en": "Pawmi",
       "fr": "Pohm"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/921/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/921/shiny.png",
-    "height": 0.3,
-    "weight": 2.5,
-    "stats": {
-      "hp": 45,
-      "atk": 50,
-      "def": 20,
-      "vit": 60,
-      "spe_atk": 40,
-      "spe_def": 25
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "922": "Niveau 18",
-      "923": "1000 pas + 1 Niveau"
     }
   },
   {
     "id": 922,
-    "generation": 9,
     "name": {
       "en": "Pawmo",
       "fr": "Pohmotte"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/922/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/922/shiny.png",
-    "height": 0.4,
-    "weight": 6.5,
-    "stats": {
-      "hp": 60,
-      "atk": 75,
-      "def": 40,
-      "vit": 85,
-      "spe_atk": 50,
-      "spe_def": 40
-    },
-    "types": [
-      2,
-      5
-    ],
-    "evolvedFrom": {
-      "921": "Niveau 18"
-    },
-    "evolvesTo": {
-      "923": "1000 pas + 1 Niveau"
     }
   },
   {
     "id": 923,
-    "generation": 9,
     "name": {
       "en": "Pawmot",
       "fr": "Pohmarmotte"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/923/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/923/shiny.png",
-    "height": 0.9,
-    "weight": 41,
-    "stats": {
-      "hp": 70,
-      "atk": 115,
-      "def": 70,
-      "vit": 105,
-      "spe_atk": 70,
-      "spe_def": 60
-    },
-    "types": [
-      2,
-      5
-    ],
-    "evolvedFrom": {
-      "921": "1000 pas + 1 Niveau",
-      "922": "1000 pas + 1 Niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 924,
-    "generation": 9,
     "name": {
       "en": "Tandemaus",
       "fr": "Compagnol"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/924/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/924/shiny.png",
-    "height": 0.3,
-    "weight": 1.8,
-    "stats": {
-      "hp": 50,
-      "atk": 50,
-      "def": 45,
-      "vit": 75,
-      "spe_atk": 40,
-      "spe_def": 45
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "925": "Niveau 25 avec gain de niveau en combat"
     }
   },
   {
     "id": 925,
-    "generation": 9,
     "name": {
       "en": "Maushold",
       "fr": "Famignol"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/925/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/925/shiny.png",
-    "height": 0.3,
-    "weight": 2.3,
-    "stats": {
-      "hp": 74,
-      "atk": 75,
-      "def": 70,
-      "vit": 111,
-      "spe_atk": 65,
-      "spe_def": 75
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": {
-      "924": "Niveau 25 avec gain de niveau en combat"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 926,
-    "generation": 9,
     "name": {
       "en": "Fidough",
-      "fr": "Pâtachiot"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/926/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/926/shiny.png",
-    "height": 0.3,
-    "weight": 10.9,
-    "stats": {
-      "hp": 37,
-      "atk": 55,
-      "def": 70,
-      "vit": 65,
-      "spe_atk": 30,
-      "spe_def": 55
-    },
-    "types": [
-      6
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "927": "Niveau 26"
+      "fr": "P\u00e2tachiot"
     }
   },
   {
     "id": 927,
-    "generation": 9,
     "name": {
       "en": "Dachsbun",
       "fr": "Briochien"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/927/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/927/shiny.png",
-    "height": 0.5,
-    "weight": 14.9,
-    "stats": {
-      "hp": 57,
-      "atk": 80,
-      "def": 115,
-      "vit": 95,
-      "spe_atk": 50,
-      "spe_def": 80
-    },
-    "types": [
-      6
-    ],
-    "evolvedFrom": {
-      "926": "Niveau 26"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 928,
-    "generation": 9,
     "name": {
       "en": "Smoliv",
       "fr": "Olivini"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/928/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/928/shiny.png",
-    "height": 0.3,
-    "weight": 6.5,
-    "stats": {
-      "hp": 41,
-      "atk": 35,
-      "def": 45,
-      "vit": 30,
-      "spe_atk": 58,
-      "spe_def": 51
-    },
-    "types": [
-      10,
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "929": "Niveau 25",
-      "930": "Niveau 35"
     }
   },
   {
     "id": 929,
-    "generation": 9,
     "name": {
       "en": "Dolliv",
       "fr": "Olivado"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/929/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/929/shiny.png",
-    "height": 0.6,
-    "weight": 11.9,
-    "stats": {
-      "hp": 52,
-      "atk": 53,
-      "def": 60,
-      "vit": 33,
-      "spe_atk": 78,
-      "spe_def": 78
-    },
-    "types": [
-      10,
-      11
-    ],
-    "evolvedFrom": {
-      "928": "Niveau 25"
-    },
-    "evolvesTo": {
-      "930": "Niveau 35"
     }
   },
   {
     "id": 930,
-    "generation": 9,
     "name": {
       "en": "Arboliva",
       "fr": "Arboliva"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/930/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/930/shiny.png",
-    "height": 1.4,
-    "weight": 48.2,
-    "stats": {
-      "hp": 78,
-      "atk": 69,
-      "def": 90,
-      "vit": 39,
-      "spe_atk": 125,
-      "spe_def": 109
-    },
-    "types": [
-      10,
-      11
-    ],
-    "evolvedFrom": {
-      "928": "Niveau 35",
-      "929": "Niveau 35"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 931,
-    "generation": 9,
     "name": {
       "en": "Squawkabilly",
-      "fr": "Tapatoès"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/931/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/931/shiny.png",
-    "height": 0.6,
-    "weight": 2.4,
-    "stats": {
-      "hp": 82,
-      "atk": 96,
-      "def": 51,
-      "vit": 95,
-      "spe_atk": 45,
-      "spe_def": 51
-    },
-    "types": [
-      10,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "Tapato\u00e8s"
+    }
   },
   {
     "id": 932,
-    "generation": 9,
     "name": {
       "en": "Nacli",
       "fr": "Selutin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/932/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/932/shiny.png",
-    "height": 0.4,
-    "weight": 16,
-    "stats": {
-      "hp": 55,
-      "atk": 55,
-      "def": 75,
-      "vit": 25,
-      "spe_atk": 35,
-      "spe_def": 35
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "933": "Niveau 24",
-      "934": "Niveau 38"
     }
   },
   {
     "id": 933,
-    "generation": 9,
     "name": {
       "en": "Naclstack",
       "fr": "Amassel"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/933/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/933/shiny.png",
-    "height": 0.6,
-    "weight": 105,
-    "stats": {
-      "hp": 60,
-      "atk": 60,
-      "def": 100,
-      "vit": 35,
-      "spe_atk": 35,
-      "spe_def": 65
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": {
-      "932": "Niveau 24"
-    },
-    "evolvesTo": {
-      "934": "Niveau 38"
     }
   },
   {
     "id": 934,
-    "generation": 9,
     "name": {
       "en": "Garganacl",
       "fr": "Gigansel"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/934/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/934/shiny.png",
-    "height": 2.3,
-    "weight": 240,
-    "stats": {
-      "hp": 100,
-      "atk": 100,
-      "def": 130,
-      "vit": 35,
-      "spe_atk": 45,
-      "spe_def": 90
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": {
-      "932": "Niveau 38",
-      "933": "Niveau 38"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 935,
-    "generation": 9,
     "name": {
       "en": "Charcadet",
       "fr": "Charbambin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/935/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/935/shiny.png",
-    "height": 0.6,
-    "weight": 10.5,
-    "stats": {
-      "hp": 40,
-      "atk": 50,
-      "def": 40,
-      "vit": 35,
-      "spe_atk": 50,
-      "spe_def": 40
-    },
-    "types": [
-      7
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "936": "Armure de la Fortune",
-      "937": "Armure de la Rancune"
     }
   },
   {
     "id": 936,
-    "generation": 9,
     "name": {
       "en": "Armarouge",
       "fr": "Carmadura"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/936/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/936/shiny.png",
-    "height": 1.5,
-    "weight": 85,
-    "stats": {
-      "hp": 85,
-      "atk": 60,
-      "def": 100,
-      "vit": 75,
-      "spe_atk": 125,
-      "spe_def": 80
-    },
-    "types": [
-      7,
-      13
-    ],
-    "evolvedFrom": {
-      "935": "Armure de la Fortune"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 937,
-    "generation": 9,
     "name": {
       "en": "Ceruledge",
       "fr": "Malvalame"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/937/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/937/shiny.png",
-    "height": 1.6,
-    "weight": 62,
-    "stats": {
-      "hp": 75,
-      "atk": 125,
-      "def": 80,
-      "vit": 85,
-      "spe_atk": 60,
-      "spe_def": 100
-    },
-    "types": [
-      7,
-      16
-    ],
-    "evolvedFrom": {
-      "935": "Armure de la Rancune"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 938,
-    "generation": 9,
     "name": {
       "en": "Tadbulb",
-      "fr": "Têtampoule"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/938/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/938/shiny.png",
-    "height": 0.3,
-    "weight": 0.4,
-    "stats": {
-      "hp": 61,
-      "atk": 31,
-      "def": 41,
-      "vit": 45,
-      "spe_atk": 59,
-      "spe_def": 35
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "939": "Pierre Foudre"
+      "fr": "T\u00eatampoule"
     }
   },
   {
     "id": 939,
-    "generation": 9,
     "name": {
       "en": "Bellibolt",
       "fr": "Ampibidou"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/939/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/939/shiny.png",
-    "height": 1.2,
-    "weight": 113,
-    "stats": {
-      "hp": 109,
-      "atk": 64,
-      "def": 91,
-      "vit": 45,
-      "spe_atk": 103,
-      "spe_def": 83
-    },
-    "types": [
-      5
-    ],
-    "evolvedFrom": {
-      "938": "Pierre Foudre"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 940,
-    "generation": 9,
     "name": {
       "en": "Wattrel",
-      "fr": "Zapétrel"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/940/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/940/shiny.png",
-    "height": 0.4,
-    "weight": 3.6,
-    "stats": {
-      "hp": 40,
-      "atk": 40,
-      "def": 35,
-      "vit": 70,
-      "spe_atk": 55,
-      "spe_def": 40
-    },
-    "types": [
-      5,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "941": "Niveau 25"
+      "fr": "Zap\u00e9trel"
     }
   },
   {
     "id": 941,
-    "generation": 9,
     "name": {
       "en": "Kilowattrel",
       "fr": "Fulgulairo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/941/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/941/shiny.png",
-    "height": 1.4,
-    "weight": 38.6,
-    "stats": {
-      "hp": 70,
-      "atk": 70,
-      "def": 60,
-      "vit": 125,
-      "spe_atk": 105,
-      "spe_def": 60
-    },
-    "types": [
-      5,
-      18
-    ],
-    "evolvedFrom": {
-      "940": "Niveau 25"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 942,
-    "generation": 9,
     "name": {
       "en": "Maschiff",
       "fr": "Grondogue"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/942/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/942/shiny.png",
-    "height": 0.5,
-    "weight": 16,
-    "stats": {
-      "hp": 60,
-      "atk": 78,
-      "def": 60,
-      "vit": 51,
-      "spe_atk": 40,
-      "spe_def": 51
-    },
-    "types": [
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "943": "Niveau 30"
     }
   },
   {
     "id": 943,
-    "generation": 9,
     "name": {
       "en": "Mabosstiff",
       "fr": "Dogrino"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/943/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/943/shiny.png",
-    "height": 1.1,
-    "weight": 61,
-    "stats": {
-      "hp": 80,
-      "atk": 120,
-      "def": 90,
-      "vit": 85,
-      "spe_atk": 60,
-      "spe_def": 70
-    },
-    "types": [
-      17
-    ],
-    "evolvedFrom": {
-      "942": "Niveau 30"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 944,
-    "generation": 9,
     "name": {
       "en": "Shroodle",
       "fr": "Gribouraigne"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/944/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/944/shiny.png",
-    "height": 0.2,
-    "weight": 0.7,
-    "stats": {
-      "hp": 40,
-      "atk": 65,
-      "def": 35,
-      "vit": 75,
-      "spe_atk": 40,
-      "spe_def": 35
-    },
-    "types": [
-      10,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "945": "Niveau 28"
     }
   },
   {
     "id": 945,
-    "generation": 9,
     "name": {
       "en": "Grafaiai",
       "fr": "Tag-Tag"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/945/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/945/shiny.png",
-    "height": 0.7,
-    "weight": 27.2,
-    "stats": {
-      "hp": 40,
-      "atk": 65,
-      "def": 35,
-      "vit": 75,
-      "spe_atk": 40,
-      "spe_def": 35
-    },
-    "types": [
-      10,
-      12
-    ],
-    "evolvedFrom": {
-      "944": "Niveau 28"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 946,
-    "generation": 9,
     "name": {
       "en": "Bramblin",
       "fr": "Virovent"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/946/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/946/shiny.png",
-    "height": 0.6,
-    "weight": 0.6,
-    "stats": {
-      "hp": 40,
-      "atk": 65,
-      "def": 30,
-      "vit": 60,
-      "spe_atk": 45,
-      "spe_def": 35
-    },
-    "types": [
-      11,
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "947": "1000 pas + 1 Niveau"
     }
   },
   {
     "id": 947,
-    "generation": 9,
     "name": {
       "en": "Brambleghast",
       "fr": "Virevorreur"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/947/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/947/shiny.png",
-    "height": 1.2,
-    "weight": 6,
-    "stats": {
-      "hp": 55,
-      "atk": 115,
-      "def": 70,
-      "vit": 90,
-      "spe_atk": 80,
-      "spe_def": 70
-    },
-    "types": [
-      11,
-      16
-    ],
-    "evolvedFrom": {
-      "946": "1000 pas + 1 Niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 948,
-    "generation": 9,
     "name": {
       "en": "Toedscool",
       "fr": "Terracool"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/948/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/948/shiny.png",
-    "height": 0.9,
-    "weight": 33,
-    "stats": {
-      "hp": 40,
-      "atk": 40,
-      "def": 35,
-      "vit": 70,
-      "spe_atk": 50,
-      "spe_def": 100
-    },
-    "types": [
-      11,
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "949": "Niveau 30"
     }
   },
   {
     "id": 949,
-    "generation": 9,
     "name": {
       "en": "Toedscruel",
       "fr": "Terracruel"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/949/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/949/shiny.png",
-    "height": 1.9,
-    "weight": 58,
-    "stats": {
-      "hp": 80,
-      "atk": 70,
-      "def": 65,
-      "vit": 100,
-      "spe_atk": 80,
-      "spe_def": 120
-    },
-    "types": [
-      11,
-      15
-    ],
-    "evolvedFrom": {
-      "948": "Niveau 30"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 950,
-    "generation": 9,
     "name": {
       "en": "Klawf",
       "fr": "Craparoi"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/950/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/950/shiny.png",
-    "height": 1.3,
-    "weight": 79,
-    "stats": {
-      "hp": 50,
-      "atk": 100,
-      "def": 115,
-      "vit": 75,
-      "spe_atk": 35,
-      "spe_def": 55
-    },
-    "types": [
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 951,
-    "generation": 9,
     "name": {
       "en": "Capsakid",
       "fr": "Pimito"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/951/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/951/shiny.png",
-    "height": 0.3,
-    "weight": 3,
-    "stats": {
-      "hp": 52,
-      "atk": 62,
-      "def": 40,
-      "vit": 50,
-      "spe_atk": 62,
-      "spe_def": 40
-    },
-    "types": [
-      11
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "952": "Pierre Feu"
     }
   },
   {
     "id": 952,
-    "generation": 9,
     "name": {
       "en": "Scovillain",
       "fr": "Scovilain"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/952/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/952/shiny.png",
-    "height": 0.9,
-    "weight": 15,
-    "stats": {
-      "hp": 65,
-      "atk": 108,
-      "def": 65,
-      "vit": 75,
-      "spe_atk": 108,
-      "spe_def": 65
-    },
-    "types": [
-      7,
-      11
-    ],
-    "evolvedFrom": {
-      "951": "Pierre Feu"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 953,
-    "generation": 9,
     "name": {
       "en": "Rellor",
-      "fr": "Léboulérou"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/953/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/953/shiny.png",
-    "height": 0.2,
-    "weight": 1,
-    "stats": {
-      "hp": 41,
-      "atk": 50,
-      "def": 60,
-      "vit": 30,
-      "spe_atk": 31,
-      "spe_def": 58
-    },
-    "types": [
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "954": "1000 pas + 1 Niveau"
+      "fr": "L\u00e9boul\u00e9rou"
     }
   },
   {
     "id": 954,
-    "generation": 9,
     "name": {
       "en": "Rabsca",
-      "fr": "Bérasca"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/954/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/954/shiny.png",
-    "height": 0.3,
-    "weight": 3.5,
-    "stats": {
-      "hp": 75,
-      "atk": 50,
-      "def": 85,
-      "vit": 45,
-      "spe_atk": 115,
-      "spe_def": 100
-    },
-    "types": [
-      9,
-      13
-    ],
-    "evolvedFrom": {
-      "953": "1000 pas + 1 Niveau"
-    },
-    "evolvesTo": []
+      "fr": "B\u00e9rasca"
+    }
   },
   {
     "id": 955,
-    "generation": 9,
     "name": {
       "en": "Flittle",
       "fr": "Flotillon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/955/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/955/shiny.png",
-    "height": 0.2,
-    "weight": 1.5,
-    "stats": {
-      "hp": 30,
-      "atk": 35,
-      "def": 30,
-      "vit": 75,
-      "spe_atk": 55,
-      "spe_def": 30
-    },
-    "types": [
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "956": "Niveau 35"
     }
   },
   {
     "id": 956,
-    "generation": 9,
     "name": {
       "en": "Espathra",
-      "fr": "Cléopsytra"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/956/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/956/shiny.png",
-    "height": 1.9,
-    "weight": 90,
-    "stats": {
-      "hp": 95,
-      "atk": 60,
-      "def": 60,
-      "vit": 105,
-      "spe_atk": 101,
-      "spe_def": 60
-    },
-    "types": [
-      13
-    ],
-    "evolvedFrom": {
-      "955": "Niveau 35"
-    },
-    "evolvesTo": []
+      "fr": "Cl\u00e9opsytra"
+    }
   },
   {
     "id": 957,
-    "generation": 9,
     "name": {
       "en": "Tinkatink",
       "fr": "Forgerette"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/957/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/957/shiny.png",
-    "height": 0.4,
-    "weight": 8.9,
-    "stats": {
-      "hp": 50,
-      "atk": 45,
-      "def": 45,
-      "vit": 58,
-      "spe_atk": 35,
-      "spe_def": 64
-    },
-    "types": [
-      1,
-      6
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "958": "Niveau 24",
-      "959": "Niveau 38"
     }
   },
   {
     "id": 958,
-    "generation": 9,
     "name": {
       "en": "Tinkatuff",
       "fr": "Forgella"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/958/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/958/shiny.png",
-    "height": 0.7,
-    "weight": 59.1,
-    "stats": {
-      "hp": 65,
-      "atk": 55,
-      "def": 55,
-      "vit": 78,
-      "spe_atk": 45,
-      "spe_def": 82
-    },
-    "types": [
-      1,
-      6
-    ],
-    "evolvedFrom": {
-      "957": "Niveau 24"
-    },
-    "evolvesTo": {
-      "959": "Niveau 38"
     }
   },
   {
     "id": 959,
-    "generation": 9,
     "name": {
       "en": "Tinkaton",
       "fr": "Forgelina"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/959/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/959/shiny.png",
-    "height": 0.7,
-    "weight": 112.8,
-    "stats": {
-      "hp": 85,
-      "atk": 75,
-      "def": 77,
-      "vit": 94,
-      "spe_atk": 70,
-      "spe_def": 105
-    },
-    "types": [
-      1,
-      6
-    ],
-    "evolvedFrom": {
-      "957": "Niveau 38",
-      "958": "Niveau 38"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 960,
-    "generation": 9,
     "name": {
       "en": "Wiglett",
       "fr": "Taupikeau"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/960/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/960/shiny.png",
-    "height": 1.2,
-    "weight": 1.8,
-    "stats": {
-      "hp": 10,
-      "atk": 55,
-      "def": 25,
-      "vit": 95,
-      "spe_atk": 35,
-      "spe_def": 25
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "961": "Niveau 26"
     }
   },
   {
     "id": 961,
-    "generation": 9,
     "name": {
       "en": "Wugtrio",
       "fr": "Triopikeau"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/961/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/961/shiny.png",
-    "height": 1.2,
-    "weight": 5.4,
-    "stats": {
-      "hp": 35,
-      "atk": 100,
-      "def": 50,
-      "vit": 120,
-      "spe_atk": 50,
-      "spe_def": 70
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "960": "Niveau 26"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 962,
-    "generation": 9,
     "name": {
       "en": "Bombirdier",
       "fr": "Lestombaile"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/962/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/962/shiny.png",
-    "height": 1.5,
-    "weight": 42.9,
-    "stats": {
-      "hp": 70,
-      "atk": 103,
-      "def": 85,
-      "vit": 82,
-      "spe_atk": 60,
-      "spe_def": 85
-    },
-    "types": [
-      17,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 963,
-    "generation": 9,
     "name": {
       "en": "Finizen",
       "fr": "Dofin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/963/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/963/shiny.png",
-    "height": 1.3,
-    "weight": 60.2,
-    "stats": {
-      "hp": 70,
-      "atk": 45,
-      "def": 40,
-      "vit": 75,
-      "spe_atk": 45,
-      "spe_def": 40
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "964": "Niveau 38 en coop"
     }
   },
   {
     "id": 964,
-    "generation": 9,
     "name": {
       "en": "Palafin",
       "fr": "Superdofin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/964/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/964/shiny.png",
-    "height": 1.3,
-    "weight": 60.2,
-    "stats": {
-      "hp": 100,
-      "atk": 70,
-      "def": 72,
-      "vit": 100,
-      "spe_atk": 53,
-      "spe_def": 62
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": {
-      "963": "Niveau 38 en coop"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 965,
-    "generation": 9,
     "name": {
       "en": "Varoom",
       "fr": "Vrombi"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/965/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/965/shiny.png",
-    "height": 1,
-    "weight": 35,
-    "stats": {
-      "hp": 45,
-      "atk": 70,
-      "def": 63,
-      "vit": 47,
-      "spe_atk": 30,
-      "spe_def": 45
-    },
-    "types": [
-      1,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "966": "Niveau 40"
     }
   },
   {
     "id": 966,
-    "generation": 9,
     "name": {
       "en": "Revavroom",
       "fr": "Vrombotor"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/966/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/966/shiny.png",
-    "height": 1.8,
-    "weight": 120,
-    "stats": {
-      "hp": 80,
-      "atk": 119,
-      "def": 90,
-      "vit": 90,
-      "spe_atk": 54,
-      "spe_def": 67
-    },
-    "types": [
-      1,
-      12
-    ],
-    "evolvedFrom": {
-      "965": "Niveau 40"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 967,
-    "generation": 9,
     "name": {
       "en": "Cyclizar",
       "fr": "Motorizard"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/967/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/967/shiny.png",
-    "height": 1.6,
-    "weight": 63,
-    "stats": {
-      "hp": 70,
-      "atk": 95,
-      "def": 65,
-      "vit": 121,
-      "spe_atk": 85,
-      "spe_def": 65
-    },
-    "types": [
-      3,
-      10
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 968,
-    "generation": 9,
     "name": {
       "en": "Orthworm",
       "fr": "Ferdeter"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/968/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/968/shiny.png",
-    "height": 2.5,
-    "weight": 310,
-    "stats": {
-      "hp": 70,
-      "atk": 85,
-      "def": 145,
-      "vit": 65,
-      "spe_atk": 60,
-      "spe_def": 55
-    },
-    "types": [
-      1
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 969,
-    "generation": 9,
     "name": {
       "en": "Glimmet",
-      "fr": "Germéclat"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/969/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/969/shiny.png",
-    "height": 0.7,
-    "weight": 8,
-    "stats": {
-      "hp": 48,
-      "atk": 35,
-      "def": 42,
-      "vit": 60,
-      "spe_atk": 105,
-      "spe_def": 60
-    },
-    "types": [
-      12,
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "970": "Niveau 35"
+      "fr": "Germ\u00e9clat"
     }
   },
   {
     "id": 970,
-    "generation": 9,
     "name": {
       "en": "Glimmora",
-      "fr": "Floréclat"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/970/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/970/shiny.png",
-    "height": 1.5,
-    "weight": 45,
-    "stats": {
-      "hp": 83,
-      "atk": 55,
-      "def": 90,
-      "vit": 86,
-      "spe_atk": 130,
-      "spe_def": 81
-    },
-    "types": [
-      12,
-      14
-    ],
-    "evolvedFrom": {
-      "969": "Niveau 35"
-    },
-    "evolvesTo": []
+      "fr": "Flor\u00e9clat"
+    }
   },
   {
     "id": 971,
-    "generation": 9,
     "name": {
       "en": "Greavard",
       "fr": "Toutombe"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/971/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/971/shiny.png",
-    "height": 0.6,
-    "weight": 35,
-    "stats": {
-      "hp": 50,
-      "atk": 61,
-      "def": 60,
-      "vit": 34,
-      "spe_atk": 30,
-      "spe_def": 55
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "972": "Niveau 30, Nuit"
     }
   },
   {
     "id": 972,
-    "generation": 9,
     "name": {
       "en": "Houndstone",
       "fr": "Tomberro"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/972/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/972/shiny.png",
-    "height": 2,
-    "weight": 15,
-    "stats": {
-      "hp": 72,
-      "atk": 101,
-      "def": 100,
-      "vit": 68,
-      "spe_atk": 50,
-      "spe_def": 97
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": {
-      "971": "Niveau 30, Nuit"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 973,
-    "generation": 9,
     "name": {
       "en": "Flamigo",
       "fr": "Flamenroule"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/973/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/973/shiny.png",
-    "height": 1.6,
-    "weight": 37,
-    "stats": {
-      "hp": 82,
-      "atk": 115,
-      "def": 74,
-      "vit": 90,
-      "spe_atk": 75,
-      "spe_def": 64
-    },
-    "types": [
-      2,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 974,
-    "generation": 9,
     "name": {
       "en": "Cetoddle",
-      "fr": "Piétacé"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/974/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/974/shiny.png",
-    "height": 1.2,
-    "weight": 45,
-    "stats": {
-      "hp": 108,
-      "atk": 68,
-      "def": 45,
-      "vit": 43,
-      "spe_atk": 30,
-      "spe_def": 40
-    },
-    "types": [
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "975": "Pierre Glace"
+      "fr": "Pi\u00e9tac\u00e9"
     }
   },
   {
     "id": 975,
-    "generation": 9,
     "name": {
       "en": "Cetitan",
-      "fr": "Balbalèze"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/975/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/975/shiny.png",
-    "height": 4.5,
-    "weight": 700,
-    "stats": {
-      "hp": 170,
-      "atk": 113,
-      "def": 65,
-      "vit": 73,
-      "spe_atk": 45,
-      "spe_def": 55
-    },
-    "types": [
-      8
-    ],
-    "evolvedFrom": {
-      "974": "Pierre Glace"
-    },
-    "evolvesTo": []
+      "fr": "Balbal\u00e8ze"
+    }
   },
   {
     "id": 976,
-    "generation": 9,
     "name": {
       "en": "Veluza",
-      "fr": "Délestin"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/976/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/976/shiny.png",
-    "height": 2.5,
-    "weight": 90,
-    "stats": {
-      "hp": 90,
-      "atk": 102,
-      "def": 73,
-      "vit": 70,
-      "spe_atk": 78,
-      "spe_def": 65
-    },
-    "types": [
-      4,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "D\u00e9lestin"
+    }
   },
   {
     "id": 977,
-    "generation": 9,
     "name": {
       "en": "Dondozo",
       "fr": "Oyacata"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/977/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/977/shiny.png",
-    "height": 12,
-    "weight": 220,
-    "stats": {
-      "hp": 150,
-      "atk": 100,
-      "def": 115,
-      "vit": 35,
-      "spe_atk": 65,
-      "spe_def": 65
-    },
-    "types": [
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 978,
-    "generation": 9,
     "name": {
       "en": "Tatsugiri",
       "fr": "Nigirigon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/978/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/978/shiny.png",
-    "height": 0.3,
-    "weight": 8,
-    "stats": {
-      "hp": 68,
-      "atk": 50,
-      "def": 60,
-      "vit": 82,
-      "spe_atk": 120,
-      "spe_def": 95
-    },
-    "types": [
-      3,
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 979,
-    "generation": 9,
     "name": {
       "en": "Annihilape",
       "fr": "Courrousinge"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/979/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/979/shiny.png",
-    "height": 1.2,
-    "weight": 56,
-    "stats": {
-      "hp": 100,
-      "atk": 115,
-      "def": 80,
-      "vit": 90,
-      "spe_atk": 50,
-      "spe_def": 90
-    },
-    "types": [
-      2,
-      16
-    ],
-    "evolvedFrom": {
-      "56": "Utilise 20 fois la capacité Poing de Colère + gain de niveau",
-      "57": "Utilise 20 fois la capacité Poing de Colère + gain de niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 980,
-    "generation": 9,
     "name": {
       "en": "Clodsire",
       "fr": "Terraiste"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/980/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/980/shiny.png",
-    "height": 1.8,
-    "weight": 223,
-    "stats": {
-      "hp": 130,
-      "atk": 75,
-      "def": 60,
-      "vit": 20,
-      "spe_atk": 45,
-      "spe_def": 100
-    },
-    "types": [
-      12,
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 981,
-    "generation": 9,
     "name": {
       "en": "Farigiraf",
       "fr": "Farigiraf"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/981/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/981/shiny.png",
-    "height": 3.2,
-    "weight": 160,
-    "stats": {
-      "hp": 120,
-      "atk": 90,
-      "def": 70,
-      "vit": 60,
-      "spe_atk": 110,
-      "spe_def": 70
-    },
-    "types": [
-      10,
-      13
-    ],
-    "evolvedFrom": {
-      "203": "+1 Niveau avec Double Laser"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 982,
-    "generation": 9,
     "name": {
       "en": "Dudunsparce",
       "fr": "Deusolourdo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/982/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/982/shiny.png",
-    "height": 1.5,
-    "weight": 14,
-    "stats": {
-      "hp": 125,
-      "atk": 100,
-      "def": 80,
-      "vit": 55,
-      "spe_atk": 85,
-      "spe_def": 75
-    },
-    "types": [
-      10
-    ],
-    "evolvedFrom": {
-      "206": "+1 Niveau avec Hyperceuse"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 983,
-    "generation": 9,
     "name": {
       "en": "Kingambit",
       "fr": "Scalpereur"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/983/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/983/shiny.png",
-    "height": 2,
-    "weight": 120,
-    "stats": {
-      "hp": 100,
-      "atk": 135,
-      "def": 120,
-      "vit": 50,
-      "spe_atk": 60,
-      "spe_def": 85
-    },
-    "types": [
-      1,
-      17
-    ],
-    "evolvedFrom": {
-      "624": "Vaincre 3 Scalproie avec Emblème du Général + 1 Niveau",
-      "625": "Vaincre 3 Scalproie avec Emblème du Général + 1 Niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 984,
-    "generation": 9,
     "name": {
       "en": "Great Tusk",
       "fr": "Fort-Ivoire"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/984/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/984/shiny.png",
-    "height": 2.2,
-    "weight": 320,
-    "stats": {
-      "hp": 115,
-      "atk": 131,
-      "def": 131,
-      "vit": 87,
-      "spe_atk": 53,
-      "spe_def": 53
-    },
-    "types": [
-      2,
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 985,
-    "generation": 9,
     "name": {
       "en": "Scream Tail",
       "fr": "Hurle-Queue"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/985/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/985/shiny.png",
-    "height": 1.2,
-    "weight": 8,
-    "stats": {
-      "hp": 115,
-      "atk": 65,
-      "def": 99,
-      "vit": 111,
-      "spe_atk": 65,
-      "spe_def": 115
-    },
-    "types": [
-      6,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 986,
-    "generation": 9,
     "name": {
       "en": "Brute Bonnet",
       "fr": "Fongus-Furie"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/986/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/986/shiny.png",
-    "height": 1.2,
-    "weight": 21,
-    "stats": {
-      "hp": 111,
-      "atk": 127,
-      "def": 99,
-      "vit": 55,
-      "spe_atk": 79,
-      "spe_def": 99
-    },
-    "types": [
-      11,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 987,
-    "generation": 9,
     "name": {
       "en": "Flutter Mane",
-      "fr": "Flotte-Mèche"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/987/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/987/shiny.png",
-    "height": 1.4,
-    "weight": 4,
-    "stats": {
-      "hp": 55,
-      "atk": 55,
-      "def": 55,
-      "vit": 135,
-      "spe_atk": 135,
-      "spe_def": 135
-    },
-    "types": [
-      6,
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "Flotte-M\u00e8che"
+    }
   },
   {
     "id": 988,
-    "generation": 9,
     "name": {
       "en": "Slither Wing",
       "fr": "Rampe-Ailes"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/988/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/988/shiny.png",
-    "height": 3.2,
-    "weight": 92,
-    "stats": {
-      "hp": 85,
-      "atk": 135,
-      "def": 79,
-      "vit": 81,
-      "spe_atk": 85,
-      "spe_def": 105
-    },
-    "types": [
-      2,
-      9
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 989,
-    "generation": 9,
     "name": {
       "en": "Sandy Shocks",
-      "fr": "Pelage-Sablé"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/989/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/989/shiny.png",
-    "height": 2.3,
-    "weight": 60,
-    "stats": {
-      "hp": 85,
-      "atk": 81,
-      "def": 97,
-      "vit": 101,
-      "spe_atk": 121,
-      "spe_def": 85
-    },
-    "types": [
-      5,
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "Pelage-Sabl\u00e9"
+    }
   },
   {
     "id": 990,
-    "generation": 9,
     "name": {
       "en": "Iron Treads",
       "fr": "Roue-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/990/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/990/shiny.png",
-    "height": 0.9,
-    "weight": 240,
-    "stats": {
-      "hp": 90,
-      "atk": 112,
-      "def": 120,
-      "vit": 106,
-      "spe_atk": 72,
-      "spe_def": 70
-    },
-    "types": [
-      1,
-      15
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 991,
-    "generation": 9,
     "name": {
       "en": "Iron Bundle",
       "fr": "Hotte-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/991/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/991/shiny.png",
-    "height": 0.6,
-    "weight": 11,
-    "stats": {
-      "hp": 56,
-      "atk": 80,
-      "def": 114,
-      "vit": 136,
-      "spe_atk": 124,
-      "spe_def": 60
-    },
-    "types": [
-      4,
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 992,
-    "generation": 9,
     "name": {
       "en": "Iron Hands",
       "fr": "Paume-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/992/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/992/shiny.png",
-    "height": 1.8,
-    "weight": 380.7,
-    "stats": {
-      "hp": 154,
-      "atk": 140,
-      "def": 108,
-      "vit": 50,
-      "spe_atk": 50,
-      "spe_def": 68
-    },
-    "types": [
-      2,
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 993,
-    "generation": 9,
     "name": {
       "en": "Iron Jugulis",
-      "fr": "Têtes-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/993/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/993/shiny.png",
-    "height": 1.3,
-    "weight": 111,
-    "stats": {
-      "hp": 94,
-      "atk": 80,
-      "def": 86,
-      "vit": 108,
-      "spe_atk": 122,
-      "spe_def": 80
-    },
-    "types": [
-      17,
-      18
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "T\u00eates-de-Fer"
+    }
   },
   {
     "id": 994,
-    "generation": 9,
     "name": {
       "en": "Iron Moth",
       "fr": "Mite-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/994/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/994/shiny.png",
-    "height": 1.2,
-    "weight": 36,
-    "stats": {
-      "hp": 80,
-      "atk": 70,
-      "def": 60,
-      "vit": 110,
-      "spe_atk": 140,
-      "spe_def": 110
-    },
-    "types": [
-      7,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 995,
-    "generation": 9,
     "name": {
       "en": "Iron Thorns",
-      "fr": "Épine-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/995/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/995/shiny.png",
-    "height": 1.6,
-    "weight": 303,
-    "stats": {
-      "hp": 100,
-      "atk": 134,
-      "def": 110,
-      "vit": 72,
-      "spe_atk": 70,
-      "spe_def": 84
-    },
-    "types": [
-      5,
-      14
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "\u00c9pine-de-Fer"
+    }
   },
   {
     "id": 996,
-    "generation": 9,
     "name": {
       "en": "Frigibax",
       "fr": "Frigodo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/996/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/996/shiny.png",
-    "height": 0.5,
-    "weight": 17,
-    "stats": {
-      "hp": 65,
-      "atk": 75,
-      "def": 45,
-      "vit": 55,
-      "spe_atk": 35,
-      "spe_def": 45
-    },
-    "types": [
-      3,
-      8
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "997": "Niveau 35",
-      "998": "Niveau 54"
     }
   },
   {
     "id": 997,
-    "generation": 9,
     "name": {
       "en": "Arctibax",
       "fr": "Cryodo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/997/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/997/shiny.png",
-    "height": 0.8,
-    "weight": 30,
-    "stats": {
-      "hp": 90,
-      "atk": 95,
-      "def": 66,
-      "vit": 62,
-      "spe_atk": 45,
-      "spe_def": 65
-    },
-    "types": [
-      3,
-      8
-    ],
-    "evolvedFrom": {
-      "996": "Niveau 35"
-    },
-    "evolvesTo": {
-      "998": "Niveau 54"
     }
   },
   {
     "id": 998,
-    "generation": 9,
     "name": {
       "en": "Baxcalibur",
       "fr": "Glaivodo"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/998/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/998/shiny.png",
-    "height": 2.1,
-    "weight": 210,
-    "stats": {
-      "hp": 115,
-      "atk": 145,
-      "def": 92,
-      "vit": 87,
-      "spe_atk": 75,
-      "spe_def": 86
-    },
-    "types": [
-      3,
-      8
-    ],
-    "evolvedFrom": {
-      "996": "Niveau 54",
-      "997": "Niveau 54"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 999,
-    "generation": 9,
     "name": {
       "en": "Gimmighoul",
       "fr": "Mordudor"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/999/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/999/shiny.png",
-    "height": 0.3,
-    "weight": 5,
-    "stats": {
-      "hp": 45,
-      "atk": 30,
-      "def": 70,
-      "vit": 10,
-      "spe_atk": 75,
-      "spe_def": 70
-    },
-    "types": [
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "1000": "Collecter 999 Pièces de Mordudor + 1 Niveau"
     }
   },
   {
     "id": 1000,
-    "generation": 9,
     "name": {
       "en": "Gholdengo",
       "fr": "Gromago"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1000/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1000/shiny.png",
-    "height": 1.2,
-    "weight": 30,
-    "stats": {
-      "hp": 87,
-      "atk": 60,
-      "def": 95,
-      "vit": 84,
-      "spe_atk": 133,
-      "spe_def": 91
-    },
-    "types": [
-      1,
-      16
-    ],
-    "evolvedFrom": {
-      "999": "Collecter 999 Pièces de Mordudor + 1 Niveau"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 1001,
-    "generation": 9,
     "name": {
       "en": "Wo-Chien",
       "fr": "Chongjian"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1001/regular.png",
-    "image_shiny": null,
-    "height": 1.5,
-    "weight": 74.2,
-    "stats": {
-      "hp": 85,
-      "atk": 85,
-      "def": 100,
-      "vit": 70,
-      "spe_atk": 95,
-      "spe_def": 135
-    },
-    "types": [
-      11,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1002,
-    "generation": 9,
     "name": {
       "en": "Chien-Pao",
       "fr": "Baojian"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1002/regular.png",
-    "image_shiny": null,
-    "height": 1.9,
-    "weight": 152.2,
-    "stats": {
-      "hp": 80,
-      "atk": 120,
-      "def": 80,
-      "vit": 135,
-      "spe_atk": 90,
-      "spe_def": 65
-    },
-    "types": [
-      8,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1003,
-    "generation": 9,
     "name": {
       "en": "Ting-Lu",
       "fr": "Dinglu"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1003/regular.png",
-    "image_shiny": null,
-    "height": 2.7,
-    "weight": 699.7,
-    "stats": {
-      "hp": 155,
-      "atk": 110,
-      "def": 125,
-      "vit": 45,
-      "spe_atk": 55,
-      "spe_def": 80
-    },
-    "types": [
-      15,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1004,
-    "generation": 9,
     "name": {
       "en": "Chi-Yu",
       "fr": "Yuyu"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1004/regular.png",
-    "image_shiny": null,
-    "height": 0.4,
-    "weight": 4.9,
-    "stats": {
-      "hp": 55,
-      "atk": 80,
-      "def": 80,
-      "vit": 100,
-      "spe_atk": 135,
-      "spe_def": 120
-    },
-    "types": [
-      7,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1005,
-    "generation": 9,
     "name": {
       "en": "Roaring Moon",
       "fr": "Rugit-Lune"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1005/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1005/shiny.png",
-    "height": 2,
-    "weight": 380,
-    "stats": {
-      "hp": 105,
-      "atk": 139,
-      "def": 71,
-      "vit": 119,
-      "spe_atk": 55,
-      "spe_def": 101
-    },
-    "types": [
-      3,
-      17
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1006,
-    "generation": 9,
     "name": {
       "en": "Iron Valiant",
       "fr": "Garde-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1006/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1006/shiny.png",
-    "height": 1.4,
-    "weight": 35,
-    "stats": {
-      "hp": 74,
-      "atk": 130,
-      "def": 90,
-      "vit": 116,
-      "spe_atk": 120,
-      "spe_def": 60
-    },
-    "types": [
-      2,
-      6
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1007,
-    "generation": 9,
     "name": {
       "en": "Koraidon",
       "fr": "Koraidon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1007/regular.png",
-    "image_shiny": null,
-    "height": 2.5,
-    "weight": 303,
-    "stats": {
-      "hp": 100,
-      "atk": 135,
-      "def": 115,
-      "vit": 135,
-      "spe_atk": 85,
-      "spe_def": 100
-    },
-    "types": [
-      2,
-      3
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1008,
-    "generation": 9,
     "name": {
       "en": "Miraidon",
       "fr": "Miraidon"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1008/regular.png",
-    "image_shiny": null,
-    "height": 3.5,
-    "weight": 240,
-    "stats": {
-      "hp": 100,
-      "atk": 85,
-      "def": 100,
-      "vit": 135,
-      "spe_atk": 135,
-      "spe_def": 115
-    },
-    "types": [
-      3,
-      5
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1009,
-    "generation": 9,
     "name": {
       "en": "Walking Wake",
       "fr": "Serpente-Eau"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1009/regular.png",
-    "image_shiny": null,
-    "height": 3.5,
-    "weight": 280,
-    "stats": {
-      "hp": 99,
-      "atk": 83,
-      "def": 91,
-      "vit": 109,
-      "spe_atk": 125,
-      "spe_def": 83
-    },
-    "types": [
-      3,
-      4
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1010,
-    "generation": 9,
     "name": {
       "en": "Iron Leaves",
       "fr": "Vert-de-Fer"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1010/regular.png",
-    "image_shiny": null,
-    "height": 1.5,
-    "weight": 125,
-    "stats": {
-      "hp": 90,
-      "atk": 130,
-      "def": 88,
-      "vit": 104,
-      "spe_atk": 70,
-      "spe_def": 108
-    },
-    "types": [
-      11,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1011,
-    "generation": 9,
     "name": {
       "en": "Dipplin",
       "fr": "Pomdramour"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1011/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1011/shiny.png",
-    "height": 0.4,
-    "weight": 4.4,
-    "stats": {
-      "hp": 80,
-      "atk": 80,
-      "def": 110,
-      "vit": 40,
-      "spe_atk": 95,
-      "spe_def": 80
-    },
-    "types": [
-      3,
-      11
-    ],
-    "evolvedFrom": {
-      "840": "Avec une Pomme Nectar"
-    },
-    "evolvesTo": []
+    }
   },
   {
     "id": 1012,
-    "generation": 9,
     "name": {
       "en": "Poltchageist",
       "fr": "Poltchageist"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1012/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1012/shiny.png",
-    "height": 0.1,
-    "weight": 1.1,
-    "stats": {
-      "hp": 40,
-      "atk": 45,
-      "def": 45,
-      "vit": 50,
-      "spe_atk": 74,
-      "spe_def": 54
-    },
-    "types": [
-      11,
-      16
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": {
-      "1013": "Avec un Bol Médiocre ou un Bol Exceptionnel"
     }
   },
   {
     "id": 1013,
-    "generation": 9,
     "name": {
       "en": "Sinistcha",
-      "fr": "Théffroyable"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1013/regular.png",
-    "image_shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1013/shiny.png",
-    "height": 0.2,
-    "weight": 2.2,
-    "stats": {
-      "hp": 71,
-      "atk": 60,
-      "def": 106,
-      "vit": 70,
-      "spe_atk": 121,
-      "spe_def": 80
-    },
-    "types": [
-      11,
-      16
-    ],
-    "evolvedFrom": {
-      "1012": "Avec un Bol Médiocre ou un Bol Exceptionnel"
-    },
-    "evolvesTo": []
+      "fr": "Th\u00e9ffroyable"
+    }
   },
   {
     "id": 1014,
-    "generation": 9,
     "name": {
       "en": "Okidogi",
-      "fr": "Félicanis"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1014/regular.png",
-    "image_shiny": null,
-    "height": 1.8,
-    "weight": 92.2,
-    "stats": {
-      "hp": 88,
-      "atk": 128,
-      "def": 115,
-      "vit": 80,
-      "spe_atk": 58,
-      "spe_def": 86
-    },
-    "types": [
-      2,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+      "fr": "F\u00e9licanis"
+    }
   },
   {
     "id": 1015,
-    "generation": 9,
     "name": {
       "en": "Munkidori",
       "fr": "Fortusimia"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1015/regular.png",
-    "image_shiny": null,
-    "height": 1,
-    "weight": 12.2,
-    "stats": {
-      "hp": 88,
-      "atk": 75,
-      "def": 66,
-      "vit": 106,
-      "spe_atk": 130,
-      "spe_def": 90
-    },
-    "types": [
-      12,
-      13
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1016,
-    "generation": 9,
     "name": {
       "en": "Fezandipiti",
       "fr": "Favianos"
-    },
-    "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1016/regular.png",
-    "image_shiny": null,
-    "height": 1.4,
-    "weight": 30.1,
-    "stats": {
-      "hp": 88,
-      "atk": 91,
-      "def": 82,
-      "vit": 99,
-      "spe_atk": 70,
-      "spe_def": 125
-    },
-    "types": [
-      6,
-      12
-    ],
-    "evolvedFrom": [],
-    "evolvesTo": []
+    }
   },
   {
     "id": 1017,
-    "generation": 9,
     "name": {
       "en": "Ogerpon",
       "fr": "Ogerpon"

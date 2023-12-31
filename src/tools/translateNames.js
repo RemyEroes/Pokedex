@@ -1,17 +1,17 @@
-import pokemons_translated from '../data/pokemon_names_new.json'
+import pokemons_translated from '../data/pokemon_names_FINAL.json'
+
 
 export default function translateNames(pokemon, language) {
 
+
     var name
     var this_pokemon_translated = pokemons_translated?.find(element => element['id'] === pokemon['id'])
-
 
     if (language === 'fr' || language === 'en') {
         name = (pokemon['name'][language]).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
         // .normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase()
     }else if (language === 'ja'){
-        
-        if (this_pokemon_translated?.['name']){
+        if (this_pokemon_translated?.['name'][language]){
             name = this_pokemon_translated?.['name'][language]
         }else{
             name = pokemon['name']['en'] 
@@ -23,9 +23,14 @@ export default function translateNames(pokemon, language) {
         }else{
             name = pokemon['name']['en'] 
         }
+    }else if (language === 'ja'){
+        
+        if (this_pokemon_translated?.['name']){
+            name = this_pokemon_translated?.['name'][language]
+        }else{
+            name = pokemon['name']['en'] 
+        }
     }
-    
-
     
 
     return name

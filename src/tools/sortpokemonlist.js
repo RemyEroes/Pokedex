@@ -1,21 +1,19 @@
-import compareByNameAsc from "./compareByNameAsc";
-import compareByNameDesc from "./compareByNameDesc";
-import PokemonNameList from "../data/pokemon_names_new_new.json";
+import PokemonNameList from "../data/pokemon_names_FINAL.json";
 
 
 export default function sortpokemonlist(pokemonlist, sortValue, language) {
     let pokemonListSorted = [];
     // var language = 'fr'
-    
-// 'none' = none
-// 'numerocroissant' = 1
-// 'numerodecroissant'=2
-// 'alphabetiquecroissant'=3
-// 'alphabetiquedecroissant'=4
-// 'poidscroissant'=5
-// 'poidsdecroissant'=6
-// 'taillecroissant'=7
-// 'tailledecroissant'=8
+
+    // 'none' = none
+    // 'numerocroissant' = 1
+    // 'numerodecroissant'=2
+    // 'alphabetiquecroissant'=3
+    // 'alphabetiquedecroissant'=4
+    // 'poidscroissant'=5
+    // 'poidsdecroissant'=6
+    // 'taillecroissant'=7
+    // 'tailledecroissant'=8
 
     // eslint-disable-next-line eqeqeq
     if (sortValue !== 'none') {
@@ -42,12 +40,12 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                     if (language === 'en' || language === 'fr') {
                         nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                         nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                    }else{
+                    } else {
                         nameA = a['name'][language];
                         nameB = b['name'][language];
                     }
-                
-                    console.log(nameA, nameB)
+
+
                     if (nameA < nameB) {
                         return -1;
                     }
@@ -57,11 +55,15 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                     // Noms identiques
                     return 0;
                 });
-
+                console.log(PokemonNameListSorted)
                 PokemonNameListSorted.forEach(element => {
-                    var correspondingPokemon = pokemonlist.find(pokemon => pokemon.id === element.id)
-                    pokemonListSorted.push(correspondingPokemon)
+                   
+                    var correspondingPokemon = pokemonlist.find(pokemon => pokemon['id'] === element['id'])
+                    if (correspondingPokemon) {
+                        pokemonListSorted.push(correspondingPokemon)
+                    }
                 });
+                console.log(pokemonListSorted)
 
                 break;
 
@@ -74,11 +76,11 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                     if (language === 'en' || language === 'fr') {
                         nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                         nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                    }else{
+                    } else {
                         nameA = a['name'][language];
                         nameB = b['name'][language];
                     }
-                
+
                     console.log(nameA, nameB)
                     if (nameA < nameB) {
                         return 1;
@@ -92,7 +94,9 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
 
                 PokemonNameListSortedReverse.forEach(element => {
                     var correspondingPokemon = pokemonlist.find(pokemon => pokemon.id === element.id)
-                    pokemonListSorted.push(correspondingPokemon)
+                    if (correspondingPokemon) {
+                        pokemonListSorted.push(correspondingPokemon)
+                    }
                 });
                 break;
 
@@ -103,7 +107,7 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
             case '6':
                 pokemonListSorted = Object.values(pokemonlist).sort((a, b) => b.weight - a.weight);
                 break;
-                
+
             case '7':
                 pokemonListSorted = Object.values(pokemonlist).sort((a, b) => a.height - b.height);
                 break;

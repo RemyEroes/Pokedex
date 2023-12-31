@@ -15,6 +15,18 @@
 
     perspective: 1000px;
     animation: fondu .8s ease-in-out;
+
+}
+
+/* by default */
+.card_wraper{
+    opacity: 0;
+    visibility: hidden;
+}
+/* when visible */
+.show{
+    opacity: 1;
+    visibility: visible;
 }
 
 .card-fade {
