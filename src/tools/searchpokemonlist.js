@@ -3,18 +3,17 @@ export default function searchPokemonList(pokemonList, searchValue, language) {
     let pokemonListSearched = [];
 
    
-    // ||  searchValue == ''
     if (searchValue !== 'none' ) {
-        // enlever les accents, les espaces
+        if(language==='fr'||language==='en'){
         searchValue = searchValue.toLowerCase().replace(/\s/g, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
         pokemonList.forEach(pokemon => {
-            // enlever les accents, les espaces
             // eslint-disable-next-line eqeqeq 
             if (pokemon['name'][language].toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(searchValue) == true){
                 pokemonListSearched.push(pokemon)
             }
         });
+    }
 
     } else {
         pokemonListSearched = pokemonList;
