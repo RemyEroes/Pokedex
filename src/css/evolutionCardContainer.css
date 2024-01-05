@@ -2,7 +2,6 @@
 
 
 .evolution-big-container{
-    /* background-color: red; */
     position: absolute;
     width: 30vw;
     height: 100vh;
@@ -26,7 +25,6 @@
     width: 100%;
 
     z-index: 1000;
-    /* box-shadow: -1px 20px 10px white; */
     box-shadow: -1px 1px 20px 20px white;
     position: relative;
 }

@@ -7,7 +7,7 @@
     all: unset;
     margin-top: 1vh;
 
-    /* transform-style: preserve-3d; */
+
     width: 100%;
     aspect-ratio: 0.73;
     font-size: 10px;
@@ -44,12 +44,6 @@
         opacity: 1;
     }
 }
-
-
-/* rotation */
-/* .card-container:hover .front-card-little {
-    animation: little-front-flip 1s ease-in-out;
-} */
 
 
 /* INFOS */
@@ -115,15 +109,10 @@
     top: 33%;
     margin-left: auto;
     margin-right: auto;
-    /* filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
-    opacity: 1; */
+
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.889));
     opacity: 0.3;
 }
-
-/* .card-container:hover > .fond-blanc-carte {
-    opacity: 1;
-} */
 
 
 
@@ -235,7 +224,6 @@
 
     50% {
         transform: rotateY(90deg);
-        /* Vous pouvez ajuster cette valeur pour déterminer le moment où le dos de la carte commence à être visible */
     }
 
     100% {
@@ -331,14 +319,7 @@
     filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
 }
 
-/* .img-pokemon-png-big{
-    height: 30%;
-    position: fixed;
-    top: 24%;
-    margin-left: auto;
-    margin-right: auto;
-    filter: drop-shadow(2px 5px 4px rgba(55, 55, 55, 0.389));
-} */
+
 
 .type-pokemon-container-big {
     width: 60%;
@@ -349,19 +330,3 @@
     margin-left: 20%;
     filter: drop-shadow(2px 2px 4px rgba(55, 55, 55, 0.489));
 }
-
-/* 
-.type-image-bi {
-    background-color: aqua;
-
-    width: 20px;
-    clip-path: path("M0 7.984C0 1.40918 1.40918 0 7.984 0H12.016C18.5908 0 20 1.40918 20 7.984V12.016C20 18.5908 18.5908 20 12.016 20H7.984C1.40918 20 0 18.5908 0 12.016V7.984Z");
-}
-
-@media screen and (min-width: 768px) {
-    .type-image-big {
-        width: 20px;
-        clip-path: path("M0 7.984C0 1.40918 1.40918 0 7.984 0H12.016C18.5908 0 20 1.40918 20 7.984V12.016C20 18.5908 18.5908 20 12.016 20H7.984C1.40918 20 0 18.5908 0 12.016V7.984Z");
-    } 
-} */
-

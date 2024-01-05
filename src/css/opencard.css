@@ -479,12 +479,6 @@
 
 /* bouton */
 .switch {
-  /* position: absolute;
-  top: 27%;
-  right: 5%;
-  width: 7.5vw;
-  height: 4vw;
-  z-index: 999; */
   position: absolute;
   top: 6%;
   right: 10%;
@@ -519,7 +513,7 @@
   content: "";
   height: 85%;
   aspect-ratio: 1;
-  /* left: 20%; */
+
   left: 10%;
   bottom: 10%;
   background-image: url('../images/pokeball.svg');

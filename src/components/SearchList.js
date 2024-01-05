@@ -1,4 +1,4 @@
-import { useContext, useRef, useEffect, useState } from 'react';
+import { useContext, useRef, useEffect } from 'react';
 import '../css/searchList.css'
 import { PokemonListContext } from '../contexts/PokemonListContext';
 import { SearchContext } from '../contexts/SearchContext';
@@ -14,7 +14,7 @@ export default function SearchList() {
   var language = useTranslation().i18n.language;
 
   const { PokemonListValue } = useContext(PokemonListContext);
-  const { searchValue, searchOnChange } = useContext(SearchContext)
+  const { searchValue } = useContext(SearchContext)
 
 
   const list_container = useRef(null)
@@ -27,11 +27,10 @@ export default function SearchList() {
     const lettreRegex = /[a-zA-Z]/;
 
   
-    if (searchValue !== 'none' && lettreRegex.test(searchValue)) {
+    if (searchValue !== 'none' || lettreRegex.test(searchValue)) {
       $(ListeElement).css('visibility', 'visible');
       $(ListeElement).css('display', 'initial');
     } else {
-      // Cacher l'élément lorsque searchValue n'est pas égal à 'none' ou s'il contient une lettre
       $(ListeElement).css('visibility', 'hidden');
       $(ListeElement).css('display', 'none');
     }

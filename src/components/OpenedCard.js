@@ -5,8 +5,6 @@ import ApexCharts from 'apexcharts';
 import Tilt from 'react-parallax-tilt';
 import fond_image_pokemon from '../images/fond-image-pokemon.svg';
 import int_to_hashtag from '../tools/int_to_hashtag';
-// import CloseButton from './CloseButton';
-import $ from 'jquery';
 import EvolutionCardContainer from './EvolutionCardContainer';
 import { useTranslation } from 'react-i18next';
 
@@ -63,9 +61,9 @@ import translateNames from '../tools/translateNames';
 
 
 export default function OpenedCard(props) {
-    const { onClose, openEvolutionCard } = props;
+    const { onClose } = props;
     var newpokemon = props.pokemon;
-    // var pokemon = props.pokemon;
+
     const [isChecked, setIsChecked] = useState(false);
     const [preEvolutionValue, setPreEvolutionValue] = useState(false);
     const [futureEvolutionValue, setFutureEvolutionValue] = useState(false);
@@ -93,7 +91,7 @@ export default function OpenedCard(props) {
         );
     };
 
-    // var pokemon_name = pokemon['name'][language].normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+
     var pokemon_name = translateNames(pokemon, language)
     var pokemon_type = pokemon['types'];
     var pokemon_type_name_ = [];
@@ -297,12 +295,7 @@ export default function OpenedCard(props) {
         });
     });
 
-    // const tiltProps = {
-    //     gyroscope:true,
-    //     tiltMaxAngleX:45,
-    //     tiltMaxAngleY:45
-
-    // };
+  
     const tiltProps = {};
 
     function render_BG_Images() {
@@ -477,4 +470,3 @@ export default function OpenedCard(props) {
     );
 }
 
-// <img className='img-pokemon-png-big' src={pokemon['image']} alt='png' />

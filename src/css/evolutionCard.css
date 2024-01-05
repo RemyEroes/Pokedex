@@ -2,7 +2,7 @@
 
 
 .pokemon-preevolution-container {
-    /* background-color: aquamarine; */
+
     height: 33%;
     width: 100%;
     margin-bottom: 10%;
@@ -11,14 +11,14 @@
 
 .preevolution-card-container {
     all: unset;
-    /* background-color: #a44700; */
+
     width: 90%;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
     position: relative; 
-    /* transition: transform 0.2s ease-in-out; */
+
 }
 
 

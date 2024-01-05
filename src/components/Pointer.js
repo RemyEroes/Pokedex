@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import '../css/pointer.css'; // Assurez-vous que le chemin est correct
+import '../css/pointer.css'; 
 import main_sacha from '../images/assets/main-sacha.svg';
 import main_sacha_hover from '../images/assets/main-sacha-hover.svg';
 import $ from 'jquery';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 export default function Pointer() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -23,7 +22,6 @@ export default function Pointer() {
         let mouseY = e.pageY;
         let deplacementX = mouseX - lastMouseX;
         let deplacementY = mouseY - lastMouseY;
-        // let angleDeg = (deplacementX * 40 + deplacementY * 40) / 20;
         let angleDeg = (deplacementX * 40 + deplacementY * 40) / 20;
         lastMouseX = mouseX;
         lastMouseY = mouseY;
@@ -31,7 +29,7 @@ export default function Pointer() {
       };
     
       const handleMouseLeave = () => {
-        setPosition({ x: -100, y: -100 });  // Mettez la position en dehors de la fenêtre
+        setPosition({ x: -100, y: -100 });  
       };
     
       const updateSVG = (value) => {
@@ -75,7 +73,7 @@ export default function Pointer() {
     position: 'fixed',
     top: `${position.y}px`,
     left: `${position.x}px`,
-    transform: `translate(-50%, -50%) rotate(${rotation}deg)`, // Utilisez des backticks pour les template strings
+    transform: `translate(-50%, -50%) rotate(${rotation}deg)`, 
     zIndex: 9999,
   };
 

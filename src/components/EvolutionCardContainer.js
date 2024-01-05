@@ -3,7 +3,6 @@ import '../css/evolutionCardContainer.css'
 import EvolutionCard from './EvolutionCard';
 import { useTranslation } from 'react-i18next';
 
-// import { use } from 'i18next';
 
 export default function EvolutionCardContainer(props) {
 

@@ -113,8 +113,6 @@ export default function Menu() {
     }
   }, [placeholderValue, searchValue, t]);
 
-
-//{isSearchActive && <SearchList />}
       
 
   return (
@@ -127,7 +125,7 @@ export default function Menu() {
         </label>
         <input type="text" name="search-bar" id="search-bar" placeholder={placeholder}  value={placeholderValue ? placeholderValue : null} onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
       </div>
-      <SearchList />
+      {isSearchActive && <SearchList />}
       
 
       <div className="generation-filter-container">

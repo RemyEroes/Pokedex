@@ -1,14 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { PokemonContext } from '../contexts/PokemonContext';
 import '../css/evolutionCard.css'
 import fond_image_pokemon from '../images/fond-image-pokemon.svg';
 import Tilt from 'react-parallax-tilt';
 import translateNames from '../tools/translateNames';
-// import translate from 'translate-google-api';
-// import axios from 'axios';
+
+import int_to_hashtag from '../tools/int_to_hashtag';
+import $ from 'jquery';
+
 
 // images front
-
 import fond_card_1 from "../images/fond-card-horizontal/fond-horizontal-card-squircle-1.svg";
 import fond_card_3 from "../images/fond-card-horizontal/fond-horizontal-card-squircle-3.svg";
 import fond_card_2 from "../images/fond-card-horizontal/fond-horizontal-card-squircle-2.svg";
@@ -50,10 +52,6 @@ import fond_card_mask_16 from "../images/fond-card-horizontal-mask/fond-horizont
 import fond_card_mask_17 from "../images/fond-card-horizontal-mask/fond-horizontal-card-squircle-mask-17.svg";
 import fond_card_mask_18 from "../images/fond-card-horizontal-mask/fond-horizontal-card-squircle-mask-18.svg";
 
-
-import int_to_hashtag from '../tools/int_to_hashtag';
-import $ from 'jquery';
-import { useTranslation } from 'react-i18next';
 
 
 export default function EvolutionCard(props) {
@@ -102,11 +100,7 @@ export default function EvolutionCard(props) {
         }
     }, [pokemonData, language]);
 
-    // var pokemon_name = pokemon['name']?.[language];
-    // var pokemon_name = translateNames(pokemon, language) ?? 'Loading...';
 
-    // const pokemon_name = pokemon?.['name']?.[language] ?? 'Loading...';
-    const pokemon_gen = "GENERATION " + pokemon?.['generation'] ?? t('chargement')+'...';
     const pokemon_number = int_to_hashtag(pokemon_id);
     const pokemon_types = pokemon?.['types'] ?? t('chargement')+'...';
 
@@ -191,47 +185,7 @@ export default function EvolutionCard(props) {
     };
 
 
-    // const translateText = async (text) => {
-    //     const options = {
-    //         method: 'POST',
-    //         url: 'https://microsoft-translator-text.p.rapidapi.com/translate',
-    //         params: {
-    //             'to[0]': 'es',
-    //             'api-version': '3.0',
-    //             profanityAction: 'NoAction',
-    //             textType: 'plain'
-    //         },
-    //         headers: {
-    //             'content-type': 'application/json',
-    //             'X-RapidAPI-Key': 'YOUR_RAPIDAPI_KEY', // Replace with your actual key
-    //             'X-RapidAPI-Host': 'microsoft-translator-text.p.rapidapi.com'
-    //         },
-    //         data: [
-    //             {
-    //                 Text: text
-    //             }
-    //         ]
-    //     };
-
-    //     try {
-    //         const response = await axios.request(options);
-
-    //         if (response.status === 200) {
-    //             console.log(response.data);
-    //         } else {
-    //             console.error(`Translation error. Status code: ${response.status}`);
-    //         }
-    //     } catch (error) {
-    //         console.error(error.message);
-    //     }
-    // };
-
-
-    // // Appeler la fonction principale
-    // translateText('I would really like to drive your car around the block a few times.');
-
-
-
+   
 
     return (
         <div className='pokemon-preevolution-container' >

@@ -1,15 +1,14 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
+import { useTranslation } from 'react-i18next';
+import { PokemonContext } from '../contexts/PokemonContext';
 import '../css/card.css'
 import fond_image_pokemon from '../images/fond-image-pokemon.svg'
-// import FaceCard from './FaceCard';
-// import fond_carte_squircle from '../images/fond-card-template-squircle.svg'
 import Tilt from 'react-parallax-tilt';
-import { useContext } from 'react';
-import { PokemonContext } from '../contexts/PokemonContext';
 import OpenedCard from './OpenedCard';
-import $ from 'jquery';
 import int_to_hashtag from '../tools/int_to_hashtag'
-import { useTranslation } from 'react-i18next';
+import $ from 'jquery';
+
+
 
 
 // images front 
@@ -144,8 +143,6 @@ export default function Card(props) {
     });
 
 
-    // const [cardState, setCardState] = useState('front');
-
     const [tiltProps, setTiltProps] = useState({
         scale: 1.15,
         glareEnable: true,
@@ -230,7 +227,7 @@ export default function Card(props) {
     const [isVisible, setIsVisible] = useState();
     const [userScollX, setUserScollX] = useState(window.scrollX);
 
-    
+
     useEffect(() => {
         setUserScollX(window.scrollX);
         const observer = new IntersectionObserver((entries) => {
