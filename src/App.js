@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './css/app.css';
 import Home from './pages/Home'
 import Menu from './components/Menu'
+import Loader from './components/Loader'
 import Pointer from './components/Pointer'
 import { PokemonProvider } from './contexts/PokemonContext';
 import { OpenCardProvider } from './contexts/OpenCardContext';
@@ -28,6 +29,10 @@ function App() {
       window.removeEventListener("resize", checkTouchSupport);
     };
   }, []);
+
+
+  
+
   return (
 
       <OpenCardProvider>
@@ -37,6 +42,7 @@ function App() {
               <SortProvider>
                 <PokemonListProvider>
                   {!isTouchDevice && <Pointer />}
+                  <Loader />
                   <Menu />
                   <Home />
                 </PokemonListProvider>

@@ -1,0 +1,63 @@
+@import '../css/app.css';
+
+.loader-div{
+
+    background-color: #fed703;
+    border-top-left-radius: 5vw ;
+    border-top-right-radius: 5vw ;
+    width: 100vw;
+    height: 110vh;
+    position: absolute;
+    bottom:0;
+    left: 0;
+
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.loader-text{
+    font-family: 'Pokemon';
+    font-size: 3rem;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 25%;
+}
+
+.pokeball-img{
+    height: 20%;
+    transform-origin: bottom;
+    animation: pokeball_vibre 3.5s infinite ease-in-out;
+}
+
+
+@keyframes loader_desappear {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY(200%);
+    }
+}
+
+
+@keyframes pokeball_vibre {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    55% {
+        transform: rotate(7deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

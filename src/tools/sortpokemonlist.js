@@ -36,10 +36,13 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
 
                     var nameA
                     var nameB
+
                     // pas de upper case pour le japonais et le chinois
                     if (language === 'en' || language === 'fr') {
-                        nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                        nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        nameA = a['name'][language];
+                        nameB = b['name'][language];
+                        // nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        // nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
                     } else {
                         nameA = a['name'][language];
                         nameB = b['name'][language];
@@ -55,7 +58,7 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                     // Noms identiques
                     return 0;
                 });
-                console.log(PokemonNameListSorted)
+
                 PokemonNameListSorted.forEach(element => {
                    
                     var correspondingPokemon = pokemonlist.find(pokemon => pokemon['id'] === element['id'])
@@ -63,7 +66,7 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                         pokemonListSorted.push(correspondingPokemon)
                     }
                 });
-                console.log(pokemonListSorted)
+
 
                 break;
 
@@ -74,14 +77,16 @@ export default function sortpokemonlist(pokemonlist, sortValue, language) {
                     var nameB
                     // pas de upper case pour le japonais et le chinois
                     if (language === 'en' || language === 'fr') {
-                        nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                        nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        // nameA = a['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        // nameB = b['name'][language].toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        nameA = a['name'][language];
+                        nameB = b['name'][language];
                     } else {
                         nameA = a['name'][language];
                         nameB = b['name'][language];
                     }
 
-                    console.log(nameA, nameB)
+                    // console.log(nameA, nameB)
                     if (nameA < nameB) {
                         return 1;
                     }
