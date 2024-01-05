@@ -226,86 +226,11 @@ export default function Card(props) {
     }, [language]);
 
     // ----------------------------------------------
-    // const [isVisible, setIsVisible] = useState(false);
-
-    // // const card_element = useRef(null);
-
-    // useEffect(() => {
-    //     const element = card_element.current;
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => {
-    //             if (entry.isIntersecting) {
-    //                 setIsVisible(true);
-    //             }
-    //         },
-    //         {
-    //             root: null,
-    //             rootMargin: '0px',
-    //             threshold: 0.5, // Ajustez le seuil selon vos besoins
-    //         }
-    //     );
-
-    //     if (element) {
-    //         observer.observe(element);
-    //     }
-
-    //     return () => {
-    //         if (element) {
-    //             observer.unobserve(element);
-    //         }
-    //     };
-    // }, []); // Assurez-vous de spécifier toutes les dépendances nécessaires
-    // const [isVisible, setIsVisible] = useState(false);
-    // // const card_element = useRef(null);
-
-    // useEffect(() => {
-    //     const element = card_element.current;
-    //     let observer;
-
-    //     if (element) {
-    //         observer = new IntersectionObserver(
-    //             ([entry]) => {
-    //                 if (entry.isIntersecting) {
-    //                     setIsVisible(true);
-    //                     observer.disconnect(); // Arrêter l'observation après le premier élément visible
-    //                 }
-    //             },
-    //             {
-    //                 root: null,
-    //                 rootMargin: '0px',
-    //                 threshold: 0.5,
-    //             }
-    //         );
-
-    //         observer.observe(element);
-    //     }
-
-    //     return () => {
-    //         if (observer) {
-    //             observer.disconnect();
-    //         }
-    //     };
-    // }, []);
-
-    // useEffect(() => {
-    //     // Ajoutez la classe show après que le composant a été monté et que la première carte est visible
-    //     if (isVisible) {
-    //         setIsVisible(true);
-    //     }
-    // }, [isVisible]);
-
-    // const showCardWrapper = isVisible || isCardOpen;
-    // className={`card_wraper ${showCardWrapper ? 'show' : ''}`}
 
     const [isVisible, setIsVisible] = useState();
     const [userScollX, setUserScollX] = useState(window.scrollX);
-    // useEffect(() => {
-    //     const oberver = new IntersectionObserver((entries)=>{
-    //         const entry = entries[0];
-    //         setIsVisible(entry.isIntersecting)
-    //     })
-    //     oberver.observe(card_element.current)
-    // }, [])
+
+    
     useEffect(() => {
         setUserScollX(window.scrollX);
         const observer = new IntersectionObserver((entries) => {
