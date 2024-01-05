@@ -1,7 +1,8 @@
-export default function searchPokemonList(pokemonList, searchValue) {
-    let pokemonListSearched = [];
-    const language = 'fr';
 
+export default function searchPokemonList(pokemonList, searchValue, language) {
+    let pokemonListSearched = [];
+
+   
     // ||  searchValue == ''
     if (searchValue !== 'none' ) {
         // enlever les accents, les espaces

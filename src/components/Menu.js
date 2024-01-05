@@ -26,7 +26,7 @@ import SearchList from './SearchList';
 export default function Menu() {
   const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
   const {  sortOnSelect  } = useContext(SortContext);
-  const {searchOnChange } = useContext(SearchContext)
+  const { searchValue, searchOnChange } = useContext(SearchContext)
   var language = useTranslation().i18n.language;
   const [lang, setLang] = useState(language);
 
@@ -101,10 +101,21 @@ export default function Menu() {
   function searchInactive(){
     setIsSearchActive(false)
   }
-  var placeholder = t('rechercher')
+
+  const [placeholderValue, setPlaceholderValue] = useState(null);
+  var placeholder = t('rechercher')+' . . .';
+
+  useEffect(() => {
+    if (searchValue !== 'none') {
+      setPlaceholderValue(placeholderValue);
+    } else {
+      setPlaceholderValue(false);
+    }
+  }, [placeholderValue, searchValue, t]);
 
 
-
+//{isSearchActive && <SearchList />}
+      
 
   return (
     <div id='menu' className="menu">
@@ -114,9 +125,9 @@ export default function Menu() {
         <label htmlFor="search-bar">
           <img className='search' src={search_img} alt="search" />
         </label>
-        <input type="text" name="search-bar" id="search-bar" placeholder={placeholder+' . . .'} onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
+        <input type="text" name="search-bar" id="search-bar" placeholder={placeholder}  value={placeholderValue ? placeholderValue : null} onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
       </div>
-      {isSearchActive && <SearchList />}
+      <SearchList />
       
 
       <div className="generation-filter-container">

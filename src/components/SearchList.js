@@ -1,4 +1,4 @@
-import { useContext, useRef, useEffect } from 'react';
+import { useContext, useRef, useEffect, useState } from 'react';
 import '../css/searchList.css'
 import { PokemonListContext } from '../contexts/PokemonListContext';
 import { SearchContext } from '../contexts/SearchContext';
@@ -14,16 +14,20 @@ export default function SearchList() {
   var language = useTranslation().i18n.language;
 
   const { PokemonListValue } = useContext(PokemonListContext);
-  const {searchValue } = useContext(SearchContext)
+  const { searchValue, searchOnChange } = useContext(SearchContext)
+
 
   const list_container = useRef(null)
   const item_container = useRef(null)
 
+
+
   useEffect(() => {
     const ListeElement = list_container.current;
     const lettreRegex = /[a-zA-Z]/;
+
   
-    if (searchValue !== 'none' || lettreRegex.test(searchValue)) {
+    if (searchValue !== 'none' && lettreRegex.test(searchValue)) {
       $(ListeElement).css('visibility', 'visible');
       $(ListeElement).css('display', 'initial');
     } else {
@@ -40,17 +44,16 @@ export default function SearchList() {
       $(ListeElement).css('height', total_height + 'px');
     }
   }, [searchValue, PokemonListValue]);
-  
 
 
   return (
     <div ref={list_container} className='search-list-container'>
 
       {PokemonListValue.map((pokemon) => (
-        <div ref={item_container} className='pokemon-item-container' key={pokemon.id}>
+        <div ref={item_container} className='pokemon-item-container' key={pokemon.id} >
           <div className='pokemon-item' >
             <img src={pokemon['image']} className="pokemon-img" alt="pokemon" />
-            <p className='pokemon-name'>{translateNames(pokemon,language)}</p>
+            <p className='pokemon-name'>{translateNames(pokemon, language)}</p>
           </div>
         </div>
       ))}

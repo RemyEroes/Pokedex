@@ -50,7 +50,7 @@ export default function Home() {
   // sort, filter, search
   useEffect(() => {
     //search
-    const newsearchedPokemonList = searchpokemonlist(pokemonList, searchValue);
+    const newsearchedPokemonList = searchpokemonlist(pokemonList, searchValue, language);
 
     // filter
     const newFilteredPokemonList = filterpokemonlist(newsearchedPokemonList, genFilterValue, typeFilterValue);
