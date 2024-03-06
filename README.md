@@ -1,2 +1,2 @@
 # Try the demo here:
-pokedex.remy-eroes.site
+https://pokedex.remy-eroes.site
