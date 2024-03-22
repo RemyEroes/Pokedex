@@ -46,6 +46,9 @@ export default function Home() {
 
   const blurry_background = useRef(null);
 
+  // MAJ UPDATE
+  var lastUpdate = '22 mars 2024 à 10:24';
+  useEffect(() => {console.log('Last update:'+ lastUpdate)}, []);
 
   // sort, filter, search
   useEffect(() => {
