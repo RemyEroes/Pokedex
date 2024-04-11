@@ -3,7 +3,7 @@
 <p align="center"><img src="https://socialify.git.ci/RemyEroes/Pokedex/image?description=1&amp;descriptionEditable=A%20React%20JS%20Pokedex%20with%20clickable%20cards%20in%20many%20languages%20&amp;forks=1&amp;language=1&amp;name=1&amp;owner=1&amp;stargazers=1&amp;theme=Dark" style="width: 70%;" alt="project-image"></p>
 
 <h2>🚀 Demo</h2>
-<p>Try it on my webpage here ! ➡️ <a href="https://pokedex.remy-eroes.site]">pokedex.remy-eroes.site</a></p>
+<p>Try it on my webpage here ! ➡️ <a href="https://pokedex.remy-eroes.site">pokedex.remy-eroes.site</a></p>
 
 
 <h2>📸 Project Screenshots:</h2>
