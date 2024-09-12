@@ -3,28 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "apexcharts": "^3.44.2",
-    "axios": "^1.6.3",
-    "configstore": "^6.0.0",
-    "google-translate-api": "^2.3.0",
-    "i18next": "^23.7.11",
-    "i18next-browser-languagedetector": "^7.2.0",
+    "@testing-library/jest-dom": "^6.5.0",
+    "@testing-library/react": "^16.0.1",
+    "apexcharts": "^3.53.0",
+    "axios": "^1.7.7",
+    "i18next": "^23.15.1",
+    "i18next-browser-languagedetector": "^8.0.0",
     "jquery": "^3.7.1",
-    "path-browserify": "^1.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^13.5.0",
-    "react-infinite-scroll-component": "^6.1.0",
-    "react-parallax-tilt": "^1.7.175",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.1",
+    "react-parallax-tilt": "^1.7.238",
     "react-scripts": "5.0.1",
-    "react-tilt": "^1.0.2",
-    "tilt": "^0.2.0",
-    "tilt.js": "^1.2.1",
-    "translate-google-api": "^1.0.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^4.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,8 +40,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@wixc3/react-board": "^2.3.0"
   }
 }
