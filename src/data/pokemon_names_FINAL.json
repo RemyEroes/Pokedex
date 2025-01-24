@@ -8084,833 +8084,1071 @@
     "id": 899,
     "name": {
       "en": "Wyrdeer",
-      "fr": "Cerbyllin"
+      "fr": "Cerbyllin",
+      "ja": "アヤシシ",
+      "zh": "诡角鹿"
     }
   },
   {
     "id": 900,
     "name": {
       "en": "Kleavor",
-      "fr": "Hach\u00e9cateur"
+      "fr": "Hachécateur",
+      "ja": "バサギリ",
+      "zh": "劈斧螳螂"
     }
   },
   {
     "id": 901,
     "name": {
       "en": "Ursaluna",
-      "fr": "Ursaking"
+      "fr": "Ursaking",
+      "ja": "ガチグマ",
+      "zh": "月熊"
     }
   },
   {
     "id": 902,
     "name": {
       "en": "Basculegion",
-      "fr": "Paragruel"
+      "fr": "Paragruel",
+      "ja": "イダイトウ",
+      "zh": "大狃拉"
     }
   },
   {
     "id": 903,
     "name": {
       "en": "Sneasler",
-      "fr": "Farfurex"
+      "fr": "Farfurex",
+      "ja": "オオニューラ",
+      "zh": "大狃拉"
     }
   },
   {
     "id": 904,
     "name": {
       "en": "Overqwil",
-      "fr": "Qwilpik"
+      "fr": "Qwilpik",
+      "ja": "ハリーマン",
+      "zh": "幽尾玄鱼"
     }
   },
   {
     "id": 905,
     "name": {
       "en": "Lovetolos",
-      "fr": "Amov\u00e9nus"
+      "fr": "Amovénus",
+      "ja": "ラブトロス",
+      "zh": "爱管侍"
     }
   },
   {
     "id": 906,
     "name": {
       "en": "Sprigatito",
-      "fr": "Poussacha"
+      "fr": "Poussacha",
+      "ja": "ニャオハ",
+      "zh": "新叶喵"
     }
   },
   {
     "id": 907,
     "name": {
       "en": "Floragato",
-      "fr": "Matourgeon"
+      "fr": "Matourgeon",
+      "ja": "ニャローテ",
+      "zh": "蒂蕾喵"
     }
   },
   {
     "id": 908,
     "name": {
       "en": "Meowscarada",
-      "fr": "Miascarade"
+      "fr": "Miascarade",
+      "ja": "マスカーニャ",
+      "zh": "魔幻假面喵"
     }
   },
   {
     "id": 909,
     "name": {
       "en": "Fuecoco",
-      "fr": "Chochodile"
+      "fr": "Chochodile",
+      "ja": "ホゲータ",
+      "zh": "呆火鳄"
     }
   },
   {
     "id": 910,
     "name": {
       "en": "Crocalor",
-      "fr": "Crocogril"
+      "fr": "Crocogril",
+      "ja": "アチゲータ",
+      "zh": "炙烤鳄"
     }
   },
   {
     "id": 911,
     "name": {
       "en": "Skeledirge",
-      "fr": "Fl\u00e2migator"
+      "fr": "Flâmigator",
+      "ja": "ラウドボーン",
+      "zh": "骨纹巨声鳄"
     }
   },
   {
     "id": 912,
     "name": {
       "en": "Quaxly",
-      "fr": "Coiffeton"
+      "fr": "Coiffeton",
+      "ja": "クワッス",
+      "zh": "润水鸭"
     }
   },
   {
     "id": 913,
     "name": {
       "en": "Quaxwell",
-      "fr": "Canarbello"
+      "fr": "Canarbello",
+      "ja": "ウェルカモ",
+      "zh": "湧跃鸭"
     }
   },
   {
     "id": 914,
     "name": {
       "en": "Quaquaval",
-      "fr": "Palmaval"
+      "fr": "Palmaval",
+      "ja": "ウェーニバル",
+      "zh": "狂欢浪舞鸭"
     }
   },
   {
     "id": 915,
     "name": {
       "en": "Lechonk",
-      "fr": "Gourmelet"
+      "fr": "Gourmelet",
+      "ja": "グルトン",
+      "zh": "爱吃豚"
     }
   },
   {
     "id": 916,
     "name": {
       "en": "Oinkologne",
-      "fr": "Fragroin"
+      "fr": "Fragroin",
+      "ja": "パフュートン",
+      "zh": "飘香豚"
     }
   },
   {
     "id": 917,
     "name": {
       "en": "Tarountula",
-      "fr": "Tissenboule"
+      "fr": "Tissenboule",
+      "ja": "タマンチュラ",
+      "zh": "团珠蛛"
     }
   },
   {
     "id": 918,
     "name": {
       "en": "Spidops",
-      "fr": "Filentrappe"
+      "fr": "Filentrappe",
+      "ja": "ワナイダー",
+      "zh": "操陷蛛"
     }
   },
   {
     "id": 919,
     "name": {
       "en": "Nymble",
-      "fr": "Lilliterelle"
+      "fr": "Lilliterelle",
+      "ja": "マメバッタ",
+      "zh": "豆蟋蟀"
     }
   },
   {
     "id": 920,
     "name": {
       "en": "Lokix",
-      "fr": "Gambex"
+      "fr": "Gambex",
+      "ja": "エクスレッグ",
+      "zh": "烈腿蝗"
     }
   },
   {
     "id": 921,
     "name": {
       "en": "Pawmi",
-      "fr": "Pohm"
+      "fr": "Pohm",
+      "ja": "パモ",
+      "zh": "布拨"
     }
   },
   {
     "id": 922,
     "name": {
       "en": "Pawmo",
-      "fr": "Pohmotte"
+      "fr": "Pohmotte",
+      "ja": "パモット",
+      "zh": "布土拨"
     }
   },
   {
     "id": 923,
     "name": {
       "en": "Pawmot",
-      "fr": "Pohmarmotte"
+      "fr": "Pohmarmotte",
+      "ja": "パーモット",
+      "zh": "巴布土拨"
     }
   },
   {
     "id": 924,
     "name": {
       "en": "Tandemaus",
-      "fr": "Compagnol"
+      "fr": "Compagnol",
+      "ja": "ワッカネズミ",
+      "zh": "一对鼠"
     }
   },
   {
     "id": 925,
     "name": {
       "en": "Maushold",
-      "fr": "Famignol"
+      "fr": "Famignol",
+      "ja": "イッカネズミ",
+      "zh": "一家鼠"
     }
   },
   {
     "id": 926,
     "name": {
       "en": "Fidough",
-      "fr": "P\u00e2tachiot"
+      "fr": "Pâtachiot",
+      "ja": "パピモッチ",
+      "zh": "团珠犬"
     }
   },
   {
     "id": 927,
     "name": {
       "en": "Dachsbun",
-      "fr": "Briochien"
+      "fr": "Briochien",
+      "ja": "パフュートン",
+      "zh": "麻花犬"
     }
   },
   {
     "id": 928,
     "name": {
       "en": "Smoliv",
-      "fr": "Olivini"
+      "fr": "Olivini",
+      "ja": "ミニーブ",
+      "zh": "迷你芙"
     }
   },
   {
     "id": 929,
     "name": {
       "en": "Dolliv",
-      "fr": "Olivado"
+      "fr": "Olivado",
+      "ja": "オリーニョ",
+      "zh": "奥利纽"
     }
   },
   {
     "id": 930,
     "name": {
       "en": "Arboliva",
-      "fr": "Arboliva"
+      "fr": "Arboliva",
+      "ja": "オリーヴァ",
+      "zh": "奥利瓦"
     }
   },
   {
     "id": 931,
     "name": {
       "en": "Squawkabilly",
-      "fr": "Tapato\u00e8s"
+      "fr": "Tapatoès",
+      "ja": "イキリンコ",
+      "zh": "怒鹦哥"
     }
   },
   {
     "id": 932,
     "name": {
       "en": "Nacli",
-      "fr": "Selutin"
+      "fr": "Selutin",
+      "ja": "コジオ",
+      "zh": "盐石宝"
     }
   },
   {
     "id": 933,
     "name": {
       "en": "Naclstack",
-      "fr": "Amassel"
+      "fr": "Amassel",
+      "ja": "ジオヅム",
+      "zh": "盐石堆"
     }
   },
   {
     "id": 934,
     "name": {
       "en": "Garganacl",
-      "fr": "Gigansel"
+      "fr": "Gigansel",
+      "ja": "キョジオーン",
+      "zh": "盐石巨灵"
     }
   },
   {
     "id": 935,
     "name": {
       "en": "Charcadet",
-      "fr": "Charbambin"
+      "fr": "Charbambin",
+      "ja": "カルボウ",
+      "zh": "炭小侍"
     }
   },
   {
     "id": 936,
     "name": {
       "en": "Armarouge",
-      "fr": "Carmadura"
+      "fr": "Carmadura",
+      "ja": "グレンアルマ",
+      "zh": "红莲铠骑"
     }
   },
   {
     "id": 937,
     "name": {
       "en": "Ceruledge",
-      "fr": "Malvalame"
+      "fr": "Malvalame",
+      "ja": "ソウブレイズ",
+      "zh": "苍炎刃鬼"
     }
   },
   {
     "id": 938,
     "name": {
       "en": "Tadbulb",
-      "fr": "T\u00eatampoule"
+      "fr": "Têtampoule",
+      "ja": "カイデン",
+      "zh": "光蚪仔"
     }
   },
   {
     "id": 939,
     "name": {
       "en": "Bellibolt",
-      "fr": "Ampibidou"
+      "fr": "Ampibidou",
+      "ja": "ハラバリー",
+      "zh": "电肚蛙"
     }
   },
   {
     "id": 940,
     "name": {
       "en": "Wattrel",
-      "fr": "Zap\u00e9trel"
+      "fr": "Zapétrel",
+      "ja": "カイデンチュ",
+      "zh": "电海燕"
     }
   },
   {
     "id": 941,
     "name": {
       "en": "Kilowattrel",
-      "fr": "Fulgulairo"
+      "fr": "Fulgulairo",
+      "ja": "カイデン",
+      "zh": "大电海燕"
     }
   },
   {
     "id": 942,
     "name": {
       "en": "Maschiff",
-      "fr": "Grondogue"
+      "fr": "Grondogue",
+      "ja": "オラチフ",
+      "zh": "猾底狗"
     }
   },
   {
     "id": 943,
     "name": {
       "en": "Mabosstiff",
-      "fr": "Dogrino"
+      "fr": "Dogrino",
+      "ja": "マフィティフ",
+      "zh": "骨纹巨犬"
     }
   },
   {
     "id": 944,
     "name": {
       "en": "Shroodle",
-      "fr": "Gribouraigne"
+      "fr": "Gribouraigne",
+      "ja": "シルシュルー",
+      "zh": "涂标客"
     }
   },
   {
     "id": 945,
     "name": {
       "en": "Grafaiai",
-      "fr": "Tag-Tag"
+      "fr": "Tag-Tag",
+      "ja": "タギングル",
+      "zh": "涂标客王"
     }
   },
   {
     "id": 946,
     "name": {
       "en": "Bramblin",
-      "fr": "Virovent"
+      "fr": "Virovent",
+      "ja": "ノノクラゲ",
+      "zh": "飘飘草"
     }
   },
   {
     "id": 947,
     "name": {
       "en": "Brambleghast",
-      "fr": "Virevorreur"
+      "fr": "Virevorreur",
+      "ja": "ノノクラゲン",
+      "zh": "飘飘龙"
     }
   },
   {
     "id": 948,
     "name": {
       "en": "Toedscool",
-      "fr": "Terracool"
+      "fr": "Terracool",
+      "ja": "オトシドリ",
+      "zh": "陆地水母"
     }
   },
   {
     "id": 949,
     "name": {
       "en": "Toedscruel",
-      "fr": "Terracruel"
+      "fr": "Terracruel",
+      "ja": "オトシドリン",
+      "zh": "陆地水母王"
     }
   },
   {
     "id": 950,
     "name": {
       "en": "Klawf",
-      "fr": "Craparoi"
+      "fr": "Craparoi",
+      "ja": "ガケガニ",
+      "zh": "悬崖蟹"
     }
   },
   {
     "id": 951,
     "name": {
       "en": "Capsakid",
-      "fr": "Pimito"
+      "fr": "Pimito",
+      "ja": "カプサイジ",
+      "zh": "椒小孩"
     }
   },
   {
     "id": 952,
     "name": {
       "en": "Scovillain",
-      "fr": "Scovilain"
+      "fr": "Scovilain",
+      "ja": "スコヴィラン",
+      "zh": "狠辣椒"
     }
   },
   {
     "id": 953,
     "name": {
       "en": "Rellor",
-      "fr": "L\u00e9boul\u00e9rou"
+      "fr": "Léboulérout",
+      "ja": "シガロコ",
+      "zh": "虫滚泥"
     }
   },
   {
     "id": 954,
     "name": {
       "en": "Rabsca",
-      "fr": "B\u00e9rasca"
+      "fr": "Bérasca",
+      "ja": "ベラカス",
+      "zh": "虫甲圣"
     }
   },
   {
     "id": 955,
     "name": {
       "en": "Flittle",
-      "fr": "Flotillon"
+      "fr": "Flotillon",
+      "ja": "ヒラヒナ",
+      "zh": "飘飘雏"
     }
   },
   {
     "id": 956,
     "name": {
       "en": "Espathra",
-      "fr": "Cl\u00e9opsytra"
+      "fr": "Cléopsytra",
+      "ja": "クエスパトラ",
+      "zh": "超能艳鸵"
     }
   },
   {
     "id": 957,
     "name": {
       "en": "Tinkatink",
-      "fr": "Forgerette"
+      "fr": "Forgerette",
+      "ja": "カヌチャン",
+      "zh": "小锻匠"
     }
   },
   {
     "id": 958,
     "name": {
       "en": "Tinkatuff",
-      "fr": "Forgella"
+      "fr": "Forgella",
+      "ja": "ナカヌチャン",
+      "zh": "巧锻匠"
     }
   },
   {
     "id": 959,
     "name": {
       "en": "Tinkaton",
-      "fr": "Forgelina"
+      "fr": "Forgelina",
+      "ja": "デカヌチャン",
+      "zh": "巨锻匠"
     }
   },
   {
     "id": 960,
     "name": {
       "en": "Wiglett",
-      "fr": "Taupikeau"
+      "fr": "Taupikeau",
+      "ja": "ウミディグダ",
+      "zh": "土龙节节"
     }
   },
   {
     "id": 961,
     "name": {
       "en": "Wugtrio",
-      "fr": "Triopikeau"
+      "fr": "Triopikeau",
+      "ja": "ウミトリオ",
+      "zh": "三节土龙"
     }
   },
   {
     "id": 962,
     "name": {
       "en": "Bombirdier",
-      "fr": "Lestombaile"
+      "fr": "Lestombaile",
+      "ja": "カラミンゴ",
+      "zh": "投掷鸦"
     }
   },
   {
     "id": 963,
     "name": {
       "en": "Finizen",
-      "fr": "Dofin"
+      "fr": "Dofin",
+      "ja": "ナミイルカ",
+      "zh": "纳噶耶"
     }
   },
   {
     "id": 964,
     "name": {
       "en": "Palafin",
-      "fr": "Superdofin"
+      "fr": "Superdofin",
+      "ja": "イルカマン",
+      "zh": "海豚侠"
     }
   },
   {
     "id": 965,
     "name": {
       "en": "Varoom",
-      "fr": "Vrombi"
+      "fr": "Vrombi",
+      "ja": "ブロロン",
+      "zh": "轰鸣气筒"
     }
   },
   {
     "id": 966,
     "name": {
       "en": "Revavroom",
-      "fr": "Vrombotor"
+      "fr": "Vrombotor",
+      "ja": "ブロロローム",
+      "zh": "噗隆隆气筒"
     }
   },
   {
     "id": 967,
     "name": {
       "en": "Cyclizar",
-      "fr": "Motorizard"
+      "fr": "Motorizard",
+      "ja": "モトトカゲ",
+      "zh": "摩托蜥"
     }
   },
   {
     "id": 968,
     "name": {
       "en": "Orthworm",
-      "fr": "Ferdeter"
+      "fr": "Ferdeter",
+      "ja": "ミミズズ",
+      "zh": "涂泥蛞蝓"
     }
   },
   {
     "id": 969,
     "name": {
       "en": "Glimmet",
-      "fr": "Germ\u00e9clat"
+      "fr": "Germéclat",
+      "ja": "キラーメ",
+      "zh": "晶汐"
     }
   },
   {
     "id": 970,
     "name": {
       "en": "Glimmora",
-      "fr": "Flor\u00e9clat"
+      "fr": "Floréclat",
+      "ja": "キラフロル",
+      "zh": "光珊"
     }
   },
   {
     "id": 971,
     "name": {
       "en": "Greavard",
-      "fr": "Toutombe"
+      "fr": "Toutombe",
+      "ja": "ボチ",
+      "zh": "幽尾狗"
     }
   },
   {
     "id": 972,
     "name": {
       "en": "Houndstone",
-      "fr": "Tomberro"
+      "fr": "Tomberro",
+      "ja": "ハカドッグ",
+      "zh": "墓尾狗"
     }
   },
   {
     "id": 973,
     "name": {
       "en": "Flamigo",
-      "fr": "Flamenroule"
+      "fr": "Flamenroule",
+      "ja": "カラミンゴ",
+      "zh": "缠红鹤"
     }
   },
   {
     "id": 974,
     "name": {
       "en": "Cetoddle",
-      "fr": "Pi\u00e9tac\u00e9"
+      "fr": "Piétacé",
+      "ja": "アルクジラ",
+      "zh": "漫步冰鲸"
     }
   },
   {
     "id": 975,
     "name": {
       "en": "Cetitan",
-      "fr": "Balbal\u00e8ze"
+      "fr": "Balbalèze",
+      "ja": "ハルクジラ",
+      "zh": "霸主冰鲸"
     }
   },
   {
     "id": 976,
     "name": {
       "en": "Veluza",
-      "fr": "D\u00e9lestin"
+      "fr": "Délestin",
+      "ja": "ミガルーサ",
+      "zh": "切裂战斧"
     }
   },
   {
     "id": 977,
     "name": {
       "en": "Dondozo",
-      "fr": "Oyacata"
+      "fr": "Oyacata",
+      "ja": "ヘイラッシャ",
+      "zh": "米饭大将军"
     }
   },
   {
     "id": 978,
     "name": {
       "en": "Tatsugiri",
-      "fr": "Nigirigon"
+      "fr": "Nigirigon",
+      "ja": "シャリタツ",
+      "zh": "米饭龙"
     }
   },
   {
     "id": 979,
     "name": {
       "en": "Annihilape",
-      "fr": "Courrousinge"
+      "fr": "Courrousinge",
+      "ja": "コノヨザル",
+      "zh": "地狱灵猿"
     }
   },
   {
     "id": 980,
     "name": {
       "en": "Clodsire",
-      "fr": "Terraiste"
+      "fr": "Terraiste",
+      "ja": "ドオー",
+      "zh": "土王"
     }
   },
   {
     "id": 981,
     "name": {
       "en": "Farigiraf",
-      "fr": "Farigiraf"
+      "fr": "Farigiraf",
+      "ja": "リキキリン",
+      "zh": "长尾奇犽"
     }
   },
   {
     "id": 982,
     "name": {
       "en": "Dudunsparce",
-      "fr": "Deusolourdo"
+      "fr": "Deusolourdo",
+      "ja": "ノココッチ",
+      "zh": "土龙巨崩"
     }
   },
   {
     "id": 983,
     "name": {
       "en": "Kingambit",
-      "fr": "Scalpereur"
+      "fr": "Scalpereur",
+      "ja": "ドドゲザン",
+      "zh": "仆刀将军"
     }
   },
   {
     "id": 984,
     "name": {
       "en": "Great Tusk",
-      "fr": "Fort-Ivoire"
+      "fr": "Fort-Ivoire",
+      "ja": "イダイナキバ",
+      "zh": "猛恶巨象"
     }
   },
   {
     "id": 985,
     "name": {
       "en": "Scream Tail",
-      "fr": "Hurle-Queue"
+      "fr": "Hurle-Queue",
+      "ja": "サケブシッポ",
+      "zh": "吼叫尾"
     }
   },
   {
     "id": 986,
     "name": {
       "en": "Brute Bonnet",
-      "fr": "Fongus-Furie"
+      "fr": "Fongus-Furie",
+      "ja": "アラブルタケ",
+      "zh": "猖狂蕈"
     }
   },
   {
     "id": 987,
     "name": {
       "en": "Flutter Mane",
-      "fr": "Flotte-M\u00e8che"
+      "fr": "Flotte-Mèche",
+      "ja": "ハバタクカミ",
+      "zh": "振翼发"
     }
   },
   {
     "id": 988,
     "name": {
       "en": "Slither Wing",
-      "fr": "Rampe-Ailes"
+      "fr": "Rampe-Ailes",
+      "ja": "チヲハウハネ",
+      "zh": "爬地翅"
     }
   },
   {
     "id": 989,
     "name": {
       "en": "Sandy Shocks",
-      "fr": "Pelage-Sabl\u00e9"
+      "fr": "Pelage-Sablé",
+      "ja": "スナノケガワ",
+      "zh": "沙铁皮"
     }
   },
   {
     "id": 990,
     "name": {
       "en": "Iron Treads",
-      "fr": "Roue-de-Fer"
+      "fr": "Roue-de-Fer",
+      "ja": "テツノワダチ",
+      "zh": "铁辙迹"
     }
   },
   {
     "id": 991,
     "name": {
       "en": "Iron Bundle",
-      "fr": "Hotte-de-Fer"
+      "fr": "Hotte-de-Fer",
+      "ja": "テツノツツミ",
+      "zh": "铁包袱"
     }
   },
   {
     "id": 992,
     "name": {
       "en": "Iron Hands",
-      "fr": "Paume-de-Fer"
+      "fr": "Paume-de-Fer",
+      "ja": "テツノカイナ",
+      "zh": "铁臂膀"
     }
   },
   {
     "id": 993,
     "name": {
       "en": "Iron Jugulis",
-      "fr": "T\u00eates-de-Fer"
+      "fr": "Têtes-de-Fer",
+      "ja": "テツノコウベ",
+      "zh": "铁毒蛾"
     }
   },
   {
     "id": 994,
     "name": {
       "en": "Iron Moth",
-      "fr": "Mite-de-Fer"
+      "fr": "Mite-de-Fer",
+      "ja": "テツノドクガ",
+      "zh": "铁毒蛾"
     }
   },
   {
     "id": 995,
     "name": {
       "en": "Iron Thorns",
-      "fr": "\u00c9pine-de-Fer"
+      "fr": "Épine-de-Fer",
+      "ja": "テツノイバラ",
+      "zh": "铁荆棘"
     }
   },
   {
     "id": 996,
     "name": {
       "en": "Frigibax",
-      "fr": "Frigodo"
+      "fr": "Frigodo",
+      "ja": "セビエ",
+      "zh": "凉脊龙"
     }
   },
   {
     "id": 997,
     "name": {
       "en": "Arctibax",
-      "fr": "Cryodo"
+      "fr": "Cryodo",
+      "ja": "セゴール",
+      "zh": "冻脊龙"
     }
   },
   {
     "id": 998,
     "name": {
       "en": "Baxcalibur",
-      "fr": "Glaivodo"
+      "fr": "Glaivodo",
+      "ja": "セグレイブ",
+      "zh": "戟脊龙"
     }
   },
   {
     "id": 999,
     "name": {
       "en": "Gimmighoul",
-      "fr": "Mordudor"
+      "fr": "Mordudor",
+      "ja": "コレクレー",
+      "zh": "索财灵"
     }
   },
   {
     "id": 1000,
     "name": {
       "en": "Gholdengo",
-      "fr": "Gromago"
+      "fr": "Gromago",
+      "ja": "サーフゴー",
+      "zh": "赛富豪"
     }
   },
   {
     "id": 1001,
     "name": {
       "en": "Wo-Chien",
-      "fr": "Chongjian"
+      "fr": "Chongjian",
+      "ja": "チオンジェン",
+      "zh": "古简蜗"
     }
   },
   {
     "id": 1002,
     "name": {
       "en": "Chien-Pao",
-      "fr": "Baojian"
+      "fr": "Baojian",
+      "ja": "パオジアン",
+      "zh": "古剑豹"
     }
   },
   {
     "id": 1003,
     "name": {
       "en": "Ting-Lu",
-      "fr": "Dinglu"
+      "fr": "Dinglu",
+      "ja": "ディンルー",
+      "zh": "古鼎鹿"
     }
   },
   {
     "id": 1004,
     "name": {
       "en": "Chi-Yu",
-      "fr": "Yuyu"
+      "fr": "Yuyu",
+      "ja": "イーユイ",
+      "zh": "古玉鱼"
     }
   },
   {
     "id": 1005,
     "name": {
       "en": "Roaring Moon",
-      "fr": "Rugit-Lune"
+      "fr": "Rugit-Lune",
+      "ja": "トドロクツキ",
+      "zh": "轰鸣月"
     }
   },
   {
     "id": 1006,
     "name": {
       "en": "Iron Valiant",
-      "fr": "Garde-de-Fer"
+      "fr": "Garde-de-Fer",
+      "ja": "テツノブジン",
+      "zh": "铁武者"
     }
   },
   {
     "id": 1007,
     "name": {
       "en": "Koraidon",
-      "fr": "Koraidon"
+      "fr": "Koraidon",
+      "ja": "コライドン",
+      "zh": "故勒顿"
     }
   },
   {
     "id": 1008,
     "name": {
       "en": "Miraidon",
-      "fr": "Miraidon"
+      "fr": "Miraidon",
+      "ja": "ミライドン",
+      "zh": "密勒顿"
     }
   },
   {
     "id": 1009,
     "name": {
       "en": "Walking Wake",
-      "fr": "Serpente-Eau"
+      "fr": "Serpente-Eau",
+      "ja": "ウネルミナモ",
+      "zh": "波荡水"
     }
   },
   {
     "id": 1010,
     "name": {
       "en": "Iron Leaves",
-      "fr": "Vert-de-Fer"
+      "fr": "Vert-de-Fer",
+      "ja": "テツノイサハ",
+      "zh": "铁斑叶"
     }
   },
   {
     "id": 1011,
     "name": {
       "en": "Dipplin",
-      "fr": "Pomdramour"
+      "fr": "Pomdramour",
+      "ja": "アップリュウ",
+      "zh": "飘飘福"
     }
   },
   {
     "id": 1012,
     "name": {
       "en": "Poltchageist",
-      "fr": "Poltchageist"
+      "fr": "Poltchageist",
+      "ja": "ヤバソチャ",
+      "zh": "怖纳茶"
     }
   },
   {
     "id": 1013,
     "name": {
       "en": "Sinistcha",
-      "fr": "Th\u00e9ffroyable"
+      "fr": "Théffroyable",
+      "ja": "キョジオマ",
+      "zh": "怖怖茶"
     }
   },
   {
     "id": 1014,
     "name": {
       "en": "Okidogi",
-      "fr": "F\u00e9licanis"
+      "fr": "Félicanis",
+      "ja": "イイネイヌ",
+      "zh": "好胜犬"
     }
   },
   {
     "id": 1015,
     "name": {
       "en": "Munkidori",
-      "fr": "Fortusimia"
+      "fr": "Fortusimia",
+      "ja": "マシマシラ",
+      "zh": "铁臂猿"
     }
   },
   {
     "id": 1016,
     "name": {
       "en": "Fezandipiti",
-      "fr": "Favianos"
+      "fr": "Favianos",
+      "ja": "キチキギス",
+      "zh": "鸣鸣鹤"
     }
   },
   {
     "id": 1017,
     "name": {
       "en": "Ogerpon",
-      "fr": "Ogerpon"
+      "fr": "Ogerpon",
+      "ja": "オーガポン",
+      "zh": "鬼盆栽"
     }
   }
 ]

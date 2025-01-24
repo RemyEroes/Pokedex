@@ -8,8 +8,8 @@ import TypeFilterSelect from './typeFilterSelect';
 import get_banner_from_width from '../tools/get_banner_from_width';
 import $ from 'jquery'
 import { SearchContext } from '../contexts/SearchContext';
-import {useTranslation} from 'react-i18next';
-import axios from 'axios';
+import { useTranslation } from 'react-i18next';
+// import axios from 'axios';
 
 
 // search
@@ -24,8 +24,8 @@ import SearchList from './SearchList';
 
 
 export default function Menu() {
-  const {  genFilterOnSelect, typeFilterOnSelect  } = useContext(FilterContext);
-  const {  sortOnSelect  } = useContext(SortContext);
+  const { genFilterOnSelect, typeFilterOnSelect } = useContext(FilterContext);
+  const { sortOnSelect } = useContext(SortContext);
   const { searchValue, searchOnChange } = useContext(SearchContext)
   var language = useTranslation().i18n.language;
   const [lang, setLang] = useState(language);
@@ -38,7 +38,7 @@ export default function Menu() {
     'ja': '🇯🇵',
     'zh': '🇨🇳',
   }
-  
+
   const changeLanguage = () => {
     // Toggle between available languages
     const availableLanguages = ['en', 'fr', 'ja', 'zh'];
@@ -59,15 +59,24 @@ export default function Menu() {
 
 
   // banner
-  useEffect(()=>{
+  useEffect(() => {
     // banner
     setBannerSRC(get_banner_from_width(lang));
 
-    // menu height
-    var height = banner_element.height()+'px'
-    menu_element.css('height',height)
+    const setBannerHeight = () => {
+      // menu height
+      var height = banner_element.height() + 'px'
+      menu_element.css('height', height)
+    }
 
-  },[windowWidth, banner_element, menu_element, lang])
+      let interval = setInterval(() => {
+        if (banner_element.height() !== undefined) {
+          setBannerHeight();
+          clearInterval(interval);
+        }
+      }, 100);
+
+  }, [windowWidth, banner_element, menu_element, lang])
 
 
   // gen filter
@@ -93,17 +102,17 @@ export default function Menu() {
     const selectedValue = event.target.value;
     searchOnChange(selectedValue)
   };
-  
+
   const [isSearchActive, setIsSearchActive] = useState(false);
-  function searchActive(){
+  function searchActive() {
     setIsSearchActive(true)
   }
-  function searchInactive(){
+  function searchInactive() {
     setIsSearchActive(false)
   }
 
   const [placeholderValue, setPlaceholderValue] = useState(null);
-  var placeholder = t('rechercher')+' . . .';
+  var placeholder = t('rechercher') + ' . . .';
 
   useEffect(() => {
     if (searchValue !== 'none') {
@@ -113,7 +122,7 @@ export default function Menu() {
     }
   }, [placeholderValue, searchValue, t]);
 
-      
+
 
   return (
     <div id='menu' className="menu">
@@ -123,16 +132,16 @@ export default function Menu() {
         <label htmlFor="search-bar">
           <img className='search' src={search_img} alt="search" />
         </label>
-        <input type="text" name="search-bar" id="search-bar" placeholder={placeholder}  value={placeholderValue ? placeholderValue : null} onChange={ searchValueChanged } onFocus={searchActive} onBlur={searchInactive}></input>
+        <input type="text" name="search-bar" id="search-bar" placeholder={placeholder} value={placeholderValue ? placeholderValue : null} onChange={searchValueChanged} onFocus={searchActive} onBlur={searchInactive}></input>
       </div>
       {isSearchActive && <SearchList />}
-      
+
 
       <div className="generation-filter-container">
         <label htmlFor="generation">
           <img className='clock' src={clock_img} alt="clock" />
         </label>
-        <select name="generation" id="generation" onChange={ genFilterChanged }>
+        <select name="generation" id="generation" onChange={genFilterChanged}>
           <option value="none">{t('tt-gen')}</option>
           <GenFilterSelect />
         </select>
@@ -142,7 +151,7 @@ export default function Menu() {
         <label htmlFor="type">
           <img className='type-img' src={type_img} alt="type" />
         </label>
-        <select name="type" id="type" onChange={ typeFilterChanged }>
+        <select name="type" id="type" onChange={typeFilterChanged}>
           <option value="none">{t('tt-type')}</option>
           <TypeFilterSelect />
         </select>
@@ -152,15 +161,15 @@ export default function Menu() {
         <label htmlFor="sort">
           <img className='sort-img' src={sort_img} alt="sort" />
         </label>
-        <select name="sort" id="sort" onChange={ sortChanged }>
+        <select name="sort" id="sort" onChange={sortChanged}>
           <option value="none">{t('trier')}</option>
           <SortSelect />
         </select>
       </div>
 
       <button className="change-language-button" onClick={changeLanguage}>{languageToFlag[lang]}</button>
-      
-      </div>
+
+    </div>
   );
 }
 
